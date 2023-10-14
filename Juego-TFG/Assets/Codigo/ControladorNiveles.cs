@@ -27,7 +27,7 @@ public class ControladorNiveles : MonoBehaviour
                 botonesNivel[i].interactable = false;
             }
 
-            // solo el nivel 1 se desbloquea en esta ocasion
+            // Desbloquea los niveles de uno en uno hasta llegar al numero de niveles desbloqueados
             for (int i = 0; i < PlayerPrefs.GetInt("nivelesDesbloqueados",1); i++)
             {
                 botonesNivel[i].interactable = true;   

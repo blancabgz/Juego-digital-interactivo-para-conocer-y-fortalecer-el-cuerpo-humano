@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 868.8
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Scene
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -335,10 +335,10 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 60}
-    m_SelectedIDs: c6630000
-    m_LastClickedID: 25542
-    m_ExpandedIDs: 00000000586300005264000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 180}
+    m_SelectedIDs: be630000
+    m_LastClickedID: 25534
+    m_ExpandedIDs: 000000005863000092630000c4630000c663000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -463,7 +463,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 486
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -506,9 +506,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ce630000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 145cffff30a2ffff86a2ffff16c7ffffacc8ffff9cc9ffff06cbffff8ccbffff46d2ffff8ad2ffffb6d4ffff3cd5ffff2ed7ffff94d7ffffd8d7ffff1cd8ffff60d8ffff6adfffff50e0fffffae1ffff9ce4ffff96f9ffff1cfbffff08640000106400005a6d0000726e00002e6f0000366f0000be710000c6710000727900007a7900001e7b0000367c00006e7c0000767f00007e7f0000ec80000004820000308200000e8300002684000052840000
+      m_SelectedIDs: 4c860000
+      m_LastClickedID: 34380
+      m_ExpandedIDs: ceb5ffffd8b6ffff3ab8ffff6eb9ffffeec7ffff36c8ffff72caffff16cbffffd6dffffffedfffff74e0ffff90e1ffffe0e1ffffb2edfffffcedffffcef6ffffaef9ffff1cfbffff6064000078650000de780000007a0000147a0000707c0000847c0000947c00000c8500002e860000428600004c860000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -901,9 +901,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1049.5922, y: 530.59467, z: -10.789682}
+    m_Target: {x: 629.4233, y: 406.46155, z: -3.7594614}
     speed: 2
-    m_Value: {x: 1049.5922, y: 530.59467, z: -10.789682}
+    m_Value: {x: 629.4233, y: 406.46155, z: -3.7594614}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -953,9 +953,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 790.52264
+    m_Target: 769.963
     speed: 2
-    m_Value: 790.52264
+    m_Value: 769.963
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1051,7 +1051,7 @@ MonoBehaviour:
   m_SerializedViewNames:
   - UnityEditor.DeviceSimulation.SimulatorWindow
   m_SerializedViewValues:
-  - E:\TFG-JUEGO\Juego-TFG\Library\PlayModeViewStates\0bf45686582565742a7df1b4f399aaf1
+  - E:\TFG-JUEGO\Juego-TFG\Library\PlayModeViewStates\6f2c14835e2347a40b760ff9deafd17d
   m_PlayModeViewName: GameView
   m_ShowGizmos: 0
   m_TargetDisplay: 0
@@ -1083,7 +1083,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
