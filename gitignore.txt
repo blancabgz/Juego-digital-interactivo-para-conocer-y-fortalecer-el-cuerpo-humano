@@ -35,6 +35,7 @@ ExportedObj/
 *.svd
 *.pdb
 *.opendb
+*.dliv
 Build/lua-5.3.5/src
 Build/lua-5.3.5/README
 # Unity3D generated meta files
