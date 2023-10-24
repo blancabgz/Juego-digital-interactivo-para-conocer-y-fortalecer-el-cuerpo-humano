@@ -1,17 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; // hacer referencia a los botones
+using UnityEngine.UI; // reference to buttons
 
-public class ControladorNiveles : MonoBehaviour
+public class LevelController : MonoBehaviour
 {
-    public static ControladorNiveles instancia; // para llamarlo facilmente desde otros codigos
-    public Button[] botonesNivel; // array que contiene los botones de nivel
-    public int desbloquear; 
+    public static LevelController instance; 
+    public Button[] levelBottons; // array containing level buttons
+    public int unlock; // unlock level
 
-    private void Awake() { // si no encontramos la instancia, solo debe haber una por escena, me creas esta
-        if(instancia == null){
-            instancia = this;
+    private void Awake() { // only one scene
+        if(instance == null){
+            instance = this;
         }   
     }
 
@@ -19,27 +19,27 @@ public class ControladorNiveles : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(botonesNivel.Length > 0){
+        if(levelBottons.Length > 0){
 
-            // se recorren todos los botones de niveles y se desactiva la propiedad de interaccion evitando poder pulsarlo hasta que se desbloquee
-            for (int i = 0; i < botonesNivel.Length; i++)
+            // disable interaction on all buttons
+            for (int i = 0; i < levelBottons.Length; i++)
             {
-                botonesNivel[i].interactable = false;
+                levelBottons[i].interactable = false;
             }
 
-            // Desbloquea los niveles de uno en uno hasta llegar al numero de niveles desbloqueados
-            for (int i = 0; i < PlayerPrefs.GetInt("nivelesDesbloqueados",1); i++)
+            // Unlock levels up to the last level unlocked by the player
+            for (int i = 0; i < PlayerPrefs.GetInt("unlockedLevels",1); i++)
             {
-                botonesNivel[i].interactable = true;   
+                levelBottons[i].interactable = true;   
             }
         }
     }
 
-    // solo desbloquear niveles, cuando es mayor al numero que tengo guardado
-    public void AumentarNivel(){
-        if (desbloquear > PlayerPrefs.GetInt("nivelesDesbloqueados",1))
+    // Increase unlocked level
+    public void IncreaseLevel(){
+        if (unlock > PlayerPrefs.GetInt("unlockedLevels",1))
         {
-            PlayerPrefs.SetInt("nivelesDesbloqueados",desbloquear); // guardo el valor de los niveles desbloqueados
+            PlayerPrefs.SetInt("unlockedLevels",unlock); // Save the value of the unlocked levels
         }
     }
 }

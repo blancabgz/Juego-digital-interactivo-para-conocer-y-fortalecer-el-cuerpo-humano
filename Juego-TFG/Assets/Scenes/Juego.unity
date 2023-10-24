@@ -405,7 +405,7 @@ GameObject:
   - component: {fileID: 188565146}
   - component: {fileID: 188565147}
   m_Layer: 0
-  m_Name: GameManagerNiveles
+  m_Name: GameManagerLevels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -438,7 +438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de9a11e3ac1c4f44fa28bce6e010dc7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  botonesNivel:
+  levelBottons:
   - {fileID: 884363597}
   - {fileID: 1605684791}
   - {fileID: 1929114510}
@@ -460,7 +460,7 @@ MonoBehaviour:
   - {fileID: 243706780}
   - {fileID: 1608818549}
   - {fileID: 953304371}
-  desbloquear: 0
+  unlock: 0
 --- !u!1 &235399265
 GameObject:
   m_ObjectHideFlags: 0
@@ -3562,7 +3562,7 @@ GameObject:
   - component: {fileID: 1542429127}
   - component: {fileID: 1542429126}
   m_Layer: 0
-  m_Name: GameManagerJuego
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

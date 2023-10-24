@@ -1,18 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement; // para manipular el menu
+using UnityEngine.SceneManagement; // Menu
 
 public class MainMenu : MonoBehaviour
 {
 
-    // Cargar la escena del juego al pulsar el boton
+    // Load scene 
     public void EscenaJuego(string opcion)
     {
         SceneManager.LoadScene(opcion);
     }
 
-    // Salir del juego
+    // Exit play
     public void Salir()
     {   
         Debug.Log("Salir...");

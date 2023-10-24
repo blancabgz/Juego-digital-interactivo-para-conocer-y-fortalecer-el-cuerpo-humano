@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement; // para manipular el menu
 
 public class MainJuego : MonoBehaviour
 {
-    // Cargar la escena de home
+    // Load scenes by name
     public void EscenaJuego(string opcion)
     {
         SceneManager.LoadScene(opcion);
