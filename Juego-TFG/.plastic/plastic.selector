@@ -1,0 +1,4 @@
+repository "Juego-TFG@blancabgz@cloud"
+  path "/"
+    br "/main"
+    co "/main"
