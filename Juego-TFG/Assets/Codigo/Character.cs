@@ -27,7 +27,7 @@ public class Character : MonoBehaviour
         }
 
         if(selectedCharacter != "null"){
-            SceneManager.LoadScene("Juego"); // going to menu 
+            SceneManager.LoadScene("Historia"); // going to menu 
         }
     }
 

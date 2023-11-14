@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MenuOpciones.unity
     guid: 44167275b05c46c408d1589f4db43ed6
+  - enabled: 1
+    path: Assets/Scenes/Historia.unity
+    guid: a0e07ccc062cfea49a1f533057750519
+  - enabled: 1
+    path: Assets/Scenes/CinematicasNiveles/Nivel1.unity
+    guid: a7598e27456ff0543a00db366dbeb94d
   m_configObjects: {}
