@@ -292,39 +292,58 @@ MonoBehaviour:
   mensajes:
   - actorId: 0
     id_superheroe: 0
+    id_imagen: 0
     text: "\xBFQue es este lugar?"
   - actorId: 8
     id_superheroe: 0
+    id_imagen: 0
     text: "\xA1Hola! \xBFEstas preparado para comenzar tu entrenamiento? "
   - actorId: 4
     id_superheroe: 0
+    id_imagen: 0
     text: "\xA1Si!"
   - actorId: 8
     id_superheroe: 0
+    id_imagen: 0
     text: "Te presento a Mr Biceps, el te ayudar\xE1 a entrenar tus biceps y aprender
       mas sobre como sacarles partido."
   - actorId: 9
     id_superheroe: 1
+    id_imagen: 1
     text: "\xA1Hola joven! Hoy vamos a aprender como formar estos maravillosos brazos.
-      Tienes huesos fuertes, como el h\xFAmero y el c\xFAbito, en tus brazos. Son
-      como los cimientos de un edificio."
+      Lo primero de todo, sabes que son los m\xFAsculos?"
   - actorId: 2
     id_superheroe: 1
-    text: "\xBFY que tiene que ver eso con los brazos?"
+    id_imagen: 1
+    text: "Ehhhh\u2026 \xBFSon los que nos ayudan a movernos?"
   - actorId: 9
     id_superheroe: 1
-    text: "Muy sencillo, los b\xEDceps se contraen y tiran del hueso, como cuando
-      aprietas un juguete. "
+    id_imagen: 1
+    text: 'Efectivamente, son tejidos del cuerpo humano que pueden contraerse y relajarse
+      para realizar todo tipo de movimientos. '
   - actorId: 4
     id_superheroe: 1
-    text: "\xBFY como puedo entrenarlo?"
+    id_imagen: 1
+    text: "\xBFY porqu\xE9 tu tienes un brazo tan grande? "
   - actorId: 9
     id_superheroe: 1
-    text: "Pueeees\u2026 vas a realizar 3 ejercicios diferentes, y me tienes que
-      decir en cual crees que se trabaja m\xE1s el biceps?"
+    id_imagen: 2
+    text: "\xA1Buena pregunta! Mi brazo es grande porque he estado entrenando estos
+      m\xFAsculos, llamados b\xEDceps, durante mucho tiempo."
   - actorId: 4
     id_superheroe: 1
-    text: "\xA1Vamos all\xE1!"
+    id_imagen: 2
+    text: "\xA1Guau, eso suena genial! \xBFC\xF3mo puedo hacer que mis b\xEDceps
+      sean fuertes?"
+  - actorId: 9
+    id_superheroe: 1
+    id_imagen: 2
+    text: "Te mostrar\xE9 tres ejercicios divertidos. Hazlos y adivina cu\xE1l trabaja
+      tus b\xEDceps. \xBFListos para comenzar?"
+  - actorId: 4
+    id_superheroe: 1
+    id_imagen: 2
+    text: " \xA1Si! \xA1Vamos all\xE1!"
   actores:
   - id: 0
     name: "ni\xF1a_asustad"
@@ -370,10 +389,22 @@ MonoBehaviour:
   - id: 1
     name: mr_biceps
     sprite: {fileID: 21300000, guid: 24313d8e19d4eae4cacbf5c71b879b0d, type: 3}
+  imagenes:
+  - id: 0
+    name: presentacion
+    sprite: {fileID: 21300000, guid: c9b9e5c68c224fd47bce671486a2f907, type: 3}
+  - id: 1
+    name: brazo
+    sprite: {fileID: 21300000, guid: fc46ae9f76aea0d498e15d606d11768e, type: 3}
+  - id: 2
+    name: bicep_triceps
+    sprite: {fileID: 21300000, guid: bbad2b5b8fdcf72428f7e9195cef3452, type: 3}
   historiaVisionada: null
+  escena: biceps
   avatar: {fileID: 1397982207}
   avatarInicio: {fileID: 338479597}
   avatarSuperheroe: {fileID: 1870251295}
+  diapositiva: {fileID: 948334242}
   conversacion: {fileID: 1205313336}
 --- !u!1 &502348837
 GameObject:
@@ -746,7 +777,7 @@ GameObject:
   - component: {fileID: 948334243}
   - component: {fileID: 948334242}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Diapositiva
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -766,10 +797,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1538256121}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.21633334, y: 0.4233603}
+  m_AnchorMin: {x: 0.21737501, y: 0.395559}
   m_AnchorMax: {x: 0.7805625, y: 0.9315591}
-  m_AnchoredPosition: {x: 1.8444824, y: 6.8407}
-  m_SizeDelta: {x: 3.689, y: 7.6812}
+  m_AnchoredPosition: {x: 4.5855713, y: 7.692108}
+  m_SizeDelta: {x: 13.171, y: 5.6107006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &948334242
 MonoBehaviour:
@@ -791,7 +822,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1a7f4f696f5b751458ce9d8eb1ea3497, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
