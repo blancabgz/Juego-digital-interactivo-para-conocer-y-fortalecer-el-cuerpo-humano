@@ -400,7 +400,7 @@ MonoBehaviour:
     name: bicep_triceps
     sprite: {fileID: 21300000, guid: bbad2b5b8fdcf72428f7e9195cef3452, type: 3}
   historiaVisionada: null
-  escena: biceps
+  escena: PreguntaBiceps
   avatar: {fileID: 1397982207}
   avatarInicio: {fileID: 338479597}
   avatarSuperheroe: {fileID: 1870251295}
