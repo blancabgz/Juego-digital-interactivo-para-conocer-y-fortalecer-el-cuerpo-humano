@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI; // reference to buttons
 
-public class LevelController : MonoBehaviour
+public class ControladorNiveles : MonoBehaviour
 {
-    public static LevelController instance; 
+    public static ControladorNiveles instancia; 
     public Button[] levelBottons; // array containing level buttons
     public int unlock; // unlock level
 
     private void Awake() { // only one scene
-        if(instance == null){
-            instance = this;
+        if(instancia == null){
+            instancia = this;
         }   
     }
 
@@ -26,7 +26,7 @@ public class LevelController : MonoBehaviour
             {
                 levelBottons[i].interactable = false;
             }
-
+            
             // Unlock levels up to the last level unlocked by the player
             for (int i = 0; i < PlayerPrefs.GetInt("unlockedLevels",1); i++)
             {
@@ -37,9 +37,16 @@ public class LevelController : MonoBehaviour
 
     // Increase unlocked level
     public void IncreaseLevel(){
+        Debug.Log(unlock);
+        Debug.Log(PlayerPrefs.GetInt("unlockedLevels",1));
         if (unlock > PlayerPrefs.GetInt("unlockedLevels",1))
         {
+            Debug.Log("hola2");
             PlayerPrefs.SetInt("unlockedLevels",unlock); // Save the value of the unlocked levels
         }
     }
+
+    public int ActualLevel(){
+        return PlayerPrefs.GetInt("unlockedLevels",1);
+    }   
 }

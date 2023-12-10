@@ -338,8 +338,8 @@ MonoBehaviour:
   - actorId: 9
     id_superheroe: 1
     id_imagen: 2
-    text: "Te mostrar\xE9 tres ejercicios divertidos. Hazlos y adivina cu\xE1l trabaja
-      tus b\xEDceps. \xBFListos para comenzar?"
+    text: "Te mostrar\xE9 tres ejercicios divertidos. Realizalos y selecciona la
+      imagen que creas correcta. \xBFEst\xE1s listo?"
   - actorId: 4
     id_superheroe: 1
     id_imagen: 2

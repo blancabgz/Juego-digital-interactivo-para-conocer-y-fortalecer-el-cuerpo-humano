@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Juego.unity
     guid: 0f5b432e1b9c9ce49839f342295108dc
@@ -35,4 +32,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Niveles/Nivel 1/PreguntaBiceps.unity
     guid: db29076767c6ad841b52f7472e46a3f4
+  - enabled: 1
+    path: Assets/Scenes/CinematicasNiveles/Nivel1.2.unity
+    guid: d54c9d75446f26a409ff67ddbb36bdb1
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel 1/PreguntaTriceps.unity
+    guid: 0a92155cc42421148885c4ff2537b015
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel 1/Triceps.unity
+    guid: 6283bc40eaa80da49b96b55eb1143197
+  - enabled: 1
+    path: Assets/Scenes/CinematicasNiveles/Nivel1.3.unity
+    guid: d8624ceef8dcaac4f9d2fcfcef22fe78
+  - enabled: 1
+    path: Assets/Scenes/Recompensas/Objetos.unity
+    guid: 8334fa61906bdbc4696a22512f4f89c0
+  - enabled: 1
+    path: Assets/Scenes/Recompensas/Medallas.unity
+    guid: 211f8117a901f1f43b8b64a4e0d7e743
+  - enabled: 1
+    path: Assets/Scenes/Niveles/NivelCompletado.unity
+    guid: bd844db695771f64f978d4efc027b5dd
   m_configObjects: {}

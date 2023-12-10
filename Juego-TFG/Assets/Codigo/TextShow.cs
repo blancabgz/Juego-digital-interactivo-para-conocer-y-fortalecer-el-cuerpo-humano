@@ -21,6 +21,8 @@ public class TextShow : MonoBehaviour
     public string historiaVisionada = "null";
     // nombre de la escena a la que vamos a mandar cuando termine la conversacion
     public string escena;
+
+    public int nivel;
     
  
 
@@ -122,7 +124,13 @@ public class TextShow : MonoBehaviour
             if(nombreEscena == "Historia"){
                 SceneManager.LoadScene("Juego"); // going to menu
             }else{
+                PlayerPrefs.SetInt("Nivel", nivel);
+                // if(ControladorNiveles.instancia != null){
+                //     ControladorNiveles.instancia.IncreaseLevel();
+                // }
+                
                 SceneManager.LoadScene(escena);
+
             }
         }
     }
