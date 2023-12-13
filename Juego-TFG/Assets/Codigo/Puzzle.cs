@@ -11,6 +11,10 @@ public class Puzzle : MonoBehaviour
     public GameObject cajonImagenes;
     public GameObject cajonPuzzle;
     private int[] imagenesGuardadas;
+
+    private Button botonPulsadoImagenes;
+    private int posImagen;
+    private int posPuzzle;
     
 
     void Start() {
@@ -21,6 +25,7 @@ public class Puzzle : MonoBehaviour
 
     public void ColocarImagenesAleatorias(){
         Image imagen;
+        imagenesGuardadas  = new int [cajonImagenes.transform.childCount];
         for (int i = 0; i < cajonImagenes.transform.childCount; i++){
             imagen = cajonImagenes.transform.GetChild(i).GetComponent<Image>();
             if (imagen != null) {
@@ -38,7 +43,7 @@ public class Puzzle : MonoBehaviour
         }
     }
 
-    public void BotonPulsado(Button botonPulsado){
+    public void BotonPulsado(Button boton){
 
         // obtenemos todos los objetos que tienen el nombre "Borde"
         GameObject[] bordes = GameObject.FindObjectsOfType<GameObject>().Where(obj => obj.name == "Borde").ToArray();
@@ -48,15 +53,26 @@ public class Puzzle : MonoBehaviour
             borde.SetActive(false);
         }
         // activar el borde del boton
-        botonPulsado.transform.Find("Borde").gameObject.SetActive(true); 
+        boton.transform.Find("Borde").gameObject.SetActive(true);
+        botonPulsadoImagenes = boton;
+
     }
 
-    public void PosicionBotonPulsado(int posicion){
-        Debug.Log(posicion);
+    public void PosicionImagen(int posicion){
+        posImagen = posicion;
     }
 
     public void Comprobar(int posicion){
-        Debug.Log(posicion);
+        posPuzzle = posicion;
+        Image imagen;
+        if(posPuzzle == imagenesGuardadas[posImagen]){
+            imagen = cajonPuzzle.transform.GetChild(posPuzzle).GetComponent<Image>();
+            imagen.sprite = preguntas[posImagen].sprite;
+            botonPulsadoImagenes.transform.Find("Borde").gameObject.SetActive(false);
+            botonPulsadoImagenes.interactable = false;
+        }else{
+            Debug.Log("No");
+        }
         
     }
 }
