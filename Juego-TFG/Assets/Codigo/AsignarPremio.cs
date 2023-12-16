@@ -13,15 +13,17 @@ public class AsignarPremio : MonoBehaviour
     void Awake()
     {    
         nivelActual = PlayerPrefs.GetInt("Nivel", 1);
-        if(nivelActual != ControladorNiveles.instancia.ActualLevel()){
-            SceneManager.LoadScene("Juego");
-        }
+        Debug.Log(nivelActual);
+        Debug.Log(ControladorNiveles.instancia.ActualLevel());
+        // if(nivelActual != ControladorNiveles.instancia.ActualLevel()){
+        //     SceneManager.LoadScene("Juego");
+        // }
     }
     void Start()
     {   
         Image imagen = imagenPremio.GetComponent<Image>();
-        int nivel = ControladorNiveles.instancia.ActualLevel();
-        imagen.sprite = premios[nivel - 1].sprite;
+        
+        imagen.sprite = premios[nivelActual - 1].sprite;
         if(ControladorNiveles.instancia != null){
             ControladorNiveles.instancia.IncreaseLevel();
         }

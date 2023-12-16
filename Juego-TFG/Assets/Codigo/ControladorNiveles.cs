@@ -37,11 +37,8 @@ public class ControladorNiveles : MonoBehaviour
 
     // Increase unlocked level
     public void IncreaseLevel(){
-        Debug.Log(unlock);
-        Debug.Log(PlayerPrefs.GetInt("unlockedLevels",1));
         if (unlock > PlayerPrefs.GetInt("unlockedLevels",1))
         {
-            Debug.Log("hola2");
             PlayerPrefs.SetInt("unlockedLevels",unlock); // Save the value of the unlocked levels
         }
     }

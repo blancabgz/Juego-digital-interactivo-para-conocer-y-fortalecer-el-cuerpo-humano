@@ -55,7 +55,6 @@ public class TextShow : MonoBehaviour
     // Funcion para que aparezca el sprite del personaje seleccionado por el jugador/a
     public void PersonajePanel(){
         if(selectedCharacter == "boy"){
-            Debug.Log(selectedCharacter);
             avatarInicio.sprite = actorPanel[1].sprite;
         }else{
             avatarInicio.sprite = actorPanel[0].sprite;
@@ -125,9 +124,9 @@ public class TextShow : MonoBehaviour
                 SceneManager.LoadScene("Juego"); // going to menu
             }else{
                 PlayerPrefs.SetInt("Nivel", nivel);
-                // if(ControladorNiveles.instancia != null){
-                //     ControladorNiveles.instancia.IncreaseLevel();
-                // }
+                if(ControladorNiveles.instancia != null){
+                    ControladorNiveles.instancia.IncreaseLevel();
+                }
                 
                 SceneManager.LoadScene(escena);
 

@@ -10,11 +10,16 @@ public class Puzzle : MonoBehaviour
     public Pregunta[] preguntas;
     public GameObject cajonImagenes;
     public GameObject cajonPuzzle;
+    public GameObject puzzleCompletado;
+    public GameObject btnCambiarEscena;
     private int[] imagenesGuardadas;
 
     private Button botonPulsadoImagenes;
     private int posImagen;
     private int posPuzzle;
+    private int imagenesCorrectas = 0;
+
+    
     
 
     void Start() {
@@ -70,11 +75,23 @@ public class Puzzle : MonoBehaviour
             imagen.sprite = preguntas[posImagen].sprite;
             botonPulsadoImagenes.transform.Find("Borde").gameObject.SetActive(false);
             botonPulsadoImagenes.interactable = false;
-        }else{
-            Debug.Log("No");
+            
+            //imagen correcta
+            imagenesCorrectas++;
+
+            // comprobamos si se ha terminado el puzzle
+            if (imagenesCorrectas == preguntas.Length)
+            {
+                if(puzzleCompletado != null){
+                    puzzleCompletado.SetActive(true);
+                    btnCambiarEscena.SetActive(true);
+                }
+                
+            }
         }
-        
     }
+
+
 }
 
 
