@@ -62,4 +62,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CinematicasNiveles/Nivel2.1.unity
     guid: 259394d50a5219c41bb01c9af106d442
+  - enabled: 1
+    path: Assets/Scenes/CinematicasNiveles/Nivel3.unity
+    guid: d46a8d76d45b55b478bf9cf9ed49a555
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel3/Batalla.unity
+    guid: 7804e110e668f76438a3a5c250e954d3
+  - enabled: 1
+    path: Assets/Scenes/CinematicasNiveles/Nivel3.1.unity
+    guid: c156040d8c62c3445ab31813748c5c43
   m_configObjects: {}

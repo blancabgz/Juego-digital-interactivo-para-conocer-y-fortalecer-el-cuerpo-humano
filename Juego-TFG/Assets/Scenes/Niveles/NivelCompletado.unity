@@ -991,6 +991,9 @@ MonoBehaviour:
   - nivel: 2
     nombre: Mochila
     sprite: {fileID: 21300000, guid: b33659bd955195f4f9483db453034d8d, type: 3}
+  - nivel: 3
+    nombre: Amuleto
+    sprite: {fileID: 21300000, guid: 97aad5f36d60e21429bcaa06dcfc7422, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
