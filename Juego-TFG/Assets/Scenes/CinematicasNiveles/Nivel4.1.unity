@@ -293,87 +293,22 @@ MonoBehaviour:
   - actorId: 8
     id_superheroe: 0
     id_imagen: 0
-    text: "\xA1Hola de nuevo! Veo que vas avanzando con buen ritmo. Hoy te presentar\xE9
-      a un nuevo amigo."
+    text: "\xBFQu\xE9 te ha parecido? \xBFNo ha ido todo muy bien?"
   - actorId: 4
     id_superheroe: 0
     id_imagen: 0
-    text: " \xA1Ui! \xBFUn nuevo superh\xE9roe? \xBFQui\xE9n es?"
+    text: " \xA1S\xED! Me ha encantado conocer al equipo del que voy a formar parte
+      de esta manera."
   - actorId: 8
     id_superheroe: 0
     id_imagen: 0
-    text: "Te presento a Capit\xE1n Core, como podr\xE1s ver, tiene una gran fuerza
-      en el abdomen y te ense\xF1ar\xE1 mucho sobre como \xE9l. "
-  - actorId: 9
-    id_superheroe: 3
-    id_imagen: 0
-    text: "\xA1Hola, joven! Hoy aprender\xE1s para poder tener un abdomen fuerte
-      e incre\xEDble como el m\xEDo. \xBFSab\xEDas que tu abdomen es una parte muy
-      fuerte de tu cuerpo y que es fundamental para mantener una buena postura?"
-  - actorId: 0
-    id_superheroe: 3
-    id_imagen: 0
-    text: "\xBFPara la postura? \xBFPero para eso no est\xE1 la espalda?"
-  - actorId: 9
-    id_superheroe: 3
-    id_imagen: 0
-    text: "Tambi\xE9n. Tus m\xFAsculos abdominales, como el recto abdominal y los
-      oblicuos, son muy importantes. "
-  - actorId: 0
-    id_superheroe: 3
-    id_imagen: 4
-    text: "\xBFY que hace cada uno?"
-  - actorId: 9
-    id_superheroe: 3
-    id_imagen: 4
-    text: " El recto abdominal te ayuda a mantener una posici\xF3n recta del cuerpo."
-  - actorId: 9
-    id_superheroe: 3
-    id_imagen: 4
-    text: "Esto hace que puedas inclinarte hacia los lados y ayuda a las costillas
-      para que puedas flexionar la columna hacia adelante y hacia atr\xE1s. "
-  - actorId: 0
-    id_superheroe: 3
-    id_imagen: 5
-    text: " \xBFY entonces los oblicuos para que sirven?"
-  - actorId: 9
-    id_superheroe: 3
-    id_imagen: 5
-    text: 'Para empezar, los oblicuos se dividen en dos partes, el oblicuo mayor
-      y menor. '
-  - actorId: 9
-    id_superheroe: 3
-    id_imagen: 5
-    text: "Ambos ayudan a realizar funciones espec\xEDficas como que puedas inclinar
-      el cuerpo hacia los lados, que puedas intentar tocar tus pies y que puedas
-      levantar objetos pesados del suelo."
-  - actorId: 8
+    text: " \xA1S\xED! Me ha encantado conocer al equipo del que voy a formar parte
+      de esta manera."
+  - actorId: 4
     id_superheroe: 0
-    id_imagen: 6
-    text: "\xA1Perd\xF3n por interrumpir! \xA1Noticas urgentes! Un villano est\xE1
-      atacando la ciudad."
-  - actorId: 0
-    id_superheroe: 0
-    id_imagen: 6
-    text: " \xBFQu\xE9 podemos hacer?"
-  - actorId: 9
-    id_superheroe: 3
-    id_imagen: 6
-    text: "Es el momento de poner en pr\xE1ctica lo que has aprendido en la clase
-      para ayudarme a derrotar al villano."
-  - actorId: 0
-    id_superheroe: 0
-    id_imagen: 6
-    text: "\xBFYo? \xBFEst\xE1s seguro?"
-  - actorId: 9
-    id_superheroe: 3
-    id_imagen: 6
-    text: "S\xED, necesitamos que utilices tus conocimientos y fuerzas para enfrentarte
-      al villano."
-  - actorId: 2
-    id_superheroe: 3
-    id_imagen: 6
-    text: " \xA1Entendido! \xA1Voy a detener a ese villano!"
+    id_imagen: 0
+    text: "Continuemos con mi formaci\xF3n. \xA1Quiero ser parte de este equipo tan
+      guay! "
   actores:
   - id: 0
     name: "ni\xF1a_asustad"
@@ -403,7 +338,16 @@ MonoBehaviour:
     name: superheroe
     sprite: {fileID: 21300000, guid: 2fe66eef633d0e54b8b401e52fefe7c1, type: 3}
   - id: 9
-    name: core
+    name: mr_biceps
+    sprite: {fileID: 21300000, guid: fe6fffcba6adffc41b51775c1a47b9b5, type: 3}
+  - id: 10
+    name: tempestad
+    sprite: {fileID: 21300000, guid: e7964e6e4630f3a41a10570376383c81, type: 3}
+  - id: 11
+    name: espaldin_supremo
+    sprite: {fileID: 21300000, guid: 33b36bf16c15ef646a01c0722561e919, type: 3}
+  - id: 12
+    name: capitan_core
     sprite: {fileID: 21300000, guid: 76e2959fdc69d844bbb4fff18dd29ef2, type: 3}
   actorPanel:
   - id: 0
@@ -423,7 +367,10 @@ MonoBehaviour:
     name: tempestad
     sprite: {fileID: 21300000, guid: c8e36b65383819b4c810276893d0aa1c, type: 3}
   - id: 3
-    name: core
+    name: espaldin_supremo
+    sprite: {fileID: 21300000, guid: 33b36bf16c15ef646a01c0722561e919, type: 3}
+  - id: 4
+    name: capitan_core
     sprite: {fileID: 21300000, guid: 9f88dba6a72eb2046b6edc8d66c7cc78, type: 3}
   imagenes:
   - id: 0
@@ -439,17 +386,20 @@ MonoBehaviour:
     name: triceps
     sprite: {fileID: 21300000, guid: d6e87c8e2ff6686438c3592aacc6a9ee, type: 3}
   - id: 4
-    name: recto_abdominal
-    sprite: {fileID: 21300000, guid: 3d5b8bbd49fe52044b9c6ec823b841b3, type: 3}
+    name: espalda
+    sprite: {fileID: 21300000, guid: ca96f74bf7aab3e4387145d63f29190d, type: 3}
   - id: 5
-    name: oblicuos
-    sprite: {fileID: 21300000, guid: 9ac805b8bc4c8e44ca02d24d354536a7, type: 3}
+    name: trapecio
+    sprite: {fileID: 21300000, guid: 2bcbfecbc6b7b584cafe1cb1f8aef13f, type: 3}
   - id: 6
-    name: news
-    sprite: {fileID: 21300000, guid: 6291f7e62afc797478c6bca66c014676, type: 3}
+    name: dorsal
+    sprite: {fileID: 21300000, guid: 1c32c04b9bac1dc4999e823c5178bc6a, type: 3}
+  - id: 7
+    name: lumbar
+    sprite: {fileID: 21300000, guid: 711758ead6c6a38439511006adc808a3, type: 3}
   historiaVisionada: null
-  escena: Batalla
-  nivel: 3
+  escena: NivelCompletado
+  nivel: 4
   avatar: {fileID: 1397982207}
   avatarInicio: {fileID: 338479597}
   avatarSuperheroe: {fileID: 1870251295}
@@ -778,6 +728,52 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &918565047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 918565049}
+  - component: {fileID: 918565048}
+  m_Layer: 0
+  m_Name: ControladorNiveles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &918565048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918565047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de9a11e3ac1c4f44fa28bce6e010dc7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelBottons: []
+  unlock: 5
+--- !u!4 &918565049
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918565047}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 683.41547, y: 659.5067, z: 2.7174108}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1347,3 +1343,4 @@ SceneRoots:
   - {fileID: 502348841}
   - {fileID: 923447982}
   - {fileID: 1473372856}
+  - {fileID: 918565049}

@@ -293,87 +293,41 @@ MonoBehaviour:
   - actorId: 8
     id_superheroe: 0
     id_imagen: 0
-    text: "\xA1Hola de nuevo! Veo que vas avanzando con buen ritmo. Hoy te presentar\xE9
-      a un nuevo amigo."
+    text: "\xA1Hola joven! Veo que vas progresando en tu entrenamiento y estoy muy
+      orgulloso de ti por ello. "
   - actorId: 4
     id_superheroe: 0
     id_imagen: 0
-    text: " \xA1Ui! \xBFUn nuevo superh\xE9roe? \xBFQui\xE9n es?"
+    text: "\xA1Si! Me lo estoy pasando genial"
   - actorId: 8
     id_superheroe: 0
     id_imagen: 0
-    text: "Te presento a Capit\xE1n Core, como podr\xE1s ver, tiene una gran fuerza
-      en el abdomen y te ense\xF1ar\xE1 mucho sobre como \xE9l. "
-  - actorId: 9
-    id_superheroe: 3
-    id_imagen: 0
-    text: "\xA1Hola, joven! Hoy aprender\xE1s para poder tener un abdomen fuerte
-      e incre\xEDble como el m\xEDo. \xBFSab\xEDas que tu abdomen es una parte muy
-      fuerte de tu cuerpo y que es fundamental para mantener una buena postura?"
-  - actorId: 0
-    id_superheroe: 3
-    id_imagen: 0
-    text: "\xBFPara la postura? \xBFPero para eso no est\xE1 la espalda?"
-  - actorId: 9
-    id_superheroe: 3
-    id_imagen: 0
-    text: "Tambi\xE9n. Tus m\xFAsculos abdominales, como el recto abdominal y los
-      oblicuos, son muy importantes. "
-  - actorId: 0
-    id_superheroe: 3
-    id_imagen: 4
-    text: "\xBFY que hace cada uno?"
-  - actorId: 9
-    id_superheroe: 3
-    id_imagen: 4
-    text: " El recto abdominal te ayuda a mantener una posici\xF3n recta del cuerpo."
-  - actorId: 9
-    id_superheroe: 3
-    id_imagen: 4
-    text: "Esto hace que puedas inclinarte hacia los lados y ayuda a las costillas
-      para que puedas flexionar la columna hacia adelante y hacia atr\xE1s. "
-  - actorId: 0
-    id_superheroe: 3
-    id_imagen: 5
-    text: " \xBFY entonces los oblicuos para que sirven?"
-  - actorId: 9
-    id_superheroe: 3
-    id_imagen: 5
-    text: 'Para empezar, los oblicuos se dividen en dos partes, el oblicuo mayor
-      y menor. '
-  - actorId: 9
-    id_superheroe: 3
-    id_imagen: 5
-    text: "Ambos ayudan a realizar funciones espec\xEDficas como que puedas inclinar
-      el cuerpo hacia los lados, que puedas intentar tocar tus pies y que puedas
-      levantar objetos pesados del suelo."
-  - actorId: 8
-    id_superheroe: 0
-    id_imagen: 6
-    text: "\xA1Perd\xF3n por interrumpir! \xA1Noticas urgentes! Un villano est\xE1
-      atacando la ciudad."
-  - actorId: 0
-    id_superheroe: 0
-    id_imagen: 6
-    text: " \xBFQu\xE9 podemos hacer?"
-  - actorId: 9
-    id_superheroe: 3
-    id_imagen: 6
-    text: "Es el momento de poner en pr\xE1ctica lo que has aprendido en la clase
-      para ayudarme a derrotar al villano."
-  - actorId: 0
-    id_superheroe: 0
-    id_imagen: 6
-    text: "\xBFYo? \xBFEst\xE1s seguro?"
-  - actorId: 9
-    id_superheroe: 3
-    id_imagen: 6
-    text: "S\xED, necesitamos que utilices tus conocimientos y fuerzas para enfrentarte
-      al villano."
+    text: "\xA1As\xED me gusta! \xBFSab\xEDas que los superh\xE9roes no solo deben
+      ser fuertes f\xEDsicamente, sino que tambi\xE9n tienen que estar preparados
+      mentalmente?"
   - actorId: 2
-    id_superheroe: 3
-    id_imagen: 6
-    text: " \xA1Entendido! \xA1Voy a detener a ese villano!"
+    id_superheroe: 0
+    id_imagen: 0
+    text: "\xBFSi?\xBFPorqu\xE9?"
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 0
+    text: "Porque no solo hay que tener una gran fuerza para hacerles frente, tambi\xE9n
+      hay que ser inteligente para prevenir los ataques. \xBFEntiendes?"
+  - actorId: 4
+    id_superheroe: 0
+    id_imagen: 0
+    text: "Si s\xED. Pero, \xBFque puedo hacer para mejorar?"
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 0
+    text: " \xA1Esa es la actitud! Como es importante que conozcas tambi\xE9n a tus
+      compa\xF1eros, vamos a resolver un puzzle donde aparece el equipo de superh\xE9roes.
+      \xBFTe parece bien?"
+  - actorId: 4
+    id_superheroe: 0
+    id_imagen: 0
+    text: "\xA1Vamos all\xE1!"
   actores:
   - id: 0
     name: "ni\xF1a_asustad"
@@ -448,8 +402,8 @@ MonoBehaviour:
     name: news
     sprite: {fileID: 21300000, guid: 6291f7e62afc797478c6bca66c014676, type: 3}
   historiaVisionada: null
-  escena: Batalla
-  nivel: 3
+  escena: Puzzle3
+  nivel: 4
   avatar: {fileID: 1397982207}
   avatarInicio: {fileID: 338479597}
   avatarSuperheroe: {fileID: 1870251295}

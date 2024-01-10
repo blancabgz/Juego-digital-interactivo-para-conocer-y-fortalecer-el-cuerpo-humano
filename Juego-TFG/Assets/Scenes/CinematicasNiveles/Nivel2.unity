@@ -382,7 +382,7 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: d6e87c8e2ff6686438c3592aacc6a9ee, type: 3}
   historiaVisionada: null
   escena: Puzzle2
-  nivel: 1
+  nivel: 2
   avatar: {fileID: 1397982207}
   avatarInicio: {fileID: 338479597}
   avatarSuperheroe: {fileID: 1870251295}
