@@ -80,4 +80,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CinematicasNiveles/Nivel4.1.unity
     guid: 47028e5cbf8e83748ad4d234f1e60cec
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel5/PreguntaPectoral2.unity
+    guid: c22721c9b3fd22a4d884853b564f23b9
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel5/PreguntaPectoral1.unity
+    guid: 4b6db71b94820fd41b4aa50e58326adf
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel5/Pectoral1.unity
+    guid: df82080ccd159e446a66b220a77f67da
   m_configObjects: {}
