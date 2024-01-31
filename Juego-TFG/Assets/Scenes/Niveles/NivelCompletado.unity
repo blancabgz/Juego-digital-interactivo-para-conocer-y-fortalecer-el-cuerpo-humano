@@ -997,6 +997,9 @@ MonoBehaviour:
   - nivel: 4
     nombre: Medalla1
     sprite: {fileID: 21300000, guid: 3f889f95fbea2164fa5648ebf002f1c2, type: 3}
+  - nivel: 5
+    nombre: Escudo
+    sprite: {fileID: 21300000, guid: fe32fe09a2c20cd438aac4c12290796c, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -370,7 +370,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 182d93aef2c806e47b91f208f5bf5738, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4a3ac0c0c8e6fb542b6a2b36ae3476a1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -649,7 +649,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a5b0a0518aada464abdf5eb355a9fe4e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3bf9158c56d18b146901a64c96d53a64, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -829,14 +829,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   respuestas:
   - id: 0
-    musculo: Biceps
-    imagen: {fileID: 21300000, guid: a5b0a0518aada464abdf5eb355a9fe4e, type: 3}
+    musculo: Hombro
+    imagen: {fileID: 21300000, guid: 3bf9158c56d18b146901a64c96d53a64, type: 3}
   - id: 1
     musculo: Pecho
-    imagen: {fileID: 21300000, guid: 111176ea1c774ed4d905e563b9acd789, type: 3}
+    imagen: {fileID: 21300000, guid: b575258b453aa2a4bbba75838b3a4f2e, type: 3}
   - id: 2
     musculo: Hombro
-    imagen: {fileID: 21300000, guid: 182d93aef2c806e47b91f208f5bf5738, type: 3}
+    imagen: {fileID: 21300000, guid: 4a3ac0c0c8e6fb542b6a2b36ae3476a1, type: 3}
   imagenes:
   - id: 0
     sprite: {fileID: 21300000, guid: 0a47ad41f1377be4ca0ae78652c529e9, type: 3}
@@ -855,7 +855,7 @@ MonoBehaviour:
   musculo: Pecho
   imagenPanel: {fileID: 921883126}
   botonSiguiente: {fileID: 97172446}
-  escenaSiguiente: PreguntaPectoral2
+  escenaSiguiente: Nivel5.1
 --- !u!1 &1150778331
 GameObject:
   m_ObjectHideFlags: 0
@@ -1259,7 +1259,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 111176ea1c774ed4d905e563b9acd789, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b575258b453aa2a4bbba75838b3a4f2e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
