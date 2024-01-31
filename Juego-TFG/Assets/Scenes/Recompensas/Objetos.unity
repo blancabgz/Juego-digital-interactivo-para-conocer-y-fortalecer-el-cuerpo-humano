@@ -1317,6 +1317,65 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slots: []
   inventario: {fileID: 58999977}
+  premios:
+  - nivel: 1
+    nombre: Reloj
+    sprite: {fileID: 21300000, guid: 61d2c2f0adc4a40459d52ef2ec90463b, type: 3}
+  - nivel: 2
+    nombre: Mochila
+    sprite: {fileID: 21300000, guid: b33659bd955195f4f9483db453034d8d, type: 3}
+  - nivel: 3
+    nombre: "Amuleto de protecci\xF3n"
+    sprite: {fileID: 21300000, guid: 97aad5f36d60e21429bcaa06dcfc7422, type: 3}
+  - nivel: 5
+    nombre: Escudo
+    sprite: {fileID: 21300000, guid: fe32fe09a2c20cd438aac4c12290796c, type: 3}
+--- !u!1 &871237111
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 871237113}
+  - component: {fileID: 871237112}
+  m_Layer: 0
+  m_Name: ControladorNiveles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &871237112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871237111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de9a11e3ac1c4f44fa28bce6e010dc7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelBottons: []
+  unlock: 0
+--- !u!4 &871237113
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871237111}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 957.82196, y: 571.64307, z: 14.056326}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963912597
 GameObject:
   m_ObjectHideFlags: 0
@@ -2321,3 +2380,4 @@ SceneRoots:
   - {fileID: 1637740875}
   - {fileID: 1321741785}
   - {fileID: 764769356}
+  - {fileID: 871237113}

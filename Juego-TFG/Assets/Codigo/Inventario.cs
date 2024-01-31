@@ -20,15 +20,16 @@ public class Inventario : MonoBehaviour
         // crear un array de slots 
         slots = new GameObject[numSlots];
 
-        for (int i = 0; i < numSlots; i++)
+        // ATENCION BLANCA, CAMBIAR DE 4 A SLOTS
+        for (int i = 0; i < 4; i++)
         {
             slots[i] = inventario.transform.GetChild(i).gameObject;
             Image imagenSlot = slots[i].GetComponent<Image>();
             imagenSlot.sprite = premios[i].sprite;
 
-            
             // si existe la instancia ControladorNiveles y el nivel actual es mas alto que alguna medalla, se desbloquea esa medalla aumentando su opacidad
-            if(ControladorNiveles.instancia != null && ControladorNiveles.instancia.ActualLevel() > premios[i].nivel ){
+            // -1 porque se desbloquea hasta el nivel pero esta completado hasta el anterior
+            if(ControladorNiveles.instancia != null && (ControladorNiveles.instancia.ActualLevel() - 1) >= premios[i].nivel ){
                 // Como el color es de solo lectura, hay que hacer un cambio creando una nueva 
                 // instancia
                 Color nuevaOpacidad = imagenSlot.color;
