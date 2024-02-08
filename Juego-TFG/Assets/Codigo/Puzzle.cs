@@ -23,7 +23,7 @@ public class Puzzle : MonoBehaviour
     
 
     void Start() {
-        MezclarElementos(preguntas);
+        Utilidades.MezclarElementos(preguntas);
         ColocarImagenesAleatorias();
         
     }
@@ -37,14 +37,6 @@ public class Puzzle : MonoBehaviour
                 imagen.sprite = preguntas[i].sprite;
                 imagenesGuardadas[i] = preguntas[i].posicion;
             }
-        }
-    }
-    public void MezclarElementos(Pregunta[] array){
-        for(int i = 0; i < array.Length; i++){
-            int indiceAleatorio = Random.Range(0, array.Length); // se obtiene un elemento aleatorio
-            Pregunta temp = array[indiceAleatorio]; // guarda el valor en una variable temporal 
-            array[indiceAleatorio] = array[i]; // lo intercambio
-            array[i] = temp; // se intercambia el elemento original en la posicion aleatoria
         }
     }
 

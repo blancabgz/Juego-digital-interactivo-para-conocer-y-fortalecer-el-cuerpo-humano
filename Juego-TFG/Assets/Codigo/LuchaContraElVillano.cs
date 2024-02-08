@@ -19,19 +19,11 @@ public class LuchaContraElVillano : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        MezclarElementos(preguntas);
+        Utilidades.MezclarElementos(preguntas);
         MostrarPregunta();
         
     }
 
-    public void MezclarElementos(Preguntas[] array){
-        for(int i = 0; i < array.Length; i++){
-            int indiceAleatorio = Random.Range(0, array.Length); // se obtiene un elemento aleatorio
-            Preguntas temp = array[indiceAleatorio]; // guarda el valor en una variable temporal 
-            array[indiceAleatorio] = array[i]; // lo intercambio
-            array[i] = temp; // se intercambia el elemento original en la posicion aleatoria
-        }
-    }
 
     public void MostrarPregunta(){
         pregunta = GameObject.Find("Pregunta"); // obtengo el contenedor del texto
@@ -41,7 +33,7 @@ public class LuchaContraElVillano : MonoBehaviour
                 if(indicePregAct < preguntas.Length){ // si el componente no es nulo y el indice de la pregunta < max
                     textoPregunta.text = preguntas[indicePregAct].pregunta; // muestras la pregunta
                 }else{
-                    MezclarElementos(preguntas); // Volvemos a mezclar las preguntas
+                    Utilidades.MezclarElementos(preguntas); // Volvemos a mezclar las preguntas
                     indicePregAct = 0; // volvemos al principio
                 }
             }

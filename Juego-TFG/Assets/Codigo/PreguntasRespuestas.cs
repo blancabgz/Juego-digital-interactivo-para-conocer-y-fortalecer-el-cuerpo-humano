@@ -25,7 +25,7 @@ public class PreguntasRespuestas : MonoBehaviour
 
 
     void Start(){
-        MezclarElementos(respuestas);
+        Utilidades.MezclarElementos(respuestas);
         resp1.GetComponent<Image>().sprite = respuestas[0].imagen;
         resp2.GetComponent<Image>().sprite = respuestas[1].imagen;
         resp3.GetComponent<Image>().sprite = respuestas[2].imagen;
@@ -36,14 +36,7 @@ public class PreguntasRespuestas : MonoBehaviour
     }
 
     
-    public void MezclarElementos(Respuestas[] array){
-        for(int i = 0; i < array.Length; i++){
-            int indiceAleatorio = Random.Range(0, array.Length); // se obtiene un elemento aleatorio
-            Respuestas temp = array[indiceAleatorio]; // guarda el valor en una variable temporal 
-            array[indiceAleatorio] = array[i]; // lo intercambio
-            array[i] = temp; // se intercambia el elemento original en la posicion aleatoria
-        }
-    }
+    
 
     public void VerificarRespuesta(string opcion, int indice){
         if(opcion == musculo){
@@ -106,21 +99,23 @@ public class PreguntasRespuestas : MonoBehaviour
            
         }
     }
+
+    [System.Serializable] //mostrar los mensajes en los ajustes
+    public class Respuestas {
+        public int id;
+        public string musculo;
+        public Sprite imagen;
+        
+    }
+
+    [System.Serializable] //mostrar los mensajes en los ajustes
+    public class Imagenes {
+        public int id;
+        public Sprite sprite;
+        
+    }
     
 }
 
-[System.Serializable] //mostrar los mensajes en los ajustes
-public class Respuestas {
-    public int id;
-    public string musculo;
-    public Sprite imagen;
-    
-}
 
-[System.Serializable] //mostrar los mensajes en los ajustes
-public class Imagenes {
-    public int id;
-    public Sprite sprite;
-    
-}
 
