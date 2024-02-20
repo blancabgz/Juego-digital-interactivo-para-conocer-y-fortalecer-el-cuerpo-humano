@@ -78,6 +78,8 @@ public class TextShow : MonoBehaviour
     public void DesplegarMensaje(){
         Mensaje mensaje = mensajes[mensajeActivo];
         conversacion.text = mensaje.text;
+
+
         Actor actor;
         int id = 0;
     

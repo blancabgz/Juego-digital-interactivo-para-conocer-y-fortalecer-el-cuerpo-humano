@@ -14,6 +14,7 @@ public class JuegoSombras : MonoBehaviour
     public string[] respuestas;
 
     private string[] nombresOpciones = {"OpcionA", "OpcionB", "OpcionC"};
+    private string[] nombresImagenes = {"TickA", "TickB", "TickC"};
 
     public int musculoActual = 0;
 
@@ -29,10 +30,12 @@ public class JuegoSombras : MonoBehaviour
         MostrarRespuesta();
     }
 
+
     // 
-    // Funcion que muestra la sombra
+    // Muestra la sombra
     //
     public void MostrarPregunta(){
+        DesactivarImagenes();
         // Encuentra el GameObject que contiene la imagen de la sombra
         pregunta = GameObject.Find("Sombra");
         // Obtener el componente imagen
@@ -49,7 +52,33 @@ public class JuegoSombras : MonoBehaviour
     }
 
     // 
-    // Funcion que muestra las respuestas posibles
+    // Desactiva todas las imagenes tick de los botones
+    //
+    private void DesactivarImagenes(){
+        for(int i = 0; i < nombresImagenes.Length; i++){
+            // Buscamos el panel que se llama como la opciones seleccionada
+            GameObject imagen = GameObject.Find(nombresImagenes[i]);
+            //Verifir si ha sido encontrado el GameObject
+            if(imagen != null){
+                // Obtenemos la imagen del GameObject
+                Image imagenTick = imagen.GetComponent<Image>();
+                // Verificar si ha encontrado el Image
+                if(imagenTick != null){
+                    // Desactiva la imagen
+                    imagenTick.enabled = false;
+                }else{
+                    // Mensaje de error
+                    Debug.LogError("No se encontró el componente Image en el GameObject.");
+                }
+            }else{
+                // Mensaje de error
+                Debug.LogError("No se encontró el GameObject con el nombre especificado.");
+            }
+        }
+    }
+
+    // 
+    // Muestra las respuestas posibles
     //
     public void MostrarRespuesta(){
         TextMeshProUGUI textOpcion;
@@ -69,6 +98,21 @@ public class JuegoSombras : MonoBehaviour
             }
         }
     }
+
+    // 
+    // Devuelve el nombre del componente Image segun la opcion clickada
+    // @param {int} opcion Indice de la respuesta seleccionada por el jugador
+    //
+
+    public string ObtenerImagen(int opcion){
+        // Verificar si la opcion esta en el rango del array de opciones
+        if(opcion >= 0 && opcion < nombresImagenes.Length){
+            // Devuelve el nombre de la imagen de la opcion
+            return nombresImagenes[opcion];
+        }else{
+            return string.Empty;
+        }
+    }
     
 
     // 
@@ -76,7 +120,7 @@ public class JuegoSombras : MonoBehaviour
     // @param {int} opcion Indice de la respuesta seleccionada por el jugador
     //
     public void ComprobarRespuesta(int opcion){
-
+        
         // Comprueba que la sombra del musculo actual es mejor que la longitud de preguntas de sombras
         if(musculoActual < sombras.Length - 1){
             // Verifica si la respuesta seleccionada es la correcta
@@ -87,7 +131,7 @@ public class JuegoSombras : MonoBehaviour
                 MostrarPregunta();
                 
             }else{
-                Debug.Log("Incorrecto");
+                ActivarImagen(opcion);
             }
         }else{
             // Verifica si ha encontrado el GameObject
@@ -96,16 +140,62 @@ public class JuegoSombras : MonoBehaviour
                 MostrarPregunta();
                 // Verifica si la opción escogida es la correcta
                 if(respuestas[opcion] == sombras[musculoActual].musculo){
-                    // Activa el panel final    
-                    panelFinal.SetActive(true);
+                    if (GameObject.Find("Sombra").TryGetComponent(out Image sombra)) {
+                        sombra.enabled = false;
+                    }
+
+                    // Desactiva el panel de respuestas
+                    GameObject respuestasPanel = GameObject.Find("Respuestas");
+                    if (respuestasPanel != null) {
+                        respuestasPanel.SetActive(false);
+                    }
+
+                    // Desactiva el panel de explicación
+                    GameObject explicacionPanel = GameObject.Find("Explicacion");
+                    if (explicacionPanel != null) {
+                        explicacionPanel.SetActive(false);
+                    }
+
+                    // Activa el panel final
+                    if (panelFinal != null) {
+                        panelFinal.SetActive(true);
+                    }
+
                 }else{
-                    Debug.Log("Incorrecto");
+                    ActivarImagen(opcion);
                 }   
             }
         }
-        
-    
     }
+
+    //
+    // Activa la imagen de la opcion seleccionada en caso de error del jugador
+    // @param {int} opcion Indice de la respuesta seleccionada por el jugador
+    //
+
+    private void ActivarImagen(int opcion){
+        // Obtenemos la opcion seleccionada
+        string opcionBoton = ObtenerImagen(opcion);
+        // Buscamos el panel que se llama como la opciones seleccionada
+        GameObject imagen = GameObject.Find(opcionBoton);
+        //Verifir si ha sido encontrado el GameObject
+        if(imagen != null){
+            // Obtenemos la imagen del GameObject
+            Image imagenTick = imagen.GetComponent<Image>();
+            // Verificar si ha encontrado el Image
+            if(imagenTick != null){
+                imagenTick.enabled = true;
+
+            }else{
+                Debug.LogError("No se encontró el componente Image en el GameObject.");
+            }
+
+        }else{
+            Debug.LogError("No se encontró el GameObject con el nombre especificado.");
+        }
+    }
+
+
 
     
     // Clase que contiene el nombre del musculo y el sprite correspondiente a la sombra

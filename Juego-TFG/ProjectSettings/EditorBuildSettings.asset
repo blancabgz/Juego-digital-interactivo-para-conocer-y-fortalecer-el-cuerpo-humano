@@ -95,4 +95,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CinematicasNiveles/Nivel5.1.unity
     guid: b6512a59b7771db43ba1c213ec106f74
+  - enabled: 1
+    path: Assets/Scenes/CinematicasNiveles/Nivel6.unity
+    guid: 94a3aefb927315942b9aafe45513964c
+  - enabled: 1
+    path: Assets/Scenes/CinematicasNiveles/Nivel6.1.unity
+    guid: d5249d7c8f073164fb148d94c7610b58
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel6/Sombras.unity
+    guid: 92608330aa16b76449d910993d3db44b
   m_configObjects: {}

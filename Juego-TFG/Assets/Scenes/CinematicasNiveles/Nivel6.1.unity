@@ -290,60 +290,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mensajes:
-  - actorId: 0
-    id_superheroe: 0
+  - actorId: 13
+    id_superheroe: 5
     id_imagen: 0
-    text: "\xBFQue es este lugar?"
-  - actorId: 8
-    id_superheroe: 0
+    text: "\xA1Impresionante! Has hecho un gran trabajo hoy. "
+  - actorId: 4
+    id_superheroe: 5
     id_imagen: 0
-    text: "\xA1Hola! \xBFEstas preparado para comenzar tu entrenamiento? "
-  - actorId: 4
-    id_superheroe: 0
+    text: "\xA1Muchas gracias! Ha sido un poco complicado pero he podido"
+  - actorId: 13
+    id_superheroe: 5
     id_imagen: 0
-    text: "\xA1Si!"
-  - actorId: 8
-    id_superheroe: 0
-    id_imagen: 0
-    text: "Te presento a Mr Biceps, el te ayudar\xE1 a entrenar tus biceps y aprender
-      mas sobre como sacarles partido."
-  - actorId: 9
-    id_superheroe: 1
-    id_imagen: 1
-    text: "\xA1Hola joven! Hoy vamos a aprender como formar estos maravillosos brazos.
-      Lo primero de todo, sabes que son los m\xFAsculos?"
-  - actorId: 2
-    id_superheroe: 1
-    id_imagen: 1
-    text: "Ehhhh\u2026 \xBFSon los que nos ayudan a movernos?"
-  - actorId: 9
-    id_superheroe: 1
-    id_imagen: 1
-    text: 'Efectivamente, son tejidos del cuerpo humano que pueden contraerse y relajarse
-      para realizar todo tipo de movimientos. '
-  - actorId: 4
-    id_superheroe: 1
-    id_imagen: 1
-    text: "\xBFY porqu\xE9 tu tienes un brazo tan grande? "
-  - actorId: 9
-    id_superheroe: 1
-    id_imagen: 2
-    text: "\xA1Buena pregunta! Mi brazo es grande porque he estado entrenando estos
-      m\xFAsculos, llamados b\xEDceps, durante mucho tiempo."
-  - actorId: 4
-    id_superheroe: 1
-    id_imagen: 2
-    text: "\xA1Guau, eso suena genial! \xBFC\xF3mo puedo hacer que mis b\xEDceps
-      sean fuertes?"
-  - actorId: 9
-    id_superheroe: 1
-    id_imagen: 2
-    text: "Te mostrar\xE9 tres ejercicios divertidos. Realizalos y selecciona la
-      imagen que creas correcta. \xBFEst\xE1s listo?"
-  - actorId: 4
-    id_superheroe: 1
-    id_imagen: 2
-    text: " \xA1Si! \xA1Vamos all\xE1!"
+    text: "\xA1Por supuesto! Y por ello te llevar\xE1s la siguiente recompensa."
   actores:
   - id: 0
     name: "ni\xF1a_asustad"
@@ -375,9 +333,21 @@ MonoBehaviour:
   - id: 9
     name: mr_biceps
     sprite: {fileID: 21300000, guid: fe6fffcba6adffc41b51775c1a47b9b5, type: 3}
+  - id: 10
+    name: tempestad
+    sprite: {fileID: 21300000, guid: e7964e6e4630f3a41a10570376383c81, type: 3}
+  - id: 11
+    name: espaldin_supremo
+    sprite: {fileID: 21300000, guid: 33b36bf16c15ef646a01c0722561e919, type: 3}
+  - id: 12
+    name: capitan_core
+    sprite: {fileID: 21300000, guid: 76e2959fdc69d844bbb4fff18dd29ef2, type: 3}
+  - id: 13
+    name: eclipse
+    sprite: {fileID: 21300000, guid: 742117cbbf43fbd44b96d6e880a73456, type: 3}
   actorPanel:
   - id: 0
-    name: Suphe
+    name: "Ni\xF1a"
     sprite: {fileID: 21300000, guid: 55f6094d3d2315a49911b3792337f749, type: 3}
   - id: 1
     name: "Ni\xF1o"
@@ -389,6 +359,18 @@ MonoBehaviour:
   - id: 1
     name: mr_biceps
     sprite: {fileID: 21300000, guid: 24313d8e19d4eae4cacbf5c71b879b0d, type: 3}
+  - id: 2
+    name: tempestad
+    sprite: {fileID: 21300000, guid: c8e36b65383819b4c810276893d0aa1c, type: 3}
+  - id: 3
+    name: espaldin_supremo
+    sprite: {fileID: 21300000, guid: 33b36bf16c15ef646a01c0722561e919, type: 3}
+  - id: 4
+    name: capitan_core
+    sprite: {fileID: 21300000, guid: 9f88dba6a72eb2046b6edc8d66c7cc78, type: 3}
+  - id: 5
+    name: eclipse
+    sprite: {fileID: 21300000, guid: 6ce669e2c67ada141bee66edf3501b19, type: 3}
   imagenes:
   - id: 0
     name: presentacion
@@ -399,15 +381,29 @@ MonoBehaviour:
   - id: 2
     name: bicep_triceps
     sprite: {fileID: 21300000, guid: bbad2b5b8fdcf72428f7e9195cef3452, type: 3}
+  - id: 3
+    name: triceps
+    sprite: {fileID: 21300000, guid: d6e87c8e2ff6686438c3592aacc6a9ee, type: 3}
+  - id: 4
+    name: espalda
+    sprite: {fileID: 21300000, guid: ca96f74bf7aab3e4387145d63f29190d, type: 3}
+  - id: 5
+    name: trapecio
+    sprite: {fileID: 21300000, guid: 2bcbfecbc6b7b584cafe1cb1f8aef13f, type: 3}
+  - id: 6
+    name: dorsal
+    sprite: {fileID: 21300000, guid: 1c32c04b9bac1dc4999e823c5178bc6a, type: 3}
+  - id: 7
+    name: lumbar
+    sprite: {fileID: 21300000, guid: 711758ead6c6a38439511006adc808a3, type: 3}
   historiaVisionada: null
-  escena: PreguntaBiceps
-  nivel: 0
+  escena: NivelCompletado
+  nivel: 6
   avatar: {fileID: 1397982207}
   avatarInicio: {fileID: 338479597}
   avatarSuperheroe: {fileID: 1870251295}
   diapositiva: {fileID: 948334242}
   conversacion: {fileID: 1205313336}
-  habla: {fileID: 0}
 --- !u!1 &502348837
 GameObject:
   m_ObjectHideFlags: 0
@@ -736,6 +732,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &918565047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 918565049}
+  - component: {fileID: 918565048}
+  m_Layer: 0
+  m_Name: ControladorNiveles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &918565048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918565047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de9a11e3ac1c4f44fa28bce6e010dc7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelBottons: []
+  unlock: 7
+--- !u!4 &918565049
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918565047}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 683.41547, y: 659.5067, z: 2.7174108}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &923447981
 GameObject:
   m_ObjectHideFlags: 0
@@ -953,9 +995,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 483878286}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 192, y: 24.328999}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -764.5, y: 0}
   m_SizeDelta: {x: 161.60706, y: 166.7894}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1397982207
@@ -1300,3 +1342,4 @@ SceneRoots:
   - {fileID: 502348841}
   - {fileID: 923447982}
   - {fileID: 1473372856}
+  - {fileID: 918565049}
