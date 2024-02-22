@@ -104,4 +104,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Niveles/Nivel6/Sombras.unity
     guid: 92608330aa16b76449d910993d3db44b
+  - enabled: 1
+    path: Assets/Scenes/CinematicasNiveles/Nivel7.unity
+    guid: ebf512410db8d554aac6ecf576b257fa
+  - enabled: 1
+    path: Assets/Scenes/CinematicasNiveles/Nivel7.1.unity
+    guid: aec4d31017d98324fb5a830959e02a24
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel7/SalaDeCuras.unity
+    guid: c4d32b424f1153d4ab6351d836dff6f9
   m_configObjects: {}

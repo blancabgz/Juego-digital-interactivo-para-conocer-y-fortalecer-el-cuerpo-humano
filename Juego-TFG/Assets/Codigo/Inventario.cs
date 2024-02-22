@@ -21,7 +21,7 @@ public class Inventario : MonoBehaviour
         slots = new GameObject[numSlots];
 
         // ATENCION BLANCA, CAMBIAR DE 4 A SLOTS
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < slots.Length; i++)
         {
             slots[i] = inventario.transform.GetChild(i).gameObject;
             Image imagenSlot = slots[i].GetComponent<Image>();
