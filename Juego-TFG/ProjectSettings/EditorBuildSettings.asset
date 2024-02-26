@@ -113,4 +113,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Niveles/Nivel7/SalaDeCuras.unity
     guid: c4d32b424f1153d4ab6351d836dff6f9
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel8/JuegoParejas.unity
+    guid: 3132f2d9bb5533b4bba37e7f09fff072
   m_configObjects: {}

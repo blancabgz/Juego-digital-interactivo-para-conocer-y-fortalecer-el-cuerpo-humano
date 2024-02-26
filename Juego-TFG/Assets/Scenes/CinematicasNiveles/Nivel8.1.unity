@@ -290,61 +290,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mensajes:
-  - actorId: 0
-    id_superheroe: 0
-    id_imagen: 0
-    text: "\xBFCreo que lo he hecho bien no?"
   - actorId: 8
     id_superheroe: 0
     id_imagen: 0
-    text: "\xA1S\xED! Y ahora... te voy a presentar a ... "
-  - actorId: 11
-    id_superheroe: 3
-    id_imagen: 0
-    text: "\xA1Hola joven! Soy Espald\xEDn Supremo, y ya he visto que has sido capaz
-      de completar el rompecabeza para formar la espalda. \xBFSab\xEDas que en la
-      espalda intervienen varios m\xFAsculos?"
-  - actorId: 0
-    id_superheroe: 3
-    id_imagen: 0
-    text: "\xBFSi? No entiendo mucho sobre los m\xFAsculos de la espalda. "
-  - actorId: 11
-    id_superheroe: 3
-    id_imagen: 4
-    text: " \xA1Por supuesto! Te explico ahora mismo."
-  - actorId: 11
-    id_superheroe: 3
-    id_imagen: 4
-    text: "Intervienen 3 m\xFAsculos importantes: el trapecio, la dorsal y el lumbar."
-  - actorId: 11
-    id_superheroe: 3
-    id_imagen: 5
-    text: "Mira, aqu\xED tienes el trapecio. Este m\xFAsculo que es un tri\xE1ngulo
-      en la parte de arriba de tu espalda y es clave para levantar cosas y mover
-      tus hombros."
-  - actorId: 2
-    id_superheroe: 3
-    id_imagen: 5
-    text: "\xBFY qu\xE9 m\xE1s m\xFAsculos intervienen?"
-  - actorId: 11
-    id_superheroe: 3
-    id_imagen: 6
-    text: "Tambi\xE9n tenemos el dorsal, que es como una capa ancha en la espalda.
-      Ayuda a levantar y sujetar cosas."
-  - actorId: 2
-    id_superheroe: 3
-    id_imagen: 6
-    text: "Pero... cuando me agacho... que m\xFAsculo interviene?"
-  - actorId: 11
-    id_superheroe: 3
-    id_imagen: 7
-    text: "El m\xFAsculo del que me hablas es el lumbar. Es importante para doblarse
-      y enderezarse, como cuando te agachas. "
+    text: "\xA1Que bien lo has hecho! Con m\xE1s entrenamiento conseguir\xE1s mejores
+      resultados. Puedes volver a hacerlo cuando quieras."
   - actorId: 4
-    id_superheroe: 3
-    id_imagen: 7
-    text: " \xA1Guau, no sab\xEDa que la espalda ten\xEDa tantos m\xFAsculos! Gracias,
-      Espald\xEDn Supremo."
+    id_superheroe: 0
+    id_imagen: 0
+    text: "\xA1Muchas gracias!"
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 0
+    text: Y recuerda, los resultados se consiguen poco a poco
   actores:
   - id: 0
     name: "ni\xF1a_asustad"
@@ -382,6 +340,12 @@ MonoBehaviour:
   - id: 11
     name: espaldin_supremo
     sprite: {fileID: 21300000, guid: 33b36bf16c15ef646a01c0722561e919, type: 3}
+  - id: 12
+    name: capitan_core
+    sprite: {fileID: 21300000, guid: 76e2959fdc69d844bbb4fff18dd29ef2, type: 3}
+  - id: 13
+    name: eclipse
+    sprite: {fileID: 21300000, guid: 742117cbbf43fbd44b96d6e880a73456, type: 3}
   actorPanel:
   - id: 0
     name: "Ni\xF1a"
@@ -402,6 +366,12 @@ MonoBehaviour:
   - id: 3
     name: espaldin_supremo
     sprite: {fileID: 21300000, guid: 33b36bf16c15ef646a01c0722561e919, type: 3}
+  - id: 4
+    name: capitan_core
+    sprite: {fileID: 21300000, guid: 9f88dba6a72eb2046b6edc8d66c7cc78, type: 3}
+  - id: 5
+    name: eclipse
+    sprite: {fileID: 21300000, guid: 6ce669e2c67ada141bee66edf3501b19, type: 3}
   imagenes:
   - id: 0
     name: presentacion
@@ -429,7 +399,7 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: 711758ead6c6a38439511006adc808a3, type: 3}
   historiaVisionada: null
   escena: NivelCompletado
-  nivel: 2
+  nivel: 8
   avatar: {fileID: 1397982207}
   avatarInicio: {fileID: 338479597}
   avatarSuperheroe: {fileID: 1870251295}
@@ -793,7 +763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelBottons: []
-  unlock: 3
+  unlock: 9
 --- !u!4 &918565049
 Transform:
   m_ObjectHideFlags: 0

@@ -289,62 +289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b3352837669b5944bece46e6dc7eae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mensajes:
-  - actorId: 0
-    id_superheroe: 0
-    id_imagen: 0
-    text: "\xBFCreo que lo he hecho bien no?"
-  - actorId: 8
-    id_superheroe: 0
-    id_imagen: 0
-    text: "\xA1S\xED! Y ahora... te voy a presentar a ... "
-  - actorId: 11
-    id_superheroe: 3
-    id_imagen: 0
-    text: "\xA1Hola joven! Soy Espald\xEDn Supremo, y ya he visto que has sido capaz
-      de completar el rompecabeza para formar la espalda. \xBFSab\xEDas que en la
-      espalda intervienen varios m\xFAsculos?"
-  - actorId: 0
-    id_superheroe: 3
-    id_imagen: 0
-    text: "\xBFSi? No entiendo mucho sobre los m\xFAsculos de la espalda. "
-  - actorId: 11
-    id_superheroe: 3
-    id_imagen: 4
-    text: " \xA1Por supuesto! Te explico ahora mismo."
-  - actorId: 11
-    id_superheroe: 3
-    id_imagen: 4
-    text: "Intervienen 3 m\xFAsculos importantes: el trapecio, la dorsal y el lumbar."
-  - actorId: 11
-    id_superheroe: 3
-    id_imagen: 5
-    text: "Mira, aqu\xED tienes el trapecio. Este m\xFAsculo que es un tri\xE1ngulo
-      en la parte de arriba de tu espalda y es clave para levantar cosas y mover
-      tus hombros."
-  - actorId: 2
-    id_superheroe: 3
-    id_imagen: 5
-    text: "\xBFY qu\xE9 m\xE1s m\xFAsculos intervienen?"
-  - actorId: 11
-    id_superheroe: 3
-    id_imagen: 6
-    text: "Tambi\xE9n tenemos el dorsal, que es como una capa ancha en la espalda.
-      Ayuda a levantar y sujetar cosas."
-  - actorId: 2
-    id_superheroe: 3
-    id_imagen: 6
-    text: "Pero... cuando me agacho... que m\xFAsculo interviene?"
-  - actorId: 11
-    id_superheroe: 3
-    id_imagen: 7
-    text: "El m\xFAsculo del que me hablas es el lumbar. Es importante para doblarse
-      y enderezarse, como cuando te agachas. "
-  - actorId: 4
-    id_superheroe: 3
-    id_imagen: 7
-    text: " \xA1Guau, no sab\xEDa que la espalda ten\xEDa tantos m\xFAsculos! Gracias,
-      Espald\xEDn Supremo."
+  mensajes: []
   actores:
   - id: 0
     name: "ni\xF1a_asustad"
@@ -376,12 +321,6 @@ MonoBehaviour:
   - id: 9
     name: mr_biceps
     sprite: {fileID: 21300000, guid: fe6fffcba6adffc41b51775c1a47b9b5, type: 3}
-  - id: 10
-    name: tempestad
-    sprite: {fileID: 21300000, guid: e7964e6e4630f3a41a10570376383c81, type: 3}
-  - id: 11
-    name: espaldin_supremo
-    sprite: {fileID: 21300000, guid: 33b36bf16c15ef646a01c0722561e919, type: 3}
   actorPanel:
   - id: 0
     name: "Ni\xF1a"
@@ -400,8 +339,11 @@ MonoBehaviour:
     name: tempestad
     sprite: {fileID: 21300000, guid: c8e36b65383819b4c810276893d0aa1c, type: 3}
   - id: 3
-    name: espaldin_supremo
-    sprite: {fileID: 21300000, guid: 33b36bf16c15ef646a01c0722561e919, type: 3}
+    name: core
+    sprite: {fileID: 21300000, guid: 9f88dba6a72eb2046b6edc8d66c7cc78, type: 3}
+  - id: 4
+    name: eclipse
+    sprite: {fileID: 21300000, guid: 6ce669e2c67ada141bee66edf3501b19, type: 3}
   imagenes:
   - id: 0
     name: presentacion
@@ -416,20 +358,38 @@ MonoBehaviour:
     name: triceps
     sprite: {fileID: 21300000, guid: d6e87c8e2ff6686438c3592aacc6a9ee, type: 3}
   - id: 4
-    name: espalda
-    sprite: {fileID: 21300000, guid: ca96f74bf7aab3e4387145d63f29190d, type: 3}
+    name: recto_abdominal
+    sprite: {fileID: 21300000, guid: 3d5b8bbd49fe52044b9c6ec823b841b3, type: 3}
   - id: 5
-    name: trapecio
-    sprite: {fileID: 21300000, guid: 2bcbfecbc6b7b584cafe1cb1f8aef13f, type: 3}
+    name: oblicuos
+    sprite: {fileID: 21300000, guid: 9ac805b8bc4c8e44ca02d24d354536a7, type: 3}
   - id: 6
-    name: dorsal
-    sprite: {fileID: 21300000, guid: 1c32c04b9bac1dc4999e823c5178bc6a, type: 3}
+    name: pectoral
+    sprite: {fileID: 21300000, guid: b4a3d5e890f56d747bdc55b326a3e36d, type: 3}
   - id: 7
-    name: lumbar
-    sprite: {fileID: 21300000, guid: 711758ead6c6a38439511006adc808a3, type: 3}
+    name: news
+    sprite: {fileID: 21300000, guid: 6291f7e62afc797478c6bca66c014676, type: 3}
+  - id: 8
+    name: gluteo
+    sprite: {fileID: 21300000, guid: fbe05f45a51c8774eaabb8fd853e968d, type: 3}
+  - id: 9
+    name: cuadriceps
+    sprite: {fileID: 21300000, guid: 30c1ec046e66cbb4dae3b34380331597, type: 3}
+  - id: 10
+    name: gemelo
+    sprite: {fileID: 21300000, guid: 144f160416ffd444a878ad8418185060, type: 3}
+  - id: 11
+    name: levantar
+    sprite: {fileID: 21300000, guid: 2b1ead98a3c8e4749a52dcd343df538d, type: 3}
+  - id: 12
+    name: sevillanas
+    sprite: {fileID: 21300000, guid: d3dc95e13fbf9d14994c1dc1928d8556, type: 3}
+  - id: 13
+    name: parejas
+    sprite: {fileID: 21300000, guid: 4c1b88cbc0ded324eaccfae884bb7c65, type: 3}
   historiaVisionada: null
-  escena: NivelCompletado
-  nivel: 2
+  escena: JuegoParejas
+  nivel: 9
   avatar: {fileID: 1397982207}
   avatarInicio: {fileID: 338479597}
   avatarSuperheroe: {fileID: 1870251295}
@@ -758,52 +718,6 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &918565047
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 918565049}
-  - component: {fileID: 918565048}
-  m_Layer: 0
-  m_Name: ControladorNiveles
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &918565048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 918565047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de9a11e3ac1c4f44fa28bce6e010dc7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelBottons: []
-  unlock: 3
---- !u!4 &918565049
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 918565047}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 683.41547, y: 659.5067, z: 2.7174108}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1249,8 +1163,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 738, y: -56.697}
-  m_SizeDelta: {x: 289.4193, y: 507.4456}
+  m_AnchoredPosition: {x: 730.4055, y: -56.697}
+  m_SizeDelta: {x: 304.6082, y: 507.4456}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1870251295
 MonoBehaviour:
@@ -1373,4 +1287,3 @@ SceneRoots:
   - {fileID: 502348841}
   - {fileID: 923447982}
   - {fileID: 1473372856}
-  - {fileID: 918565049}
