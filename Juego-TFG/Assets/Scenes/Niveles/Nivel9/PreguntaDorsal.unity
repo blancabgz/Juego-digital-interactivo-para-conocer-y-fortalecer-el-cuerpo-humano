@@ -339,7 +339,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xBFQue ejercicio necesito hacer para conseguir un pecho tonificado?"
+  m_Text: "\xBFQue ejercicio necesito hacer para trabajar el dorsal?"
 --- !u!222 &1131278410
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -531,7 +531,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Pectoral1
+          m_StringArgument: Dorsal
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1580209764

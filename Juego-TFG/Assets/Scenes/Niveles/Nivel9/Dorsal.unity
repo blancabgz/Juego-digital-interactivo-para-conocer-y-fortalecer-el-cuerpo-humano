@@ -649,7 +649,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f82e9f8a4b39ced4cb8ff846869495a9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5ee32d3e03752bf46a462c25e6427d66, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -830,9 +830,9 @@ MonoBehaviour:
   respuestas:
   - id: 0
     musculo: Biceps
-    imagen: {fileID: 21300000, guid: f82e9f8a4b39ced4cb8ff846869495a9, type: 3}
+    imagen: {fileID: 21300000, guid: 5ee32d3e03752bf46a462c25e6427d66, type: 3}
   - id: 1
-    musculo: Pecho
+    musculo: Hombro
     imagen: {fileID: 21300000, guid: 83636da298c194c42991511d8a1bead9, type: 3}
   - id: 2
     musculo: Dorsal
@@ -852,10 +852,10 @@ MonoBehaviour:
   validate1: {fileID: 370645618}
   validate2: {fileID: 1589949770}
   validate3: {fileID: 1486606070}
-  musculo: Pecho
+  musculo: Dorsal
   imagenPanel: {fileID: 921883126}
   botonSiguiente: {fileID: 97172446}
-  escenaSiguiente: PreguntaPectoral2
+  escenaSiguiente: Nivel9.1
 --- !u!1 &1150778331
 GameObject:
   m_ObjectHideFlags: 0

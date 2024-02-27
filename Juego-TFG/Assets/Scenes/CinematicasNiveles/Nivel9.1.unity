@@ -290,19 +290,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mensajes:
-  - actorId: 8
-    id_superheroe: 0
+  - actorId: 11
+    id_superheroe: 3
     id_imagen: 0
-    text: "\xA1Que bien lo has hecho! Con m\xE1s entrenamiento conseguir\xE1s mejores
-      resultados. Puedes volver a hacerlo cuando quieras."
+    text: "\xA1Lo has hecho genial! Ahora ya sabes que ejercicio tienes que hacer
+      para formar tus alas"
   - actorId: 4
-    id_superheroe: 0
+    id_superheroe: 3
     id_imagen: 0
-    text: "\xA1Muchas gracias!"
-  - actorId: 8
-    id_superheroe: 0
+    text: "\xA1Muchas gracias! Es genial"
+  - actorId: 11
+    id_superheroe: 3
     id_imagen: 0
-    text: Y recuerda, los resultados se consiguen poco a poco
+    text: 'Como lo has hecho fenomenal, te mereces un premio. '
   actores:
   - id: 0
     name: "ni\xF1a_asustad"
