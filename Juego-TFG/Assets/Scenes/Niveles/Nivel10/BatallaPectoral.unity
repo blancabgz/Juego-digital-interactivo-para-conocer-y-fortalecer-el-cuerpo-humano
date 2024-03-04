@@ -326,7 +326,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.30800003, y: 0}
   m_AnchorMax: {x: 0.88000005, y: 0.8263064}
-  m_AnchoredPosition: {x: 22, y: -10.4513855}
+  m_AnchoredPosition: {x: 22, y: -10.451416}
   m_SizeDelta: {x: -206.3779, y: -42.3413}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &177839527
@@ -349,7 +349,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5b9e6d37cf1367142bf16ce60955e82f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cb59ff8998ce8034290d0a7333359f9e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -661,32 +661,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   preguntas:
-  - pregunta: "El recto abdominal ayuda a mantener una posici\xF3n recta del cuerpo"
+  - pregunta: El pectoral se divide en dos partes.
     verdadera: 1
-  - pregunta: "El recto abdominal ayuda a mantener una posici\xF3n recta del cuerpo"
+  - pregunta: "El pectoral mayor est\xE1 delante del pectoral menor."
     verdadera: 1
-  - pregunta: "El recto abdominal contribuye a la flexi\xF3n de la columna a trav\xE9s
-      de las costillas"
+  - pregunta: "El pectoral menor es un m\xFAsculo peque\xF1o."
     verdadera: 1
-  - pregunta: "Los oblicuos mayor y menor trabajan en conjunto para realizar funciones
-      espec\xEDficas"
+  - pregunta: "El pectoral es m\xE1s grande que el biceps."
     verdadera: 1
-  - pregunta: El recto abdominal ayuda a inclinar el tronco hacia los lados
+  - pregunta: "El pectoral mayor es m\xE1s peque\xF1o que el gl\xFAteo"
     verdadera: 1
-  - pregunta: "El recto abdominal est\xE1 involucrado principalmente en la rotaci\xF3n
-      del tronco"
+  - pregunta: "El pectoral mayor es un m\xFAsculo peque\xF1o."
     verdadera: 0
-  - pregunta: "Los m\xFAsculos oblicuos no tienen ninguna funci\xF3n en la flexi\xF3n
-      del tronco"
+  - pregunta: 'El pectoral menor no ayuda en nada al pectoral mayor. '
     verdadera: 0
-  - pregunta: El oblicuo menor trabaja de manera independiente y no colabora con
-      el oblicuo mayor
+  - pregunta: El pectoral no te ayuda a levantar objetos.
     verdadera: 0
-  - pregunta: "Los oblicuos no desempe\xF1an un papel en la inclinaci\xF3n del tronco"
+  - pregunta: El pectoral no se puede trabajar con ejercicios
     verdadera: 0
-  - pregunta: "El recto abdominal no mantiene una posici\xF3n recta del cuerpo"
+  - pregunta: El pectoral mayor trabaja en solitario.
     verdadera: 0
-  pagina: Nivel3.1
+  pagina: Nivel10.1
   barraVida: {fileID: 2087164769}
 --- !u!1 &420161739
 GameObject:

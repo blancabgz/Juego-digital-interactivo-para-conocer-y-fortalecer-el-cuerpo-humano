@@ -128,4 +128,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CinematicasNiveles/Nivel9.1.unity
     guid: f4ee2ad87a13de447aff2aec23621536
+  - enabled: 1
+    path: Assets/Scenes/CinematicasNiveles/Nivel10.unity
+    guid: 46beb38f9c0c51648949156fbb8bec76
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel10/BatallaPectoral.unity
+    guid: 22034f95bf5dcab458d90a8e532389d8
+  - enabled: 1
+    path: Assets/Scenes/CinematicasNiveles/Nivel10.1.unity
+    guid: 6c38a8d024a864d4b8aa8d25bc6ba39f
+  - enabled: 1
+    path: Assets/Scenes/CinematicasNiveles/Nivel11.unity
+    guid: 558089290eed54544b456353001d50d9
+  - enabled: 1
+    path: Assets/Scenes/CinematicasNiveles/Nivel11.1.unity
+    guid: bf5145383c5e6d44ab06e9e805834445
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel11/SombrasAbdomen.unity
+    guid: df3c2cba0e88d9a4ba3929d04f02ad49
   m_configObjects: {}

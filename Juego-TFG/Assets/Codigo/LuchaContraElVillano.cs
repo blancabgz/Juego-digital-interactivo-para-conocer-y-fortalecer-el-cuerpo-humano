@@ -9,6 +9,7 @@ public class LuchaContraElVillano : MonoBehaviour
 {
 
     public Preguntas[] preguntas;
+    public string pagina;
     public Image barraVida;
     private float vidaActual = 4;
     private float vidaMaxima = 4;
@@ -47,7 +48,7 @@ public class LuchaContraElVillano : MonoBehaviour
             vidaActual--; // bajamos la vida 
             barraVida.fillAmount = vidaActual / vidaMaxima; // actualizamos la barra de vida
             if(vidaActual == 0){
-                SceneManager.LoadScene("Nivel3.1");
+                SceneManager.LoadScene(pagina);
             }
         }else{
             numPreguntasFalladas++;
