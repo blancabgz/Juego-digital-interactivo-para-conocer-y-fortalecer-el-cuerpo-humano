@@ -18,5 +18,10 @@ public class Utilidades
         }
     }
 
+    public static void EscenaJuego(string opcion)
+    {
+        SceneManager.LoadScene(opcion);
+    }
+
     
 }

@@ -1015,6 +1015,9 @@ MonoBehaviour:
   - nivel: 10
     nombre: Pesas
     sprite: {fileID: 21300000, guid: 4ed164095afbf4b46ad5798e52a8d76b, type: 3}
+  - nivel: 11
+    nombre: Pelota
+    sprite: {fileID: 21300000, guid: 4c76cf4136a988640a9e4d4bc1b2efa0, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

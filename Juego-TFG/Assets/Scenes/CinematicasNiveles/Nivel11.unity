@@ -289,7 +289,66 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b3352837669b5944bece46e6dc7eae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mensajes: []
+  mensajes:
+  - actorId: 11
+    id_superheroe: 3
+    id_imagen: 0
+    text: "\xA1Hola! \xBFTe acuerdas de m\xED?"
+  - actorId: 4
+    id_superheroe: 3
+    id_imagen: 0
+    text: "\xA1Por supuesto Capit\xE1n Core! Me alegro mucho de que est\xE9s aqu\xED,
+      me gustar\xEDa seguir fortaleciendo mis abdominales. "
+  - actorId: 11
+    id_superheroe: 3
+    id_imagen: 0
+    text: "Me alegra que est\xE9s tan emocionado, hoy nos vamos a enfocar en un m\xFAsculo
+      que te ayuda a mantener una buena postura. \xBFRecuerdas cual era?"
+  - actorId: 6
+    id_superheroe: 3
+    id_imagen: 0
+    text: "Mmm\u2026 "
+  - actorId: 6
+    id_superheroe: 3
+    id_imagen: 4
+    text: "\xBFEl recto abdominal?"
+  - actorId: 11
+    id_superheroe: 3
+    id_imagen: 4
+    text: "\xA1Exacto! Es el m\xFAsculo que nos permite flexionar el cuerpo hacia
+      delante y hacia atr\xE1s."
+  - actorId: 4
+    id_superheroe: 3
+    id_imagen: 4
+    text: "\xBFPor eso podemos coger cosas del suelo?"
+  - actorId: 11
+    id_superheroe: 3
+    id_imagen: 4
+    text: "Efectivamente. \xBFY sab\xEDas que mantener un abdomen fuerte puede hacer
+      que no tengas lesiones en la espalda?"
+  - actorId: 4
+    id_superheroe: 3
+    id_imagen: 5
+    text: "Entonces es muy importante mantenerlo fuerte, lo entrenar\xE9 m\xE1s a
+      menudo. "
+  - actorId: 11
+    id_superheroe: 3
+    id_imagen: 0
+    text: "Me parece una idea incre\xEDble. \xBFTe apetece jugar a un juego? Me gustar\xEDa
+      comprobar si eres capaz de identificar los m\xFAsculos que te hemos ense\xF1ado. "
+  - actorId: 4
+    id_superheroe: 3
+    id_imagen: 0
+    text: "\xA1S\xED, suena genial!"
+  - actorId: 11
+    id_superheroe: 3
+    id_imagen: 0
+    text: "Pues vamos a ir al escenario, donde tendr\xE1s que identificar cual es
+      el m\xFAsculo que muestra la sombra del escenario. \xBFPodr\xE1s hacerlo?"
+  - actorId: 4
+    id_superheroe: 3
+    id_imagen: 0
+    text: "\xA1Por supuesto!"
   actores:
   - id: 0
     name: "ni\xF1a_asustad"
@@ -324,6 +383,9 @@ MonoBehaviour:
   - id: 10
     name: espaldin_supremo
     sprite: {fileID: 21300000, guid: 33b36bf16c15ef646a01c0722561e919, type: 3}
+  - id: 11
+    name: capitan_core
+    sprite: {fileID: 21300000, guid: 76e2959fdc69d844bbb4fff18dd29ef2, type: 3}
   actorPanel:
   - id: 0
     name: "Ni\xF1a"
@@ -397,7 +459,7 @@ MonoBehaviour:
     name: alas
     sprite: {fileID: 21300000, guid: 936d47572828e664797fa48fb528d1dc, type: 3}
   historiaVisionada: null
-  escena: BatallaPectoral
+  escena: SombrasAbdomen
   nivel: 11
   avatar: {fileID: 1397982207}
   avatarInicio: {fileID: 338479597}

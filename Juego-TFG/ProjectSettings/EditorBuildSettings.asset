@@ -146,4 +146,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Niveles/Nivel11/SombrasAbdomen.unity
     guid: df3c2cba0e88d9a4ba3929d04f02ad49
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel12/TipoTestRuleta.unity
+    guid: 72b55a58c08adce41ac2239ab8dc02dd
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel12/Ruleta.unity
+    guid: 25dcad3d154e700429bb874b0acb4f72
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel12/MovimientoRuleta.unity
+    guid: 79185725945d1174e995a6b05163ccba
   m_configObjects: {}

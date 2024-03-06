@@ -289,7 +289,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b3352837669b5944bece46e6dc7eae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mensajes: []
+  mensajes:
+  - actorId: 12
+    id_superheroe: 4
+    id_imagen: 0
+    text: "\xA1Enhorabuena! Has hecho un buen trabajo. Has demostrado tener un buen
+      conocimiento sobre tus m\xFAsculos. "
+  - actorId: 4
+    id_superheroe: 4
+    id_imagen: 0
+    text: "\xA1Gracias, Capit\xE1n Core! He estado trabajando muy duro. "
+  - actorId: 12
+    id_superheroe: 4
+    id_imagen: 0
+    text: "Eso har\xE1 que consigas tu objetivo seguro. Como reconocimiento por tu
+      excelente desempe\xF1o, te voy a dar esta pelota."
+  - actorId: 4
+    id_superheroe: 4
+    id_imagen: 0
+    text: "\xBFUna pelota? \xBFTan grande?"
+  - actorId: 12
+    id_superheroe: 4
+    id_imagen: 0
+    text: "Si, esta pelota sirve para que puedas entrenar tu abdomen de una manera
+      m\xE1s divertida. M\xE1s adelante descubriremos como. "
+  - actorId: 4
+    id_superheroe: 4
+    id_imagen: 0
+    text: "\xA1Wow! \xA1Muchas gracias, Capit\xE1n Core!"
   actores:
   - id: 0
     name: "ni\xF1a_asustad"
