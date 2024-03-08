@@ -1074,10 +1074,21 @@ MonoBehaviour:
   dados:
   - {fileID: 21300000, guid: a7e6d221d19774a409c6635e70b2f182, type: 3}
   - {fileID: 21300000, guid: bff1bf22499c7e840a17e5bb2563f1d9, type: 3}
+  - {fileID: 21300000, guid: 87b348ff5dd34c440a96d50ae782bfee, type: 3}
   - {fileID: 21300000, guid: 7a50d1177a1f5a64ea0ff32ca40121c7, type: 3}
+  - {fileID: 21300000, guid: b62998af2debf4d4dab55992a03ff286, type: 3}
+  - {fileID: 21300000, guid: 87b348ff5dd34c440a96d50ae782bfee, type: 3}
   - {fileID: 21300000, guid: 242f90671144d9d428e911eae7a6d49a, type: 3}
   - {fileID: 21300000, guid: 87b348ff5dd34c440a96d50ae782bfee, type: 3}
-  - {fileID: 21300000, guid: b62998af2debf4d4dab55992a03ff286, type: 3}
+  musculos:
+  - Brazo
+  - Abdomen
+  - Movimiento
+  - Pecho
+  - Pierna
+  - Movimiento
+  - Espalda
+  - Movimiento
 --- !u!114 &1841584375
 MonoBehaviour:
   m_ObjectHideFlags: 0

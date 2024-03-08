@@ -12,12 +12,16 @@ public class TirarDado : MonoBehaviour
     private Image imagenDado;
     private bool rueda = false;
     private int valorDado;
+    public string[] musculos;
+    private string dadoSeleccion = "null";
+
     // Start is called before the first frame update
     void Start()
     {
        imagenDado = GameObject.Find("Dado").GetComponent<Image>();
     }
 
+    
     public void Pulsar(){
         if(!rueda){
             StartCoroutine(Dado());
@@ -35,7 +39,27 @@ public class TirarDado : MonoBehaviour
         valorDado = Random.Range(0, dados.Length);
         imagenDado.sprite = dados[valorDado];
         rueda = false;
-        Debug.Log(valorDado);
+        DadoSeleccionado(valorDado);
+        if (!string.Equals(dadoSeleccion, "Movimiento")) {
+            Invoke("IrEscenaTest",1f);  
+        }else{
+            Invoke("IrMovimiento",1f);  
+        }
+          
+    }
+
+    private void IrEscenaTest(){
+        SceneManager.LoadScene("TipoTestRuleta");
+    }
+
+    private void IrMovimiento(){
+        SceneManager.LoadScene("MovimientoRuleta");
+    }
+
+    public void DadoSeleccionado(int valor){
+        dadoSeleccion = musculos[valor];
+        PlayerPrefs.SetString("DadoSeleccion", dadoSeleccion);
+        Debug.Log("El musculo seleccionado es: " + dadoSeleccion);
     }
     
 

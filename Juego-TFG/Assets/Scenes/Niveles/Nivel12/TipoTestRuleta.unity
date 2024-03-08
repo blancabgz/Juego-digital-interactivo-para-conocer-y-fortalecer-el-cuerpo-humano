@@ -232,6 +232,110 @@ MonoBehaviour:
     - Cuadriceps
     - Dorsal
     respuestaCorrecta: Triceps
+  - musculo: Brazo
+    pregunta: "\xBFQu\xE9 m\xFAsculo se encuentra en la parte posterior de tu brazo
+      y te ayuda a estirar el codo?"
+    respuestas:
+    - Triceps
+    - Dorsal
+    - Biceps
+    - Lumbar
+    respuestaCorrecta: Triceps
+  - musculo: Brazo
+    pregunta: "\xBFC\xF3mo se llama el m\xFAsculo que se encuentra en el hombro?"
+    respuestas:
+    - Deltoides
+    - Dorsal
+    - Triceps
+    - Pecho
+    respuestaCorrecta: Deltoides
+  - musculo: Pectoral
+    pregunta: "\xBFQu\xE9 m\xFAsculo usas cuando haces \"flexiones\" en el suelo? "
+    respuestas:
+    - Pecho
+    - Biceps
+    - Hombro
+    - Gluteo
+    respuestaCorrecta: Pecho
+  - musculo: Pectoral
+    pregunta: "\xBFCu\xE1l es el m\xFAsculo que ayuda a empujar cosas con tus brazos?"
+    respuestas:
+    - Biceps
+    - Pecho
+    - Triceps
+    - Cuadriceps
+    respuestaCorrecta: Pecho
+  - musculo: Espalda
+    pregunta: "\xBFQu\xE9 m\xFAsculo est\xE1 en la parte superior de tu espalda y
+      te ayuda a levantar cosas pesadas?"
+    respuestas:
+    - Biceps
+    - Dorsal
+    - Trapecio
+    - Lumbar
+    respuestaCorrecta: Trapecio
+  - musculo: Espalda
+    pregunta: "\xBFCu\xE1l es el m\xFAsculo que te ayuda a estirar los brazos hacia
+      atr\xE1s como si fueras a volar?"
+    respuestas:
+    - Biceps
+    - Trapecio
+    - Dorsal
+    - Cuadriceps
+    respuestaCorrecta: Dorsal
+  - musculo: Espalda
+    pregunta: "\xBFC\xF3mo se llama el m\xFAsculo que te ayuda a levantar objetos
+      del suelo sin doblar las rodillas?"
+    respuestas:
+    - Biceps
+    - Triceps
+    - Lumbar
+    - Pecho
+    respuestaCorrecta: Lumbar
+  - musculo: Abdomen
+    pregunta: "\xBFQu\xE9 m\xFAsculo te ayuda a doblarte hacia adelante cuando intentas
+      tocar tus dedos de los pies?"
+    respuestas:
+    - Recto abdominal
+    - Pecho
+    - Gluteo
+    - Gemelos
+    respuestaCorrecta: Recto Abdominal
+  - musculo: Abdomen
+    pregunta: "\xBFQu\xE9 m\xFAsculos est\xE1n en los lados de tu barriga y te ayudan
+      a girar tu torso?"
+    respuestas:
+    - Oblicuos
+    - Gemelos
+    - Pecho
+    - Dorsal
+    respuestaCorrecta: Oblicuos
+  - musculo: Pierna
+    pregunta: "\xBFC\xF3mo se llama el m\xFAsculo que te ayuda a saltar y correr?"
+    respuestas:
+    - Gluteo
+    - Cuadriceps
+    - Gemelo
+    - Pecho
+    respuestaCorrecta: Cuadriceps
+  - musculo: Pierna
+    pregunta: "\xBFQu\xE9 m\xFAsculo se encuentra en la parte posterior de la pierna
+      y te ayuda a levantar los talones del suelo?"
+    respuestas:
+    - Gluteo
+    - Cuadriceps
+    - Gemelo
+    - Biceps
+    respuestaCorrecta: Gemelo
+  - musculo: Pierna
+    pregunta: "\xBFQu\xE9 m\xFAsculo se fortalece cuando haces ejercicios como sentadillas?"
+    respuestas:
+    - Gluteo
+    - Cuadriceps
+    - Gemelo
+    - Biceps
+    respuestaCorrecta: Gluteo
+  preguntasSeleccionadas: []
   panelFinal: {fileID: 413370015}
 --- !u!1 &86043511
 GameObject:

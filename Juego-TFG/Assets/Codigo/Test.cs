@@ -8,28 +8,62 @@ public class Test : MonoBehaviour
 {
 
     public Preguntas[] preguntas;
+    public Preguntas[] preguntasSeleccionadas;
     TextMeshProUGUI textPregunta;
     GameObject respuestas;
 
     int indicePreguntaAleatoria;
     public GameObject panelFinal;
+
+    private string dadoSeleccion = "null";
     
+    private void Awake(){
+        CargarSeleccionDado();
+    }
+
     void Start()
     {   
-        Utilidades.MezclarElementos(preguntas);
+        FiltrarPreguntas();
+        Utilidades.MezclarElementos(preguntasSeleccionadas);
         MostrarPreguntaRespuestas();
-        
+    }
+
+    private void FiltrarPreguntas(){
+        int contador = 0;
+        if(dadoSeleccion != null){
+            preguntasSeleccionadas = new Preguntas[preguntas.Length]; 
+            for(int i = 0; i < preguntas.Length; i++){
+                if(string.Equals(preguntas[i].musculo, dadoSeleccion)){
+                    preguntasSeleccionadas[contador] = preguntas[i];
+                    contador++;
+                }
+            }
+            // Redimensionar el Array
+            System.Array.Resize(ref preguntasSeleccionadas, contador);
+        }else{
+            Debug.LogWarning("La seleccion del dado es null");
+        }
+    }
+    
+
+    private void CargarSeleccionDado(){
+        if (PlayerPrefs.HasKey("DadoSeleccion")){
+            dadoSeleccion = PlayerPrefs.GetString("DadoSeleccion");
+            Debug.Log("Parte del cuerpo seleccionada es " + dadoSeleccion);
+        }
     }
     public void MostrarPreguntaRespuestas(){
         textPregunta = GameObject.Find("Pregunta").transform.GetComponent<TextMeshProUGUI>();
-        
-        if(textPregunta != null && preguntas != null && preguntas.Length > 0){
-            indicePreguntaAleatoria = Random.Range(0, preguntas.Length);
-            textPregunta.text = preguntas[indicePreguntaAleatoria].pregunta;
+        if(textPregunta != null && preguntasSeleccionadas != null && preguntasSeleccionadas.Length > 0){
+            // Obtener un numero de pregunta aleatoria
+            indicePreguntaAleatoria = Random.Range(0, preguntasSeleccionadas.Length);
+            // Mezclar las respuestas
+            Utilidades.MezclarElementos(preguntasSeleccionadas[indicePreguntaAleatoria].respuestas);
+            textPregunta.text = preguntasSeleccionadas[indicePreguntaAleatoria].pregunta;
 
             respuestas = GameObject.Find("Respuestas");
             if(respuestas != null){
-                Preguntas preguntaActual = preguntas[indicePreguntaAleatoria];
+                Preguntas preguntaActual = preguntasSeleccionadas[indicePreguntaAleatoria];
                 for(int i = 0; i < preguntaActual.respuestas.Length; i++){
                     Text textoRespuesta = respuestas.transform.GetChild(i).GetComponentInChildren<Text>();
                     textoRespuesta.text = preguntaActual.respuestas[i];
@@ -47,7 +81,7 @@ public class Test : MonoBehaviour
         GameObject visible;
         if(panelFinal != null){
             panelFinal.SetActive(true);
-            if(preguntas[indicePreguntaAleatoria].respuestaCorrecta == preguntas[indicePreguntaAleatoria].respuestas[indice]){
+            if(preguntasSeleccionadas[indicePreguntaAleatoria].respuestaCorrecta == preguntasSeleccionadas[indicePreguntaAleatoria].respuestas[indice]){
                 visible = panelFinal.transform.Find("Acierto")?.gameObject;
             }else{
                 visible = panelFinal.transform.Find("Fallo")?.gameObject;
@@ -56,7 +90,7 @@ public class Test : MonoBehaviour
                 visible.SetActive(true);
             }
 
-            Invoke("IrAlDado",1f);
+            Invoke("IrAlDado",1f); 
 
 
         }else{
