@@ -3,25 +3,38 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class TirarDado : MonoBehaviour
 {
 
     public Sprite[] dados;
+    public GameObject[] medallas;
     private GameObject dadoObjecto;
     private Image imagenDado;
     private bool rueda = false;
     private int valorDado;
     public string[] musculos;
     private string dadoSeleccion = "null";
+    private TextMeshProUGUI tituloDado;
+    public Image medalla;
+    public Color medallaSeleccionada;
+    private int contadorMedallas = 0;
+    public GameObject panelFinal;
 
-    // Start is called before the first frame update
+
+    void Awake(){
+        CargarContadorMedallas();
+        GuardarContadorMedallas();
+        SubirIntensidad();
+    }
     void Start()
     {
        imagenDado = GameObject.Find("Dado").GetComponent<Image>();
+       tituloDado = GameObject.Find("TituloDado").transform.GetComponent<TextMeshProUGUI>();
     }
 
-    
+
     public void Pulsar(){
         if(!rueda){
             StartCoroutine(Dado());
@@ -33,11 +46,13 @@ public class TirarDado : MonoBehaviour
         for(int i = 0; i < iteraciones ; i++){
             int randomIndice = Random.Range(0, dados.Length);
             imagenDado.sprite = dados[randomIndice];
+            tituloDado.text = musculos[randomIndice];
             yield return new WaitForSeconds(0.1f);
         }
 
         valorDado = Random.Range(0, dados.Length);
         imagenDado.sprite = dados[valorDado];
+        tituloDado.text = musculos[valorDado];
         rueda = false;
         DadoSeleccionado(valorDado);
         if (!string.Equals(dadoSeleccion, "Movimiento")) {
@@ -59,9 +74,48 @@ public class TirarDado : MonoBehaviour
     public void DadoSeleccionado(int valor){
         dadoSeleccion = musculos[valor];
         PlayerPrefs.SetString("DadoSeleccion", dadoSeleccion);
-        Debug.Log("El musculo seleccionado es: " + dadoSeleccion);
+        
+    }
+
+    private void CargarContadorMedallas(){
+        if (PlayerPrefs.HasKey("ContadorMedallas")){
+            contadorMedallas = PlayerPrefs.GetInt("ContadorMedallas");
+            
+        }
+
+        if(panelFinal != null){
+            if(contadorMedallas >= 3){
+                panelFinal.SetActive(true);
+                PlayerPrefs.SetInt("ContadorMedallas", 0);
+
+                for(int i = 0; i < contadorMedallas; i++){
+                    medalla = medallas[i].GetComponent<Image>();
+                    Color nuevaOpacidad = medalla.color;
+                    nuevaOpacidad.a = 0.5f;
+                    medalla.color = nuevaOpacidad;
+                }
+            }
+        }
+    } 
+
+    private void SubirIntensidad(){
+        if(contadorMedallas != 0){
+            for(int i = 0; i < contadorMedallas; i++){
+                medalla = medallas[i].GetComponent<Image>();
+                Color nuevaOpacidad = medalla.color;
+                nuevaOpacidad.a = 1f;
+                medalla.color = nuevaOpacidad;
+                
+            }
+        }
+    }
+
+    private void GuardarContadorMedallas(){
+        if(contadorMedallas == 0){
+            Utilidades.InicializarContadorMedallas();
+        }
     }
     
-
+   
     
 }

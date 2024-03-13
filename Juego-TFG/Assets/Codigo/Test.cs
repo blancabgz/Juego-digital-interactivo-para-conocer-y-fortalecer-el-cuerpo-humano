@@ -16,9 +16,12 @@ public class Test : MonoBehaviour
     public GameObject panelFinal;
 
     private string dadoSeleccion = "null";
+
+    private int contadorMedallas = 0;
     
     private void Awake(){
         CargarSeleccionDado();
+        CargarContadorMedallas();
     }
 
     void Start()
@@ -52,6 +55,13 @@ public class Test : MonoBehaviour
             Debug.Log("Parte del cuerpo seleccionada es " + dadoSeleccion);
         }
     }
+
+    private void CargarContadorMedallas(){
+        if (PlayerPrefs.HasKey("ContadorMedallas")){
+            contadorMedallas = PlayerPrefs.GetInt("ContadorMedallas");
+            Debug.Log("Contador de medallas en la pregunta =  " + contadorMedallas);
+        }
+    }
     public void MostrarPreguntaRespuestas(){
         textPregunta = GameObject.Find("Pregunta").transform.GetComponent<TextMeshProUGUI>();
         if(textPregunta != null && preguntasSeleccionadas != null && preguntasSeleccionadas.Length > 0){
@@ -83,6 +93,10 @@ public class Test : MonoBehaviour
             panelFinal.SetActive(true);
             if(preguntasSeleccionadas[indicePreguntaAleatoria].respuestaCorrecta == preguntasSeleccionadas[indicePreguntaAleatoria].respuestas[indice]){
                 visible = panelFinal.transform.Find("Acierto")?.gameObject;
+                contadorMedallas++;
+                Debug.Log("Contador de medallas despues de acertar =" + contadorMedallas);
+                PlayerPrefs.SetInt("ContadorMedallas", contadorMedallas);
+
             }else{
                 visible = panelFinal.transform.Find("Fallo")?.gameObject;
             }
@@ -98,6 +112,8 @@ public class Test : MonoBehaviour
         }
         
     }
+
+
 
     private void IrAlDado() {
         Utilidades.EscenaJuego("Ruleta");

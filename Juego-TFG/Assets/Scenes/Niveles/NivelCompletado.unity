@@ -1018,6 +1018,9 @@ MonoBehaviour:
   - nivel: 11
     nombre: Pelota
     sprite: {fileID: 21300000, guid: 4c76cf4136a988640a9e4d4bc1b2efa0, type: 3}
+  - nivel: 12
+    nombre: Medalla3
+    sprite: {fileID: 21300000, guid: 2c62139fdeddf7940bdd51e44bbee483, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

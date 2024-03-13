@@ -23,5 +23,9 @@ public class Utilidades
         SceneManager.LoadScene(opcion);
     }
 
+    public static void InicializarContadorMedallas(){
+        PlayerPrefs.SetInt("ContadorMedallas", 0);
+    }
+
     
 }
