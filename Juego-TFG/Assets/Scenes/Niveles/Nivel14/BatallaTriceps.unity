@@ -660,7 +660,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45c7c633201ef0a4a80b1a2a5eaa0b3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  preguntas: []
+  preguntas:
+  - pregunta: "El b\xEDceps tiene dos cabezas"
+    verdadera: 1
+  - pregunta: El triceps tiene tres cabezas
+    verdadera: 1
+  - pregunta: "El b\xEDceps es responsable principalmente de la flexi\xF3n del codo"
+    verdadera: 1
+  - pregunta: El triceps tiene dos cabezas
+    verdadera: 0
+  - pregunta: "El deltoides es un m\xFAsculo situado en la parte posterior del brazo"
+    verdadera: 0
+  - pregunta: "El b\xEDceps se encuentra en la parte posterior del brazo"
+    verdadera: 0
+  - pregunta: "El b\xEDceps se encuentra en la parte frontal del brazo"
+    verdadera: 1
+  - pregunta: "El deltoides es un m\xFAsculo triangular situado en el hombro"
+    verdadera: 1
+  - pregunta: "El deltoides es el m\xFAsculo principal que se encarga de la flexi\xF3n
+      del codo"
+    verdadera: 0
+  - pregunta: El deltoides se encuentra en la espalda
+    verdadera: 0
+  - pregunta: "Podemos fortalecer nuestros b\xEDceps haciendo flexiones"
+    verdadera: 0
+  - pregunta: El deltoides se encuentra en la espalda
+    verdadera: 0
+  - pregunta: "Cuando levantamos una bolsa de compras, estamos usando nuestros b\xEDceps"
+    verdadera: 1
+  - pregunta: "El tr\xEDceps es el m\xFAsculo que nos ayuda a empujar cosas"
+    verdadera: 1
+  - pregunta: "El tr\xEDceps es un m\xFAsculo que se encuentra en el abdomen"
+    verdadera: 0
+  - pregunta: Podemos fortalecer nuestros triceps levantando un objeto
+    verdadera: 0
   pagina: Nivel14.1
   barraVida: {fileID: 2087164769}
 --- !u!1 &420161739

@@ -164,4 +164,55 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CinematicasNiveles/Nivel12.1.unity
     guid: 60b887e09d588f047b8f8e91a16ef89f
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel13/SalaDeCurasN13.unity
+    guid: 05db47350aa5c664a9de2c0ad8cde4cc
+  - enabled: 1
+    path: Assets/Scenes/CinematicasNiveles/Nivel13.1.unity
+    guid: ece40f5884cd19e44987265c6f2073a6
+  - enabled: 1
+    path: Assets/Scenes/CinematicasNiveles/Nivel14.unity
+    guid: 43157e664a86cb54dbf9bf17e26f8fa2
+  - enabled: 1
+    path: Assets/Scenes/CinematicasNiveles/Nivel14.1.unity
+    guid: f2cf4dc3be5202546bf08e985d4af246
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel14/BatallaTriceps.unity
+    guid: bdef9cea766453b449713aa870a262b6
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel15/SombrasEspalda.unity
+    guid: d6e4d9cc98c92a945bc481b0ff713e8c
+  - enabled: 1
+    path: Assets/Scenes/CinematicasNiveles/Nivel15.1.unity
+    guid: 7d3d11f2bcedee241be4112ec59abf15
+  - enabled: 1
+    path: Assets/Scenes/CinematicasNiveles/Nivel16.unity
+    guid: e7b12c1160d6c4d4780f7b52bf892221
+  - enabled: 1
+    path: Assets/Scenes/CinematicasNiveles/Nivel16.1.unity
+    guid: 2e03df3e957140d4ba6e078f1d52d1c2
+  - enabled: 1
+    path: Assets/Scenes/CinematicasNiveles/Nivel17.unity
+    guid: d12e916d74d93864480c3eb13289a000
+  - enabled: 1
+    path: Assets/Scenes/CinematicasNiveles/Nivel17.1.unity
+    guid: a9b245db684c77d498afb6d379f4c906
+  - enabled: 1
+    path: Assets/Scenes/CinematicasNiveles/Nivel18.unity
+    guid: 25bbeaaad9afab84d99977d75d6d305b
+  - enabled: 1
+    path: Assets/Scenes/CinematicasNiveles/Nivel18.1.unity
+    guid: 9be6fac830db699479da72d568141ca1
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel17/PreguntaOblicuo.unity
+    guid: bf6eb89093ced12448eb0504927daeef
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel17/Oblicuo.unity
+    guid: c7fdeb43458c0494dad14dddd4643a79
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel17/Abdomen.unity
+    guid: 49131ca257634ac4998b3797b43329f6
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel17/PreguntaAbdomen.unity
+    guid: eeef3996cedad3b47b0ffb05e19053ac
   m_configObjects: {}
