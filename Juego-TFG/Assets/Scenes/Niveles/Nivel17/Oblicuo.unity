@@ -370,7 +370,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 92d0fec22fa74dd4480b1ceb93830717, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2b067fb8b4efa58488ae0e326329ca57, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -836,7 +836,7 @@ MonoBehaviour:
     imagen: {fileID: 21300000, guid: edc1755a858e8a64999c125604daef85, type: 3}
   - id: 2
     musculo: Oblicuo
-    imagen: {fileID: 21300000, guid: 92d0fec22fa74dd4480b1ceb93830717, type: 3}
+    imagen: {fileID: 21300000, guid: 2b067fb8b4efa58488ae0e326329ca57, type: 3}
   imagenes:
   - id: 0
     sprite: {fileID: 21300000, guid: 0a47ad41f1377be4ca0ae78652c529e9, type: 3}

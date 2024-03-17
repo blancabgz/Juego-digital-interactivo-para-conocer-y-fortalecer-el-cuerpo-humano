@@ -290,40 +290,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mensajes:
-  - actorId: 11
-    id_superheroe: 3
+  - actorId: 14
+    id_superheroe: 6
     id_imagen: 0
-    text: "\xA1Lo has hecho genial! Has aprovechado muy bien la pista"
+    text: "\xA1Lo has hecho genial! Espero verte pronto en misiones conmigo. "
   - actorId: 4
-    id_superheroe: 3
+    id_superheroe: 6
     id_imagen: 0
-    text: "\xA1Muchas gracias por la pista! Ha sido muy divertido."
-  - actorId: 11
-    id_superheroe: 3
+    text: "\xA1Ojal\xE1!"
+  - actorId: 14
+    id_superheroe: 6
     id_imagen: 0
-    text: "\xA1Me alegro de que te hayas divertido! Es muy importante identificar
-      los m\xFAsculos del cuerpo."
+    text: "Ya ver\xE1s como s\xED. Como recompensa tienes el siguiente regalito."
   - actorId: 4
-    id_superheroe: 3
+    id_superheroe: 6
     id_imagen: 0
-    text: "\xA1Si!"
-  - actorId: 11
-    id_superheroe: 3
-    id_imagen: 0
-    text: Bueno como lo has hecho muy bien, tengo algo para ti.
-  - actorId: 4
-    id_superheroe: 3
-    id_imagen: 0
-    text: "\xBFEl qu\xE9?"
-  - actorId: 11
-    id_superheroe: 3
-    id_imagen: 0
-    text: "Un elixir de curaci\xF3n para t\xED o para un compa\xF1ero que necesite
-      curaci\xF3n r\xE1pida."
-  - actorId: 4
-    id_superheroe: 3
-    id_imagen: 0
-    text: "\xA1Estoy es muy \xFAtil! Muchas gracias"
+    text: "\xA1Muchas gracias Delto Tit\xE1n!"
   actores:
   - id: 0
     name: "ni\xF1a_asustad"
@@ -345,7 +327,7 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: fadf0d94f0aca1b4789279d28ac65bca, type: 3}
   - id: 6
     name: "ni\xF1a_insegur"
-    sprite: {fileID: 21300000, guid: 4a3393da1a6da4940a77741abe4a81a2, type: 3}
+    sprite: {fileID: 21300000, guid: 6b935d9304b1a1944bdc2d84c7260d33, type: 3}
   - id: 7
     name: "ni\xF1o_insegur"
     sprite: {fileID: 21300000, guid: 622a13cba4471b245819d5a706f59cb6, type: 3}
@@ -367,6 +349,9 @@ MonoBehaviour:
   - id: 13
     name: eclipse
     sprite: {fileID: 21300000, guid: 742117cbbf43fbd44b96d6e880a73456, type: 3}
+  - id: 14
+    name: deltotitan
+    sprite: {fileID: 21300000, guid: 6b935d9304b1a1944bdc2d84c7260d33, type: 3}
   actorPanel:
   - id: 0
     name: "Ni\xF1a"
@@ -393,6 +378,9 @@ MonoBehaviour:
   - id: 5
     name: eclipse
     sprite: {fileID: 21300000, guid: 6ce669e2c67ada141bee66edf3501b19, type: 3}
+  - id: 6
+    name: deltotitan
+    sprite: {fileID: 21300000, guid: 8042528e5fb92d8459f79d7e130561ec, type: 3}
   imagenes:
   - id: 0
     name: presentacion
@@ -420,7 +408,7 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: 711758ead6c6a38439511006adc808a3, type: 3}
   historiaVisionada: null
   escena: NivelCompletado
-  nivel: 15
+  nivel: 18
   avatar: {fileID: 1397982207}
   avatarInicio: {fileID: 338479597}
   avatarSuperheroe: {fileID: 1870251295}
