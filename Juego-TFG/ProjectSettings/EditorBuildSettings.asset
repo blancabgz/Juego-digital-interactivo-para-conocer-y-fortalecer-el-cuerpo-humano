@@ -218,4 +218,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Niveles/Nivel18/SombrasBrazo.unity
     guid: 0cff8d1b44b2e3449abf2bf1864f6e8b
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel19/PreguntaGluteo.unity
+    guid: 0f827387ebc9ff444bbbd178b6fc0a69
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel19/Gluteo.unity
+    guid: 08eb1cb56bc7eab47b954136800c72cc
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel19/PreguntaGemelo.unity
+    guid: 60b0d56a4c04471419879e22fc7e3627
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel19/Gemelo.unity
+    guid: 52530ce8ad6634d4799066e9ce771dca
+  - enabled: 1
+    path: Assets/Scenes/CinematicasNiveles/Nivel19.unity
+    guid: 81654fe8071095c4992d306e66488ff0
+  - enabled: 1
+    path: Assets/Scenes/CinematicasNiveles/Nivel19.1.unity
+    guid: 7fd1eac30d7a87d489c70614010e2e0b
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel21/BatallaEspalda.unity
+    guid: a4c718bb289f32c448e4dbcbfeca87e7
   m_configObjects: {}
