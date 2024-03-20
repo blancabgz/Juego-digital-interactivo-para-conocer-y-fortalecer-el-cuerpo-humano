@@ -291,72 +291,91 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mensajes:
-  - actorId: 11
-    id_superheroe: 4
-    id_imagen: 0
-    text: "\xA1Hola joven! \xBFTe acuerdas de m\xED? \xBFComo van esos gl\xFAteos
-      y esos gemelos?"
+  - actorId: 10
+    id_superheroe: 5
+    id_imagen: 20
+    text: "\xA1Hola de nuevo! Hoy vamos a hablar sobre el \xFAltimo m\xFAsculo de
+      la espalda. \xBFSabes cu\xE1l nos queda?"
   - actorId: 2
-    id_superheroe: 4
-    id_imagen: 0
-    text: "\xA1Hola! Pues\u2026 no he podido entrenarlos mucho porque no se que ejercicios
-      realizar. "
-  - actorId: 11
-    id_superheroe: 4
-    id_imagen: 0
-    text: "Pues te traigo la soluci\xF3n, primero vamos a hablar de estos dos m\xFAsculos
-      extraordinarios y despu\xE9s te voy a ense\xF1ar ejercicios para mejorarlos."
+    id_superheroe: 5
+    id_imagen: 20
+    text: "Mmm hemos visto el trapecio y las dorales\u2026 \xBFLa lumbar?"
+  - actorId: 10
+    id_superheroe: 5
+    id_imagen: 20
+    text: "\xA1Efectivamente! El m\xFAsculo del que vamos a hablar hoy es el lumbar,
+      que se encuentra en la parte baja de la espalda. "
+  - actorId: 2
+    id_superheroe: 5
+    id_imagen: 20
+    text: "\xBFJusto encima del gl\xFAteo?"
+  - actorId: 10
+    id_superheroe: 5
+    id_imagen: 20
+    text: "\xA1Muy bien! Es como un puente que conecta la parte superior e inferior
+      de la espalda."
   - actorId: 4
-    id_superheroe: 4
-    id_imagen: 0
-    text: "\xA1Me parece genial!"
-  - actorId: 11
-    id_superheroe: 4
-    id_imagen: 8
-    text: "\xBFSab\xEDas que el gl\xFAteo mayor es el m\xFAsculo m\xE1s fuerte del
-      cuerpo?"
+    id_superheroe: 5
+    id_imagen: 20
+    text: "\xA1Entendido! \xBFY qu\xE9 hace este m\xFAsculo?"
+  - actorId: 10
+    id_superheroe: 5
+    id_imagen: 20
+    text: "Ayuda a mantener la postura y nos permite realizar movimientos como inclinarnos
+      hacia adelante, hacia los lados y hacia atr\xE1s."
   - actorId: 4
-    id_superheroe: 4
-    id_imagen: 8
-    text: "\xA1S\xED! Pero\u2026 \xBFPara que sirve tanta fuerza?"
-  - actorId: 11
-    id_superheroe: 4
-    id_imagen: 8
-    text: "\xA1Buena pregunta! No solo nos permite caminar, correr y subir escaleras,
-      sino que tambi\xE9n nos estabiliza y ayuda a mantener una postura correcta."
+    id_superheroe: 5
+    id_imagen: 20
+    text: "\xA1Vaya, es muy importante!"
+  - actorId: 10
+    id_superheroe: 5
+    id_imagen: 20
+    text: "\xA1Exactamente! \xBFSab\xEDas que el m\xFAsculo lumbar es uno de los
+      m\xFAsculos m\xE1s fuertes del cuerpo humano?"
+  - actorId: 2
+    id_superheroe: 5
+    id_imagen: 20
+    text: "\xBFJunto al gl\xFAteo mayor?"
+  - actorId: 10
+    id_superheroe: 5
+    id_imagen: 21
+    text: "\xA1S\xED! El musculo lumbar, en este caso, soporta una gran cantidad
+      de peso y tensi\xF3n todos los d\xEDas. Imagina cu\xE1ntas veces te inclinas,
+      levantas cosas o simplemente te sientas."
+  - actorId: 10
+    id_superheroe: 5
+    id_imagen: 21
+    text: "\xA1Este m\xFAsculo trabaja constantemente!"
   - actorId: 4
-    id_superheroe: 4
-    id_imagen: 8
-    text: " \xA1Wow, no sab\xEDa que hac\xEDa tantas cosas!"
-  - actorId: 11
-    id_superheroe: 4
-    id_imagen: 10
-    text: "Ahora, hablemos de los gemelos. \xBFSab\xEDas que los gemelos son responsables
-      de la flexi\xF3n plantar, es decir, levantar los talones del suelo al caminar,
-      correr o saltar?"
-  - actorId: 4
-    id_superheroe: 4
-    id_imagen: 10
-    text: "\xA1S\xED! Pero pensaba que no lo hac\xEDan solos."
-  - actorId: 11
-    id_superheroe: 4
-    id_imagen: 10
-    text: "Pues como puedes ver, es incre\xEDble c\xF3mo estos m\xFAsculos que son
-      peque\xF1itos desempe\xF1an un papel crucial en nuestra movilidad y estabilidad."
-  - actorId: 11
-    id_superheroe: 4
-    id_imagen: 10
-    text: "Mantener los gemelos fuertes es esencial para prevenir lesiones en los
-      tobillos y mejorar el rendimiento en actividades f\xEDsicas."
-  - actorId: 4
-    id_superheroe: 4
-    id_imagen: 10
-    text: "\xA1Entendido!"
-  - actorId: 11
-    id_superheroe: 4
-    id_imagen: 10
-    text: "Ahora, veamos algunos ejercicios que te ayudar\xE1n a fortalecer estos
-      m\xFAsculos y mejorar tu rendimiento en tus aventuras diarias."
+    id_superheroe: 5
+    id_imagen: 21
+    text: "\xA1Es asombroso todo lo que hace!"
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 7
+    text: "Un nuevo villano est\xE1 atacando la ciudad y necesito tu ayuda para vencerlo."
+  - actorId: 0
+    id_superheroe: 0
+    id_imagen: 7
+    text: "\xBFY como lo har\xE9?"
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 7
+    text: "Para derrotarlo necesito que respondas correctamente a una serie de preguntas
+      sobre la espalda. Si aciertas, ver\xE1s como el villano recibe un golpe y su
+      vida disminuir\xE1."
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 7
+    text: "\xBFPodr\xE1s hacerlo?"
+  - actorId: 10
+    id_superheroe: 5
+    id_imagen: 7
+    text: " \xA1Claro que podr\xE1 hacerlo! Tiene todos los conocimientos."
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 7
+    text: "\xA1Pues vamos all\xE1!"
   actores:
   - id: 0
     name: "ni\xF1a_asustad"
@@ -500,8 +519,8 @@ MonoBehaviour:
     name: "ni\xF1o_agachado"
     sprite: {fileID: 21300000, guid: 9512727cfe4e8514b8cafbbbba4ab486, type: 3}
   historiaVisionada: null
-  escena: PreguntaGemelo
-  nivel: 19
+  escena: BatallaEspalda
+  nivel: 21
   avatar: {fileID: 1397982207}
   avatarInicio: {fileID: 338479597}
   avatarSuperheroe: {fileID: 1870251295}

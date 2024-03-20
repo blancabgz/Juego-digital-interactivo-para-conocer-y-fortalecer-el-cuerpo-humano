@@ -210,7 +210,6 @@ GameObject:
   - component: {fileID: 483878288}
   - component: {fileID: 483878287}
   - component: {fileID: 483878289}
-  - component: {fileID: 483878290}
   m_Layer: 5
   m_Name: Dialogo
   m_TagString: Untagged
@@ -292,71 +291,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mensajes:
   - actorId: 11
-    id_superheroe: 4
+    id_superheroe: 5
     id_imagen: 0
-    text: "\xA1Hola joven! \xBFTe acuerdas de m\xED? \xBFComo van esos gl\xFAteos
-      y esos gemelos?"
-  - actorId: 2
-    id_superheroe: 4
+    text: "\xA1Estoy muy orgulloso de t\xED! !Has vencido al villano! "
+  - actorId: 4
+    id_superheroe: 3
     id_imagen: 0
-    text: "\xA1Hola! Pues\u2026 no he podido entrenarlos mucho porque no se que ejercicios
-      realizar. "
+    text: "\xA1S\xED! Y todo gracias a t\xED"
   - actorId: 11
-    id_superheroe: 4
+    id_superheroe: 3
     id_imagen: 0
-    text: "Pues te traigo la soluci\xF3n, primero vamos a hablar de estos dos m\xFAsculos
-      extraordinarios y despu\xE9s te voy a ense\xF1ar ejercicios para mejorarlos."
-  - actorId: 4
-    id_superheroe: 4
+    text: Me alegro que hayas aprendido tanto. Bueno, mi labor ha terminado por ahora,
+      nos vemos en la prueba final.
+  - actorId: 0
+    id_superheroe: 3
     id_imagen: 0
-    text: "\xA1Me parece genial!"
+    text: "\xBFC\xF3mo?"
   - actorId: 11
-    id_superheroe: 4
-    id_imagen: 8
-    text: "\xBFSab\xEDas que el gl\xFAteo mayor es el m\xFAsculo m\xE1s fuerte del
-      cuerpo?"
-  - actorId: 4
-    id_superheroe: 4
-    id_imagen: 8
-    text: "\xA1S\xED! Pero\u2026 \xBFPara que sirve tanta fuerza?"
-  - actorId: 11
-    id_superheroe: 4
-    id_imagen: 8
-    text: "\xA1Buena pregunta! No solo nos permite caminar, correr y subir escaleras,
-      sino que tambi\xE9n nos estabiliza y ayuda a mantener una postura correcta."
-  - actorId: 4
-    id_superheroe: 4
-    id_imagen: 8
-    text: " \xA1Wow, no sab\xEDa que hac\xEDa tantas cosas!"
-  - actorId: 11
-    id_superheroe: 4
-    id_imagen: 10
-    text: "Ahora, hablemos de los gemelos. \xBFSab\xEDas que los gemelos son responsables
-      de la flexi\xF3n plantar, es decir, levantar los talones del suelo al caminar,
-      correr o saltar?"
-  - actorId: 4
-    id_superheroe: 4
-    id_imagen: 10
-    text: "\xA1S\xED! Pero pensaba que no lo hac\xEDan solos."
-  - actorId: 11
-    id_superheroe: 4
-    id_imagen: 10
-    text: "Pues como puedes ver, es incre\xEDble c\xF3mo estos m\xFAsculos que son
-      peque\xF1itos desempe\xF1an un papel crucial en nuestra movilidad y estabilidad."
-  - actorId: 11
-    id_superheroe: 4
-    id_imagen: 10
-    text: "Mantener los gemelos fuertes es esencial para prevenir lesiones en los
-      tobillos y mejorar el rendimiento en actividades f\xEDsicas."
-  - actorId: 4
-    id_superheroe: 4
-    id_imagen: 10
-    text: "\xA1Entendido!"
-  - actorId: 11
-    id_superheroe: 4
-    id_imagen: 10
-    text: "Ahora, veamos algunos ejercicios que te ayudar\xE1n a fortalecer estos
-      m\xFAsculos y mejorar tu rendimiento en tus aventuras diarias."
+    id_superheroe: 3
+    id_imagen: 0
+    text: "\xA1Ya lo ver\xE1s! Toma un regalo. \xA1Adios!"
+  - actorId: 0
+    id_superheroe: 3
+    id_imagen: 0
+    text: "Ehhh gracias. \xA1Adi\xF3s!"
   actores:
   - id: 0
     name: "ni\xF1a_asustad"
@@ -378,7 +336,7 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: fadf0d94f0aca1b4789279d28ac65bca, type: 3}
   - id: 6
     name: "ni\xF1a_insegur"
-    sprite: {fileID: 21300000, guid: 4a3393da1a6da4940a77741abe4a81a2, type: 3}
+    sprite: {fileID: 21300000, guid: 6b935d9304b1a1944bdc2d84c7260d33, type: 3}
   - id: 7
     name: "ni\xF1o_insegur"
     sprite: {fileID: 21300000, guid: 622a13cba4471b245819d5a706f59cb6, type: 3}
@@ -389,17 +347,17 @@ MonoBehaviour:
     name: mr_biceps
     sprite: {fileID: 21300000, guid: fe6fffcba6adffc41b51775c1a47b9b5, type: 3}
   - id: 10
+    name: tempestad
+    sprite: {fileID: 21300000, guid: e7964e6e4630f3a41a10570376383c81, type: 3}
+  - id: 11
     name: espaldin_supremo
     sprite: {fileID: 21300000, guid: 8889b26b6770874468f7b73cdfd47451, type: 3}
-  - id: 11
-    name: eclipse
-    sprite: {fileID: 21300000, guid: 742117cbbf43fbd44b96d6e880a73456, type: 3}
   - id: 12
     name: capitan_core
     sprite: {fileID: 21300000, guid: 76e2959fdc69d844bbb4fff18dd29ef2, type: 3}
   - id: 13
-    name: tempestad
-    sprite: {fileID: 21300000, guid: e7964e6e4630f3a41a10570376383c81, type: 3}
+    name: eclipse
+    sprite: {fileID: 21300000, guid: 742117cbbf43fbd44b96d6e880a73456, type: 3}
   - id: 14
     name: deltotitan
     sprite: {fileID: 21300000, guid: 6b935d9304b1a1944bdc2d84c7260d33, type: 3}
@@ -421,14 +379,14 @@ MonoBehaviour:
     name: tempestad
     sprite: {fileID: 21300000, guid: c8e36b65383819b4c810276893d0aa1c, type: 3}
   - id: 3
-    name: core
-    sprite: {fileID: 21300000, guid: 9f88dba6a72eb2046b6edc8d66c7cc78, type: 3}
+    name: espaldin_supremo
+    sprite: {fileID: 21300000, guid: 33b36bf16c15ef646a01c0722561e919, type: 3}
   - id: 4
+    name: capitan_core
+    sprite: {fileID: 21300000, guid: 9f88dba6a72eb2046b6edc8d66c7cc78, type: 3}
+  - id: 5
     name: eclipse
     sprite: {fileID: 21300000, guid: 6ce669e2c67ada141bee66edf3501b19, type: 3}
-  - id: 5
-    name: espaldin
-    sprite: {fileID: 21300000, guid: 33b36bf16c15ef646a01c0722561e919, type: 3}
   - id: 6
     name: deltotitan
     sprite: {fileID: 21300000, guid: 8042528e5fb92d8459f79d7e130561ec, type: 3}
@@ -446,79 +404,25 @@ MonoBehaviour:
     name: triceps
     sprite: {fileID: 21300000, guid: d6e87c8e2ff6686438c3592aacc6a9ee, type: 3}
   - id: 4
-    name: recto_abdominal
-    sprite: {fileID: 21300000, guid: 3d5b8bbd49fe52044b9c6ec823b841b3, type: 3}
-  - id: 5
-    name: oblicuos
-    sprite: {fileID: 21300000, guid: 9ac805b8bc4c8e44ca02d24d354536a7, type: 3}
-  - id: 6
-    name: pectoral
-    sprite: {fileID: 21300000, guid: b4a3d5e890f56d747bdc55b326a3e36d, type: 3}
-  - id: 7
-    name: news
-    sprite: {fileID: 21300000, guid: 6291f7e62afc797478c6bca66c014676, type: 3}
-  - id: 8
-    name: gluteo
-    sprite: {fileID: 21300000, guid: fbe05f45a51c8774eaabb8fd853e968d, type: 3}
-  - id: 9
-    name: cuadriceps
-    sprite: {fileID: 21300000, guid: 30c1ec046e66cbb4dae3b34380331597, type: 3}
-  - id: 10
-    name: gemelo
-    sprite: {fileID: 21300000, guid: 144f160416ffd444a878ad8418185060, type: 3}
-  - id: 11
-    name: levantar
-    sprite: {fileID: 21300000, guid: 2b1ead98a3c8e4749a52dcd343df538d, type: 3}
-  - id: 12
-    name: sevillanas
-    sprite: {fileID: 21300000, guid: d3dc95e13fbf9d14994c1dc1928d8556, type: 3}
-  - id: 13
-    name: parejas
-    sprite: {fileID: 21300000, guid: 4c1b88cbc0ded324eaccfae884bb7c65, type: 3}
-  - id: 14
-    name: alas
-    sprite: {fileID: 21300000, guid: 936d47572828e664797fa48fb528d1dc, type: 3}
-  - id: 15
-    name: isquios
-    sprite: {fileID: 21300000, guid: e8dcec5c4feb13842bf8d6360f0158f6, type: 3}
-  - id: 16
-    name: salto
-    sprite: {fileID: 21300000, guid: 0c9b173dd6017184ca37f7562944f8dc, type: 3}
-  - id: 17
-    name: cuadrisquios
-    sprite: {fileID: 21300000, guid: 4da4004707fb74041be1bf38e994f33d, type: 3}
-  - id: 18
-    name: cometa
-    sprite: {fileID: 21300000, guid: de4a4e87f7cb28c47aefe0ec8f7a3554, type: 3}
-  - id: 19
-    name: chocar
-    sprite: {fileID: 21300000, guid: f156443cca9eb264e945583608429df8, type: 3}
-  - id: 20
     name: espalda
-    sprite: {fileID: 21300000, guid: 39ee2f80022671b4692be0515f6c9ac6, type: 3}
-  - id: 21
-    name: "ni\xF1o_agachado"
-    sprite: {fileID: 21300000, guid: 9512727cfe4e8514b8cafbbbba4ab486, type: 3}
+    sprite: {fileID: 21300000, guid: ca96f74bf7aab3e4387145d63f29190d, type: 3}
+  - id: 5
+    name: trapecio
+    sprite: {fileID: 21300000, guid: 2bcbfecbc6b7b584cafe1cb1f8aef13f, type: 3}
+  - id: 6
+    name: dorsal
+    sprite: {fileID: 21300000, guid: 1c32c04b9bac1dc4999e823c5178bc6a, type: 3}
+  - id: 7
+    name: lumbar
+    sprite: {fileID: 21300000, guid: 711758ead6c6a38439511006adc808a3, type: 3}
   historiaVisionada: null
-  escena: PreguntaGemelo
-  nivel: 19
+  escena: NivelCompletado
+  nivel: 21
   avatar: {fileID: 1397982207}
   avatarInicio: {fileID: 338479597}
   avatarSuperheroe: {fileID: 1870251295}
   diapositiva: {fileID: 948334242}
   conversacion: {fileID: 1205313336}
---- !u!114 &483878290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 483878285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f43d2f6a9023d346a1a09e318b0320c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &502348837
 GameObject:
   m_ObjectHideFlags: 0
@@ -842,6 +746,52 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &918565047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 918565049}
+  - component: {fileID: 918565048}
+  m_Layer: 0
+  m_Name: ControladorNiveles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &918565048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918565047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de9a11e3ac1c4f44fa28bce6e010dc7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelBottons: []
+  unlock: 22
+--- !u!4 &918565049
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918565047}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 683.41547, y: 659.5067, z: 2.7174108}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1287,8 +1237,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 721.0442, y: -60.67208}
-  m_SizeDelta: {x: 390.4944, y: 499.4962}
+  m_AnchoredPosition: {x: 738, y: -56.697}
+  m_SizeDelta: {x: 289.4193, y: 507.4456}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1870251295
 MonoBehaviour:
@@ -1411,3 +1361,4 @@ SceneRoots:
   - {fileID: 502348841}
   - {fileID: 923447982}
   - {fileID: 1473372856}
+  - {fileID: 918565049}

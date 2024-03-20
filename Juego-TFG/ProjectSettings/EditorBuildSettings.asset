@@ -239,4 +239,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Niveles/Nivel21/BatallaEspalda.unity
     guid: a4c718bb289f32c448e4dbcbfeca87e7
+  - enabled: 1
+    path: Assets/Scenes/CinematicasNiveles/Nivel21.unity
+    guid: 4015a36ce0876544cae98713a9ba8f50
+  - enabled: 1
+    path: Assets/Scenes/CinematicasNiveles/Nivel21.1.unity
+    guid: 34ccdd1e4bcec374d87100ed4cc167f0
   m_configObjects: {}
