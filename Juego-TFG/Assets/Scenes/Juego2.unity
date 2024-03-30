@@ -745,7 +745,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1064907925}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1573162117}
+        m_TargetAssemblyTypeName: MainJuego, Assembly-CSharp
+        m_MethodName: EscenaJuego
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Nivel21
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1064907925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1048,7 +1060,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de9a11e3ac1c4f44fa28bce6e010dc7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelBottons: []
+  levelBottons:
+  - nivel: 20
+    btnNivel: {fileID: 1064907924}
+  - nivel: 21
+    btnNivel: {fileID: 815864705}
   unlock: 0
 --- !u!4 &1321944100
 Transform:

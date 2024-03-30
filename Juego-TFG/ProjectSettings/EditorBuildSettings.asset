@@ -245,4 +245,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CinematicasNiveles/Nivel21.1.unity
     guid: 34ccdd1e4bcec374d87100ed4cc167f0
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel16/Ahorcado.unity
+    guid: 1572bfe323387a2458aefdd182f42af0
   m_configObjects: {}

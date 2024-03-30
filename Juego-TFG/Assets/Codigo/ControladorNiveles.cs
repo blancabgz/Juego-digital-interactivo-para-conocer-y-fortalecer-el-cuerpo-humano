@@ -6,7 +6,7 @@ using UnityEngine.UI; // reference to buttons
 public class ControladorNiveles : MonoBehaviour
 {
     public static ControladorNiveles instancia; 
-    public Button[] levelBottons; // array containing level buttons
+    public Niveles[] levelBottons; // array containing level buttons
     public int unlock; // unlock level
 
     private void Awake() { // only one scene
@@ -19,18 +19,20 @@ public class ControladorNiveles : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         if(levelBottons.Length > 0){
 
             // disable interaction on all buttons
             for (int i = 0; i < levelBottons.Length; i++)
             {
-                levelBottons[i].interactable = false;
+                levelBottons[i].btnNivel.interactable = false;
             }
-            
+
             // Unlock levels up to the last level unlocked by the player
-            for (int i = 0; i < PlayerPrefs.GetInt("unlockedLevels",1); i++)
-            {
-                levelBottons[i].interactable = true;   
+            for(int i = 0; i < levelBottons.Length; i++){
+                if(levelBottons[i].nivel < PlayerPrefs.GetInt("unlockedLevels",1)){
+                    levelBottons[i].btnNivel.interactable = true;
+                }
             }
         }
     }
@@ -45,5 +47,12 @@ public class ControladorNiveles : MonoBehaviour
 
     public int ActualLevel(){
         return PlayerPrefs.GetInt("unlockedLevels",1);
-    }   
+    }
+
+    [System.Serializable] 
+    public class Niveles {
+        public int nivel;
+        public Button btnNivel;
+        
+    }
 }

@@ -15,9 +15,6 @@ public class AsignarPremio : MonoBehaviour
         nivelActual = PlayerPrefs.GetInt("Nivel", 1);
         Debug.Log(nivelActual);
         Debug.Log(ControladorNiveles.instancia.ActualLevel());
-        // if(nivelActual != ControladorNiveles.instancia.ActualLevel()){
-        //     SceneManager.LoadScene("Juego");
-        // }
     }
     void Start()
     {   
@@ -26,6 +23,14 @@ public class AsignarPremio : MonoBehaviour
         imagen.sprite = premios[nivelActual - 1].sprite;
         if(ControladorNiveles.instancia != null){
             ControladorNiveles.instancia.IncreaseLevel();
+        }
+    }
+
+    public void MenuJuego(){
+        if(PlayerPrefs.GetInt("unlockedLevels",1) >= 20){
+            SceneManager.LoadScene("Juego2");
+        }else{
+            SceneManager.LoadScene("Juego");
         }
     }
     

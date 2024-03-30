@@ -451,27 +451,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelBottons:
-  - {fileID: 884363597}
-  - {fileID: 1605684791}
-  - {fileID: 1929114510}
-  - {fileID: 1488855722}
-  - {fileID: 1506166247}
-  - {fileID: 1990945081}
-  - {fileID: 373789976}
-  - {fileID: 357729650}
-  - {fileID: 553764985}
-  - {fileID: 559430285}
-  - {fileID: 95474906}
-  - {fileID: 735307403}
-  - {fileID: 858161130}
-  - {fileID: 1889176281}
-  - {fileID: 1968927443}
-  - {fileID: 1320868585}
-  - {fileID: 895407162}
-  - {fileID: 655641121}
-  - {fileID: 243706780}
-  - {fileID: 1608818549}
-  - {fileID: 953304371}
+  - nivel: 0
+    btnNivel: {fileID: 884363597}
+  - nivel: 1
+    btnNivel: {fileID: 1605684791}
+  - nivel: 2
+    btnNivel: {fileID: 1929114510}
+  - nivel: 3
+    btnNivel: {fileID: 1488855722}
+  - nivel: 4
+    btnNivel: {fileID: 1506166247}
+  - nivel: 5
+    btnNivel: {fileID: 1990945081}
+  - nivel: 6
+    btnNivel: {fileID: 373789976}
+  - nivel: 7
+    btnNivel: {fileID: 357729650}
+  - nivel: 8
+    btnNivel: {fileID: 553764985}
+  - nivel: 9
+    btnNivel: {fileID: 559430285}
+  - nivel: 10
+    btnNivel: {fileID: 95474906}
+  - nivel: 11
+    btnNivel: {fileID: 735307403}
+  - nivel: 12
+    btnNivel: {fileID: 858161130}
+  - nivel: 13
+    btnNivel: {fileID: 1889176281}
+  - nivel: 14
+    btnNivel: {fileID: 1968927443}
+  - nivel: 15
+    btnNivel: {fileID: 1320868585}
+  - nivel: 16
+    btnNivel: {fileID: 895407162}
+  - nivel: 17
+    btnNivel: {fileID: 655641121}
+  - nivel: 18
+    btnNivel: {fileID: 243706780}
+  - nivel: 19
+    btnNivel: {fileID: 1608818549}
+  - nivel: 20
+    btnNivel: {fileID: 953304371}
   unlock: 0
 --- !u!1 &235399265
 GameObject:
