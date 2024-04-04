@@ -248,4 +248,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Niveles/Nivel16/Ahorcado.unity
     guid: 1572bfe323387a2458aefdd182f42af0
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel20/AdivinanzaSeleccion.unity
+    guid: 65213d58252f6cc45a41bfa8a8ff26e6
   m_configObjects: {}

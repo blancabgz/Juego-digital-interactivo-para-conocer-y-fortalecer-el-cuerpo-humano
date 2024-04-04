@@ -26,16 +26,17 @@ public class Ahorcado : MonoBehaviour
     public TextMeshProUGUI intentos;
     void Start()
     {   
+        // Obtener los componentes GameObject
         panelTeclado = GameObject.Find("Teclado");
         panelPalabra = GameObject.Find("Palabra");
         panelImagenes = GameObject.Find("PanelFallos");
+        // Actualizar intentos disponibles en pantalla
         intentos.text = numIntentos.ToString();
-
-    
-
+        // Cargar letras de teclado
         AsignarLetrasDelTeclado();
         // Mezcla los elementos
         Utilidades.MezclarElementos(palabras);
+        // Seleccionar palabra oculta
         SeleccionarPalabra();
     }
 
@@ -92,16 +93,13 @@ public class Ahorcado : MonoBehaviour
 
         // Inicializo los array con la longitud de la palabra seleccionada
         letrasPalabraDividida = palabraElegida.Length;
-        Debug.Log(letrasPalabraDividida);
         palabraDividida = new char[palabraElegida.Length];
         palabraOculta = new char[palabraElegida.Length];
 
         // Divide la palabra en letras y rellena el array 
         for(int i = 0; i < palabraElegida.Length; i++){
             palabraDividida[i] = palabraElegida[i];
-            Debug.Log(palabraDividida[i]);
             palabraOculta[i] = '_';
-            Debug.Log(palabraOculta[i]);
         }
 
         // Verifica que el componente no es nulo y que el indice esté dentro del rango
@@ -113,42 +111,63 @@ public class Ahorcado : MonoBehaviour
     }
 
     public void Comprobar(GameObject boton){
-        // Obtener el texto del botón que ha sido presionado
-        TextMeshProUGUI textoBoton = boton.GetComponentInChildren<TextMeshProUGUI>();
         Color colorImagen;
-        if (textoBoton != null){
-            char letra = textoBoton.text[0];
-            
-            bool letraEncontrada = false;
+        // Comprobar que el boton seleccionado no es nulo
+        if(boton == null){
+            Debug.LogError("El GameObject no ha sido encontrado");
+            return;
+        }
 
+        // Obtener el componente TextMeshProUGUI del botón
+        TextMeshProUGUI textoBoton = boton.GetComponentInChildren<TextMeshProUGUI>();
+        if (textoBoton != null){
+            // Obtener la letra asociada al boton
+            char letra = textoBoton.text[0];
+            // Variable para controlar si se ha encontrado una letra en la palabra oculta
+            bool letraEncontrada = false;
+            // desactivamos el boton para no volver a repetir letra
+            boton.GetComponentInChildren<Button>().interactable = false;
+
+            // Iterar sobre la palabra para comprobar si la letra seleccionada se encuentra 
             for(int i = 0; i < palabraDividida.Length; i++){
+                // Si se encuentra la letra
                 if(palabraDividida[i] == letra){
-                    // FALTA CONTROLAR QUE ESTO SOLO LO HAGA CUANDO NO HAYA REPETIDO YA LA LETRA
+                    // Marcar la letra como encontrada
                     letrasPalabraDividida--;
+                    // Actualizar la palabra oculta con la letra encontrada
                     palabraOculta[i] = letra;
                     letraEncontrada = true;
                 }
             }
 
+            // Si se ha encontrado una letra oculta
             if(letraEncontrada){
+                // Volver a cargar la palabra 
                 textoPalabraOculta.text = new string(palabraOculta);
+                // Comprobar si se han adivinado todas las letras
                 if(letrasPalabraDividida == 0){
                     panelFinal.SetActive(true);
                 }
             }else{
-                if(imagenesFallo != null){
+                if(imagenesFallo != null || imagenesFallo.Length > 0){
+                    // Obtener la imagen segun el error cometido
                     colorImagen = imagenesFallo[numIntentos - 1].color;
                     colorImagen.a = 1f;
                     imagenesFallo[numIntentos - 1].color = colorImagen;
                 }
+                //Actualizar el numero de intentos
                 numIntentos--;
+                // Actualizar los intentos disponibles en pantalla
                 intentos.text = numIntentos.ToString();
+                // Comprobar si se han agotado los intentos
                 if(numIntentos == 0){
                     panelVolverIntentar.SetActive(true);
 
                 }
             }
-            
+        }else{
+            Debug.LogError("El componente Text no ha sido encontrado");
+            return; 
         }
     }
 
