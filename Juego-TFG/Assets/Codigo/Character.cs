@@ -30,7 +30,4 @@ public class Character : MonoBehaviour
             SceneManager.LoadScene("Historia"); // going to menu 
         }
     }
-
-
-
 }

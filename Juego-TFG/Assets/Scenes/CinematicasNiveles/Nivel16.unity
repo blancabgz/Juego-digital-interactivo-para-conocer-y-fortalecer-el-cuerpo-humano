@@ -210,7 +210,6 @@ GameObject:
   - component: {fileID: 483878288}
   - component: {fileID: 483878287}
   - component: {fileID: 483878289}
-  - component: {fileID: 483878290}
   m_Layer: 5
   m_Name: Dialogo
   m_TagString: Untagged
@@ -290,7 +289,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b3352837669b5944bece46e6dc7eae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mensajes: []
+  mensajes:
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 7
+    text: "\xA1Tenemos problemas muy graves!"
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 7
+    text: "Nuestro compa\xF1ero ha sido capturado por una ara\xF1a mientras andaba
+      por el bosque en busca de un villano. \xA1Tenemos que salvarlo!"
+  - actorId: 2
+    id_superheroe: 0
+    id_imagen: 7
+    text: "\xA1Por supuesto! \xBFComo podemos salvarlo?"
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 7
+    text: "Para liberar a nuestro compa\xF1ero, debemos jugar el juego de la ara\xF1a."
+  - actorId: 2
+    id_superheroe: 0
+    id_imagen: 7
+    text: "\xBFC\xF3mo se juega?"
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 7
+    text: "La ara\xF1a ha ideado un desaf\xEDo en el que tendr\xE1s que adivinar
+      una palabra escondida. Pero cuidado, solo tendr\xE1s algunos intentos para
+      lograrlo."
+  - actorId: 0
+    id_superheroe: 0
+    id_imagen: 7
+    text: "\xBFY que pasa si no lo logro?"
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 7
+    text: "Si no lo consigues, nuestro amigo quedar\xE1 totalmente atrapado en la
+      telara\xF1a pero sin presi\xF3n"
+  - actorId: 0
+    id_superheroe: 0
+    id_imagen: 7
+    text: "\xA1Uff vamos a intentarlo!"
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 7
+    text: "\xA1Yo conf\xEDo en ti!"
   actores:
   - id: 0
     name: "ni\xF1a_asustad"
@@ -425,25 +468,13 @@ MonoBehaviour:
     name: chocar
     sprite: {fileID: 21300000, guid: f156443cca9eb264e945583608429df8, type: 3}
   historiaVisionada: null
-  escena: SombrasEspalda
-  nivel: 15
+  escena: Ahorcado
+  nivel: 16
   avatar: {fileID: 1397982207}
   avatarInicio: {fileID: 338479597}
   avatarSuperheroe: {fileID: 1870251295}
   diapositiva: {fileID: 948334242}
   conversacion: {fileID: 1205313336}
---- !u!114 &483878290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 483878285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f43d2f6a9023d346a1a09e318b0320c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &502348837
 GameObject:
   m_ObjectHideFlags: 0

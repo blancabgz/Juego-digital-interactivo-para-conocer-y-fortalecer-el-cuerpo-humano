@@ -528,20 +528,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   adivinanzas:
   - musculo: Trapecio
-    adivinanza: "En lo profundo de tu asiento me hallar\xE1s, sosteniendo tu postura
-      con gran paz. Al andar o al saltar, sin vacilar jam\xE1s, soy el m\xFAsculo
-      que en tus movimientos brillar\xE1."
+    adivinanza: "En tu cuerpo, arriba estoy, triangular y tenaz me ves. Cuando giras
+      la cabeza, soy el m\xFAsculo que interviene. \xBFQui\xE9n soy?"
   - musculo: Dorsal
     adivinanza: "En la espalda media, ancho y fuerte, como alas, me despliego con
-      suerte. Al estirar y al encoger, soy el m\xFAsculo que hace mover."
+      suerte. Al estirar y al encoger, soy el m\xFAsculo que hace mover. \xBFQui\xE9n
+      soy?"
   - musculo: Lumbar
     adivinanza: "En la regi\xF3n baja, firme guardi\xE1n, sostengo tu espalda con
       gran af\xE1n. Cuando te inclinas o das un comp\xE1s, soy el m\xFAsculo que
-      te da paz."
-  - musculo: "Gl\xFAteo"
-    adivinanza: "En la regi\xF3n baja, firme guardi\xE1n, sostengo tu espalda con
-      gran af\xE1n. Cuando te inclinas o das un comp\xE1s, soy el m\xFAsculo que
-      te da paz."
+      te da paz. \xBFQui\xE9n soy?"
+  - musculo: Isquios
+    adivinanza: "En la parte trasera, oculto en mi ser, firme sost\xE9n en cada paso
+      al correr. Al estirarte o al saltar, al avanzar con poder, soy el m\xFAsculo
+      que te ayudar\xE1 a vencer. \xBFQui\xE9n soy?"
+  - musculo: Gemelo
+    adivinanza: "En la parte de abajo de la pierna estoy,   firme sost\xE9n al avanzar
+      sin titubear voy.   Alzarte sobre los dedos, es mi labor,   me contraigo y
+      te impulso con gran vigor. \xBFQui\xE9n soy?"
+  - musculo: Triceps
+    adivinanza: "En la parte trasera del brazo me encontrar\xE1s,  De tres cabezas
+      soy, en la fuerza lo ver\xE1s.  Extiendo el codo con gran habilidad,  En cada
+      movimiento, apoyo ofrezco sin igual.  \xBFQui\xE9n soy?"
+  - musculo: Cuadriceps
+    adivinanza: "En la pierna mi morada hallar\xE1s, De cuatro cabezas soy, no dudar\xE1s,
+      En la flexi\xF3n de la rodilla me destacar\xE9, Fuerza y estabilidad en cada
+      paso brindar\xE9.\xBFQui\xE9n soy?"
+  - musculo: Deltoide
+    adivinanza: "En el hombro me encontrar\xE1s, De tres partes soy, en cada gesto
+      resaltar\xE1s. En elevaci\xF3n y rotaci\xF3n me ver\xE1s brillar, en movimientos
+      amplios, mi funci\xF3n demostrar\xE1s. \xBFQui\xE9n soy?"
+  - musculo: Pectoral
+    adivinanza: "En la lucha por la forma, me encontrar\xE1s, Sobre el torso, mi
+      poder mostrar\xE1s. Cuando alzas pesas, se hace evidente, En el espejo, su
+      forma resplandeciente. \xBFQui\xE9n soy?"
+  - musculo: Biceps
+    adivinanza: "En el brazo me encontrar\xE1s, listo para actuar, De dos cabezas
+      soy, en fuerza resaltar\xE1s. En cada flexi\xF3n, mi dominio demostrar\xE9,
+      En cada movimiento, mi poder desplegar\xE9. \xBFQui\xE9n soy?"
+  - musculo: Recto
+    adivinanza: "En el centro del torso, firme y tenaz, Una estructura robusta, no
+      te fallar\xE1. Con cada contracci\xF3n, mi fuerza mostrar\xE9, En los ejercicios
+      de flexi\xF3n, dominar\xE9.  \xBFQui\xE9n soy?"
+  - musculo: Oblicuos
+    adivinanza: "En los costados del torso, me encontrar\xE1s, Curvado y fuerte,
+      en cada gesto destacar\xE1s. En los giros y en la inclinaci\xF3n, me ver\xE1s
+      brillar, En la estabilidad y el equilibrio, mi funci\xF3n demostrar\xE1s. \xBFQui\xE9n
+      soy?"
 --- !u!1 &780922916
 GameObject:
   m_ObjectHideFlags: 0

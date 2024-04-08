@@ -289,7 +289,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b3352837669b5944bece46e6dc7eae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mensajes: []
+  mensajes:
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 8
+    text: "\xA1Lo has logrado! \xA1Nuestro compa\xF1ero est\xE1 libre y a salvo gracias
+      a ti!"
+  - actorId: 4
+    id_superheroe: 0
+    id_imagen: 8
+    text: "\xA1Qu\xE9 alivio!"
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 8
+    text: "Gracias a tu valent\xEDa y determinaci\xF3n, has superado el desaf\xEDo
+      de la ara\xF1a y salvado a nuestro amigo."
+  - actorId: 4
+    id_superheroe: 0
+    id_imagen: 8
+    text: " \xA1Fue un desaf\xEDo emocionante!"
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 8
+    text: "Y no solo eso, has estimulado tu inteligencia, aumentado tu concentraci\xF3n
+      y atenci\xF3n, practicado el manejo de las letras del alfabeto y aprendido
+      m\xE1s sobre los m\xFAsculos."
+  - actorId: 4
+    id_superheroe: 0
+    id_imagen: 8
+    text: "\xA1Gracias, Superh\xE9roe! Estoy feliz de haber podido ayudar."
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 8
+    text: "Gracias a tu increible aza\xF1a, has ganado la siguiente medalla. \xA1Enhorabuena!"
   actores:
   - id: 0
     name: "ni\xF1a_asustad"
@@ -384,9 +416,12 @@ MonoBehaviour:
   - id: 7
     name: lumbar
     sprite: {fileID: 21300000, guid: 711758ead6c6a38439511006adc808a3, type: 3}
+  - id: 8
+    name: news
+    sprite: {fileID: 21300000, guid: 6291f7e62afc797478c6bca66c014676, type: 3}
   historiaVisionada: null
   escena: NivelCompletado
-  nivel: 15
+  nivel: 16
   avatar: {fileID: 1397982207}
   avatarInicio: {fileID: 338479597}
   avatarSuperheroe: {fileID: 1870251295}
@@ -750,7 +785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelBottons: []
-  unlock: 16
+  unlock: 17
 --- !u!4 &918565049
 Transform:
   m_ObjectHideFlags: 0

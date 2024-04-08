@@ -8,9 +8,8 @@ using TMPro;
 public class AdivinanzaMusculo : MonoBehaviour
 {
     private string musculo;
-    // Start is called before the first frame update
-    void Start()
-    {
+    public GameObject panelFinal;
+    void Start(){
         musculo = PlayerPrefs.GetString("MusculoSeleccionado");
         Debug.Log(musculo);
         if(musculo == null){
@@ -21,23 +20,42 @@ public class AdivinanzaMusculo : MonoBehaviour
 
     public void ComprobarMusculo(GameObject boton){
         string texto;
-
+        GameObject imagen;
         if(boton == null){
             Debug.LogError("El GameObject no ha sido encontrado");
             return;
         }
 
+        Transform hijo = boton.transform.Find("Fallo");
+        if(hijo != null){
+            imagen = hijo.gameObject;
+        }else{
+            Debug.LogError("El GameObject 'Fallo' no ha sido encontrado");
+            return;
+        }
+
         // Obtener el componente TextMeshProUGUI del botón
         TextMeshProUGUI textoBoton = boton.GetComponentInChildren<TextMeshProUGUI>();
+        // Verificación de si se ha obtenido el componente TextMeshProUGUI del botón
         if (textoBoton != null){
+            // Obtener texto del boton 
             texto = textoBoton.text;
+            // Comparación del texto del botón con una cadena musculo
             if(string.Equals(musculo, texto)){
-                Debug.Log("Acierto");
+                if(panelFinal != null){
+                    // Activar el panel final
+                    panelFinal.SetActive(true);
+                }else{
+                    Debug.LogError("El GameObject no ha sido encontrado");
+                    return;
+                }
             }else{
-                Debug.Log("Fallo");
+                // Activar la imagen de fallo
+                imagen.SetActive(true);
             }
         }else{
             Debug.LogError("El componente Text no ha sido encontrado");
+            return;
         }
 
     }
