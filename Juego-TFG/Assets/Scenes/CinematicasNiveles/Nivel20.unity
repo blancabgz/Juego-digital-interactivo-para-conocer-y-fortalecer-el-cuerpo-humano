@@ -291,91 +291,47 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mensajes:
-  - actorId: 10
-    id_superheroe: 5
-    id_imagen: 20
-    text: "\xA1Hola de nuevo! Hoy vamos a hablar sobre el \xFAltimo m\xFAsculo de
-      la espalda. \xBFSabes cu\xE1l nos queda?"
-  - actorId: 2
-    id_superheroe: 5
-    id_imagen: 20
-    text: "Mmm hemos visto el trapecio y las dorales\u2026 \xBFLa lumbar?"
-  - actorId: 10
-    id_superheroe: 5
-    id_imagen: 20
-    text: "\xA1Efectivamente! El m\xFAsculo del que vamos a hablar hoy es el lumbar,
-      que se encuentra en la parte baja de la espalda. "
-  - actorId: 2
-    id_superheroe: 5
-    id_imagen: 20
-    text: "\xBFJusto encima del gl\xFAteo?"
-  - actorId: 10
-    id_superheroe: 5
-    id_imagen: 20
-    text: "\xA1Muy bien! Es como un puente que conecta la parte superior e inferior
-      de la espalda."
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 0
+    text: "\xA1Hola joven! Hoy traigo un nuevo desaf\xEDo para t\xED."
+  - actorId: 6
+    id_superheroe: 0
+    id_imagen: 0
+    text: "\xBFEn qu\xE9 consiste?"
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 0
+    text: Hoy vamos a entrenar tu mente de una manera divertida y desafiante. Vamos
+      a jugar con adivinanzas.
   - actorId: 4
-    id_superheroe: 5
-    id_imagen: 20
-    text: "\xA1Entendido! \xBFY qu\xE9 hace este m\xFAsculo?"
-  - actorId: 10
-    id_superheroe: 5
-    id_imagen: 20
-    text: "Ayuda a mantener la postura y nos permite realizar movimientos como inclinarnos
-      hacia adelante, hacia los lados y hacia atr\xE1s."
+    id_superheroe: 0
+    id_imagen: 0
+    text: "\xA1Ui suena divertido! Pero...\xBFEso en que me ayuda a unirme al equipo?"
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 0
+    text: "Muy sencillo, te ayudan a desarrollar tu capacidad para solucionar problemas,
+      adem\xE1s de desarrollar tu memoria y concentraci\xF3n. "
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 0
+    text: 'Todas estas habilidades que te he nombrado son muy importantes para salvar
+      vidas y ayudar a los ciudadanos. '
   - actorId: 4
-    id_superheroe: 5
-    id_imagen: 20
-    text: "\xA1Vaya, es muy importante!"
-  - actorId: 10
-    id_superheroe: 5
-    id_imagen: 20
-    text: "\xA1Exactamente! \xBFSab\xEDas que el m\xFAsculo lumbar es uno de los
-      m\xFAsculos m\xE1s fuertes del cuerpo humano?"
-  - actorId: 2
-    id_superheroe: 5
-    id_imagen: 20
-    text: "\xBFJunto al gl\xFAteo mayor?"
-  - actorId: 10
-    id_superheroe: 5
-    id_imagen: 21
-    text: "\xA1S\xED! El musculo lumbar, en este caso, soporta una gran cantidad
-      de peso y tensi\xF3n todos los d\xEDas. Imagina cu\xE1ntas veces te inclinas,
-      levantas cosas o simplemente te sientas."
-  - actorId: 10
-    id_superheroe: 5
-    id_imagen: 21
-    text: "\xA1Este m\xFAsculo trabaja constantemente!"
+    id_superheroe: 0
+    id_imagen: 0
+    text: "\xBFAh s\xED? Entonces... quiero empezar cu\xE1nto antes. \xBFComo se
+      juega?"
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 0
+    text: "Te leer\xE9 una adivinanza y luego tendr\xE1s que seleccionar el m\xFAsculo
+      al que corresponde. \xBFEntendido?"
   - actorId: 4
-    id_superheroe: 5
-    id_imagen: 21
-    text: "\xA1Es asombroso todo lo que hace!"
-  - actorId: 8
     id_superheroe: 0
-    id_imagen: 7
-    text: "Un nuevo villano est\xE1 atacando la ciudad y necesito tu ayuda para vencerlo."
-  - actorId: 0
-    id_superheroe: 0
-    id_imagen: 7
-    text: "\xBFY como lo har\xE9?"
-  - actorId: 8
-    id_superheroe: 0
-    id_imagen: 7
-    text: "Para derrotarlo necesito que respondas correctamente a una serie de preguntas
-      sobre la espalda. Si aciertas, ver\xE1s como el villano recibe un golpe y su
-      vida disminuir\xE1."
-  - actorId: 8
-    id_superheroe: 0
-    id_imagen: 7
-    text: "\xBFPodr\xE1s hacerlo?"
-  - actorId: 10
-    id_superheroe: 5
-    id_imagen: 7
-    text: " \xA1Claro que podr\xE1 hacerlo! Tiene todos los conocimientos."
-  - actorId: 8
-    id_superheroe: 0
-    id_imagen: 7
-    text: "\xA1Pues vamos all\xE1!"
+    id_imagen: 0
+    text: "\xA1S\xED! Vamos all\xE1"
   actores:
   - id: 0
     name: "ni\xF1a_asustad"
@@ -519,8 +475,8 @@ MonoBehaviour:
     name: "ni\xF1o_agachado"
     sprite: {fileID: 21300000, guid: 9512727cfe4e8514b8cafbbbba4ab486, type: 3}
   historiaVisionada: null
-  escena: BatallaEspalda
-  nivel: 21
+  escena: Adivinanzas
+  nivel: 20
   avatar: {fileID: 1397982207}
   avatarInicio: {fileID: 338479597}
   avatarSuperheroe: {fileID: 1870251295}
@@ -733,7 +689,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Juego2
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &623562471

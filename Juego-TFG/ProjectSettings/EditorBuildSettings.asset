@@ -27,19 +27,19 @@ EditorBuildSettings:
     path: Assets/Scenes/CinematicasNiveles/Nivel1.unity
     guid: a7598e27456ff0543a00db366dbeb94d
   - enabled: 1
-    path: Assets/Scenes/Niveles/Nivel 1/Biceps.unity
+    path: Assets/Scenes/Niveles/Nivel1/Biceps.unity
     guid: 3a8039a4e009df9449d03ee4b0a7eb00
   - enabled: 1
-    path: Assets/Scenes/Niveles/Nivel 1/PreguntaBiceps.unity
+    path: Assets/Scenes/Niveles/Nivel1/PreguntaBiceps.unity
     guid: db29076767c6ad841b52f7472e46a3f4
   - enabled: 1
     path: Assets/Scenes/CinematicasNiveles/Nivel1.2.unity
     guid: d54c9d75446f26a409ff67ddbb36bdb1
   - enabled: 1
-    path: Assets/Scenes/Niveles/Nivel 1/PreguntaTriceps.unity
+    path: Assets/Scenes/Niveles/Nivel1/PreguntaTriceps.unity
     guid: 0a92155cc42421148885c4ff2537b015
   - enabled: 1
-    path: Assets/Scenes/Niveles/Nivel 1/Triceps.unity
+    path: Assets/Scenes/Niveles/Nivel1/Triceps.unity
     guid: 6283bc40eaa80da49b96b55eb1143197
   - enabled: 1
     path: Assets/Scenes/CinematicasNiveles/Nivel1.3.unity
@@ -254,4 +254,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Niveles/Nivel20/Adivinanzas.unity
     guid: 1490c28cd2094094f8cad3d97d171632
+  - enabled: 1
+    path: Assets/Scenes/CinematicasNiveles/Nivel20.unity
+    guid: 3704b514490653c41824a4ac7e69dde6
+  - enabled: 1
+    path: Assets/Scenes/CinematicasNiveles/Nivel20.1.unity
+    guid: efb871ad9d2c9bd48ad1eafd5c3e2a23
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel22/SombrasFinal.unity
+    guid: 43c09a91b05ce3a429f80ff31fd31620
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel22/BatallaFinal.unity
+    guid: 02177db4c45603f4d898b412f03ceb17
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel22/PreguntaAbdomenFinal.unity
+    guid: 2d7c9a122563bb542a17d5706494e6a6
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel22/AbdomenFinal.unity
+    guid: f4900a4104593d54ab3e81a95843221e
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel22/SalaDeCurasFinal.unity
+    guid: ac9db71952d8c0740813fd1a0153d267
   m_configObjects: {}
