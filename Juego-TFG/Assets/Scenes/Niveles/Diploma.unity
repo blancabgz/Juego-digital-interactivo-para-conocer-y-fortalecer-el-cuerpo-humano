@@ -259,8 +259,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.5283, y: 3.9426}
-  m_SizeDelta: {x: 1806.085, y: 564.52}
+  m_AnchoredPosition: {x: -0.000020980835, y: 0.0000038146973}
+  m_SizeDelta: {x: 1773.5073, y: 652.229}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &163005159
 MonoBehaviour:
@@ -928,10 +928,10 @@ RectTransform:
   - {fileID: 163005158}
   m_Father: {fileID: 886121693}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.22866666}
-  m_AnchorMax: {x: 1, y: 0.75474083}
-  m_AnchoredPosition: {x: 0, y: 2.1225586}
-  m_SizeDelta: {x: 0, y: 4.2451}
+  m_AnchorMin: {x: 0, y: 0.17500001}
+  m_AnchorMax: {x: 1, y: 0.8315185}
+  m_AnchoredPosition: {x: 0, y: 2.1524963}
+  m_SizeDelta: {x: 0, y: -1.4324036}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1674484653
 MonoBehaviour:
@@ -953,8 +953,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 0}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1050,7 +1050,7 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: bb803adabbad35f4ebfdaa2925144c9c, type: 3}
   - nivel: 22
     nombre: Manual
-    sprite: {fileID: 21300000, guid: c4cf687e1e32d2f4299062a05bfbd770, type: 3}
+    sprite: {fileID: 21300000, guid: 462d26f15fa00b144a2fd7952abfdcae, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

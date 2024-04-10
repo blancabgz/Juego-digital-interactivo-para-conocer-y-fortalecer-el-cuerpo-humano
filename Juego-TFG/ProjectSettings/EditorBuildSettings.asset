@@ -275,4 +275,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Niveles/Nivel22/SalaDeCurasFinal.unity
     guid: ac9db71952d8c0740813fd1a0153d267
+  - enabled: 1
+    path: Assets/Scenes/CinematicasNiveles/Nivel22.unity
+    guid: afe53f0be001ab144bed828c1c9c2000
   m_configObjects: {}
