@@ -1219,6 +1219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelFinal: {fileID: 1064166961}
+  nivel: 20
 --- !u!1 &450596617
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,6 +9,9 @@ public class AdivinanzaMusculo : MonoBehaviour
 {
     private string musculo;
     public GameObject panelFinal;
+    public int nivel;
+    private int puntos;
+    private int numFallos;
     void Start(){
         musculo = PlayerPrefs.GetString("MusculoSeleccionado");
         Debug.Log(musculo);
@@ -16,6 +19,8 @@ public class AdivinanzaMusculo : MonoBehaviour
             Debug.LogError("No se ha seleccionado musculo");
             return;
         }
+        puntos = 10;
+        numFallos = 0;
     }
 
     public void ComprobarMusculo(GameObject boton){
@@ -42,6 +47,15 @@ public class AdivinanzaMusculo : MonoBehaviour
             texto = textoBoton.text;
             // Comparación del texto del botón con una cadena musculo
             if(string.Equals(musculo, texto)){
+                puntos -= numFallos;
+                if(puntos < 0){
+                    puntos = 0;
+                }
+                // Guardar nivel completado
+                NivelCompletado.GuardarNivel(nivel,2);
+                // Guardar puntos
+                Puntuaciones.GuardarPuntuacion(nivel,puntos);
+
                 if(panelFinal != null){
                     // Activar el panel final
                     panelFinal.SetActive(true);
@@ -50,6 +64,8 @@ public class AdivinanzaMusculo : MonoBehaviour
                     return;
                 }
             }else{
+                // Aumento contador fallos para calcular los puntos
+                numFallos++;
                 // Activar la imagen de fallo
                 imagen.SetActive(true);
             }

@@ -290,31 +290,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mensajes:
-  - actorId: 11
-    id_superheroe: 5
+  - actorId: 8
+    id_superheroe: 0
     id_imagen: 0
-    text: "\xA1Estoy muy orgulloso de t\xED! !Has vencido al villano! "
+    text: "\xA1Eres parte del equipo por fin!"
+  - actorId: 2
+    id_superheroe: 0
+    id_imagen: 0
+    text: "\xBFEnserio? \xA1No me lo creo!"
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 0
+    text: "\xA1Pues crretelo! Ya eres parte de nuestro equipo. Has trabajado muy
+      duro para llegar hasta aqu\xED y te doy mi enhorabuena. "
   - actorId: 4
-    id_superheroe: 3
+    id_superheroe: 0
     id_imagen: 0
-    text: "\xA1S\xED! Y todo gracias a t\xED"
-  - actorId: 11
-    id_superheroe: 3
+    text: "\xA1Muchas gracias! \xBFY ahora que?"
+  - actorId: 8
+    id_superheroe: 0
     id_imagen: 0
-    text: Me alegro que hayas aprendido tanto. Bueno, mi labor ha terminado por ahora,
-      nos vemos en la prueba final.
-  - actorId: 0
-    id_superheroe: 3
+    text: "A partir de aqu\xED, con los conocimientos que has adquirido y nuestro
+      gran equipo, podr\xE1s llegar donde te propongas."
+  - actorId: 8
+    id_superheroe: 0
     id_imagen: 0
-    text: "\xBFC\xF3mo?"
-  - actorId: 11
-    id_superheroe: 3
+    text: "\xA1Conf\xEDo en t\xED! Se que ayudar\xE1s para hacer del mundo un lugar
+      mejor. "
+  - actorId: 4
+    id_superheroe: 0
     id_imagen: 0
-    text: "\xA1Ya lo ver\xE1s! Toma un regalo. \xA1Adios!"
-  - actorId: 0
-    id_superheroe: 3
+    text: "\xA1S\xED! Trabajar\xE9 muy duro para ayudar a los dem\xE1s. \xA1Gracias
+      por todo!"
+  - actorId: 8
+    id_superheroe: 0
     id_imagen: 0
-    text: "Ehhh gracias. \xA1Adi\xF3s!"
+    text: "Gracias a t\xED por esta gran aventura, te hago entrega de tu diploma.
+      \xA1Nos vemos por las calles. "
   actores:
   - id: 0
     name: "ni\xF1a_asustad"

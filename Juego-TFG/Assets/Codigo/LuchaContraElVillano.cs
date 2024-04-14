@@ -7,7 +7,7 @@ using TMPro;
 
 public class LuchaContraElVillano : MonoBehaviour
 {
-
+    public int nivel;
     public Preguntas[] preguntas;
     public string pagina;
     public Image barraVida;
@@ -17,12 +17,17 @@ public class LuchaContraElVillano : MonoBehaviour
     private GameObject pregunta;
     private TextMeshProUGUI textoPregunta;
     private int numPreguntasFalladas = 0;
+    private int puntos;
+    private int numErrores;
     // Start is called before the first frame update
     void Start()
     {
         Utilidades.MezclarElementos(preguntas);
         MostrarPregunta();
         
+        if(nivel > 0){
+            puntos = 10;
+        }
     }
 
 
@@ -47,7 +52,20 @@ public class LuchaContraElVillano : MonoBehaviour
         if(respuesta == preguntas[indicePregAct].verdadera){ // si coincide la respuesta
             vidaActual--; // bajamos la vida 
             barraVida.fillAmount = vidaActual / vidaMaxima; // actualizamos la barra de vida
+            // Si ha vencido
             if(vidaActual == 0){
+                // Calculo la puntuacion segun el numero de preguntas falladas
+                puntos -= numPreguntasFalladas*2;
+                // Si la puntuacion es negativa
+                if(puntos < 0){
+                    // Puntuacion a 0
+                    puntos = 0;
+                }
+                // Guarda el nivel completado
+                NivelCompletado.GuardarNivel(nivel,2);
+                // Guarda los puntos del nivel
+                Puntuaciones.GuardarPuntuacion(nivel, puntos);
+                // Carga la escena
                 SceneManager.LoadScene(pagina);
             }
         }else{

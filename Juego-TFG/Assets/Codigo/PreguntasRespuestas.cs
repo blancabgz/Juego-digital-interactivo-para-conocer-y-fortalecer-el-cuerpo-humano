@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class PreguntasRespuestas : MonoBehaviour
 {
+    public int nivel;
     public Respuestas[] respuestas;
     public Imagenes[] imagenes;
 
@@ -22,10 +23,17 @@ public class PreguntasRespuestas : MonoBehaviour
     public GameObject imagenPanel;
     public GameObject botonSiguiente;
     public string escenaSiguiente;
+    private int numErrores;
+    private int puntos;
 
 
     void Start(){
+
+        // Inicializar la variable de control de errores
+        numErrores = 0;
+        // Mezclar las posibles respuestas del array
         Utilidades.MezclarElementos(respuestas);
+        // Obtener los componentes y establecer una imagen
         resp1.GetComponent<Image>().sprite = respuestas[0].imagen;
         resp2.GetComponent<Image>().sprite = respuestas[1].imagen;
         resp3.GetComponent<Image>().sprite = respuestas[2].imagen;
@@ -33,6 +41,27 @@ public class PreguntasRespuestas : MonoBehaviour
         resp1.GetComponent<Button>().onClick.AddListener(() => VerificarRespuesta(respuestas[0].musculo,1));
         resp2.GetComponent<Button>().onClick.AddListener(() => VerificarRespuesta(respuestas[1].musculo,2));
         resp3.GetComponent<Button>().onClick.AddListener(() => VerificarRespuesta(respuestas[2].musculo,3));
+        
+        // Obtener la puntuacion del nivel
+        if(nivel > 0){
+            // Si el nivel ya ha sido completado 
+            if(NivelCompletado.CargarNivel(nivel) == 2){
+                // reinicio los puntos
+                puntos = -1;
+            // Si el menu solo ha sido completado la primera fase
+            }else if(NivelCompletado.CargarNivel(nivel) == 1){
+                // Obtengo los puntos conseguidos en la primera fase
+                puntos = Puntuaciones.CargarPuntuacion(nivel);
+                Debug.Log(puntos);
+            // Si no ha sido completado
+            }else{
+                // Reinicio los puntos
+                puntos = -1;
+                Debug.Log(puntos);
+            }
+        }
+
+        
     }
 
     
@@ -41,10 +70,39 @@ public class PreguntasRespuestas : MonoBehaviour
     public void VerificarRespuesta(string opcion, int indice){
         if(opcion == musculo){
             ActivarImagen(indice, 1);
-            //Debug.Log("Respuesta correcta");
+            // Si la primera pantalla no ha sido completada
+            if(puntos < 0){
+                puntos = 10;
+                if(numErrores == 0){
+                    puntos -= 0;
+                }else if(numErrores == 1){
+                    puntos -= 5;
+                }else{
+                    puntos -= 10;
+                }
+                // Pantalla 1 completada
+                NivelCompletado.GuardarNivel(nivel,1);
+                // Guardar puntos conseguidos
+                Puntuaciones.GuardarPuntuacion(nivel, puntos);
+            // Si la primera pantalla ha sido completada
+            }else{
+                if(numErrores == 0){
+                    puntos += 10;
+                }else if(numErrores == 1){
+                    puntos += 5;
+                }else{
+                    puntos += 0;
+                }
+                // Nivel completado
+                NivelCompletado.GuardarNivel(nivel,2);
+                // Guardo la media de los puntos conseguidos en ambas pantallas
+                Puntuaciones.GuardarPuntuacion(nivel, puntos/2);
+            }
         }else{
+            // Activo la imagen de error
             ActivarImagen(indice, 0);
-            //Debug.Log("Respuesta incorrecta");
+            // Aumento el contador en 1 de errores cometidos
+            numErrores++;
         }
     }
 

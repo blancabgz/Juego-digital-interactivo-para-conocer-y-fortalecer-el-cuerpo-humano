@@ -718,6 +718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97a617b2ed8cd3e4da55aa097fa1018e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nivel: 22
   sombras:
   - musculo: biceps
     sombra: {fileID: 21300000, guid: 624372cdc22db5547a422d4fbfa626fb, type: 3}
@@ -1960,7 +1961,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: BatallaFinal
+          m_StringArgument: Nivel22.1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1579545932

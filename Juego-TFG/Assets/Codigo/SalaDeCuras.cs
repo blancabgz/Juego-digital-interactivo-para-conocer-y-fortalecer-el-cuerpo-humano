@@ -7,9 +7,12 @@ using TMPro;
 
 public class SalaDeCuras : MonoBehaviour
 {
+    public int nivel;
     public string respuesta;
     public string[] curasOpciones;
     public GameObject panelFinal;
+    private int numErrores;
+    private int puntos;
     
     
     void Start()
@@ -18,6 +21,8 @@ public class SalaDeCuras : MonoBehaviour
         Utilidades.MezclarElementos(curasOpciones);
         // Muestra las opciones posibles
         MostrarCuras();
+        numErrores = 0;
+        puntos = 10;
     }
 
     //
@@ -26,12 +31,25 @@ public class SalaDeCuras : MonoBehaviour
     public void RecogerRespuesta(int opcion){
         // Comprueba si la respuesta es correcta
         if(respuesta == curasOpciones[opcion]){
+            if(numErrores == 3){
+                puntos -= 10;
+            }else if(numErrores == 2){
+                puntos -= 6;
+            }else if(numErrores == 1){
+                puntos -= 4;
+            }
+            // Nivel completado
+            NivelCompletado.GuardarNivel(nivel,2);
+            // Guardo los puntos conseguidos 
+            Puntuaciones.GuardarPuntuacion(nivel, puntos);
+
             // Activa el panel final tras comprobar que la respuesta es correcta
             if (panelFinal != null) {
                 panelFinal.SetActive(true);
             }
         // Si la respuesta no es correcta
         }else{
+            numErrores++;
             // Obtiene el componente Curas
             GameObject curas = GameObject.Find("Curas");
             if(curas != null){

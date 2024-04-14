@@ -7,7 +7,7 @@ using TMPro;
 
 public class JuegoSombras : MonoBehaviour
 {
-
+    public int nivel;
     public Sombras[] sombras;
     private GameObject pregunta;
 
@@ -17,6 +17,9 @@ public class JuegoSombras : MonoBehaviour
     private string[] nombresImagenes = {"TickA", "TickB", "TickC"};
 
     public int musculoActual = 0;
+    private int puntosFinal;
+    private int puntos;
+    private int numErrores;
 
     public GameObject panelFinal;
 
@@ -28,6 +31,11 @@ public class JuegoSombras : MonoBehaviour
         MostrarPregunta();
         // Muestra las opciones posibles
         MostrarRespuesta();
+        // Inicializo los puntos
+        if(nivel > 0){
+            puntos = 10;
+            puntosFinal = 0;
+        }
     }
 
 
@@ -35,6 +43,8 @@ public class JuegoSombras : MonoBehaviour
     // Muestra la sombra
     //
     public void MostrarPregunta(){
+        // Inicializo num errores
+        numErrores = 0;
         DesactivarImagenes();
         // Encuentra el GameObject que contiene la imagen de la sombra
         pregunta = GameObject.Find("Sombra");
@@ -97,6 +107,8 @@ public class JuegoSombras : MonoBehaviour
                 }
             }
         }
+
+        
     }
 
     // 
@@ -121,17 +133,28 @@ public class JuegoSombras : MonoBehaviour
     //
     public void ComprobarRespuesta(int opcion){
         
-        // Comprueba que la sombra del musculo actual es mejor que la longitud de preguntas de sombras
+        // Comprueba que la sombra del musculo actual es menor que la longitud de preguntas de sombras
         if(musculoActual < sombras.Length - 1){
             // Verifica si la respuesta seleccionada es la correcta
             if(respuestas[opcion] == sombras[musculoActual].musculo){
                 // Incrementa el indice de la respuesta
                 musculoActual++;
+                puntos = 10;
+                if(numErrores == 2){
+                    puntos -= 10;
+                }else if(numErrores == 1){
+                    puntos -= 5;
+                }else{
+                    puntos -= 0;
+                }
+                // Suma puntos de la pregunta
+                puntosFinal += puntos;
                 // Muestra la siguiente pregunta
                 MostrarPregunta();
                 
             }else{
                 ActivarImagen(opcion);
+                numErrores++;
             }
         }else{
             // Verifica si ha encontrado el GameObject
@@ -140,6 +163,24 @@ public class JuegoSombras : MonoBehaviour
                 MostrarPregunta();
                 // Verifica si la opción escogida es la correcta
                 if(respuestas[opcion] == sombras[musculoActual].musculo){
+                    musculoActual++;
+                    puntos = 10;
+                    if(numErrores == 2){
+                        puntos -= 10;
+                    }else if(numErrores == 1){
+                        puntos -= 5;
+                    }else{
+                        puntos -= 0;
+                    }
+                    // Suma puntos ultima ronda
+                    puntosFinal += puntos;
+                    // Calcular puntuacion media de las tres rondas
+                    puntosFinal /= 3;
+                    // Guardar nivel completado
+                    NivelCompletado.GuardarNivel(nivel,2);
+                    // Guardar puntuacion final
+                    Puntuaciones.GuardarPuntuacion(nivel, puntosFinal);
+
                     if (GameObject.Find("Sombra").TryGetComponent(out Image sombra)) {
                         sombra.enabled = false;
                     }
@@ -163,6 +204,7 @@ public class JuegoSombras : MonoBehaviour
 
                 }else{
                     ActivarImagen(opcion);
+                    numErrores++;
                 }   
             }
         }

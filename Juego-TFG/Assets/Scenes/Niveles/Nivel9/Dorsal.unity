@@ -827,6 +827,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3c081fa1f3cf4d4f982d4b29d4f5dea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nivel: 9
   respuestas:
   - id: 0
     musculo: Biceps

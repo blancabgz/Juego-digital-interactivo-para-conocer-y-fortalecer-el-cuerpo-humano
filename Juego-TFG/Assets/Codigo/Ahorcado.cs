@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 using TMPro;
 public class Ahorcado : MonoBehaviour
 {
+
+    public int nivel;
     private GameObject panelTeclado;
     private GameObject panelPalabra;
     private GameObject panelImagenes;
@@ -17,6 +19,7 @@ public class Ahorcado : MonoBehaviour
     public Image[] imagenesFallo;
     // numero de intentos para acertar la palabra
     private int numIntentos = 6;
+    private int puntos;
     public PalabrasAhorcado[] palabras;
     public char[] palabraDividida;
     public int letrasPalabraDividida;
@@ -38,6 +41,7 @@ public class Ahorcado : MonoBehaviour
         Utilidades.MezclarElementos(palabras);
         // Seleccionar palabra oculta
         SeleccionarPalabra();
+        puntos = 10;
     }
 
     void AsignarLetrasDelTeclado(){
@@ -146,6 +150,14 @@ public class Ahorcado : MonoBehaviour
                 textoPalabraOculta.text = new string(palabraOculta);
                 // Comprobar si se han adivinado todas las letras
                 if(letrasPalabraDividida == 0){
+                    // Calcular los puntos en función del número de intentos
+                    puntos -= (6 - numIntentos) * 2;
+                    Debug.Log(puntos);  
+                    // Nivel completado
+                    NivelCompletado.GuardarNivel(nivel,2);
+                    // Guardo la media de los puntos conseguidos en ambas pantallas
+                    Puntuaciones.GuardarPuntuacion(nivel, puntos);
+                    // Activo el panel final
                     panelFinal.SetActive(true);
                 }
             }else{
