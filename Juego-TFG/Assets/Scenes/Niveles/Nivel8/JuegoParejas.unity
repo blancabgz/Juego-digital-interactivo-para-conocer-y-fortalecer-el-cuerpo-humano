@@ -3179,6 +3179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7073f5944abee6f429e0cd3693cc84f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nivel: 8
   cartas:
   - musculo: dorsal
     sprite: {fileID: 21300000, guid: 09dc8b45aac981d488ed5ed9cddd73fb, type: 3}

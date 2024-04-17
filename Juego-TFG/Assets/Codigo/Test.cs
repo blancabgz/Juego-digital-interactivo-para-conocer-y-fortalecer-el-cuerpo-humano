@@ -18,6 +18,7 @@ public class Test : MonoBehaviour
     private string dadoSeleccion = "null";
 
     private int contadorMedallas = 0;
+
     
     private void Awake(){
         CargarSeleccionDado();
@@ -62,6 +63,8 @@ public class Test : MonoBehaviour
             Debug.Log("Contador de medallas en la pregunta =  " + contadorMedallas);
         }
     }
+
+
     public void MostrarPreguntaRespuestas(){
         textPregunta = GameObject.Find("Pregunta").transform.GetComponent<TextMeshProUGUI>();
         if(textPregunta != null && preguntasSeleccionadas != null && preguntasSeleccionadas.Length > 0){

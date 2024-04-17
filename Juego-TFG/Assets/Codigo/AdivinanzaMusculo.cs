@@ -51,9 +51,11 @@ public class AdivinanzaMusculo : MonoBehaviour
                 if(puntos < 0){
                     puntos = 0;
                 }
+                
                 // Guardar nivel completado
                 NivelCompletado.GuardarNivel(nivel,2);
                 // Guardar puntos
+                Debug.Log(nivel +" , " + puntos);
                 Puntuaciones.GuardarPuntuacion(nivel,puntos);
 
                 if(panelFinal != null){

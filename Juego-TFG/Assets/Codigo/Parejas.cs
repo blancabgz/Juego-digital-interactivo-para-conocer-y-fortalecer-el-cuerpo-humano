@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Parejas : MonoBehaviour
 {
+    public int nivel;
     public Carta[] cartas;
     private GameObject mazoCartas;
 
@@ -18,6 +19,8 @@ public class Parejas : MonoBehaviour
     private int poseleccion2;
     private int cartasCorrectasEncontradas = 0;
     public GameObject panelFinal;
+    private int numFallos;
+    private const int MAX_FALLOS = 20;
 
 
 
@@ -86,6 +89,7 @@ public class Parejas : MonoBehaviour
             } else {
                 // Esperas 2s antes de ocultar las cartas
                 Invoke("OcultarCartas", 2f);
+                numFallos++;
                 BloquearInteraccionCartas(true);
             }
             
@@ -150,6 +154,12 @@ public class Parejas : MonoBehaviour
 
     private bool ComprobarFinNivel(){
         if(cartasCorrectasEncontradas == cartas.Length){
+            // Calcular puntuacion segun el numero de fallos cometidos
+            int puntuacionFinal = Utilidades.CalcularPuntuacionProporcion(numFallos, MAX_FALLOS);
+            Debug.Log(puntuacionFinal);
+
+            NivelCompletado.GuardarNivel(nivel,2);
+            Puntuaciones.GuardarPuntuacion(nivel, puntuacionFinal);
             // Activa el panel final
             if (panelFinal != null) {
                 panelFinal.SetActive(true);

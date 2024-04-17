@@ -7,6 +7,7 @@ using System.Linq;
 
 public class Puzzle : MonoBehaviour
 {
+    public int nivel;
     public Pregunta[] preguntas;
     public GameObject cajonImagenes;
     public GameObject cajonPuzzle;
@@ -19,13 +20,16 @@ public class Puzzle : MonoBehaviour
     private int posPuzzle;
     private int imagenesCorrectas = 0;
 
+    private int numFallos;
+    private static int MAX_FALLOS = 66;
+
     
     
 
     void Start() {
         Utilidades.MezclarElementos(preguntas);
         ColocarImagenesAleatorias();
-        
+        numFallos = 0;
     }
 
     public void ColocarImagenesAleatorias(){
@@ -74,15 +78,24 @@ public class Puzzle : MonoBehaviour
             // comprobamos si se ha terminado el puzzle
             if (imagenesCorrectas == preguntas.Length)
             {
+                CalcularPuntuacion();
                 if(puzzleCompletado != null){
                     puzzleCompletado.SetActive(true);
                     btnCambiarEscena.SetActive(true);
                 }
                 
             }
+        }else{
+            numFallos++;
         }
     }
 
+    public void CalcularPuntuacion(){
+        int puntuacionFinal = Utilidades.CalcularPuntuacionProporcion(numFallos, MAX_FALLOS);
+        Debug.Log(puntuacionFinal);
+        NivelCompletado.GuardarNivel(nivel,2);
+        Puntuaciones.GuardarPuntuacion(nivel, puntuacionFinal);
+    }
 
 }
 

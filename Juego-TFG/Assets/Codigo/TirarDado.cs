@@ -7,7 +7,7 @@ using TMPro;
 
 public class TirarDado : MonoBehaviour
 {
-
+    public int nivel;
     public Sprite[] dados;
     public GameObject[] medallas;
     private GameObject dadoObjecto;
@@ -20,13 +20,15 @@ public class TirarDado : MonoBehaviour
     public Image medalla;
     public Color medallaSeleccionada;
     private int contadorMedallas = 0;
+    private int puntuacion = 10;
     public GameObject panelFinal;
 
 
     void Awake(){
+        CargarPuntuacion();
         CargarContadorMedallas();
         GuardarContadorMedallas();
-        SubirIntensidad();
+        SubirIntensidadImagen();
     }
     void Start()
     {
@@ -37,7 +39,14 @@ public class TirarDado : MonoBehaviour
 
     public void Pulsar(){
         if(!rueda){
+            // Quito un punto por tirar al dado
+            puntuacion--;
+            PlayerPrefs.SetInt("Puntuacion", puntuacion);
+            CargarPuntuacion();
+            Debug.Log(puntuacion);
             StartCoroutine(Dado());
+           
+            
         }
     }
     IEnumerator Dado(){
@@ -56,7 +65,7 @@ public class TirarDado : MonoBehaviour
         rueda = false;
         DadoSeleccionado(valorDado);
         if (!string.Equals(dadoSeleccion, "Movimiento")) {
-            Invoke("IrEscenaTest",1f);  
+            Invoke("IrEscenaTest",1f);
         }else{
             Invoke("IrMovimiento",1f);  
         }
@@ -77,6 +86,12 @@ public class TirarDado : MonoBehaviour
         
     }
 
+    private void CargarPuntuacion(){
+        if (PlayerPrefs.HasKey("Puntuacion")){
+            puntuacion = PlayerPrefs.GetInt("Puntuacion");
+        }
+    }
+
     private void CargarContadorMedallas(){
         if (PlayerPrefs.HasKey("ContadorMedallas")){
             contadorMedallas = PlayerPrefs.GetInt("ContadorMedallas");
@@ -85,8 +100,22 @@ public class TirarDado : MonoBehaviour
 
         if(panelFinal != null){
             if(contadorMedallas >= 3){
+                // A la puntuacion obtenida le sumo los puntos ganados 
+                puntuacion += contadorMedallas;
+                // Compruebo que la puntuacion es mayor de 0
+                if(puntuacion < 0){
+                    puntuacion = 0;
+                }
+                Debug.Log(puntuacion);
+                // Guardo la puntuacion del nivel
+                Puntuaciones.GuardarPuntuacion(nivel, puntuacion);
+                // Guardo nivel superado
+                NivelCompletado.GuardarNivel(nivel,2);
+
                 panelFinal.SetActive(true);
+                // Restablezco los valores
                 PlayerPrefs.SetInt("ContadorMedallas", 0);
+                PlayerPrefs.SetInt("Puntuacion", 10);
 
                 for(int i = 0; i < contadorMedallas; i++){
                     medalla = medallas[i].GetComponent<Image>();
@@ -96,9 +125,10 @@ public class TirarDado : MonoBehaviour
                 }
             }
         }
-    } 
+    }
 
-    private void SubirIntensidad(){
+
+    private void SubirIntensidadImagen(){
         if(contadorMedallas != 0){
             for(int i = 0; i < contadorMedallas; i++){
                 medalla = medallas[i].GetComponent<Image>();
