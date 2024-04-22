@@ -287,4 +287,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Calificaciones.unity
     guid: 685287c1c2c2b69448e389f8c4f5f4a2
+  - enabled: 1
+    path: Assets/Scenes/CinematicasNiveles/Nivel5.unity
+    guid: 690be9225dc314e428c9fb66a74f44e8
   m_configObjects: {}

@@ -2625,6 +2625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3f038ccc0e7a8a49998e1ece0fa3fad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nivel: 2
   preguntas:
   - posicion: 0
     sprite: {fileID: -1429772365, guid: 7b5fc62a8055023499918ef602bc546f, type: 3}

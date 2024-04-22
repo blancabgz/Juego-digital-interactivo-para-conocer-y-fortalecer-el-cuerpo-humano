@@ -5,12 +5,23 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 using System;
+using System.IO;
+
+using UnityEngine;
+using UnityEngine.UI;
+using System.Net;
+using System.Net.Mail;
+using System.Net.Security;
+using System.Security.Cryptography.X509Certificates;
+
 
 public class InsertarCalificaciones : MonoBehaviour
 {
     private GameObject[] slotsPanel;
-    public GameObject calificaciones;
+    public GameObject calificaciones;   
     private int numSlots;
+    public string mensaje = "";
+
     
     
     void Awake() {
@@ -26,6 +37,23 @@ public class InsertarCalificaciones : MonoBehaviour
             slotsPanel[i] = calificaciones.transform.GetChild(i).gameObject;
         }
         Calificaciones();
+        EscribirMensaje();
+
+    }
+
+    public void EscribirMensaje(){
+        mensaje = "Notas del alumno \n";
+        for(int i = 0; i < 22; i++){
+            int nota = Puntuaciones.CargarPuntuacion(i+1);
+            if(NivelCompletado.CargarNivel(i+1) == 2){
+                mensaje += "Nivel" + (i+1) + " -- " + nota + "\n";
+            }else{
+                mensaje += "Nivel" + (i+1) + " --  nivel no completado \n";
+            }
+            
+        }
+
+        Debug.Log(mensaje);
     }
 
     private void Calificaciones(){
@@ -48,4 +76,33 @@ public class InsertarCalificaciones : MonoBehaviour
             } 
         }
     }
+
+    public void EnviarEmail(){
+        MailMessage mail = new MailMessage();
+        SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
+        SmtpServer.Timeout = 10000;
+        SmtpServer.DeliveryMethod = SmtpDeliveryMethod.Network;
+        SmtpServer.UseDefaultCredentials = false;
+        SmtpServer.Port = 587;
+
+        mail.From = new MailAddress("blancabril.999@gmail.com");
+        mail.To.Add(new MailAddress("blancahoran302@gmail.com"));
+
+        mail.Subject = "Calificaciones";
+        mail.Body = mensaje;
+
+        SmtpServer.Credentials = new System.Net.NetworkCredential("blancabril.999", "uexg kljy ikfn ldjm") as ICredentialsByHost; SmtpServer.EnableSsl = true;
+        ServicePointManager.ServerCertificateValidationCallback = delegate (object s, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors)
+        {
+            
+            return true;
+        };
+
+        
+
+        mail.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
+        SmtpServer.Send(mail);
+    }
+
+
 }
