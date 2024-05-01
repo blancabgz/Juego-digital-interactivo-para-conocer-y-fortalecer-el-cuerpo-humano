@@ -528,8 +528,12 @@ MonoBehaviour:
   - id: 0
     name: superheroe
     sprite: {fileID: 21300000, guid: 0fbf80cc26e3e6644ad081f55c7e5c1c, type: 3}
-  imagenes: []
-  historiaVisionada: null
+  imagenes:
+  - id: 0
+    name: Pecho
+    sprite: {fileID: 21300000, guid: 5cf40a3d4c46fab4c87cfc78b60716c9, type: 3}
+  escena: 
+  nivel: 0
   avatar: {fileID: 1393529893}
   avatarInicio: {fileID: 1090962736}
   avatarSuperheroe: {fileID: 546356836}

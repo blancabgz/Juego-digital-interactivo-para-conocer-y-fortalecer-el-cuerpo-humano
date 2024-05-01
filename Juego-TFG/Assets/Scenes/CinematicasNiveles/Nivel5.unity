@@ -210,6 +210,7 @@ GameObject:
   - component: {fileID: 483878288}
   - component: {fileID: 483878287}
   - component: {fileID: 483878289}
+  - component: {fileID: 483878290}
   m_Layer: 5
   m_Name: Dialogo
   m_TagString: Untagged
@@ -294,8 +295,11 @@ MonoBehaviour:
     id_superheroe: 0
     id_imagen: 0
     text: "\xA1Hola joven! Hoy te voy a ense\xF1ar sobre los m\xFAsculos del pecho,
-      tambi\xE9n conocidos como pectorales. \xBFSabes que los pectorales se dividen
-      en dos partes?"
+      tambi\xE9n conocidos como pectorales. "
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 0
+    text: "\xBFSabes que los pectorales se dividen en dos partes?"
   - actorId: 2
     id_superheroe: 0
     id_imagen: 0
@@ -303,7 +307,7 @@ MonoBehaviour:
   - actorId: 8
     id_superheroe: 0
     id_imagen: 6
-    text: " Tenemos el pectoral mayor y el pectoral menor. El pectoral mayor es un
+    text: "Tenemos el pectoral mayor y el pectoral menor. El pectoral mayor es un
       m\xFAsculo grueso, ancho y resistente que se encuentra delante del pectoral
       menor."
   - actorId: 2
@@ -322,9 +326,12 @@ MonoBehaviour:
   - actorId: 8
     id_superheroe: 0
     id_imagen: 6
-    text: "El pectoral menor es un m\xFAsculo m\xE1s peque\xF1o, de forma triangular,
-      que ayuda al pectoral mayor a levantar objetos ligeros, por ejemplo. \xA1As\xED
-      que ambos trabajan juntos para ayudarte a moverte!"
+    text: "El pectoral menor es un m\xFAsculo triangular que ayuda al pectoral mayor
+      a levantar objetos ligeros. "
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 0
+    text: "\xA1As\xED que ambos trabajan juntos para ayudarte a moverte!"
   - actorId: 4
     id_superheroe: 0
     id_imagen: 6
@@ -335,7 +342,11 @@ MonoBehaviour:
     id_imagen: 6
     text: "\xA1Estupendo! Para aprender m\xE1s, tengo una actividad preparada donde
       tienes que realizar los ejercicios que se muestran en la imagen uno detr\xE1s
-      de otro. Una vez los hagas todos, selecciona el que creas que trabaja tu pectoral. "
+      de otro."
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 0
+    text: 'Una vez los hagas todos, selecciona el que creas que trabaja tu pectoral. '
   - actorId: 4
     id_superheroe: 0
     id_imagen: 0
@@ -428,6 +439,35 @@ MonoBehaviour:
   avatarSuperheroe: {fileID: 1870251295}
   diapositiva: {fileID: 948334242}
   conversacion: {fileID: 1205313336}
+--- !u!114 &483878290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483878285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 483878289}
+          m_TargetAssemblyTypeName: TextShow, Assembly-CSharp
+          m_MethodName: SiguienteMensaje
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &502348837
 GameObject:
   m_ObjectHideFlags: 0

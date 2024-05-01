@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/GiraTelefono.unity
+    guid: db626a8216a451148abf0ec07a3efff6
+  - enabled: 1
+    path: Assets/Scenes/Datos.unity
+    guid: 4c51010a850bf49478b6744c3afb753d
+  - enabled: 1
     path: Assets/Scenes/MenuPrincipal.unity
     guid: 26802fa8538ca844db5a91dadf35a5c4
   - enabled: 1
@@ -115,7 +121,7 @@ EditorBuildSettings:
     guid: c4d32b424f1153d4ab6351d836dff6f9
   - enabled: 1
     path: Assets/Scenes/Niveles/Nivel8/JuegoParejas.unity
-    guid: 3132f2d9bb5533b4bba37e7f09fff072
+    guid: 3a2364b1009e3b74fba0fddf9a2cc836
   - enabled: 1
     path: Assets/Scenes/Niveles/Nivel9/Dorsal.unity
     guid: c7c27fd9d91d8124385b6c71703e6ff0
@@ -136,7 +142,7 @@ EditorBuildSettings:
     guid: 22034f95bf5dcab458d90a8e532389d8
   - enabled: 1
     path: Assets/Scenes/CinematicasNiveles/Nivel10.1.unity
-    guid: 6c38a8d024a864d4b8aa8d25bc6ba39f
+    guid: 953616a49862b5e40a19e9938a0ec0a8
   - enabled: 1
     path: Assets/Scenes/CinematicasNiveles/Nivel11.unity
     guid: 558089290eed54544b456353001d50d9

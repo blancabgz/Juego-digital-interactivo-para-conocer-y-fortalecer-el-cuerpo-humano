@@ -5797,7 +5797,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 859220481}
         m_TargetAssemblyTypeName: InsertarCalificaciones, Assembly-CSharp
-        m_MethodName: EnviarEmail
+        m_MethodName: EnviarMensaje
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

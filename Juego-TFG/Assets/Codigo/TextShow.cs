@@ -18,7 +18,7 @@ public class TextShow : MonoBehaviour
     // array con las diapositivas
     public Diapositiva[] imagenes;
     // guardar si la historia ya se ha reproducido
-    public string historiaVisionada = "null";
+    // public int historiaVisionada;
     // nombre de la escena a la que vamos a mandar cuando termine la conversacion
     public string escena;
 
@@ -64,13 +64,10 @@ public class TextShow : MonoBehaviour
     // Funcion para controlar si la historia ha sido visionada, en el caso de que no, la muestra
     // En caso contrario, no la muestra y va directamente a la escena "Juego"
     public void LoadHistoriaVisionada(){
-        if (PlayerPrefs.HasKey("HistoriaVisionada")){
-            historiaVisionada = PlayerPrefs.GetString("HistoriaVisionada");
-            
-        }
-
-        if(historiaVisionada != "null"){
+        if (PlayerPrefs.GetInt("HistoriaVisionada",0) != 0){
             SceneManager.LoadScene("Juego"); // going to menu 
+        }else{
+            PlayerPrefs.SetInt("HistoriaVisionada",1);
         }
     }
 
@@ -105,7 +102,10 @@ public class TextShow : MonoBehaviour
         // avatar del superheroe de la escena
         avatarSuperheroe.sprite = superheroePanel[mensaje.id_superheroe].sprite;
         // imagen de la escena
-        diapositiva.sprite = imagenes[mensaje.id_imagen].sprite;
+        if(diapositiva != null){
+            diapositiva.sprite = imagenes[mensaje.id_imagen].sprite;
+        }
+        
     }
 
     public void SiguienteMensaje(){
@@ -116,11 +116,11 @@ public class TextShow : MonoBehaviour
         if(mensajeActivo < mensajes.Length){
             DesplegarMensaje();
         }else{
-            // si el nombre de la escena es historia, ya se ha visionado, asi que la pongo a true
-            if(nombreEscena == "Historia"){
-                historiaVisionada = "true";
-                PlayerPrefs.SetString("HistoriaVisionada", historiaVisionada);
-            }
+            // // si el nombre de la escena es historia, ya se ha visionado, asi que la pongo a true
+            // if(nombreEscena == "Historia"){
+            //     historiaVisionada = "true";
+            //     PlayerPrefs.SetString("HistoriaVisionada", historiaVisionada);
+            // }
             
             if(nombreEscena == "Historia"){
                 SceneManager.LoadScene("Juego"); // going to menu
@@ -135,8 +135,6 @@ public class TextShow : MonoBehaviour
             }
         }
     }
-
-    
 }
 
 

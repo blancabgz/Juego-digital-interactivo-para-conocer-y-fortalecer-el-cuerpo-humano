@@ -77,6 +77,18 @@ public class InsertarCalificaciones : MonoBehaviour
         }
     }
 
+    public void EnviarMensaje(){
+        if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer){
+            SocialShare(mensaje, "Calificaciones");
+        }else{
+            EnviarEmail();
+        }
+    }
+
+    void SocialShare(string mensaje, string asunto){
+        SocialShareHelper.ShareText(mensaje, asunto);
+    }
+
     public void EnviarEmail(){
         MailMessage mail = new MailMessage();
         SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
@@ -86,7 +98,7 @@ public class InsertarCalificaciones : MonoBehaviour
         SmtpServer.Port = 587;
 
         mail.From = new MailAddress("blancabril.999@gmail.com");
-        mail.To.Add(new MailAddress("blancahoran302@gmail.com"));
+        mail.To.Add(new MailAddress(GuardarDatosJugador.CargarEmailJugador()));
 
         mail.Subject = "Calificaciones";
         mail.Body = mensaje;
