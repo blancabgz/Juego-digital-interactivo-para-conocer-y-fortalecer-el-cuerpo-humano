@@ -23,7 +23,6 @@ public class Character : MonoBehaviour
     public void LoadSelectedCharacter(){
         if (PlayerPrefs.HasKey("SelectedCharacter")){
             selectedCharacter = PlayerPrefs.GetString("SelectedCharacter");
-            Debug.Log("El genero seleccionado es " + selectedCharacter);
         }
 
         if(selectedCharacter != "null"){

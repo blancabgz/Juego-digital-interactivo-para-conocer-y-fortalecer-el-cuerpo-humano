@@ -52,14 +52,11 @@ public class InsertarCalificaciones : MonoBehaviour
             }
             
         }
-
-        Debug.Log(mensaje);
     }
 
     private void Calificaciones(){
         GameObject slotPuntuacion;
         if(slotsPanel.Length > 0){
-            Debug.Log(slotsPanel.Length);
             for(int i = 0; i < slotsPanel.Length; i++){
                 slotPuntuacion = slotsPanel[i];
                 TextMeshProUGUI texto = slotPuntuacion.GetComponentInChildren<TextMeshProUGUI>();

@@ -14,7 +14,7 @@ public class AdivinanzaMusculo : MonoBehaviour
     private int numFallos;
     void Start(){
         musculo = PlayerPrefs.GetString("MusculoSeleccionado");
-        Debug.Log(musculo);
+  
         if(musculo == null){
             Debug.LogError("No se ha seleccionado musculo");
             return;
@@ -55,7 +55,6 @@ public class AdivinanzaMusculo : MonoBehaviour
                 // Guardar nivel completado
                 NivelCompletado.GuardarNivel(nivel,2);
                 // Guardar puntos
-                Debug.Log(nivel +" , " + puntos);
                 Puntuaciones.GuardarPuntuacion(nivel,puntos);
 
                 if(panelFinal != null){

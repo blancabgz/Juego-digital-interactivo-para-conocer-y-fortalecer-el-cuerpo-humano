@@ -34,7 +34,6 @@ public class ControlMusica : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        Debug.Log("Escena actual: " + scene.name);
         if (escenasPersiste.Contains(scene.name))
         {
             DontDestroyOnLoad(gameObject);

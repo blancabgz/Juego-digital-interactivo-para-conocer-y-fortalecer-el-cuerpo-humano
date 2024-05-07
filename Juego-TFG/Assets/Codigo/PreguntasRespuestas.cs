@@ -52,12 +52,10 @@ public class PreguntasRespuestas : MonoBehaviour
             }else if(NivelCompletado.CargarNivel(nivel) == 1){
                 // Obtengo los puntos conseguidos en la primera fase
                 puntos = Puntuaciones.CargarPuntuacion(nivel);
-                Debug.Log(puntos);
             // Si no ha sido completado
             }else{
                 // Reinicio los puntos
                 puntos = -1;
-                Debug.Log(puntos);
             }
         }
 

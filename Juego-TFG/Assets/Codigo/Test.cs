@@ -53,14 +53,12 @@ public class Test : MonoBehaviour
     private void CargarSeleccionDado(){
         if (PlayerPrefs.HasKey("DadoSeleccion")){
             dadoSeleccion = PlayerPrefs.GetString("DadoSeleccion");
-            Debug.Log("Parte del cuerpo seleccionada es " + dadoSeleccion);
         }
     }
 
     private void CargarContadorMedallas(){
         if (PlayerPrefs.HasKey("ContadorMedallas")){
             contadorMedallas = PlayerPrefs.GetInt("ContadorMedallas");
-            Debug.Log("Contador de medallas en la pregunta =  " + contadorMedallas);
         }
     }
 
@@ -97,7 +95,6 @@ public class Test : MonoBehaviour
             if(preguntasSeleccionadas[indicePreguntaAleatoria].respuestaCorrecta == preguntasSeleccionadas[indicePreguntaAleatoria].respuestas[indice]){
                 visible = panelFinal.transform.Find("Acierto")?.gameObject;
                 contadorMedallas++;
-                Debug.Log("Contador de medallas despues de acertar =" + contadorMedallas);
                 PlayerPrefs.SetInt("ContadorMedallas", contadorMedallas);
 
             }else{

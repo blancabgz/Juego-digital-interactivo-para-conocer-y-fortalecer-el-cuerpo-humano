@@ -40,7 +40,6 @@ public class Opciones : MonoBehaviour
     }
 
     public void IntentarBorrarDatos(){
-        Debug.Log("borrar");
         panelSeguridad.SetActive(true);
     }
 

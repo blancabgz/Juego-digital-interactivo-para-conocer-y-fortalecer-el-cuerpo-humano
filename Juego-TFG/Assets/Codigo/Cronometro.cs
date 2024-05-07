@@ -51,7 +51,6 @@
         private void CargarContadorMedallas(){
             if (PlayerPrefs.HasKey("ContadorMedallas")){
                 contadorMedallas = PlayerPrefs.GetInt("ContadorMedallas");
-                Debug.Log("Contador de medallas en el movimiento =  " + contadorMedallas);
             }
         }
     }

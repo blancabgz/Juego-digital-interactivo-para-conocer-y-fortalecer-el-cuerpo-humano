@@ -43,7 +43,6 @@ public class TirarDado : MonoBehaviour
             puntuacion--;
             PlayerPrefs.SetInt("Puntuacion", puntuacion);
             CargarPuntuacion();
-            Debug.Log(puntuacion);
             StartCoroutine(Dado());
            
             
@@ -106,7 +105,6 @@ public class TirarDado : MonoBehaviour
                 if(puntuacion < 0){
                     puntuacion = 0;
                 }
-                Debug.Log(puntuacion);
                 // Guardo la puntuacion del nivel
                 Puntuaciones.GuardarPuntuacion(nivel, puntuacion);
                 // Guardo nivel superado

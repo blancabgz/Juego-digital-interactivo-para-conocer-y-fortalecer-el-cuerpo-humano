@@ -92,7 +92,6 @@ public class Puzzle : MonoBehaviour
 
     public void CalcularPuntuacion(){
         int puntuacionFinal = Utilidades.CalcularPuntuacionProporcion(numFallos, MAX_FALLOS);
-        Debug.Log(puntuacionFinal);
         NivelCompletado.GuardarNivel(nivel,2);
         Puntuaciones.GuardarPuntuacion(nivel, puntuacionFinal);
     }

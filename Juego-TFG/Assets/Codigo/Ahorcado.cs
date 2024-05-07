@@ -151,8 +151,7 @@ public class Ahorcado : MonoBehaviour
                 // Comprobar si se han adivinado todas las letras
                 if(letrasPalabraDividida == 0){
                     // Calcular los puntos en función del número de intentos
-                    puntos -= (6 - numIntentos) * 2;
-                    Debug.Log(puntos);  
+                    puntos -= (6 - numIntentos) * 2;  
                     // Nivel completado
                     NivelCompletado.GuardarNivel(nivel,2);
                     // Guardo la media de los puntos conseguidos en ambas pantallas

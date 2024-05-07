@@ -13,8 +13,6 @@ public class AsignarPremio : MonoBehaviour
     void Awake()
     {    
         nivelActual = PlayerPrefs.GetInt("Nivel", 1);
-        Debug.Log(nivelActual);
-        Debug.Log(ControladorNiveles.instancia.ActualLevel());
     }
     void Start()
     {   

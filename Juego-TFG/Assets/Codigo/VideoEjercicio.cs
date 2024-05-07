@@ -20,7 +20,7 @@ public class VideoEjercicio : MonoBehaviour
             videoPlayer.clip = randomVideo;
             videoPlayer.Play();
         }else{
-            Debug.Log("No hay videos en el array");
+            Debug.LogError("No hay videos en el array");
         }
     }
 

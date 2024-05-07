@@ -156,7 +156,6 @@ public class Parejas : MonoBehaviour
         if(cartasCorrectasEncontradas == cartas.Length){
             // Calcular puntuacion segun el numero de fallos cometidos
             int puntuacionFinal = Utilidades.CalcularPuntuacionProporcion(numFallos, MAX_FALLOS);
-            Debug.Log(puntuacionFinal);
 
             NivelCompletado.GuardarNivel(nivel,2);
             Puntuaciones.GuardarPuntuacion(nivel, puntuacionFinal);
