@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using System.Text.RegularExpressions;
 
 public class Utilidades
 {
@@ -57,6 +58,13 @@ public class Utilidades
         float proporcion = (float)numFallos / max_fallos;
         float puntuacion = 10.0f - proporcion * 10.0f;
         return Redondear(puntuacion);
+    }
+
+    public static bool EsEmail(string email){
+        // Expresión regular para validar el formato de un correo electrónico
+        string pattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
+        Regex regex = new Regex(pattern);
+        return regex.IsMatch(email);
     }
 
     
