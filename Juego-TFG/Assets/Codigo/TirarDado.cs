@@ -22,6 +22,7 @@ public class TirarDado : MonoBehaviour
     private int contadorMedallas = 0;
     private int puntuacion = 10;
     public GameObject panelFinal;
+    public AudioSource audioSource;
 
 
     void Awake(){
@@ -30,10 +31,13 @@ public class TirarDado : MonoBehaviour
         GuardarContadorMedallas();
         SubirIntensidadImagen();
     }
-    void Start()
-    {
-       imagenDado = GameObject.Find("Dado").GetComponent<Image>();
-       tituloDado = GameObject.Find("TituloDado").transform.GetComponent<TextMeshProUGUI>();
+    void Start(){
+        if(audioSource != null){
+            audioSource.Stop();
+            audioSource.enabled = false;
+        }
+        imagenDado = GameObject.Find("Dado").GetComponent<Image>();
+        tituloDado = GameObject.Find("TituloDado").transform.GetComponent<TextMeshProUGUI>();
     }
 
 
@@ -44,8 +48,10 @@ public class TirarDado : MonoBehaviour
             PlayerPrefs.SetInt("Puntuacion", puntuacion);
             CargarPuntuacion();
             StartCoroutine(Dado());
-           
-            
+            if (audioSource != null){
+                audioSource.enabled = true;
+                audioSource.Play();
+            } 
         }
     }
     IEnumerator Dado(){
