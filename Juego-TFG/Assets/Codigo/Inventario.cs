@@ -13,6 +13,23 @@ public class Inventario : MonoBehaviour
     // contenedor del inventario de los slots
     public GameObject inventario;
     public ObjetoInventario[] premios;
+    
+    AudioSource[] audioSources;
+    private string musica;
+
+    void Awake(){
+        audioSources = FindObjectsOfType<AudioSource>();
+        musica = PlayerPrefs.GetString("estadoMusica", "null");
+        if(musica != null){
+            if(musica == "OFF"){
+                if(audioSources != null){
+                    foreach (AudioSource audioSource in audioSources){
+                        audioSource.mute = false;
+                    }
+                }
+            }
+        }
+    }
 
     void Start(){
         // cuenta el numero de slots del inventario

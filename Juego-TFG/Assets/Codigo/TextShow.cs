@@ -35,6 +35,9 @@ public class TextShow : MonoBehaviour
     
 
     int mensajeActivo = 0;
+    AudioSource[] audioSources;
+    private string musica;
+
 
     void Start(){
         PersonajePanel();
@@ -52,8 +55,19 @@ public class TextShow : MonoBehaviour
         // obtengo el personaje que ha elegido el jugador/a
         selectedCharacter = PlayerPrefs.GetString("SelectedCharacter");
         // comprueba si la escena ya ha sido visionada en la escena "Historia"
-        
-        
+
+        audioSources = FindObjectsOfType<AudioSource>();
+        musica = PlayerPrefs.GetString("estadoMusica", "null");
+        if(musica != null){
+            if(musica == "OFF"){
+                if(audioSources != null){
+                    foreach (AudioSource audioSource in audioSources){
+                        audioSource.mute = false;
+                    }
+                }
+            }
+        }
+
     }
 
     // Funcion para que aparezca el sprite del personaje seleccionado por el jugador/a
@@ -64,13 +78,6 @@ public class TextShow : MonoBehaviour
             avatarInicio.sprite = actorPanel[0].sprite;
         }
     }
-
-    // Funcion para controlar si la historia ha sido visionada, en el caso de que no, la muestra
-    // En caso contrario, no la muestra y va directamente a la escena "Juego"
-    public void LoadHistoriaVisionada(){
-        
-    }
-
     
 
     // Funcion que despliega el mensaje junto con el avatar del personaje que habla

@@ -22,9 +22,22 @@ public class Parejas : MonoBehaviour
     private int numFallos;
     private const int MAX_FALLOS = 20;
 
+    AudioSource[] audioSources;
+    private string musica;
 
-
-
+    void Awake(){
+        audioSources = FindObjectsOfType<AudioSource>();
+        musica = PlayerPrefs.GetString("estadoMusica", "null");
+        if(musica != null){
+            if(musica == "OFF"){
+                if(audioSources != null){
+                    foreach (AudioSource audioSource in audioSources){
+                        audioSource.mute = false;
+                    }
+                }
+            }
+        }
+    }
     void Start()
     {
         // Mezclamos los elementos del array

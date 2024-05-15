@@ -10,6 +10,23 @@ public class Adivinanzas : MonoBehaviour
     public Adivinanza[] adivinanzas;
     private GameObject panelAdivinanzas;
     private TextMeshProUGUI adivinanzaText;
+    
+    AudioSource[] audioSources;
+    private string musica;
+
+    void Awake(){
+        audioSources = FindObjectsOfType<AudioSource>();
+        musica = PlayerPrefs.GetString("estadoMusica", "null");
+        if(musica != null){
+            if(musica == "OFF"){
+                if(audioSources != null){
+                    foreach (AudioSource audioSource in audioSources){
+                        audioSource.mute = false;
+                    }
+                }
+            }
+        }
+    }
     void Start()
     {   
         // Mezcla elementos

@@ -23,7 +23,22 @@ public class Puzzle : MonoBehaviour
     private int numFallos;
     private static int MAX_FALLOS = 66;
 
-    
+    AudioSource[] audioSources;
+    private string musica;
+
+    void Awake(){
+        audioSources = FindObjectsOfType<AudioSource>();
+        musica = PlayerPrefs.GetString("estadoMusica", "null");
+        if(musica != null){
+            if(musica == "OFF"){
+                if(audioSources != null){
+                    foreach (AudioSource audioSource in audioSources){
+                        audioSource.mute = false;
+                    }
+                }
+            }
+        }
+    }
     
 
     void Start() {

@@ -10,6 +10,7 @@ public class ObtenerDatosUser : MonoBehaviour
     public TMP_InputField nombre;
     public TMP_InputField email;
     public TextMeshProUGUI mensajeError;
+ 
     void Start(){
         if(PlayerPrefs.GetInt("Datos",0) != 0){
             SceneManager.LoadScene("MenuPrincipal");   

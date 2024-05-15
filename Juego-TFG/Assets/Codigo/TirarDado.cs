@@ -24,13 +24,29 @@ public class TirarDado : MonoBehaviour
     public GameObject panelFinal;
     public AudioSource audioSource;
 
+    AudioSource[] audioSources;
+    private string musica;
 
     void Awake(){
+        audioSources = FindObjectsOfType<AudioSource>();
+        musica = PlayerPrefs.GetString("estadoMusica", "null");
+        if(musica != null){
+            if(musica == "OFF"){
+                if(audioSources != null){
+                    foreach (AudioSource audioSource in audioSources){
+                        audioSource.mute = false;
+                    }
+                }
+            }
+        }
+
         CargarPuntuacion();
         CargarContadorMedallas();
         GuardarContadorMedallas();
         SubirIntensidadImagen();
     }
+
+    
     void Start(){
         if(audioSource != null){
             audioSource.Stop();

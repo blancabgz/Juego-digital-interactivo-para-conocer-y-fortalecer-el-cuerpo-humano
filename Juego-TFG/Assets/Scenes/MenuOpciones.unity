@@ -2547,6 +2547,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   btext: {fileID: 391739477}
   panelSeguridad: {fileID: 1005297586}
+  nombresAudios:
+  - ControlMusica
+  - Musica
+  - AjustesMusic
 --- !u!1 &1976746745
 GameObject:
   m_ObjectHideFlags: 0

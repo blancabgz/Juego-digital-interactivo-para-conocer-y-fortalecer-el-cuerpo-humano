@@ -14,16 +14,31 @@
         private int tempMin, tempSeg;
         private int contadorMedallas = 0;
         private bool terminado = false;
+        
+        AudioSource[] audioSources;
+        private string musica;
 
-        private void Awake(){
+        void Awake(){
+            audioSources = FindObjectsOfType<AudioSource>();
+            musica = PlayerPrefs.GetString("estadoMusica", "null");
+            if(musica != null){
+                if(musica == "OFF"){
+                    if(audioSources != null){
+                        foreach (AudioSource audioSource in audioSources){
+                            audioSource.mute = false;
+                        }
+                    }
+                }
+            }
+
             CargarContadorMedallas();
             restante = (min * 60) + seg;
             enMarcha = true;
         }
 
 
-        void Update()
-        {
+
+        void Update(){
             if (!enMarcha || terminado) return; // Comprueba si ya se ha llamado IrAlDado
 
             restante -= Time.deltaTime;
@@ -53,4 +68,4 @@
                 contadorMedallas = PlayerPrefs.GetInt("ContadorMedallas");
             }
         }
-    }
+}

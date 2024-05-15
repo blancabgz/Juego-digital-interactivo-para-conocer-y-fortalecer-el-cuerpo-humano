@@ -20,6 +20,24 @@ public class LuchaContraElVillano : MonoBehaviour
     private int puntos;
     private int numErrores;
     // Start is called before the first frame update
+
+    AudioSource[] audioSources;
+    private string musica;
+
+    void Awake(){
+        audioSources = FindObjectsOfType<AudioSource>();
+        musica = PlayerPrefs.GetString("estadoMusica", "null");
+        if(musica != null){
+            if(musica == "OFF"){
+                if(audioSources != null){
+                    foreach (AudioSource audioSource in audioSources){
+                        audioSource.mute = false;
+                    }
+                }
+            }
+        }
+    }
+    
     void Start()
     {
         Utilidades.MezclarElementos(preguntas);
