@@ -10,6 +10,7 @@ public class MainJuego : MonoBehaviour
 
     void Awake(){
         audioSources = FindObjectsOfType<AudioSource>();
+        Debug.Log(audioSources);
         musica = PlayerPrefs.GetString("estadoMusica", "null");
         if(musica != null){
             if(musica == "OFF"){

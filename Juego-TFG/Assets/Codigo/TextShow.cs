@@ -35,17 +35,21 @@ public class TextShow : MonoBehaviour
     
 
     int mensajeActivo = 0;
-    AudioSource[] audioSources;
-    private string musica;
 
 
-    void Start(){
-        PersonajePanel();
-        DesplegarMensaje();  
-    }
+
+  
 
     private void Awake(){
         string nombreEscena = SceneManager.GetActiveScene().name;
+        GameObject controlMusica = GameObject.Find("ControlMusica");
+        Debug.Log(controlMusica);
+        if(PlayerPrefs.GetString("estadoMusica", "null") == "OFF"){
+            if(controlMusica != null){
+                Destroy(controlMusica);
+            }   
+        }
+
         if(nombreEscena == "Historia"){
             if (PlayerPrefs.GetInt("HistoriaVisionada",0) == 1){
                 SceneManager.LoadScene("Juego"); 
@@ -56,18 +60,10 @@ public class TextShow : MonoBehaviour
         selectedCharacter = PlayerPrefs.GetString("SelectedCharacter");
         // comprueba si la escena ya ha sido visionada en la escena "Historia"
 
-        audioSources = FindObjectsOfType<AudioSource>();
-        musica = PlayerPrefs.GetString("estadoMusica", "null");
-        if(musica != null){
-            if(musica == "OFF"){
-                if(audioSources != null){
-                    foreach (AudioSource audioSource in audioSources){
-                        audioSource.mute = false;
-                    }
-                }
-            }
-        }
-
+    }
+    void Start(){
+        PersonajePanel();
+        DesplegarMensaje();  
     }
 
     // Funcion para que aparezca el sprite del personaje seleccionado por el jugador/a
