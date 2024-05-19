@@ -41,6 +41,12 @@ public class Opciones : MonoBehaviour
         EscenaJuego("EleccionPersonaje");
     }
 
+    public void CambiarDatos(){
+        PlayerPrefs.SetInt("Datos",0);
+        PlayerPrefs.Save();
+        EscenaJuego("Datos");
+    }
+
     public void ComprobarEstadoMusica(){
         if(audioSources != null){
             foreach (AudioSource audioSource in audioSources){
