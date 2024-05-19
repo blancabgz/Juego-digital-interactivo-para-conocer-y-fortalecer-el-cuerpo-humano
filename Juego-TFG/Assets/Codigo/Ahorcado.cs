@@ -38,7 +38,7 @@ public class Ahorcado : MonoBehaviour
             if(musica == "OFF"){
                 if(audioSources != null){
                     foreach (AudioSource audioSource in audioSources){
-                        audioSource.mute = false;
+                        audioSource.mute = true;
                     }
                 }
             }

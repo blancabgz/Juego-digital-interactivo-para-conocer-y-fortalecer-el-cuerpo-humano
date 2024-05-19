@@ -23,8 +23,7 @@ public class ControladorNiveles : MonoBehaviour
         if(levelBottons.Length > 0){
 
             // disable interaction on all buttons
-            for (int i = 0; i < levelBottons.Length; i++)
-            {
+            for (int i = 0; i < levelBottons.Length; i++){
                 levelBottons[i].btnNivel.interactable = false;
             }
 
