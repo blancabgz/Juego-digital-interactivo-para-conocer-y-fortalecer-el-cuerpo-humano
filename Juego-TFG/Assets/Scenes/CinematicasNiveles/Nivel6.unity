@@ -295,11 +295,11 @@ MonoBehaviour:
     id_superheroe: 0
     id_imagen: 0
     text: "\xA1Buenas joven! Hoy toca una zona del cuerpo que a casi nadie le gusta
-      entrenar pero todo el mundo quiere tener trabajada"
+      entrenar pero todo el mundo quiere tener trabajada."
   - actorId: 2
     id_superheroe: 0
     id_imagen: 0
-    text: "\xBFDe que zona est\xE1s hablando?"
+    text: "\xBFDe qu\xE9 zona est\xE1s hablando?"
   - actorId: 8
     id_superheroe: 0
     id_imagen: 0
@@ -313,17 +313,22 @@ MonoBehaviour:
     id_superheroe: 0
     id_imagen: 0
     text: "\xA1Ja, ja! Esa es una idea com\xFAn, pero hay que hacer un poco m\xE1s
-      que correr para entrenarlos. Nosotros aprenderemos los tres m\xE1s importantes.
-      \xBFSabes cuales son?"
+      que correr para entrenarlos."
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 0
+    text: "Nosotros aprenderemos los tres m\xFAsculos m\xE1s importantes. \xBFSabes
+      cu\xE1les son?"
   - actorId: 4
     id_superheroe: 0
     id_imagen: 0
-    text: "Pues la verdad es que no. \xBFLas piernas y el culo no?"
+    text: "Pues la verdad es que no. Las piernas y el culo, \xBFno?"
   - actorId: 8
     id_superheroe: 0
     id_imagen: 9
     text: "\xA1Has estado cerca! El m\xFAsculo que se encuentra en la parte delantera
-      de la pierna, en tus muslos se llaman cuadriceps. \xBFSabes para que se utilizan?"
+      de la pierna, en tus muslos se llaman cu\xE1driceps. \xBFSabes para qu\xE9
+      se utilizan?"
   - actorId: 2
     id_superheroe: 0
     id_imagen: 9
@@ -333,7 +338,7 @@ MonoBehaviour:
     id_imagen: 9
     text: "\xA1Efectivamente! Y adem\xE1s sirven para saltar, por ejemplo. "
   - actorId: 8
-    id_superheroe: 4
+    id_superheroe: 0
     id_imagen: 8
     text: "Por otro lado, el m\xFAsculo que se sit\xFAa en el culo, se llama gl\xFAteo.
       \xA1Este m\xFAsculo es el m\xE1s grande del cuerpo! Te ayuda a caminar y subir
@@ -341,17 +346,20 @@ MonoBehaviour:
   - actorId: 4
     id_superheroe: 0
     id_imagen: 8
-    text: "\xA1Ala! \xBFEs el m\xE1s grande? \xA1Que guay! "
+    text: "\xA1Ala! \xBFEs el m\xE1s grande? \xA1Qu\xE9 guay! "
   - actorId: 8
     id_superheroe: 0
     id_imagen: 10
-    text: "Y el \xFAltimo que nos queda es el gemelo. Es un m\xFAsculo que est\xE1
-      en la parte de atr\xE1s de las piernas y te ayudan a impulsarte y a mantener
-      equilibrio. "
+    text: "Y el \xFAltimo que nos queda es el gemelo. "
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 10
+    text: "Es un m\xFAsculo que est\xE1 en la parte de atr\xE1s de las piernas y
+      te ayudan a impulsarte y a mantener equilibrio."
   - actorId: 4
     id_superheroe: 0
     id_imagen: 10
-    text: "\xA1Ah vale! Ahora s\xED todo comprendido. "
+    text: "\xA1Ah vale! Ahora s\xED lo comprendo todo."
   - actorId: 8
     id_superheroe: 0
     id_imagen: 10
@@ -360,7 +368,7 @@ MonoBehaviour:
   - actorId: 9
     id_superheroe: 4
     id_imagen: 0
-    text: "\xA1Hola! \xBFQue tal est\xE1s?"
+    text: "\xA1Hola! \xBFQu\xE9 tal est\xE1s?"
   - actorId: 4
     id_superheroe: 4
     id_imagen: 0
@@ -368,10 +376,17 @@ MonoBehaviour:
   - actorId: 9
     id_superheroe: 4
     id_imagen: 0
-    text: "\xA1Efectivamente! Ahora que has aprendido los tres m\xFAsculos principales
-      de la parte de abajo de nuestro cuerpo\u2026 te voy a llevar a un sitio donde
-      tendr\xE1s que adivinar cual es el m\xFAsculo que muestra la sombra del escenario.
-      \xBFPodr\xE1s hacerlo?"
+    text: "\xA1Efectivamente! "
+  - actorId: 9
+    id_superheroe: 4
+    id_imagen: 0
+    text: "Ahora que has aprendido los tres m\xFAsculos principales de la parte de
+      abajo de nuestro cuerpo te voy a llevar a un sitio donde realizaremos la actividad."
+  - actorId: 9
+    id_superheroe: 4
+    id_imagen: 0
+    text: "Tendr\xE1s que adivinar cual es el m\xFAsculo que muestra la sombra del
+      escenario. \xBFPodr\xE1s hacerlo?"
   - actorId: 4
     id_superheroe: 4
     id_imagen: 0

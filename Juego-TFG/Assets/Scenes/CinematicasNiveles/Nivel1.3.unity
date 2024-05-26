@@ -422,16 +422,16 @@ MonoBehaviour:
   - actorId: 0
     id_superheroe: 1
     id_imagen: 0
-    text: "Uff... \xBFcomo ha ido?"
+    text: "Uff... \xBFC\xF3mo ha ido?"
   - actorId: 9
     id_superheroe: 1
     id_imagen: 0
-    text: "\xA1Lo has hecho genial!Realmente puedes ver que tus b\xEDceps y tr\xEDceps
+    text: "\xA1Lo has hecho genial! Realmente puedes ver que tus b\xEDceps y tr\xEDceps
       se est\xE1n fortaleciendo. \xA1Sigue practicando!"
   - actorId: 4
     id_superheroe: 1
     id_imagen: 0
-    text: "\xA1Oh genial! Ya mismo ser\xE9 como vosotros!"
+    text: "\xA1Oh genial! \xA1Ya mismo ser\xE9 como vosotros!"
   - actorId: 10
     id_superheroe: 2
     id_imagen: 0

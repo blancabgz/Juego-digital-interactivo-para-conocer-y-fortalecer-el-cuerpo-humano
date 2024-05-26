@@ -326,16 +326,29 @@ MonoBehaviour:
   - actorId: 11
     id_superheroe: 3
     id_imagen: 0
-    text: "\xA1Lo has hecho genial! Ahora ya sabes que ejercicio tienes que hacer
-      para formar tus alas"
+    text: "\xA1Lo has hecho genial! Ahora ya sabes qu\xE9 ejercicio tienes que hacer
+      para formar tus alas."
   - actorId: 4
     id_superheroe: 3
     id_imagen: 0
-    text: "\xA1Muchas gracias! Es genial"
+    text: "\xA1Muchas gracias! Es genial."
   - actorId: 11
     id_superheroe: 3
     id_imagen: 0
     text: 'Como lo has hecho fenomenal, te mereces un premio. '
+  - actorId: 11
+    id_superheroe: 3
+    id_imagen: 0
+    text: "Es un anillo que te har\xE1 poder volar dependiendo de la fuerza y el
+      desarrollo que tengas en tu espalda."
+  - actorId: 11
+    id_superheroe: 3
+    id_imagen: 0
+    text: "Cuanto m\xE1s fuerte y desarrollada est\xE9, m\xE1s tiempo podr\xE1s volar."
+  - actorId: 4
+    id_superheroe: 3
+    id_imagen: 0
+    text: "\xA1Qu\xE9 guay! Qu\xE9 ganas de poder probarlo."
   actores:
   - id: 0
     name: "ni\xF1a_asustad"

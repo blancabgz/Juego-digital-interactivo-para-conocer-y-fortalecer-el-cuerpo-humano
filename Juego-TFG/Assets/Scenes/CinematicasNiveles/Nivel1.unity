@@ -294,11 +294,11 @@ MonoBehaviour:
   - actorId: 0
     id_superheroe: 0
     id_imagen: 0
-    text: "\xBFQue es este lugar?"
+    text: "\xBFQu\xE9 es este lugar?"
   - actorId: 8
     id_superheroe: 0
     id_imagen: 0
-    text: "\xA1Hola! \xBFEstas preparado para comenzar tu entrenamiento? "
+    text: "\xA1Hola! \xBFEst\xE1s preparado para comenzar tu entrenamiento? "
   - actorId: 4
     id_superheroe: 0
     id_imagen: 0
@@ -306,13 +306,13 @@ MonoBehaviour:
   - actorId: 8
     id_superheroe: 0
     id_imagen: 0
-    text: "Te presento a Mr Biceps, el te ayudar\xE1 a entrenar tus biceps y aprender
-      mas sobre como sacarles partido."
+    text: "Te presento a Mr. B\xEDceps, \xE9l te ayudar\xE1 a entrenar tus b\xEDceps
+      y aprender m\xE1s sobre como sacarles partido."
   - actorId: 9
     id_superheroe: 1
     id_imagen: 1
     text: "\xA1Hola joven! Hoy vamos a aprender como formar estos maravillosos brazos.
-      Lo primero de todo, sabes que son los m\xFAsculos?"
+      Lo primero de todo, \xBFsabes qu\xE9 son los m\xFAsculos?"
   - actorId: 2
     id_superheroe: 1
     id_imagen: 1
@@ -325,7 +325,7 @@ MonoBehaviour:
   - actorId: 4
     id_superheroe: 1
     id_imagen: 1
-    text: "\xBFY porqu\xE9 tu tienes un brazo tan grande? "
+    text: "\xBFY por qu\xE9 t\xFA tienes un brazo tan grande?"
   - actorId: 9
     id_superheroe: 1
     id_imagen: 2
@@ -339,8 +339,8 @@ MonoBehaviour:
   - actorId: 9
     id_superheroe: 1
     id_imagen: 2
-    text: "Te mostrar\xE9 tres ejercicios divertidos. Realizalos y selecciona la
-      imagen que creas correcta. \xBFEst\xE1s listo?"
+    text: "Te mostrar\xE9 tres ejercicios divertidos. Real\xEDzalos y selecciona
+      la imagen que creas correcta. \xBFEst\xE1s listo? "
   - actorId: 4
     id_superheroe: 1
     id_imagen: 2

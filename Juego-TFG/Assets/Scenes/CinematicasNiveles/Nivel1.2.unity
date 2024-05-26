@@ -294,42 +294,42 @@ MonoBehaviour:
   - actorId: 0
     id_superheroe: 1
     id_imagen: 2
-    text: "\xBFLo he hecho bien en la prueba Mr Biceps?"
+    text: "\xBFLo he hecho bien en la prueba Mr. B\xEDceps?"
   - actorId: 9
     id_superheroe: 1
     id_imagen: 0
-    text: "\xA1Por supuesto! Lo has hecho muy bien pero el aprendizaje no acaba aqu\xED"
+    text: "\xA1Por supuesto! Lo has hecho muy bien pero el aprendizaje no acaba aqu\xED."
   - actorId: 0
     id_superheroe: 1
     id_imagen: 0
-    text: "\xBFAh no?"
+    text: "Ah, \xBFno?"
   - actorId: 9
     id_superheroe: 1
     id_imagen: 0
-    text: "\xA1Que va! Te presento a Tempestad, ella es una experta en Triceps y
-      te va a contar un poco lo que tienes que saber a cerca del triceps"
+    text: "\xA1Qu\xE9 va! Te presento a Tempestad, ella es una experta en tr\xEDceps
+      y te va a contar un poco sobre lo que tienes que saber a cerca del tr\xEDceps."
   - actorId: 10
     id_superheroe: 2
     id_imagen: 1
-    text: "\xA1Hola joven! \xBFCuanto sabes sobre este m\xFAsculo de aqui?"
+    text: "\xA1Hola joven! \xBFCu\xE1nto sabes sobre este m\xFAsculo de aqu\xED?"
   - actorId: 2
     id_superheroe: 2
     id_imagen: 1
-    text: "Puues... la verdad es que poco. \xBFEs el triceps no?"
+    text: "Puues... la verdad es que poco. Es el tr\xEDceps, \xBFno?"
   - actorId: 10
     id_superheroe: 2
     id_imagen: 2
-    text: "\xA1Muy bien! Este m\xFAsculo se llama triceps. \xBFSabes que es el m\xFAsculo
-      m\xE1s grande de la parte trasera del brazo?"
+    text: "\xA1Muy bien! Este m\xFAsculo se llama tr\xEDceps. \xBFSabes que es el
+      m\xFAsculo m\xE1s grande del brazo?"
   - actorId: 4
     id_superheroe: 2
     id_imagen: 2
-    text: "\xBFAh si?"
+    text: "Ah, \xBFsi?"
   - actorId: 10
     id_superheroe: 2
     id_imagen: 3
     text: "Pues s\xED y encima, tiene 3 partes y es muy importante realizar ejercicios
-      que lo trabajen para poder tener un brazo fuerte"
+      que lo trabajen para poder tener un brazo fuerte y grande."
   - actorId: 4
     id_superheroe: 2
     id_imagen: 3
@@ -337,12 +337,12 @@ MonoBehaviour:
   - actorId: 10
     id_superheroe: 2
     id_imagen: 3
-    text: "Te mostrar\xE9 tres ejercicios divertidos para trabajar tu triceps. Realizalos
-      y selecciona la imagen que creas correcta. \xBFEst\xE1s listo?"
+    text: "Te mostrar\xE9 tres ejercicios divertidos para trabajar tu tr\xEDceps.
+      Real\xEDzalos y selecciona la imagen que creas correcta. \xBFEst\xE1s listo?"
   - actorId: 4
     id_superheroe: 2
     id_imagen: 3
-    text: " \xA1Si! \xA1Vamos all\xE1!"
+    text: "\xA1S\xED! \xA1Vamos all\xE1!"
   actores:
   - id: 0
     name: "ni\xF1a_asustad"

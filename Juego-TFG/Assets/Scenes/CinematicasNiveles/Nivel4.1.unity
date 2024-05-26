@@ -323,25 +323,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mensajes:
-  - actorId: 8
-    id_superheroe: 0
+  - actorId: 13
+    id_superheroe: 5
     id_imagen: 0
-    text: "\xBFQu\xE9 te ha parecido? \xBFHa ido todo muy bien?"
+    text: "\xBFQu\xE9 te ha parecido el puzle? \xBFTe ha gustado?"
   - actorId: 4
-    id_superheroe: 0
+    id_superheroe: 5
     id_imagen: 0
-    text: " \xA1S\xED! Me ha encantado conocer al equipo del que voy a formar parte
-      de esta manera."
-  - actorId: 8
-    id_superheroe: 0
+    text: "\xA1S\xED! Me ha encantado conocer al equipo del que voy a formar parte."
+  - actorId: 13
+    id_superheroe: 5
     id_imagen: 0
-    text: "Me alegro mucho que te haya gustado este juego que hemos dise\xF1ado especialmente
-      para ti para fortalecer tu capacidad mental. "
+    text: "Me alegro, con este tipo de puzles puedes ir desarrollando m\xE1s y m\xE1s
+      tu inteligencia hasta ser tan listo como yo."
   - actorId: 4
-    id_superheroe: 0
+    id_superheroe: 5
     id_imagen: 0
-    text: "Continuemos con mi formaci\xF3n. \xA1Quiero ser parte de este equipo tan
-      guay! "
+    text: "\xA1Bien! \xA1Qu\xE9 ganas tengo de seguir con mi formaci\xF3n!"
   actores:
   - id: 0
     name: "ni\xF1a_asustad"
@@ -382,6 +380,9 @@ MonoBehaviour:
   - id: 12
     name: capitan_core
     sprite: {fileID: 21300000, guid: 76e2959fdc69d844bbb4fff18dd29ef2, type: 3}
+  - id: 13
+    name: delto_titan
+    sprite: {fileID: 21300000, guid: 6b935d9304b1a1944bdc2d84c7260d33, type: 3}
   actorPanel:
   - id: 0
     name: "Ni\xF1a"
@@ -405,6 +406,9 @@ MonoBehaviour:
   - id: 4
     name: capitan_core
     sprite: {fileID: 21300000, guid: 9f88dba6a72eb2046b6edc8d66c7cc78, type: 3}
+  - id: 5
+    name: delto_titan
+    sprite: {fileID: 21300000, guid: 8042528e5fb92d8459f79d7e130561ec, type: 3}
   imagenes:
   - id: 0
     name: presentacion

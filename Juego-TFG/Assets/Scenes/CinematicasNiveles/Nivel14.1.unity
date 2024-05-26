@@ -295,7 +295,7 @@ MonoBehaviour:
     id_superheroe: 2
     id_imagen: 0
     text: "\xA1Uf! Menos mal que hemos conseguido vencerle. Muchas gracias por tu
-      ayuda. \xA1Has estado increible!"
+      ayuda. \xA1Has estado incre\xEDble!"
   - actorId: 4
     id_superheroe: 2
     id_imagen: 0
@@ -303,16 +303,25 @@ MonoBehaviour:
   - actorId: 10
     id_superheroe: 2
     id_imagen: 0
-    text: "Un poquito pero hemos podido con el. Como lo has vencido tu... Tengo un
-      regalo para t\xED."
+    text: "Un poquito pero hemos podido con \xE9l. Como lo has vencido t\xFA... Tengo
+      un regalo para ti."
   - actorId: 4
     id_superheroe: 2
     id_imagen: 0
-    text: "\xA1Ui! \xBFQue es?"
+    text: "\xA1Uy! \xBFQu\xE9 es?"
   - actorId: 10
     id_superheroe: 2
     id_imagen: 0
-    text: "\xA1Ya lo ver\xE1s!"
+    text: "Es un cintur\xF3n multiherramientas, en \xE9l tendr\xE1s todo lo necesario
+      para cualquier situaci\xF3n en la que te encuentres."
+  - actorId: 10
+    id_superheroe: 2
+    id_imagen: 0
+    text: "Tienes desde cuerdas, ganchos, mini elixires de curaci\xF3n\u2026"
+  - actorId: 4
+    id_superheroe: 2
+    id_imagen: 0
+    text: "\xA1Vaya! Es un cintur\xF3n muy \xFAtil, muchas gracias."
   actores:
   - id: 0
     name: "ni\xF1a_asustad"

@@ -294,16 +294,16 @@ MonoBehaviour:
   - actorId: 0
     id_superheroe: 0
     id_imagen: 0
-    text: "\xBFCreo que lo he hecho bien no?"
+    text: "Creo que lo he hecho bien, \xBFno?"
   - actorId: 8
     id_superheroe: 0
     id_imagen: 0
-    text: "\xA1S\xED! Y ahora... te voy a presentar a ... "
+    text: "\xA1S\xED! Y ahora te voy a presentar a..."
   - actorId: 11
     id_superheroe: 3
     id_imagen: 0
     text: "\xA1Hola joven! Soy Espald\xEDn Supremo, y ya he visto que has sido capaz
-      de completar el rompecabeza para formar la espalda. \xBFSab\xEDas que en la
+      de completar el rompecabezas para formar la espalda. \xBFSab\xEDas que en la
       espalda intervienen varios m\xFAsculos?"
   - actorId: 0
     id_superheroe: 3
@@ -312,11 +312,12 @@ MonoBehaviour:
   - actorId: 11
     id_superheroe: 3
     id_imagen: 4
-    text: " \xA1Por supuesto! Te explico ahora mismo."
+    text: "\xA1Por supuesto! Ahora mismo te explico."
   - actorId: 11
     id_superheroe: 3
     id_imagen: 4
-    text: "Intervienen 3 m\xFAsculos importantes: el trapecio, la dorsal y el lumbar."
+    text: "Intervienen 3 m\xFAsculos importantes: el trapecio, los dorsales y el
+      lumbar."
   - actorId: 11
     id_superheroe: 3
     id_imagen: 5
@@ -330,12 +331,12 @@ MonoBehaviour:
   - actorId: 11
     id_superheroe: 3
     id_imagen: 6
-    text: "Tambi\xE9n tenemos el dorsal, que es como una capa ancha en la espalda.
-      Ayuda a levantar y sujetar cosas."
+    text: "Tambi\xE9n tenemos los dorsales, que son como una capa ancha en la espalda.
+      Ayudan a levantar y sujetar cosas."
   - actorId: 2
     id_superheroe: 3
     id_imagen: 6
-    text: "Pero... cuando me agacho... que m\xFAsculo interviene?"
+    text: "Pero cuando me agacho... \xBFQu\xE9 m\xFAsculo interviene?"
   - actorId: 11
     id_superheroe: 3
     id_imagen: 7
@@ -344,8 +345,26 @@ MonoBehaviour:
   - actorId: 4
     id_superheroe: 3
     id_imagen: 7
-    text: " \xA1Guau, no sab\xEDa que la espalda ten\xEDa tantos m\xFAsculos! Gracias,
+    text: "\xA1Guau, no sab\xEDa que la espalda ten\xEDa tantos m\xFAsculos! Gracias
       Espald\xEDn Supremo."
+  - actorId: 11
+    id_superheroe: 3
+    id_imagen: 7
+    text: "\xBFSabes? He estado pensando y creo que voy a darte un regalo por haber
+      pasado la prueba y como muestra de tus conocimientos."
+  - actorId: 4
+    id_superheroe: 3
+    id_imagen: 7
+    text: "\xBFUn regalo?"
+  - actorId: 11
+    id_superheroe: 3
+    id_imagen: 7
+    text: "S\xED, voy a darte esta mochila con espacio infinito para que puedas llevar
+      en tus espaldas todos los objetos que necesites."
+  - actorId: 4
+    id_superheroe: 3
+    id_imagen: 7
+    text: "\xA1Guau! Muchas gracias Espald\xEDn Supremo."
   actores:
   - id: 0
     name: "ni\xF1a_asustad"

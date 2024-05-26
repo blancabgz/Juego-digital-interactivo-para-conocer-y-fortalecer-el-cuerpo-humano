@@ -432,7 +432,7 @@ MonoBehaviour:
     id_superheroe: 3
     id_imagen: 0
     text: "Me alegra que est\xE9s tan emocionado, hoy nos vamos a enfocar en un m\xFAsculo
-      que te ayuda a mantener una buena postura. \xBFRecuerdas cual era?"
+      que te ayuda a mantener una buena postura. \xBFRecuerdas cu\xE1l era?"
   - actorId: 6
     id_superheroe: 3
     id_imagen: 0
@@ -463,8 +463,12 @@ MonoBehaviour:
   - actorId: 11
     id_superheroe: 3
     id_imagen: 0
-    text: "Me parece una idea incre\xEDble. \xBFTe apetece jugar a un juego? Me gustar\xEDa
-      comprobar si eres capaz de identificar los m\xFAsculos que te hemos ense\xF1ado. "
+    text: "Me parece una idea incre\xEDble. \xBFTe apetece jugar a un juego? "
+  - actorId: 11
+    id_superheroe: 3
+    id_imagen: 0
+    text: "Me gustar\xEDa comprobar si eres capaz de identificar los m\xFAsculos
+      que te hemos ense\xF1ado."
   - actorId: 4
     id_superheroe: 3
     id_imagen: 0
@@ -472,8 +476,8 @@ MonoBehaviour:
   - actorId: 11
     id_superheroe: 3
     id_imagen: 0
-    text: "Pues vamos a ir al escenario, donde tendr\xE1s que identificar cual es
-      el m\xFAsculo que muestra la sombra del escenario. \xBFPodr\xE1s hacerlo?"
+    text: "Pues vamos a ir al escenario, donde tendr\xE1s que identificar cu\xE1l
+      es el m\xFAsculo que muestra la sombra del escenario. \xBFPodr\xE1s hacerlo?"
   - actorId: 4
     id_superheroe: 3
     id_imagen: 0

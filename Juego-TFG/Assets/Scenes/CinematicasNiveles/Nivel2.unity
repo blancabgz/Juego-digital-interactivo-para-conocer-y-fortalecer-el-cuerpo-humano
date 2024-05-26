@@ -326,21 +326,21 @@ MonoBehaviour:
   - actorId: 8
     id_superheroe: 0
     id_imagen: 0
-    text: "\xA1Hola nuevamente, joven aprendiz! Veo que has estado trabajando duro
+    text: "\xA1Hola nuevamente joven aprendiz! Veo que has estado trabajando duro
       en tus entrenamientos."
   - actorId: 4
     id_superheroe: 0
     id_imagen: 0
-    text: "\xA1S\xED! Estoy trabajando mucho\xBFQu\xE9 vamos a aprender hoy?"
+    text: "\xA1S\xED! Estoy trabajando mucho. \xBFQu\xE9 vamos a aprender hoy?"
   - actorId: 8
     id_superheroe: 0
     id_imagen: 0
-    text: " Hoy, te presentar\xE9 a un gran amigo mio que te ense\xF1ar\xE1 un nuevo
-      conocimiento. Pero antes, me ha pedido que tienes que pasar una prueba."
+    text: "Hoy te presentar\xE9 a un gran amigo m\xEDo que te ense\xF1ar\xE1 un nuevo
+      conocimiento. Pero antes, me ha pedido que pases una prueba."
   - actorId: 0
     id_superheroe: 0
     id_imagen: 0
-    text: " \xBFUna prueba? \xBFQu\xE9 tipo de prueba?"
+    text: "\xBFUna prueba? \xBFQu\xE9 tipo de prueba?"
   - actorId: 8
     id_superheroe: 0
     id_imagen: 0
@@ -348,13 +348,24 @@ MonoBehaviour:
   - actorId: 0
     id_superheroe: 0
     id_imagen: 0
-    text: "\xBFY como funciona?"
+    text: "\xBFY c\xF3mo funciona?"
   - actorId: 8
     id_superheroe: 0
     id_imagen: 0
-    text: "Pues ver\xE1s, tendr\xE1s que pulsar en las im\xE1genes desordenadas de
-      la parte derecha e ir haciendo clic en cada una y luego colocarlas en el espacio
-      en blanco que tienes a la izquierda. \xA1Mucho \xE1nimo!"
+    text: "Tendr\xE1s que pulsar en las im\xE1genes desordenadas de la parte derecha
+      y luego colocarlas en el espacio en blanco que tienes a la izquierda. "
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 0
+    text: "\xBFA que es sencillo?"
+  - actorId: 0
+    id_superheroe: 0
+    id_imagen: 0
+    text: "\xA1Tanto como sacar punta a un l\xE1piz!"
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 0
+    text: "\xA1Pues mucho \xE1nimo!"
   actores:
   - id: 0
     name: "ni\xF1a_asustad"

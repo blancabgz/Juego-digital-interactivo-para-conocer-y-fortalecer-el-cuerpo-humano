@@ -299,18 +299,22 @@ MonoBehaviour:
   - actorId: 4
     id_superheroe: 0
     id_imagen: 0
-    text: " \xA1Ui! \xBFUn nuevo superh\xE9roe? \xBFQui\xE9n es?"
+    text: "\xA1Uy! \xBFUn nuevo superh\xE9roe? \xBFQui\xE9n es?"
   - actorId: 8
     id_superheroe: 0
     id_imagen: 0
     text: "Te presento a Capit\xE1n Core, como podr\xE1s ver, tiene una gran fuerza
-      en el abdomen y te ense\xF1ar\xE1 mucho sobre como \xE9l. "
+      en el abdomen y te ense\xF1ar\xE1 mucho sobre \xE9l."
   - actorId: 9
     id_superheroe: 3
     id_imagen: 0
-    text: "\xA1Hola, joven! Hoy aprender\xE1s para poder tener un abdomen fuerte
-      e incre\xEDble como el m\xEDo. \xBFSab\xEDas que tu abdomen es una parte muy
-      fuerte de tu cuerpo y que es fundamental para mantener una buena postura?"
+    text: "\xA1Hola joven! Hoy aprender\xE1s sobre c\xF3mo obtener un abdomen fuerte
+      e incre\xEDble como el m\xEDo. "
+  - actorId: 9
+    id_superheroe: 3
+    id_imagen: 0
+    text: "\xBFSab\xEDas que tu abdomen es una parte muy fuerte de tu cuerpo y que
+      es fundamental para mantener una buena postura? "
   - actorId: 0
     id_superheroe: 3
     id_imagen: 0
@@ -318,25 +322,25 @@ MonoBehaviour:
   - actorId: 9
     id_superheroe: 3
     id_imagen: 0
-    text: "Tambi\xE9n. Tus m\xFAsculos abdominales, como el recto abdominal y los
-      oblicuos, son muy importantes. "
+    text: "Efectivamente, pero tus m\xFAsculos abdominales, como el recto abdominal
+      y los oblicuos, son  tambi\xE9n muy importantes."
   - actorId: 0
     id_superheroe: 3
     id_imagen: 4
-    text: "\xBFY que hace cada uno?"
+    text: "\xBFY qu\xE9 hace cada uno?"
   - actorId: 9
     id_superheroe: 3
     id_imagen: 4
-    text: " El recto abdominal te ayuda a mantener una posici\xF3n recta del cuerpo."
+    text: "El recto abdominal te ayuda a mantener una posici\xF3n recta del cuerpo."
   - actorId: 9
     id_superheroe: 3
     id_imagen: 4
     text: "Esto hace que puedas inclinarte hacia los lados y ayuda a las costillas
-      para que puedas flexionar la columna hacia adelante y hacia atr\xE1s. "
+      para que puedas flexionar la columna hacia adelante y hacia atr\xE1s."
   - actorId: 0
     id_superheroe: 3
     id_imagen: 5
-    text: " \xBFY entonces los oblicuos para que sirven?"
+    text: "\xBFY entonces los oblicuos para qu\xE9 sirven?"
   - actorId: 9
     id_superheroe: 3
     id_imagen: 5
@@ -345,25 +349,28 @@ MonoBehaviour:
   - actorId: 9
     id_superheroe: 3
     id_imagen: 5
-    text: "Ambos ayudan a realizar funciones espec\xEDficas como que puedas inclinar
-      el cuerpo hacia los lados, que puedas intentar tocar tus pies y que puedas
-      levantar objetos pesados del suelo."
+    text: "Ambos ayudan a realizar funciones espec\xEDficas."
+  - actorId: 9
+    id_superheroe: 3
+    id_imagen: 5
+    text: Con ellos puedes inclinar el cuerpo hacia los lados, intentar tocar tus
+      pies y levantar objetos pesados del suelo.
   - actorId: 8
     id_superheroe: 0
     id_imagen: 6
-    text: "\xA1Perd\xF3n por interrumpir! \xA1Noticas urgentes! Un villano est\xE1
+    text: "\xA1Perd\xF3n por interrumpir! \xA1Noticias urgentes! Un villano est\xE1
       atacando la ciudad."
   - actorId: 0
     id_superheroe: 0
     id_imagen: 6
-    text: " \xBFQu\xE9 podemos hacer?"
+    text: "\xBFQu\xE9 podemos hacer?"
   - actorId: 9
     id_superheroe: 3
     id_imagen: 6
     text: "Es el momento de poner en pr\xE1ctica lo que has aprendido en la clase
       para ayudarme a derrotar al villano."
   - actorId: 0
-    id_superheroe: 0
+    id_superheroe: 3
     id_imagen: 6
     text: "\xBFYo? \xBFEst\xE1s seguro?"
   - actorId: 9

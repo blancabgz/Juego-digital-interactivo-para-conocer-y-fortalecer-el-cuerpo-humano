@@ -304,22 +304,22 @@ MonoBehaviour:
   - actorId: 11
     id_superheroe: 4
     id_imagen: 0
-    text: "\xA1Por supuesto! Hoy te voy a ense\xF1ar la importancia de los cuadriceps
+    text: "\xA1Por supuesto! Hoy te voy a ense\xF1ar la importancia de los cu\xE1driceps
       y los isquios."
   - actorId: 11
     id_superheroe: 4
     id_imagen: 0
-    text: "\xBFTe acuerdas donde estaban?"
+    text: "\xBFTe acuerdas d\xF3nde estaban?"
   - actorId: 2
     id_superheroe: 4
     id_imagen: 9
-    text: "Los cuadriceps creo recordar que estaban en el muslo pero\u2026 \xBFLos
-      isquios? \xBFEso es nuevo no?"
+    text: "Los cu\xE1driceps creo recordar que estaban en el muslo pero\u2026 \xBFLos
+      isquios? Eso es nuevo, \xBFno?"
   - actorId: 11
     id_superheroe: 4
     id_imagen: 15
-    text: "\xA1Ai! Olvid\xE9 contarte acerca de los isquiotibiales a los que solemos
-      llamar isquios. "
+    text: "\xA1Ay! Olvid\xE9 contarte acerca de los isquiotibiales, a los que solemos
+      llamar isquios."
   - actorId: 11
     id_superheroe: 4
     id_imagen: 15
@@ -340,12 +340,11 @@ MonoBehaviour:
   - actorId: 11
     id_superheroe: 4
     id_imagen: 16
-    text: "S\xED y encima uno que conoces\u2026 \xBFSabes cual es? Los isquios le
-      ayudan."
+    text: "S\xED y encima uno que conoces\u2026 \xBFSabes cu\xE1l es?"
   - actorId: 2
     id_superheroe: 4
     id_imagen: 9
-    text: "\xBFEl cu\xE1driceps?"
+    text: "\xBFLos cu\xE1driceps?"
   - actorId: 11
     id_superheroe: 4
     id_imagen: 9
@@ -372,7 +371,7 @@ MonoBehaviour:
   - actorId: 8
     id_superheroe: 0
     id_imagen: 7
-    text: " \xA1Genial! Ve a la sala de curas donde te dar\xE1n 4 pociones. "
+    text: "\xA1Genial! Ve a la sala de curas donde te dar\xE1n 4 pociones. "
   - actorId: 8
     id_superheroe: 0
     id_imagen: 7

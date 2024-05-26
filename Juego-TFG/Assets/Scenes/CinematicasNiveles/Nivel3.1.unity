@@ -303,9 +303,13 @@ MonoBehaviour:
   - actorId: 12
     id_superheroe: 4
     id_imagen: 0
-    text: "Has estado incre\xEDble. Y como recompensa por tu gran haza\xF1a, tu premio
-      es el valioso aprendizaje que has adquirido y este amuleto especial que te
-      avisar\xE1 cuando haya alguna amenaza cerca."
+    text: "\xA1Has estado incre\xEDble!"
+  - actorId: 12
+    id_superheroe: 4
+    id_imagen: 0
+    text: "Y como recompensa por tu gran haza\xF1a, tu premio es el valioso aprendizaje
+      que has adquirido y este amuleto especial que te avisar\xE1 cuando haya alguna
+      amenaza cerca."
   - actorId: 4
     id_superheroe: 4
     id_imagen: 0

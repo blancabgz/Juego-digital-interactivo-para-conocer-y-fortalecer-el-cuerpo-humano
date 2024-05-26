@@ -331,7 +331,7 @@ MonoBehaviour:
   - actorId: 4
     id_superheroe: 0
     id_imagen: 0
-    text: "\xA1Si! Me lo estoy pasando genial"
+    text: "\xA1S\xED! Me lo estoy pasando genial."
   - actorId: 8
     id_superheroe: 0
     id_imagen: 0
@@ -341,7 +341,7 @@ MonoBehaviour:
   - actorId: 2
     id_superheroe: 0
     id_imagen: 0
-    text: "\xBFSi?\xBFPorqu\xE9?"
+    text: "\xBFSi?\xBFPor qu\xE9?"
   - actorId: 8
     id_superheroe: 0
     id_imagen: 0
@@ -350,15 +350,33 @@ MonoBehaviour:
   - actorId: 4
     id_superheroe: 0
     id_imagen: 0
-    text: "Si s\xED. Pero, \xBFque puedo hacer para mejorar?"
+    text: "Si si pero, \xBFqu\xE9 puedo hacer para mejorar?"
   - actorId: 8
     id_superheroe: 0
     id_imagen: 0
-    text: " \xA1Esa es la actitud! Como es importante que conozcas tambi\xE9n a tus
-      compa\xF1eros, vamos a resolver un puzzle donde aparece el equipo de superh\xE9roes.
-      \xBFTe parece bien?"
+    text: "\xA1Esa es la actitud! Por ello voy a presentarte a un compa\xF1ero que
+      te ayudar\xE1 a mejorar tu inteligencia."
+  - actorId: 10
+    id_superheroe: 4
+    id_imagen: 0
+    text: "\xA1Hola joven! Me presento, soy Delto Tit\xE1n, un superh\xE9roe con
+      un gran cerebro."
+  - actorId: 10
+    id_superheroe: 4
+    id_imagen: 0
+    text: "Vengo a ense\xF1arte como puedes desarrollar tu inteligencia para poder
+      hacer frente a villanos muy listos."
   - actorId: 4
-    id_superheroe: 0
+    id_superheroe: 4
+    id_imagen: 0
+    text: "\xA1Guau! \xBFY c\xF3mo vamos a hacerlo?"
+  - actorId: 10
+    id_superheroe: 4
+    id_imagen: 0
+    text: "Para ello tendr\xE1s que resolver este puzle donde aparece el equipo de
+      superh\xE9roes, esto te ayudar\xE1 a desarrollar m\xE1s tu cerebro."
+  - actorId: 4
+    id_superheroe: 4
     id_imagen: 0
     text: "\xA1Vamos all\xE1!"
   actores:
@@ -392,6 +410,9 @@ MonoBehaviour:
   - id: 9
     name: core
     sprite: {fileID: 21300000, guid: 76e2959fdc69d844bbb4fff18dd29ef2, type: 3}
+  - id: 10
+    name: delto_titan
+    sprite: {fileID: 21300000, guid: 6b935d9304b1a1944bdc2d84c7260d33, type: 3}
   actorPanel:
   - id: 0
     name: "Ni\xF1a"
@@ -412,6 +433,9 @@ MonoBehaviour:
   - id: 3
     name: core
     sprite: {fileID: 21300000, guid: 9f88dba6a72eb2046b6edc8d66c7cc78, type: 3}
+  - id: 4
+    name: delto_titan
+    sprite: {fileID: 21300000, guid: 8042528e5fb92d8459f79d7e130561ec, type: 3}
   imagenes:
   - id: 0
     name: presentacion

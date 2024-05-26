@@ -308,7 +308,7 @@ MonoBehaviour:
   - actorId: 8
     id_superheroe: 0
     id_imagen: 0
-    text: "Tengo una sorpresa para t\xED."
+    text: "Por cierto, tengo una sorpresa para t\xED."
   - actorId: 4
     id_superheroe: 0
     id_imagen: 0
@@ -316,8 +316,19 @@ MonoBehaviour:
   - actorId: 8
     id_superheroe: 0
     id_imagen: 0
-    text: "Te hago entrega de esta piedra que te permitir\xE1 teletransportarte en
-      caso de peligro. "
+    text: Te hago entrega de esta piedra.
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 0
+    text: "Es un objeto que te permitir\xE1 teletransportarte en caso de peligro. "
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 0
+    text: "Pero \xFAsalo con precauci\xF3n, ya que solo tiene 5 usos."
+  - actorId: 4
+    id_superheroe: 0
+    id_imagen: 0
+    text: "\xA1Muchas gracias! La usar\xE9 solo en los momentos verdaderamente necesarios."
   actores:
   - id: 0
     name: "ni\xF1a_asustad"
@@ -412,7 +423,6 @@ MonoBehaviour:
   - id: 7
     name: lumbar
     sprite: {fileID: 21300000, guid: 711758ead6c6a38439511006adc808a3, type: 3}
-  historiaVisionada: null
   escena: NivelCompletado
   nivel: 13
   avatar: {fileID: 1397982207}

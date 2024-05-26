@@ -450,7 +450,7 @@ MonoBehaviour:
   - actorId: 4
     id_superheroe: 0
     id_imagen: 0
-    text: "\xA1Que ilusi\xF3n! \xA1Muchas gracias!"
+    text: "\xA1Qu\xE9 ilusi\xF3n! \xA1Muchas gracias!"
   actores:
   - id: 0
     name: "ni\xF1a_asustad"

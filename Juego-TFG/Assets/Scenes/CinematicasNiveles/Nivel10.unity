@@ -309,7 +309,7 @@ MonoBehaviour:
   - actorId: 2
     id_superheroe: 0
     id_imagen: 7
-    text: " \xBFQue ha ocurrido?"
+    text: "\xBFQu\xE9 ha ocurrido?"
   - actorId: 8
     id_superheroe: 0
     id_imagen: 7
@@ -317,13 +317,16 @@ MonoBehaviour:
   - actorId: 2
     id_superheroe: 0
     id_imagen: 7
-    text: "\xBFY como lo har\xE9?"
+    text: "\xBFY c\xF3mo lo har\xE9?"
   - actorId: 8
     id_superheroe: 0
     id_imagen: 7
-    text: "Para derrotarlo necesito que respondas correctamente a una serie de preguntas
-      sobre el pectoral. Si aciertas, ver\xE1s como el villano recibe un golpe y
-      su vida disminuir\xE1."
+    text: Para derrotarlo necesito que respondas correctamente a una serie de preguntas
+      sobre el pectoral.
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 7
+    text: "Si aciertas, ver\xE1s como el villano recibe un golpe y su vida disminuir\xE1."
   - actorId: 8
     id_superheroe: 0
     id_imagen: 7
@@ -331,11 +334,11 @@ MonoBehaviour:
   - actorId: 4
     id_superheroe: 0
     id_imagen: 7
-    text: " \xA1Por supuesto! "
+    text: "\xA1Por supuesto! "
   - actorId: 8
     id_superheroe: 0
     id_imagen: 7
-    text: "\xA1Tu puedes! Estoy seguro de que juntos podemos proteger la ciudad.
+    text: "\xA1T\xFA puedes! Estoy seguro de que juntos podremos proteger la ciudad.
       \xA1Vamos a hacerlo!"
   actores:
   - id: 0

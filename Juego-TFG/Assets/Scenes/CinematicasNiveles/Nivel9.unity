@@ -317,8 +317,8 @@ MonoBehaviour:
   - actorId: 10
     id_superheroe: 5
     id_imagen: 14
-    text: "\xA1Efectivamente! Cuando trabajas tus m\xFAsculos dorsales, se desarrollan
-      mucho y se extienden, entonces cuando se flexiona, se ven como unas alas."
+    text: "\xA1Efectivamente! Cuando trabajas tus dorsales, se desarrollan mucho
+      y se extienden, entonces cuando se flexionan, aparentan ser unas alas."
   - actorId: 4
     id_superheroe: 5
     id_imagen: 14
@@ -333,8 +333,12 @@ MonoBehaviour:
     id_superheroe: 5
     id_imagen: 0
     text: "Te voy a mostrar 3 ejercicios diferentes, los vas a realizar y me tienes
-      que decir en cu\xE1l de todos se trabaja la dorsal. Tienes que notarlo en la
-      parte de los lados de la espalda. \xBFLo has entendido?"
+      que decir en cu\xE1l de todos se trabaja la dorsal. "
+  - actorId: 10
+    id_superheroe: 5
+    id_imagen: 0
+    text: "Tienes que notarlo en la parte de los lados de la espalda. \xBFLo has
+      entendido?"
   - actorId: 4
     id_superheroe: 5
     id_imagen: 0

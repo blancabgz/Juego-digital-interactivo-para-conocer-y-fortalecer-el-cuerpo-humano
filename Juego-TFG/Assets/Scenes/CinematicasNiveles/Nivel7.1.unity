@@ -294,17 +294,26 @@ MonoBehaviour:
   - actorId: 8
     id_superheroe: 0
     id_imagen: 0
-    text: "\xA1Lo has hecho genial! Gracias a ti nuestro compa\xF1ero est\xE1 recuperandose
+    text: "\xA1Lo has hecho genial! Gracias a ti nuestro compa\xF1ero est\xE1 recuper\xE1ndose
       de su herida. \xA1Muchas gracias! "
   - actorId: 4
     id_superheroe: 0
     id_imagen: 0
     text: "\xA1Me alegro de haber podido ayudar! Ahora ya s\xE9 como ayudar a un
-      compa\xF1ero o compa\xF1era en caso de herida"
+      compa\xF1ero o compa\xF1era en caso de herida."
   - actorId: 8
     id_superheroe: 0
     id_imagen: 0
     text: "\xA1Por supuesto! Y por tu valent\xEDa vas a recibir un premio. "
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 0
+    text: "Es un elixir de curaci\xF3n con el que podr\xE1s curarte cualquier herida,
+      tanto a ti como a alg\xFAn compa\xF1ero."
+  - actorId: 4
+    id_superheroe: 0
+    id_imagen: 0
+    text: "\xA1Gracias! Me vendr\xE1 muy bien en el futuro."
   actores:
   - id: 0
     name: "ni\xF1a_asustad"

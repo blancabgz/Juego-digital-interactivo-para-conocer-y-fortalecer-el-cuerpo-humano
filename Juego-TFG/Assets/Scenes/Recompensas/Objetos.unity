@@ -1351,7 +1351,7 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: 44f700940a9a7de4785fc6e5186d926e, type: 3}
   - nivel: 14
     nombre: cinturon
-    sprite: {fileID: 21300000, guid: e43be1cd4cb7748408a2f7eda078b33f, type: 3}
+    sprite: {fileID: 21300000, guid: 7d849a0af0b198040997b37373f4031b, type: 3}
   - nivel: 15
     nombre: elixir
     sprite: {fileID: 21300000, guid: e67a5f12a9893f946828ca923a08b6f3, type: 3}

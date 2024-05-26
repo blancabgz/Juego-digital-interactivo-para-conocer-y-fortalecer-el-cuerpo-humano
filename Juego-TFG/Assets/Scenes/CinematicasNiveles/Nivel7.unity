@@ -422,9 +422,8 @@ MonoBehaviour:
   - actorId: 8
     id_superheroe: 0
     id_imagen: 0
-    text: "\xA1Hola joven! En una de las sesiones anteriores, Mr Biceps te ayud\xF3
-      a fortalecer y aprender sobre los brazos. Hoy te ense\xF1ar\xE1 todo sobre
-      uno de los m\xFAsculos del brazo."
+    text: "\xA1Hola joven! En una de las sesiones anteriores, Mr. B\xEDceps te ayud\xF3
+      a fortalecer y aprender sobre los brazos."
   - actorId: 2
     id_superheroe: 0
     id_imagen: 0
@@ -436,17 +435,17 @@ MonoBehaviour:
   - actorId: 9
     id_superheroe: 1
     id_imagen: 1
-    text: "Hola! \xBFCu\xE1nto sabes del b\xEDceps?"
+    text: "\xA1Hola! \xBFCu\xE1nto sabes del b\xEDceps?"
   - actorId: 2
     id_superheroe: 1
     id_imagen: 1
     text: "Pues me dijiste que era un m\xFAsculo que estaba en la parte delantera
-      del brazo y \u2026 que t\xFA lo tienes muy grande porque lo entrenas mucho. "
+      del brazo y que t\xFA lo tienes muy grande porque lo entrenas mucho. "
   - actorId: 9
     id_superheroe: 1
     id_imagen: 11
     text: "\xA1Exactamente! El b\xEDceps est\xE1 en nuestro brazo, en la parte frontal
-      y nos ayuda a levantar objetos, abrir puertas \u2026 "
+      y nos ayuda a levantar objetos, abrir puertas\u2026"
   - actorId: 4
     id_superheroe: 1
     id_imagen: 11
@@ -471,7 +470,7 @@ MonoBehaviour:
   - actorId: 8
     id_superheroe: 0
     id_imagen: 7
-    text: " \xA1Tenemos un herido! Nuestro amigo se ha hecho da\xF1o intentando ayudar
+    text: "\xA1Tenemos un herido! Nuestro amigo se ha hecho da\xF1o intentando ayudar
       a las personas de la ciudad. "
   - actorId: 0
     id_superheroe: 0
@@ -480,15 +479,21 @@ MonoBehaviour:
   - actorId: 8
     id_superheroe: 0
     id_imagen: 7
-    text: "\xA1Por supuesto! Adem\xE1s de aprender sobre los m\xFAsculos, debemos
-      aprender a ayudar a nuestros compa\xF1eros cuando est\xE1n en peligro. Muchas
-      gracias. "
+    text: "\xA1Por supuesto! "
   - actorId: 8
     id_superheroe: 0
     id_imagen: 7
-    text: "Ve a la sala de curas donde te dar\xE1n 4 pociones. Debes de administrarle
-      la poci\xF3n que corresponda con el m\xFAsculo del cuerpo herido. \xA1Confiamos
-      en ti! "
+    text: "Adem\xE1s de aprender sobre los m\xFAsculos, debemos aprender a ayudar
+      a nuestros compa\xF1eros cuando est\xE1n en peligro. "
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 7
+    text: "Ve a la sala de curas donde te dar\xE1n 4 pociones."
+  - actorId: 8
+    id_superheroe: 0
+    id_imagen: 7
+    text: "Debes de administrarle la poci\xF3n que corresponda con el m\xFAsculo
+      del cuerpo herido. \xA1Confiamos en ti! "
   actores:
   - id: 0
     name: "ni\xF1a_asustad"

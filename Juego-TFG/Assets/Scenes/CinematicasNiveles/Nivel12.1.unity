@@ -291,28 +291,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mensajes:
-  - actorId: 8
-    id_superheroe: 0
+  - actorId: 14
+    id_superheroe: 6
     id_imagen: 0
-    text: "\xA1Incre\xEDble! Has conseguido superar el reto.\xA1Felicidades!"
+    text: "\xA1Incre\xEDble! Has conseguido superar el reto. \xA1Felicidades!"
   - actorId: 4
-    id_superheroe: 0
+    id_superheroe: 6
     id_imagen: 0
-    text: "\xA1Gracias, Superh\xE9roe! Ha sido muy divertido y aprend\xED mucho sobre
-      mis m\xFAsculos."
-  - actorId: 8
-    id_superheroe: 0
+    text: "\xA1Gracias, Delto Tit\xE1n! Ha sido muy divertido y aprend\xED mucho
+      sobre mis m\xFAsculos."
+  - actorId: 14
+    id_superheroe: 6
     id_imagen: 0
     text: "Me alegra escuchar eso. Como premio por tu esfuerzo y dedicaci\xF3n, te
       presento esta medalla especial."
   - actorId: 4
-    id_superheroe: 0
+    id_superheroe: 6
     id_imagen: 0
-    text: "\xA1Gracias! Es muy chula"
-  - actorId: 8
-    id_superheroe: 0
+    text: "\xA1Gracias! Es muy chula."
+  - actorId: 14
+    id_superheroe: 6
     id_imagen: 0
-    text: "\xA1De nada! Siempre recuerda que eres capaz de lograr grandes cosas cuando
+    text: "\xA1De nada! Recuerda que siempre eres capaz de lograr grandes cosas cuando
       te esfuerzas. \xA1Hasta la pr\xF3xima aventura!"
   actores:
   - id: 0
@@ -357,6 +357,9 @@ MonoBehaviour:
   - id: 13
     name: eclipse
     sprite: {fileID: 21300000, guid: 742117cbbf43fbd44b96d6e880a73456, type: 3}
+  - id: 14
+    name: delto_titan
+    sprite: {fileID: 21300000, guid: 6b935d9304b1a1944bdc2d84c7260d33, type: 3}
   actorPanel:
   - id: 0
     name: "Ni\xF1a"
@@ -383,6 +386,9 @@ MonoBehaviour:
   - id: 5
     name: eclipse
     sprite: {fileID: 21300000, guid: 6ce669e2c67ada141bee66edf3501b19, type: 3}
+  - id: 6
+    name: delto_titan
+    sprite: {fileID: 21300000, guid: 8042528e5fb92d8459f79d7e130561ec, type: 3}
   imagenes:
   - id: 0
     name: presentacion

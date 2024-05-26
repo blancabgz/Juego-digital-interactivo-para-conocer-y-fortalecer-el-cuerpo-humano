@@ -298,11 +298,20 @@ MonoBehaviour:
   - actorId: 4
     id_superheroe: 5
     id_imagen: 0
-    text: "\xA1Muchas gracias! Ha sido un poco complicado pero he podido"
+    text: "\xA1Muchas gracias! Ha sido un poco complicado pero he podido."
   - actorId: 13
     id_superheroe: 5
     id_imagen: 0
     text: "\xA1Por supuesto! Y por ello te llevar\xE1s la siguiente recompensa."
+  - actorId: 13
+    id_superheroe: 5
+    id_imagen: 0
+    text: "Son unas zapatillas que te dan m\xE1s velocidad cuanto m\xE1s fuertes
+      tengas las piernas."
+  - actorId: 4
+    id_superheroe: 5
+    id_imagen: 0
+    text: "\xA1Guau! Que ganas de entrenar mis piernas a\xFAn m\xE1s y poder usarlas."
   actores:
   - id: 0
     name: "ni\xF1a_asustad"

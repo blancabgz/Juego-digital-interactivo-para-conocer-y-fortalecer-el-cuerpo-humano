@@ -291,7 +291,83 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b3352837669b5944bece46e6dc7eae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mensajes: []
+  mensajes:
+  - actorId: 13
+    id_superheroe: 2
+    id_imagen: 0
+    text: "\xA1Hola joven! He vuelto porque tenemos que hablar sobre la importancia
+      del tr\xEDceps."
+  - actorId: 13
+    id_superheroe: 2
+    id_imagen: 0
+    text: "\xBFQu\xE9 recuerdas sobre los tr\xEDceps?"
+  - actorId: 4
+    id_superheroe: 2
+    id_imagen: 0
+    text: "Pues que est\xE1n en la parte de atr\xE1s del brazo."
+  - actorId: 13
+    id_superheroe: 2
+    id_imagen: 0
+    text: "\xA1Exactamente! El tr\xEDceps est\xE1 ubicado en la parte posterior del
+      brazo y es crucial para extender el codo."
+  - actorId: 4
+    id_superheroe: 2
+    id_imagen: 0
+    text: "\xBFY para qu\xE9 se usan?"
+  - actorId: 13
+    id_superheroe: 2
+    id_imagen: 0
+    text: "\xBFAlguna vez has volado una cometa?"
+  - actorId: 4
+    id_superheroe: 2
+    id_imagen: 0
+    text: "\xA1S\xED, me encantan!"
+  - actorId: 13
+    id_superheroe: 2
+    id_imagen: 0
+    text: "Pues el tr\xEDceps es esencial para realizar los movimientos que necesitas
+      para que la cometa se mantenga en el aire. "
+  - actorId: 13
+    id_superheroe: 2
+    id_imagen: 0
+    text: "\xA1As\xED que cada vez que vuelas una cometa, est\xE1s trabajando tus
+      tr\xEDceps!"
+  - actorId: 4
+    id_superheroe: 2
+    id_imagen: 0
+    text: "\xA1Qu\xE9 guay!"
+  - actorId: 13
+    id_superheroe: 2
+    id_imagen: 0
+    text: "\xBFAlguna vez has intentado hacer el gesto de chocar los cinco con alguien?"
+  - actorId: 4
+    id_superheroe: 2
+    id_imagen: 0
+    text: "\xA1S\xED! \xBFPor qu\xE9?"
+  - actorId: 13
+    id_superheroe: 2
+    id_imagen: 0
+    text: Ese movimiento involucra extender completamente el brazo. Es como si estuvieras
+      haciendo un mini ejercicio cada vez que celebras algo.
+  - actorId: 4
+    id_superheroe: 2
+    id_imagen: 0
+    text: "\xA1Es incre\xEDble! No me imaginaba que con hacer eso pod\xEDa ejercitar
+      un poco el tr\xEDceps."
+  - actorId: 13
+    id_superheroe: 2
+    id_imagen: 0
+    text: "\xA1S\xED, nuestro cuerpo es asombroso! Cada movimiento involucra diferentes
+      m\xFAsculos. "
+  - actorId: 13
+    id_superheroe: 2
+    id_imagen: 0
+    text: "\xA1Vaya! Me acaban de alertar que ha aparecido un villano, \xBFquieres
+      que usemos tu nuevos conocimientos para derrotarlo?"
+  - actorId: 4
+    id_superheroe: 2
+    id_imagen: 0
+    text: "\xA1Vamos a ello!"
   actores:
   - id: 0
     name: "ni\xF1a_asustad"
