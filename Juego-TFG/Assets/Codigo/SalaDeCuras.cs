@@ -18,16 +18,11 @@ public class SalaDeCuras : MonoBehaviour
     private string musica;
 
     void Awake(){
-        audioSources = FindObjectsOfType<AudioSource>();
-        musica = PlayerPrefs.GetString("estadoMusica", "null");
-        if(musica != null){
-            if(musica == "OFF"){
-                if(audioSources != null){
-                    foreach (AudioSource audioSource in audioSources){
-                        audioSource.mute = false;
-                    }
-                }
-            }
+        GameObject controlMusica = GameObject.Find("ControlMusica");
+        if(PlayerPrefs.GetString("estadoMusica", "null") == "OFF"){
+            if(controlMusica != null){
+                Destroy(controlMusica);
+            }   
         }
     }
     

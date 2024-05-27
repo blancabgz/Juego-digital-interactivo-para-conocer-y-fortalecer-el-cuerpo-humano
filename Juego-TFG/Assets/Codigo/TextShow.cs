@@ -43,7 +43,6 @@ public class TextShow : MonoBehaviour
     private void Awake(){
         string nombreEscena = SceneManager.GetActiveScene().name;
         GameObject controlMusica = GameObject.Find("ControlMusica");
-        Debug.Log(controlMusica);
         if(PlayerPrefs.GetString("estadoMusica", "null") == "OFF"){
             if(controlMusica != null){
                 Destroy(controlMusica);
