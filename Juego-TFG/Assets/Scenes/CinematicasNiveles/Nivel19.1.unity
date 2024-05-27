@@ -423,15 +423,20 @@ MonoBehaviour:
     id_superheroe: 5
     id_imagen: 0
     text: "\xA1Lo has hecho genial! Espero que estos ejercicios te ayuden a crear
-      un gran gluteo y unos fuertes gemelos."
+      un gran gl\xFAteo y unos fuertes gemelos."
   - actorId: 4
     id_superheroe: 5
     id_imagen: 0
-    text: "\xA1Hoy mismo comenzar\xE9 a ejercitar! Muchas gracias"
+    text: "\xA1Hoy mismo comenzar\xE9 a ejercitarlos! Muchas gracias."
   - actorId: 13
     id_superheroe: 5
     id_imagen: 0
-    text: "\xA1As\xED me gusta! Toma este regalito que tengo para t\xED"
+    text: "\xA1As\xED me gusta! Toma este regalito que tengo para ti."
+  - actorId: 13
+    id_superheroe: 5
+    id_imagen: 0
+    text: "Es un pat\xEDn dise\xF1ado a tu medida para que puedas movilizarte f\xE1cilmente
+      en tus patrullas o labores como superh\xE9roe."
   - actorId: 4
     id_superheroe: 5
     id_imagen: 0

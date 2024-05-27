@@ -291,24 +291,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mensajes:
-  - actorId: 8
-    id_superheroe: 0
+  - actorId: 14
+    id_superheroe: 6
     id_imagen: 0
-    text: "\xA1Lo has hecho super bien! Estoy muy orgulloso de ti."
+    text: "\xA1Lo has hecho s\xFAper bien! Estoy muy orgulloso de ti."
   - actorId: 4
-    id_superheroe: 0
+    id_superheroe: 6
     id_imagen: 0
     text: "\xA1Gracias! Es muy importante desarrollar todo mi potencial para entrar
       en el equipo. Adem\xE1s, ha sido divertido."
-  - actorId: 8
-    id_superheroe: 0
+  - actorId: 14
+    id_superheroe: 6
     id_imagen: 0
     text: "Me alegro mucho joven. Te hago entrega de tu premio como siempre. \xA1Nos
       vemos!"
   - actorId: 4
-    id_superheroe: 0
+    id_superheroe: 6
     id_imagen: 0
-    text: "\xA1Gracias! Que emoci\xF3n"
+    text: "\xA1Gracias! Que ganas de llegar a ser un superh\xE9roe del equipo."
   actores:
   - id: 0
     name: "ni\xF1a_asustad"

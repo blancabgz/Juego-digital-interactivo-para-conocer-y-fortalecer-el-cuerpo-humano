@@ -325,7 +325,7 @@ MonoBehaviour:
   - actorId: 11
     id_superheroe: 3
     id_imagen: 0
-    text: "\xA1Lo has hecho genial! Has aprovechado muy bien la pista"
+    text: "\xA1Lo has hecho genial! Has aprovechado muy bien la pista."
   - actorId: 4
     id_superheroe: 3
     id_imagen: 0
@@ -350,12 +350,12 @@ MonoBehaviour:
   - actorId: 11
     id_superheroe: 3
     id_imagen: 0
-    text: "Un elixir de curaci\xF3n para t\xED o para un compa\xF1ero que necesite
-      curaci\xF3n r\xE1pida."
+    text: "Un elixir de protecci\xF3n con el que podr\xE1s defenderte m\xE1s f\xE1cilmente
+      de los ataques de los villanos."
   - actorId: 4
     id_superheroe: 3
     id_imagen: 0
-    text: "\xA1Estoy es muy \xFAtil! Muchas gracias"
+    text: "\xA1Esto es muy \xFAtil! Muchas gracias."
   actores:
   - id: 0
     name: "ni\xF1a_asustad"

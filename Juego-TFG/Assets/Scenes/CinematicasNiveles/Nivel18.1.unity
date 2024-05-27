@@ -291,22 +291,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mensajes:
-  - actorId: 14
-    id_superheroe: 6
+  - actorId: 11
+    id_superheroe: 3
     id_imagen: 0
     text: "\xA1Lo has hecho genial! Espero verte pronto en misiones conmigo. "
   - actorId: 4
-    id_superheroe: 6
+    id_superheroe: 3
     id_imagen: 0
     text: "\xA1Ojal\xE1!"
-  - actorId: 14
-    id_superheroe: 6
+  - actorId: 11
+    id_superheroe: 3
     id_imagen: 0
     text: "Ya ver\xE1s como s\xED. Como recompensa tienes el siguiente regalito."
-  - actorId: 4
-    id_superheroe: 6
+  - actorId: 11
+    id_superheroe: 3
     id_imagen: 0
-    text: "\xA1Muchas gracias Delto Tit\xE1n!"
+    text: "Es una capa que, cuando te la pongas, te volver\xE1 invisible para el
+      resto de gente."
+  - actorId: 11
+    id_superheroe: 3
+    id_imagen: 0
+    text: "Es muy \xFAtil para un futuro gran superh\xE9roe como t\xFA."
+  - actorId: 4
+    id_superheroe: 3
+    id_imagen: 0
+    text: "\xA1Muchas gracias Espald\xEDn Supremo!"
   actores:
   - id: 0
     name: "ni\xF1a_asustad"

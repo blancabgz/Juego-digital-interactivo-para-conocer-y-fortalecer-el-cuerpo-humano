@@ -295,7 +295,7 @@ MonoBehaviour:
   - actorId: 10
     id_superheroe: 5
     id_imagen: 0
-    text: "\xA1Hola j\xF3ven! Hoy vamos a hablar de un m\xFAsculo poco conocido pero
+    text: "\xA1Hola joven! Hoy vamos a hablar de un m\xFAsculo poco conocido pero
       muy importante en el cuerpo. \xBFSabes por qu\xE9?"
   - actorId: 6
     id_superheroe: 5
@@ -322,8 +322,8 @@ MonoBehaviour:
   - actorId: 10
     id_superheroe: 5
     id_imagen: 0
-    text: "Muy bien, estoy muy orgulloso de ti. \xBFSabes porque el m\xFAsculo se
-      llama trapecio?"
+    text: "Muy bien, estoy muy orgulloso de ti. \xBFSabes por qu\xE9 el m\xFAsculo
+      se llama trapecio?"
   - actorId: 6
     id_superheroe: 5
     id_imagen: 0
@@ -346,7 +346,7 @@ MonoBehaviour:
   - actorId: 2
     id_superheroe: 5
     id_imagen: 0
-    text: "\xBFDe verdad? \xBFQue tengo que hacer?"
+    text: "\xBFDe verdad? \xBFQu\xE9 tengo que hacer?"
   - actorId: 10
     id_superheroe: 5
     id_imagen: 0
@@ -355,12 +355,12 @@ MonoBehaviour:
   - actorId: 4
     id_superheroe: 5
     id_imagen: 0
-    text: "\xA1Si!"
+    text: "\xA1S\xED!"
   - actorId: 10
     id_superheroe: 5
     id_imagen: 0
     text: "Acu\xE9rdate de que en la espalda tenemos 3 partes, la dorsal, la lumbar
-      y el trapecio que acabamos de recordar. \xA1Animo!"
+      y el trapecio que acabamos de recordar. \xA1\xC1nimo!"
   actores:
   - id: 0
     name: "ni\xF1a_asustad"

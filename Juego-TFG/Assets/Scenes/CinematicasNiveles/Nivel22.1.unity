@@ -326,7 +326,8 @@ MonoBehaviour:
   - actorId: 8
     id_superheroe: 0
     id_imagen: 0
-    text: "\xA1Eres parte del equipo por fin!"
+    text: "\xA1Has conseguido superar la prueba final! \xA1Eres parte del equipo
+      por fin!"
   - actorId: 2
     id_superheroe: 0
     id_imagen: 0
@@ -334,12 +335,12 @@ MonoBehaviour:
   - actorId: 8
     id_superheroe: 0
     id_imagen: 0
-    text: "\xA1Pues crretelo! Ya eres parte de nuestro equipo. Has trabajado muy
-      duro para llegar hasta aqu\xED y te doy mi enhorabuena. "
+    text: "\xA1Efectivamente! Ya eres parte de nuestro equipo. Has trabajado muy
+      duro para llegar hasta aqu\xED y te doy mi enhorabuena."
   - actorId: 4
     id_superheroe: 0
     id_imagen: 0
-    text: "\xA1Muchas gracias! \xBFY ahora que?"
+    text: "\xA1Muchas gracias! Y\u2026 \xBFahora qu\xE9?"
   - actorId: 8
     id_superheroe: 0
     id_imagen: 0
@@ -348,7 +349,7 @@ MonoBehaviour:
   - actorId: 8
     id_superheroe: 0
     id_imagen: 0
-    text: "\xA1Conf\xEDo en t\xED! Se que ayudar\xE1s para hacer del mundo un lugar
+    text: "\xA1Conf\xEDo en ti! Se que ayudar\xE1s para hacer del mundo un lugar
       mejor. "
   - actorId: 4
     id_superheroe: 0
@@ -358,8 +359,8 @@ MonoBehaviour:
   - actorId: 8
     id_superheroe: 0
     id_imagen: 0
-    text: "Gracias a t\xED por esta gran aventura, te hago entrega de tu diploma.
-      \xA1Nos vemos por las calles. "
+    text: "Gracias a ti por esta gran aventura, te hago entrega de tu diploma. \xA1Nos
+      veremos salvando a la gente! "
   actores:
   - id: 0
     name: "ni\xF1a_asustad"

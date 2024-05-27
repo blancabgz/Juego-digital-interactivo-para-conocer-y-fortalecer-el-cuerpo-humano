@@ -292,13 +292,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mensajes:
   - actorId: 11
-    id_superheroe: 5
+    id_superheroe: 3
     id_imagen: 0
-    text: "\xA1Estoy muy orgulloso de t\xED! !Has vencido al villano! "
+    text: "\xA1Estoy muy orgulloso de ti! \xA1Has vencido al villano! "
   - actorId: 4
     id_superheroe: 3
     id_imagen: 0
-    text: "\xA1S\xED! Y todo gracias a t\xED"
+    text: "\xA1S\xED! Y todo gracias a ti."
   - actorId: 11
     id_superheroe: 3
     id_imagen: 0
@@ -311,11 +311,20 @@ MonoBehaviour:
   - actorId: 11
     id_superheroe: 3
     id_imagen: 0
-    text: "\xA1Ya lo ver\xE1s! Toma un regalo. \xA1Adios!"
+    text: "\xA1Ya lo ver\xE1s! Toma este regalo. Es una m\xE1scara que ocultar\xE1
+      tu identidad secreta al resto de gente."
+  - actorId: 11
+    id_superheroe: 3
+    id_imagen: 0
+    text: "Es tambi\xE9n una parte muy importante de nuestra vida como superh\xE9roes."
+  - actorId: 11
+    id_superheroe: 3
+    id_imagen: 0
+    text: "Mucho \xE1nimo en la prueba final, \xA1conf\xEDo en ti!"
   - actorId: 0
     id_superheroe: 3
     id_imagen: 0
-    text: "Ehhh gracias. \xA1Adi\xF3s!"
+    text: "\xA1Muchas gracias!"
   actores:
   - id: 0
     name: "ni\xF1a_asustad"

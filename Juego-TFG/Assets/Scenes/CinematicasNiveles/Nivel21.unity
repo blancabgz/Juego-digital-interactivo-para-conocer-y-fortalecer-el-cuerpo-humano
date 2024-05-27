@@ -468,7 +468,7 @@ MonoBehaviour:
   - actorId: 10
     id_superheroe: 5
     id_imagen: 21
-    text: "\xA1S\xED! El musculo lumbar, en este caso, soporta una gran cantidad
+    text: "\xA1S\xED! El m\xFAsculo lumbar, en este caso, soporta una gran cantidad
       de peso y tensi\xF3n todos los d\xEDas. Imagina cu\xE1ntas veces te inclinas,
       levantas cosas o simplemente te sientas."
   - actorId: 10
@@ -486,7 +486,7 @@ MonoBehaviour:
   - actorId: 0
     id_superheroe: 0
     id_imagen: 7
-    text: "\xBFY como lo har\xE9?"
+    text: "\xBFY c\xF3mo lo har\xE9?"
   - actorId: 8
     id_superheroe: 0
     id_imagen: 7

@@ -292,99 +292,98 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mensajes:
-  - actorId: 14
-    id_superheroe: 6
+  - actorId: 10
+    id_superheroe: 5
     id_imagen: 0
-    text: "\xA1Saludos, valiente aprendiz! Me presento, soy Delto Tit\xE1n y, he
-      venido a revelarte los misterios del m\xFAsculo que define la amplitud de nuestros
-      hombros. "
+    text: "\xA1Saludos, valiente aprendiz! He venido a revelarte los misterios del
+      m\xFAsculo que define la amplitud de nuestros hombros, los deltoides. "
   - actorId: 4
-    id_superheroe: 6
+    id_superheroe: 5
     id_imagen: 0
-    text: "\xA1Hola Delto Tit\xE1n! \xBFEnserio me vas a revelar esos misterios?
-      \xBFA m\xED? \xA1Que emoci\xF3n!"
-  - actorId: 14
-    id_superheroe: 6
+    text: "\xA1Hola Espald\xEDn Supremo! \xBFEnserio me vas a revelar esos misterios?
+      \xBFA m\xED? \xA1Qu\xE9 emoci\xF3n!"
+  - actorId: 10
+    id_superheroe: 5
     id_imagen: 0
     text: "\xA1Por supuesto! Como miembro de nuestro equipo, es crucial que tengas
       todos los conocimientos posibles, y por eso estoy aqu\xED."
   - actorId: 4
-    id_superheroe: 6
+    id_superheroe: 5
     id_imagen: 0
-    text: "\xA1Qu\xE9 emocionante! \xBFQu\xE9 me puedes contar sobre el deltoides?"
-  - actorId: 14
-    id_superheroe: 6
+    text: "\xA1Qu\xE9 emocionante! \xBFQu\xE9 me puedes contar sobre los deltoides?"
+  - actorId: 10
+    id_superheroe: 5
     id_imagen: 0
     text: "Este m\xFAsculo abarca la parte superior del hombro. \xBFSabes para qu\xE9
       sirve?"
   - actorId: 6
-    id_superheroe: 6
+    id_superheroe: 5
     id_imagen: 0
     text: "\xBFPara levantar los brazos?"
-  - actorId: 14
-    id_superheroe: 6
+  - actorId: 10
+    id_superheroe: 5
     id_imagen: 0
     text: "\xA1S\xED! Sirve tanto para levantar los brazos como para girar el brazo
       en diferentes direcciones."
   - actorId: 4
-    id_superheroe: 6
+    id_superheroe: 5
     id_imagen: 0
     text: Entendido.
-  - actorId: 14
-    id_superheroe: 6
+  - actorId: 10
+    id_superheroe: 5
     id_imagen: 0
     text: "\xBFAlguna vez has ido a un partido de b\xE9isbol?"
   - actorId: 2
-    id_superheroe: 6
+    id_superheroe: 5
     id_imagen: 0
     text: 'La verdad es que no. '
-  - actorId: 14
-    id_superheroe: 6
+  - actorId: 10
+    id_superheroe: 5
     id_imagen: 0
     text: "\xA1Qu\xE9 pena! Pues te voy a llevar a uno. Mientras tanto, observa esta
       imagen donde puedes ver como lanzan la pelota con fuerza y precisi\xF3n, \xBFverdad?"
   - actorId: 4
-    id_superheroe: 6
+    id_superheroe: 5
     id_imagen: 0
     text: "\xA1Si, es incre\xEDble!"
-  - actorId: 14
-    id_superheroe: 6
+  - actorId: 10
+    id_superheroe: 5
     id_imagen: 0
     text: "Pues el deltoides es el protagonista en esos lanzamientos. Es como el
       motor que impulsa el movimiento del brazo hacia adelante con fuerza y precisi\xF3n."
   - actorId: 4
-    id_superheroe: 6
+    id_superheroe: 5
     id_imagen: 0
     text: "\xA1Qu\xE9 interesante! \xBFAlgo m\xE1s que deba saber?"
-  - actorId: 14
-    id_superheroe: 6
+  - actorId: 10
+    id_superheroe: 5
     id_imagen: 0
     text: "Un detalle importante, el deltoides es un m\xFAsculo bastante complejo
       que se compone de tres partes distintas."
   - actorId: 0
-    id_superheroe: 6
+    id_superheroe: 5
     id_imagen: 0
     text: "\xBFTres?"
-  - actorId: 14
-    id_superheroe: 6
+  - actorId: 10
+    id_superheroe: 5
     id_imagen: 0
     text: Efectivamente, la parte delantera nos ayuda a levantar el brazo hacia adelante,
       como cuando saludamos a alguien, por ejemplo.
-  - actorId: 14
-    id_superheroe: 6
+  - actorId: 10
+    id_superheroe: 5
     id_imagen: 0
     text: 'La parte del medio nos ayuda a levantar los brazos hacia los lados. '
-  - actorId: 14
-    id_superheroe: 6
+  - actorId: 10
+    id_superheroe: 5
     id_imagen: 0
     text: "Y, por \xFAltimo, la parte posterior nos ayuda a levantar los brazos hacia
       atr\xE1s, como cuando intentamos rascarnos la espalda."
   - actorId: 4
-    id_superheroe: 6
+    id_superheroe: 5
     id_imagen: 0
-    text: "\xA1Ostras eso no lo sab\xEDa! Muchas gracias Delto Tit\xE1n. "
-  - actorId: 14
-    id_superheroe: 6
+    text: "\xA1Vaya eso no lo sab\xEDa! Muchas gracias Espald\xEDn Supremo."
+  - actorId: 10
+    id_superheroe: 5
     id_imagen: 0
     text: "Ahora quiero ponerte una prueba donde tendr\xE1s que identificar que parte
       del brazo aparece en la sombra. \xA1Mucha suerte!"

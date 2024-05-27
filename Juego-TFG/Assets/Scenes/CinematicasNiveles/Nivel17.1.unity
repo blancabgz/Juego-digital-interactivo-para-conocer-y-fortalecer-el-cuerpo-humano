@@ -312,8 +312,16 @@ MonoBehaviour:
   - actorId: 12
     id_superheroe: 4
     id_imagen: 0
-    text: "Por aqu\xED tienes un peque\xF1o premio por haberte esforzado tanto. \xA1Nos
-      vemos en la pr\xF3xima!"
+    text: "Por aqu\xED tienes un peque\xF1o premio por haberte esforzado tanto."
+  - actorId: 12
+    id_superheroe: 4
+    id_imagen: 0
+    text: "Son unas gafas de visi\xF3n nocturna para que puedas ayudar a la gente
+      hasta siendo de noche."
+  - actorId: 4
+    id_superheroe: 4
+    id_imagen: 0
+    text: "\xA1Guau! Me ser\xE1n muy \xFAtiles. \xA1Qu\xE9 ganas de probarlas!"
   actores:
   - id: 0
     name: "ni\xF1a_asustad"

@@ -292,45 +292,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mensajes:
-  - actorId: 8
-    id_superheroe: 0
+  - actorId: 14
+    id_superheroe: 6
     id_imagen: 0
-    text: "\xA1Hola joven! Hoy traigo un nuevo desaf\xEDo para t\xED."
+    text: "\xA1Hola joven! Hoy traigo un nuevo desaf\xEDo para ti."
   - actorId: 6
-    id_superheroe: 0
+    id_superheroe: 6
     id_imagen: 0
     text: "\xBFEn qu\xE9 consiste?"
-  - actorId: 8
-    id_superheroe: 0
+  - actorId: 14
+    id_superheroe: 6
     id_imagen: 0
     text: Hoy vamos a entrenar tu mente de una manera divertida y desafiante. Vamos
       a jugar con adivinanzas.
   - actorId: 4
-    id_superheroe: 0
+    id_superheroe: 6
     id_imagen: 0
-    text: "\xA1Ui suena divertido! Pero...\xBFEso en que me ayuda a unirme al equipo?"
-  - actorId: 8
-    id_superheroe: 0
-    id_imagen: 0
-    text: "Muy sencillo, te ayudan a desarrollar tu capacidad para solucionar problemas,
-      adem\xE1s de desarrollar tu memoria y concentraci\xF3n. "
-  - actorId: 8
-    id_superheroe: 0
-    id_imagen: 0
-    text: 'Todas estas habilidades que te he nombrado son muy importantes para salvar
-      vidas y ayudar a los ciudadanos. '
+    text: "\xA1Uy suena divertido!"
   - actorId: 4
-    id_superheroe: 0
+    id_superheroe: 6
     id_imagen: 0
-    text: "\xBFAh s\xED? Entonces... quiero empezar cu\xE1nto antes. \xBFComo se
-      juega?"
-  - actorId: 8
-    id_superheroe: 0
+    text: "Quiero empezar cu\xE1nto antes. \xBFC\xF3mo se juega?"
+  - actorId: 14
+    id_superheroe: 6
     id_imagen: 0
-    text: "Te leer\xE9 una adivinanza y luego tendr\xE1s que seleccionar el m\xFAsculo
-      al que corresponde. \xBFEntendido?"
+    text: "Pues es muy sencillo. Te leer\xE9 una adivinanza y luego tendr\xE1s que
+      seleccionar el m\xFAsculo al que corresponde. \xBFEntendido?"
   - actorId: 4
-    id_superheroe: 0
+    id_superheroe: 6
     id_imagen: 0
     text: "\xA1S\xED! Vamos all\xE1"
   actores:

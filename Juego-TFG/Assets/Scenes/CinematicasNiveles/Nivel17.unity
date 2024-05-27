@@ -295,8 +295,8 @@ MonoBehaviour:
   - actorId: 12
     id_superheroe: 3
     id_imagen: 0
-    text: "\xA1Hola! \xBFRecuerdas cual es el m\xFAsculo que se encuentra a los lados
-      de tu cintura?"
+    text: "\xA1Hola joven! \xBFRecuerdas cu\xE1l es el m\xFAsculo que se encuentra
+      a los lados de tu cintura?"
   - actorId: 6
     id_superheroe: 3
     id_imagen: 5
@@ -304,8 +304,12 @@ MonoBehaviour:
   - actorId: 12
     id_superheroe: 3
     id_imagen: 5
-    text: "\xA1Muy bien! Veo que poco a poco te lo vas aprendiendo todo. Hoy vamos
-      a aprender un poco m\xE1s sobre los oblicuos y su importancia en nuestro cuerpo."
+    text: "\xA1Muy bien! Veo que poco a poco te lo vas aprendiendo todo."
+  - actorId: 12
+    id_superheroe: 3
+    id_imagen: 5
+    text: "Hoy vamos a aprender un poco m\xE1s sobre los oblicuos y su importancia
+      en nuestro cuerpo."
   - actorId: 4
     id_superheroe: 3
     id_imagen: 5
@@ -313,7 +317,7 @@ MonoBehaviour:
   - actorId: 12
     id_superheroe: 3
     id_imagen: 5
-    text: "Bueno para empezar\u2026 \xBFrecuerdas para que sirven?"
+    text: "Bueno para empezar\u2026 \xBFrecuerdas para qu\xE9 sirven?"
   - actorId: 6
     id_superheroe: 3
     id_imagen: 5
@@ -322,12 +326,16 @@ MonoBehaviour:
     id_superheroe: 3
     id_imagen: 5
     text: "\xA1Efectivamente! Pero no solo a los lados, tambi\xE9n sirven para mirar
-      hacia atr\xE1s. Con ese movimiento de torcer se activan y los est\xE1s ejercitando
-      un poquito. "
+      hacia atr\xE1s."
+  - actorId: 12
+    id_superheroe: 3
+    id_imagen: 5
+    text: "Con ese movimiento de torcer se activan y los est\xE1s ejercitando un
+      poco."
   - actorId: 4
     id_superheroe: 3
     id_imagen: 5
-    text: "\xA1Vaya! Eso es interesante."
+    text: "\xA1Vaya! Eso no lo sab\xEDa."
   - actorId: 12
     id_superheroe: 3
     id_imagen: 5
@@ -335,7 +343,7 @@ MonoBehaviour:
   - actorId: 2
     id_superheroe: 3
     id_imagen: 5
-    text: "\xBFComo lo hacen?"
+    text: "\xBFC\xF3mo lo hacen?"
   - actorId: 12
     id_superheroe: 3
     id_imagen: 5
@@ -344,7 +352,7 @@ MonoBehaviour:
   - actorId: 4
     id_superheroe: 3
     id_imagen: 5
-    text: "Ostras pues menos mal que est\xE1n. "
+    text: "\xA1Vaya! Pues menos mal que existen los oblicuos."
   - actorId: 12
     id_superheroe: 3
     id_imagen: 5

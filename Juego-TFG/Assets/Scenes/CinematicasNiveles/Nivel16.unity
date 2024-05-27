@@ -291,50 +291,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mensajes:
-  - actorId: 8
-    id_superheroe: 0
+  - actorId: 14
+    id_superheroe: 7
     id_imagen: 7
     text: "\xA1Tenemos problemas muy graves!"
-  - actorId: 8
-    id_superheroe: 0
+  - actorId: 14
+    id_superheroe: 7
     id_imagen: 7
     text: "Nuestro compa\xF1ero ha sido capturado por una ara\xF1a mientras andaba
       por el bosque en busca de un villano. \xA1Tenemos que salvarlo!"
   - actorId: 2
-    id_superheroe: 0
+    id_superheroe: 7
     id_imagen: 7
-    text: "\xA1Por supuesto! \xBFComo podemos salvarlo?"
-  - actorId: 8
-    id_superheroe: 0
+    text: "\xA1Por supuesto! \xBFC\xF3mo podemos salvarlo?"
+  - actorId: 14
+    id_superheroe: 7
     id_imagen: 7
     text: "Para liberar a nuestro compa\xF1ero, debemos jugar el juego de la ara\xF1a."
   - actorId: 2
-    id_superheroe: 0
+    id_superheroe: 7
     id_imagen: 7
     text: "\xBFC\xF3mo se juega?"
-  - actorId: 8
-    id_superheroe: 0
+  - actorId: 14
+    id_superheroe: 7
     id_imagen: 7
     text: "La ara\xF1a ha ideado un desaf\xEDo en el que tendr\xE1s que adivinar
       una palabra escondida. Pero cuidado, solo tendr\xE1s algunos intentos para
       lograrlo."
   - actorId: 0
-    id_superheroe: 0
+    id_superheroe: 7
     id_imagen: 7
-    text: "\xBFY que pasa si no lo logro?"
-  - actorId: 8
-    id_superheroe: 0
+    text: "\xBFY qu\xE9 pasa si no lo logro?"
+  - actorId: 14
+    id_superheroe: 7
     id_imagen: 7
     text: "Si no lo consigues, nuestro amigo quedar\xE1 totalmente atrapado en la
-      telara\xF1a pero sin presi\xF3n"
+      telara\xF1a."
   - actorId: 0
-    id_superheroe: 0
+    id_superheroe: 7
     id_imagen: 7
-    text: "\xA1Uff vamos a intentarlo!"
-  - actorId: 8
-    id_superheroe: 0
+    text: "\xA1Oh no! \xA1Vamos a salvarlo!"
+  - actorId: 14
+    id_superheroe: 7
     id_imagen: 7
-    text: "\xA1Yo conf\xEDo en ti!"
+    text: "\xA1Confiamos en ti!"
   actores:
   - id: 0
     name: "ni\xF1a_asustad"
@@ -378,6 +378,9 @@ MonoBehaviour:
   - id: 13
     name: tempestad
     sprite: {fileID: 21300000, guid: e7964e6e4630f3a41a10570376383c81, type: 3}
+  - id: 14
+    name: delto_titan
+    sprite: {fileID: 21300000, guid: 6b935d9304b1a1944bdc2d84c7260d33, type: 3}
   actorPanel:
   - id: 0
     name: "Ni\xF1a"
@@ -404,9 +407,12 @@ MonoBehaviour:
   - id: 5
     name: espaldin
     sprite: {fileID: 21300000, guid: 33b36bf16c15ef646a01c0722561e919, type: 3}
-  - id: 5
+  - id: 6
     name: espaldin
     sprite: {fileID: 21300000, guid: 33b36bf16c15ef646a01c0722561e919, type: 3}
+  - id: 7
+    name: delto_titan
+    sprite: {fileID: 21300000, guid: 8042528e5fb92d8459f79d7e130561ec, type: 3}
   imagenes:
   - id: 0
     name: presentacion
