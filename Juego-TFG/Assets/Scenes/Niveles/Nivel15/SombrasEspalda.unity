@@ -719,6 +719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nivel: 15
+  panelFinal: {fileID: 721945209}
   sombras:
   - musculo: trapecio
     sombra: {fileID: 21300000, guid: 5b97020ce55611a498105e9ad66cee54, type: 3}
@@ -731,7 +732,6 @@ MonoBehaviour:
   - dorsal
   - lumbar
   musculoActual: 0
-  panelFinal: {fileID: 721945209}
 --- !u!1 &430454360
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,7 +1047,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 750026769}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c8985a2d8e28534db87c7744d20a466, type: 3}
+  m_Script: {fileID: 11500000, guid: b416c9f9c7ba8f341a8a7885680f47aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &750026771

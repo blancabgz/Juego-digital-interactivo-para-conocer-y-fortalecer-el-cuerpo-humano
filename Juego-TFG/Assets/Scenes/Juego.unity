@@ -205,8 +205,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1542429126}
-        m_TargetAssemblyTypeName: MainJuego, Assembly-CSharp
+      - m_Target: {fileID: 657543997}
+        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
         m_MethodName: EscenaJuego
         m_Mode: 5
         m_Arguments:
@@ -425,8 +425,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1542429126}
-        m_TargetAssemblyTypeName: MainJuego, Assembly-CSharp
+      - m_Target: {fileID: 657543997}
+        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
         m_MethodName: EscenaJuego
         m_Mode: 5
         m_Arguments:
@@ -557,8 +557,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1542429126}
-        m_TargetAssemblyTypeName: MainJuego, Assembly-CSharp
+      - m_Target: {fileID: 657543997}
+        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
         m_MethodName: EscenaJuego
         m_Mode: 5
         m_Arguments:
@@ -689,8 +689,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1542429126}
-        m_TargetAssemblyTypeName: MainJuego, Assembly-CSharp
+      - m_Target: {fileID: 657543997}
+        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
         m_MethodName: EscenaJuego
         m_Mode: 5
         m_Arguments:
@@ -1065,8 +1065,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1542429126}
-        m_TargetAssemblyTypeName: MainJuego, Assembly-CSharp
+      - m_Target: {fileID: 657543997}
+        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
         m_MethodName: EscenaJuego
         m_Mode: 5
         m_Arguments:
@@ -1197,8 +1197,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1542429126}
-        m_TargetAssemblyTypeName: MainJuego, Assembly-CSharp
+      - m_Target: {fileID: 657543997}
+        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
         m_MethodName: EscenaJuego
         m_Mode: 5
         m_Arguments:
@@ -1329,8 +1329,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1542429126}
-        m_TargetAssemblyTypeName: MainJuego, Assembly-CSharp
+      - m_Target: {fileID: 657543997}
+        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
         m_MethodName: EscenaJuego
         m_Mode: 5
         m_Arguments:
@@ -1379,6 +1379,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 655641119}
   m_CullTransparentMesh: 1
+--- !u!1 &657543996
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 657543998}
+  - component: {fileID: 657543997}
+  m_Layer: 0
+  m_Name: Controlador
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &657543997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657543996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b416c9f9c7ba8f341a8a7885680f47aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &657543998
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657543996}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 542.9027, y: 394.549, z: -0.3485274}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &735307401
 GameObject:
   m_ObjectHideFlags: 0
@@ -1461,8 +1505,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1542429126}
-        m_TargetAssemblyTypeName: MainJuego, Assembly-CSharp
+      - m_Target: {fileID: 657543997}
+        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
         m_MethodName: EscenaJuego
         m_Mode: 5
         m_Arguments:
@@ -1648,7 +1692,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5683126, y: 0.2817778}
   m_AnchorMax: {x: 0.6375453, y: 0.3933704}
-  m_AnchoredPosition: {x: -1.7469939, y: -3.3630066}
+  m_AnchoredPosition: {x: -1.7470093, y: -3.3630066}
   m_SizeDelta: {x: 6.563202, y: 8.009998}
   m_Pivot: {x: 0.49999997, y: 0.5}
 --- !u!114 &858161130
@@ -1695,8 +1739,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1542429126}
-        m_TargetAssemblyTypeName: MainJuego, Assembly-CSharp
+      - m_Target: {fileID: 657543997}
+        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
         m_MethodName: EscenaJuego
         m_Mode: 5
         m_Arguments:
@@ -1827,8 +1871,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1542429126}
-        m_TargetAssemblyTypeName: MainJuego, Assembly-CSharp
+      - m_Target: {fileID: 657543997}
+        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
         m_MethodName: EscenaJuego
         m_Mode: 5
         m_Arguments:
@@ -1959,8 +2003,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1542429126}
-        m_TargetAssemblyTypeName: MainJuego, Assembly-CSharp
+      - m_Target: {fileID: 657543997}
+        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
         m_MethodName: EscenaJuego
         m_Mode: 5
         m_Arguments:
@@ -2072,8 +2116,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1542429126}
-        m_TargetAssemblyTypeName: MainJuego, Assembly-CSharp
+      - m_Target: {fileID: 657543997}
+        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
         m_MethodName: EscenaJuego
         m_Mode: 5
         m_Arguments:
@@ -2223,8 +2267,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1542429126}
-        m_TargetAssemblyTypeName: MainJuego, Assembly-CSharp
+      - m_Target: {fileID: 657543997}
+        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
         m_MethodName: EscenaJuego
         m_Mode: 5
         m_Arguments:
@@ -2355,8 +2399,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1542429126}
-        m_TargetAssemblyTypeName: MainJuego, Assembly-CSharp
+      - m_Target: {fileID: 657543997}
+        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
         m_MethodName: EscenaJuego
         m_Mode: 5
         m_Arguments:
@@ -2487,8 +2531,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1542429126}
-        m_TargetAssemblyTypeName: MainJuego, Assembly-CSharp
+      - m_Target: {fileID: 657543997}
+        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
         m_MethodName: EscenaJuego
         m_Mode: 5
         m_Arguments:
@@ -2619,8 +2663,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1542429126}
-        m_TargetAssemblyTypeName: MainJuego, Assembly-CSharp
+      - m_Target: {fileID: 657543997}
+        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
         m_MethodName: EscenaJuego
         m_Mode: 5
         m_Arguments:
@@ -2669,50 +2713,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1506166245}
   m_CullTransparentMesh: 1
---- !u!1 &1542429125
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1542429127}
-  - component: {fileID: 1542429126}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1542429126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1542429125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9228bcb2120efb34d8e5eac245508b21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1542429127
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1542429125}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 509.98932, y: 335.46304, z: -9.124204}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1605684789
 GameObject:
   m_ObjectHideFlags: 0
@@ -2795,8 +2795,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1542429126}
-        m_TargetAssemblyTypeName: MainJuego, Assembly-CSharp
+      - m_Target: {fileID: 657543997}
+        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
         m_MethodName: EscenaJuego
         m_Mode: 5
         m_Arguments:
@@ -2927,8 +2927,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1542429126}
-        m_TargetAssemblyTypeName: MainJuego, Assembly-CSharp
+      - m_Target: {fileID: 657543997}
+        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
         m_MethodName: EscenaJuego
         m_Mode: 5
         m_Arguments:
@@ -3127,8 +3127,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1542429126}
-        m_TargetAssemblyTypeName: MainJuego, Assembly-CSharp
+      - m_Target: {fileID: 657543997}
+        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
         m_MethodName: EscenaJuego
         m_Mode: 5
         m_Arguments:
@@ -3259,8 +3259,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1542429126}
-        m_TargetAssemblyTypeName: MainJuego, Assembly-CSharp
+      - m_Target: {fileID: 657543997}
+        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
         m_MethodName: EscenaJuego
         m_Mode: 5
         m_Arguments:
@@ -3391,8 +3391,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1542429126}
-        m_TargetAssemblyTypeName: MainJuego, Assembly-CSharp
+      - m_Target: {fileID: 657543997}
+        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
         m_MethodName: EscenaJuego
         m_Mode: 5
         m_Arguments:
@@ -3523,8 +3523,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1542429126}
-        m_TargetAssemblyTypeName: MainJuego, Assembly-CSharp
+      - m_Target: {fileID: 657543997}
+        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
         m_MethodName: EscenaJuego
         m_Mode: 5
         m_Arguments:
@@ -3677,6 +3677,6 @@ SceneRoots:
   - {fileID: 491882093}
   - {fileID: 803381976}
   - {fileID: 1864072726}
-  - {fileID: 1542429127}
   - {fileID: 188565146}
   - {fileID: 528501723}
+  - {fileID: 657543998}

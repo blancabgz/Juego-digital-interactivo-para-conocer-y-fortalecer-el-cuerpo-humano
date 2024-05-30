@@ -2085,16 +2085,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2c5e6428cc5d63489f817e692092d3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nivel: 0
+  nivel: 16
   panelFinal: {fileID: 1245959418}
-  panelVolverIntentar: {fileID: 1451320864}
-  imagenesFallo:
-  - {fileID: 1217825378}
-  - {fileID: 1081252362}
-  - {fileID: 1095261758}
-  - {fileID: 957481894}
-  - {fileID: 1867310100}
-  - {fileID: 604284908}
+  palabraDividida: 
+  letrasPalabraDividida: 0
+  palabraOculta: 
   palabras:
   - palabra: BICEPS
     definicion: Se encuentra en el brazo
@@ -2118,11 +2113,16 @@ MonoBehaviour:
     definicion: Se encuentra en la parte de abajo del cuerpo
   - palabra: GEMELO
     definicion: Se encuentra en la parte de abajo del cuerpo
-  palabraDividida: 
-  letrasPalabraDividida: 0
-  palabraOculta: 
+  panelVolverIntentar: {fileID: 1451320864}
   pista: {fileID: 379803052}
   intentos: {fileID: 719668926}
+  imagenesFallo:
+  - {fileID: 1217825378}
+  - {fileID: 1081252362}
+  - {fileID: 1095261758}
+  - {fileID: 957481894}
+  - {fileID: 1867310100}
+  - {fileID: 604284908}
 --- !u!1 &465638891
 GameObject:
   m_ObjectHideFlags: 0
@@ -3828,7 +3828,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 750026769}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c8985a2d8e28534db87c7744d20a466, type: 3}
+  m_Script: {fileID: 11500000, guid: b416c9f9c7ba8f341a8a7885680f47aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &750026771

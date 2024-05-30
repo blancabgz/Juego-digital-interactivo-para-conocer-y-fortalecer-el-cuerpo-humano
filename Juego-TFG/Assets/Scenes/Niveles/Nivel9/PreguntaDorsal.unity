@@ -236,7 +236,7 @@ GameObject:
   - component: {fileID: 1006640689}
   - component: {fileID: 1006640688}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Controlador
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1006640687}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c8985a2d8e28534db87c7744d20a466, type: 3}
+  m_Script: {fileID: 11500000, guid: b416c9f9c7ba8f341a8a7885680f47aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1006640689
