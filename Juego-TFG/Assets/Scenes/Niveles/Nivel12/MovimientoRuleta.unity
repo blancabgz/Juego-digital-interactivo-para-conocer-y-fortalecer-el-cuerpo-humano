@@ -1171,8 +1171,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videos:
-  - {fileID: 32900000, guid: ff99fdcd87adbe74ba1131b466438a6e, type: 3}
-  - {fileID: 32900000, guid: 292bb60f234f5ef4b937075a37fc1f4a, type: 3}
+  - {fileID: 32900000, guid: 5de4352a128561e43a14e8df3cc605de, type: 3}
+  - {fileID: 32900000, guid: 09179ca0467e30b49ae9c4c8681c268a, type: 3}
+  - {fileID: 32900000, guid: f9636e1649aea2c4e989e00a3a80cae5, type: 3}
+  - {fileID: 32900000, guid: 718dd8d673a8b4c4aa2ff636b92affb5, type: 3}
+  - {fileID: 32900000, guid: ef806c5061860c24d8364ae5be6a9af7, type: 3}
+  - {fileID: 32900000, guid: e64da9b647c567e4a8f06f00b5024ed9, type: 3}
   videoPlayerObject: {fileID: 946154638}
 --- !u!1 &2000060562
 GameObject:
