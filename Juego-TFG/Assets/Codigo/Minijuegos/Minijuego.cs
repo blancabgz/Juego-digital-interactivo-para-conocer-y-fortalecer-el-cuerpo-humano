@@ -26,6 +26,11 @@ public class Minijuego : MonoBehaviour{
         numFallos++;
     }
 
+    protected void DisminuirNumeroFallos(){
+        // Debug.Log("Numero de fallos antes" + numFallos);
+        numFallos--;
+    }
+
      /**
      * @brief Metodo para almacenar que el nivel ha sido completado y almacenar la puntuacion obtenida
      *
@@ -110,7 +115,12 @@ public class Minijuego : MonoBehaviour{
     protected int CalcularPuntuacionProporcion(int max_fallos){
         float proporcion = (float)numFallos / max_fallos;
         float puntuacion = 10.0f - proporcion * 10.0f;
-        return Utilidades.Redondear(puntuacion);
+        return Redondear(puntuacion);
+    }
+
+    // Funcion para inicial el contador de medallas conseguidas
+    public void InicializarContadorMedallas(){
+        PlayerPrefs.SetInt("ContadorMedallas", 0);
     }
 
     // Funcion que obtiene la puntuacion 
@@ -129,6 +139,21 @@ public class Minijuego : MonoBehaviour{
             // Reinicio los puntos
             puntos = -1;
         }
+    }
+
+    // Funcion que redondea el numero flotante al entero mas cercano
+    // puntuacion --> El numero float para redondear
+    // return int --> El numero redondeada
+    private int Redondear(float puntuacion) {
+        int parteEntera = (int) puntuacion;
+        float parteDecimal = puntuacion - parteEntera;
+
+        if(parteDecimal >= 0.5){
+            return parteEntera + 1;
+        }else{
+            return parteEntera;
+        }
+
     }
 
 }

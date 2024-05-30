@@ -19,12 +19,7 @@ public class LuchaContraElVillano : Minijuego
 
 
     void Awake(){
-        GameObject controlMusica = GameObject.Find("ControlMusica");
-        if(PlayerPrefs.GetString("estadoMusica", "null") == "OFF"){
-            if(controlMusica != null){
-                Destroy(controlMusica);
-            }   
-        }
+        ControlMusica.EstadoMusica();
     }
     
     void Start()

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ControladorDado : MonoBehaviour
+public class ControladorDado : Minijuego
 {
     void Awake(){
-        Utilidades.InicializarContadorMedallas();
+        base.InicializarContadorMedallas();
     }
 }

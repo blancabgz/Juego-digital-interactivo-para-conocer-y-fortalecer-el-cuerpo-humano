@@ -29,38 +29,6 @@ public class Utilidades : MonoBehaviour
         SceneManager.LoadScene(opcion);
     }
 
-    // Funcion para inicial el contador de medallas conseguidas
-    public static void InicializarContadorMedallas(){
-        PlayerPrefs.SetInt("ContadorMedallas", 0);
-    }
-
-
-    // Funcion que redondea el numero flotante al entero mas cercano
-    // puntuacion --> El numero float para redondear
-    // return int --> El numero redondeada
-    public static int Redondear(float puntuacion) {
-        int parteEntera = (int) puntuacion;
-        float parteDecimal = puntuacion - parteEntera;
-
-        if(parteDecimal >= 0.5){
-            return parteEntera + 1;
-        }else{
-            return parteEntera;
-        }
-
-    }
-
-
-    // ! BLANCA QUITARLO CUANDO HAGAS PUZZLE QUE ESTA YA EN MINIJUEGO
-    // Funcion que calcula la puntuacion basada en la proporcion de fallos en relacion con el maximo de fallos posibles
-    /// numFallos --> El numero de fallos cometidos por el jugador.
-    /// max_fallos --> El maximo de fallos posibles.
-    /// int return --> La puntuacion calculada, redondeada al entero mas cercano.
-    public static int CalcularPuntuacionProporcion(int numFallos, int max_fallos){
-        float proporcion = (float)numFallos / max_fallos;
-        float puntuacion = 10.0f - proporcion * 10.0f;
-        return Redondear(puntuacion);
-    }
 
     public static bool EsEmail(string email){
         // Expresión regular para validar el formato de un correo electrónico

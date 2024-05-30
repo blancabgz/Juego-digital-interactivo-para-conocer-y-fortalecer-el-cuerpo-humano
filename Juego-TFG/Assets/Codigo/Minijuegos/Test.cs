@@ -6,27 +6,24 @@ using UnityEngine.UI;
 
 public class Test : MonoBehaviour
 {
+    private int contadorMedallas = 0;
+    int indicePreguntaAleatoria;
+    private string dadoSeleccion = "null";
 
     public Preguntas[] preguntas;
     public Preguntas[] preguntasSeleccionadas;
     TextMeshProUGUI textPregunta;
     GameObject respuestas;
-
-    int indicePreguntaAleatoria;
     public GameObject panelFinal;
 
-    private string dadoSeleccion = "null";
 
-    private int contadorMedallas = 0;
-
-    
     private void Awake(){
+        ControlMusica.EstadoMusica();
         CargarSeleccionDado();
         CargarContadorMedallas();
     }
 
-    void Start()
-    {   
+    void Start(){   
         FiltrarPreguntas();
         Utilidades.MezclarElementos(preguntasSeleccionadas);
         MostrarPreguntaRespuestas();

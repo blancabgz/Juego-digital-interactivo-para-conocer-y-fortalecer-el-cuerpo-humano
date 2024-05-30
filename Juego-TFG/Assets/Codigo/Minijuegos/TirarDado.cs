@@ -5,9 +5,9 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class TirarDado : MonoBehaviour
+public class TirarDado : Minijuego
 {
-    public int nivel;
+    // public int nivel;
     public Sprite[] dados;
     public GameObject[] medallas;
     private GameObject dadoObjecto;
@@ -20,18 +20,11 @@ public class TirarDado : MonoBehaviour
     public Image medalla;
     public Color medallaSeleccionada;
     private int contadorMedallas = 0;
-    private int puntuacion = 10;
-    public GameObject panelFinal;
     public AudioSource audioSource;
 
     void Awake(){
-        GameObject controlMusica = GameObject.Find("ControlMusica");
-        if(PlayerPrefs.GetString("estadoMusica", "null") == "OFF"){
-            if(controlMusica != null){
-                Destroy(controlMusica);
-            }   
-        }
-
+        ControlMusica.EstadoMusica();
+        base.puntos = 10;
         CargarPuntuacion();
         CargarContadorMedallas();
         GuardarContadorMedallas();
@@ -52,8 +45,8 @@ public class TirarDado : MonoBehaviour
     public void Pulsar(){
         if(!rueda){
             // Quito un punto por tirar al dado
-            puntuacion--;
-            PlayerPrefs.SetInt("Puntuacion", puntuacion);
+            base.DisminuirNumeroFallos();
+            PlayerPrefs.SetInt("Puntuacion", base.puntos);
             CargarPuntuacion();
             StartCoroutine(Dado());
             if(PlayerPrefs.GetString("estadoMusica", "null") == "ON"){
@@ -103,42 +96,38 @@ public class TirarDado : MonoBehaviour
 
     private void CargarPuntuacion(){
         if (PlayerPrefs.HasKey("Puntuacion")){
-            puntuacion = PlayerPrefs.GetInt("Puntuacion");
+            base.puntos = PlayerPrefs.GetInt("Puntuacion");
         }
     }
 
     private void CargarContadorMedallas(){
         if (PlayerPrefs.HasKey("ContadorMedallas")){
-            contadorMedallas = PlayerPrefs.GetInt("ContadorMedallas");
-            
+            contadorMedallas = PlayerPrefs.GetInt("ContadorMedallas");   
         }
 
-        if(panelFinal != null){
-            if(contadorMedallas >= 3){
-                // A la puntuacion obtenida le sumo los puntos ganados 
-                puntuacion += contadorMedallas;
-                // Compruebo que la puntuacion es mayor de 0
-                if(puntuacion < 0){
-                    puntuacion = 0;
-                }
-                // Guardo la puntuacion del nivel
-                Puntuaciones.GuardarPuntuacion(nivel, puntuacion);
-                // Guardo nivel superado
-                NivelCompletado.GuardarNivel(nivel,2);
+        if(contadorMedallas >= 3){
+            // A la puntuacion obtenida le sumo los puntos ganados 
+            base.puntos += contadorMedallas;
+            // Compruebo que la puntuacion es mayor de 0
+            if(base.puntos < 0){
+                base.puntos = 0;
+            }
 
-                panelFinal.SetActive(true);
-                // Restablezco los valores
-                PlayerPrefs.SetInt("ContadorMedallas", 0);
-                PlayerPrefs.SetInt("Puntuacion", 10);
+            base.GuardarPuntuacion(2);
+            base.MostrarPanelFinal();
 
-                for(int i = 0; i < contadorMedallas; i++){
-                    medalla = medallas[i].GetComponent<Image>();
-                    Color nuevaOpacidad = medalla.color;
-                    nuevaOpacidad.a = 0.5f;
-                    medalla.color = nuevaOpacidad;
-                }
+            // Restablezco los valores
+            PlayerPrefs.SetInt("ContadorMedallas", 0);
+            PlayerPrefs.SetInt("Puntuacion", 10);
+
+            for(int i = 0; i < contadorMedallas; i++){
+                medalla = medallas[i].GetComponent<Image>();
+                Color nuevaOpacidad = medalla.color;
+                nuevaOpacidad.a = 0.5f;
+                medalla.color = nuevaOpacidad;
             }
         }
+
     }
 
 
@@ -156,7 +145,7 @@ public class TirarDado : MonoBehaviour
 
     private void GuardarContadorMedallas(){
         if(contadorMedallas == 0){
-            Utilidades.InicializarContadorMedallas();
+            base.InicializarContadorMedallas();
         }
     }
     
