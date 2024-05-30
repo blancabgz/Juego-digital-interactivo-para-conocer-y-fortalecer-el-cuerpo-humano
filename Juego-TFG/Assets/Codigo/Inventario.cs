@@ -37,7 +37,6 @@ public class Inventario : MonoBehaviour
         // crear un array de slots 
         slots = new GameObject[numSlots];
 
-        // ATENCION BLANCA, CAMBIAR DE 4 A SLOTS
         for (int i = 0; i < slots.Length; i++)
         {
             slots[i] = inventario.transform.GetChild(i).gameObject;

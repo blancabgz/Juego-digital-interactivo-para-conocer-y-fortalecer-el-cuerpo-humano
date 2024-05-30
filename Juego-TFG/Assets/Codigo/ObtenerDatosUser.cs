@@ -13,7 +13,7 @@ public class ObtenerDatosUser : MonoBehaviour
  
     void Start(){
         if(PlayerPrefs.GetInt("Datos",0) != 0){
-            SceneManager.LoadScene("MenuPrincipal");   
+            Utilidades.EscenaJuego("MenuPrincipal");   
         }
     }
 
@@ -49,7 +49,7 @@ public class ObtenerDatosUser : MonoBehaviour
             mensajeError.text = "Por favor, complete todos los campos.";
         }else{
             PlayerPrefs.SetInt("Datos",1);
-            SceneManager.LoadScene(escena);
+            Utilidades.EscenaJuego(escena);
         }
     }
 

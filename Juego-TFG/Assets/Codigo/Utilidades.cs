@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using System.Text.RegularExpressions;
 
-public class Utilidades
+public class Utilidades : MonoBehaviour
 {
     
     // Funcion que mezcla los elementos de un array 
@@ -50,6 +50,8 @@ public class Utilidades
 
     }
 
+
+    // ! BLANCA QUITARLO CUANDO HAGAS PUZZLE QUE ESTA YA EN MINIJUEGO
     // Funcion que calcula la puntuacion basada en la proporcion de fallos en relacion con el maximo de fallos posibles
     /// numFallos --> El numero de fallos cometidos por el jugador.
     /// max_fallos --> El maximo de fallos posibles.
@@ -67,5 +69,22 @@ public class Utilidades
         return regex.IsMatch(email);
     }
 
+    /**
+     * @brief Metodo para cargar el menú de niveles según desbloqueado
+     *
+     * Este metodo comprueba el último nivel nivel desbloqueado para cargar la primera escena o la segunda
+    */
+
+    public static void MenuNiveles(){
+        if(PlayerPrefs.GetInt("unlockedLevels",1) >= 20){
+            Utilidades.EscenaJuego("Juego2");
+        }else{
+            Utilidades.EscenaJuego("Juego");
+        }
+    }
+    public static void Salir(){   
+        Debug.Log("Salir...");
+        Application.Quit();
+    }
     
 }

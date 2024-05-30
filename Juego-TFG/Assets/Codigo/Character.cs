@@ -16,7 +16,7 @@ public class Character : MonoBehaviour
     public void SelectCharacter(string gender){
         selectedCharacter = gender;
         PlayerPrefs.SetString("SelectedCharacter", selectedCharacter ); // key and value
-        SceneManager.LoadScene("MenuPrincipal"); // going to menu 
+        Utilidades.EscenaJuego("MenuPrincipal"); // going to menu 
     }
 
     // Method to load the character, if this character exit, going to the level menu without selecting the character again
@@ -26,7 +26,7 @@ public class Character : MonoBehaviour
         }
 
         if(selectedCharacter != "null"){
-            SceneManager.LoadScene("Historia"); // going to menu 
+            Utilidades.EscenaJuego("Historia"); // going to menu 
         }
     }
 }

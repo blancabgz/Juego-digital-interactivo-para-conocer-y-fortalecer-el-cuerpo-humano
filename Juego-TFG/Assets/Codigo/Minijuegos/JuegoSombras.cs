@@ -5,9 +5,9 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class JuegoSombras : MonoBehaviour
+public class JuegoSombras : Minijuego
 {
-    public int nivel;
+    // public int nivel;
     public Sombras[] sombras;
     private GameObject pregunta;
 
@@ -18,18 +18,10 @@ public class JuegoSombras : MonoBehaviour
 
     public int musculoActual = 0;
     private int puntosFinal;
-    private int puntos;
-    private int numErrores;
 
-    public GameObject panelFinal;
     
     void Awake(){
-        GameObject controlMusica = GameObject.Find("ControlMusica");
-        if(PlayerPrefs.GetString("estadoMusica", "null") == "OFF"){
-            if(controlMusica != null){
-                Destroy(controlMusica);
-            }   
-        }
+        ControlMusica.EstadoMusica();
     }
 
     void Start()
@@ -42,7 +34,7 @@ public class JuegoSombras : MonoBehaviour
         MostrarRespuesta();
         // Inicializo los puntos
         if(nivel > 0){
-            puntos = 10;
+            base.puntos = 10;
             puntosFinal = 0;
         }
     }
@@ -53,7 +45,7 @@ public class JuegoSombras : MonoBehaviour
     //
     public void MostrarPregunta(){
         // Inicializo num errores
-        numErrores = 0;
+        base.numFallos = 0;
         DesactivarImagenes();
         // Encuentra el GameObject que contiene la imagen de la sombra
         pregunta = GameObject.Find("Sombra");
@@ -142,79 +134,61 @@ public class JuegoSombras : MonoBehaviour
     //
     public void ComprobarRespuesta(int opcion){
         
-        // Comprueba que la sombra del musculo actual es menor que la longitud de preguntas de sombras
         if(musculoActual < sombras.Length - 1){
             // Verifica si la respuesta seleccionada es la correcta
             if(respuestas[opcion] == sombras[musculoActual].musculo){
                 // Incrementa el indice de la respuesta
                 musculoActual++;
-                puntos = 10;
-                if(numErrores == 2){
-                    puntos -= 10;
-                }else if(numErrores == 1){
-                    puntos -= 5;
+                base.puntos = 10;
+                if(base.numFallos == 2){
+                    base.puntos -= 10;
+                }else if(base.numFallos == 1){
+                    base.puntos -= 5;
                 }else{
-                    puntos -= 0;
+                    base.puntos -= 0;
                 }
                 // Suma puntos de la pregunta
-                puntosFinal += puntos;
+                puntosFinal += base.puntos;
                 // Muestra la siguiente pregunta
                 MostrarPregunta();
                 
             }else{
                 ActivarImagen(opcion);
-                numErrores++;
+                base.AumentarNumeroFallos();
             }
         }else{
-            // Verifica si ha encontrado el GameObject
-            if(panelFinal != null){
-                // Muestra la ultima pregunta
-                MostrarPregunta();
-                // Verifica si la opción escogida es la correcta
-                if(respuestas[opcion] == sombras[musculoActual].musculo){
-                    musculoActual++;
-                    puntos = 10;
-                    if(numErrores == 2){
-                        puntos -= 10;
-                    }else if(numErrores == 1){
-                        puntos -= 5;
-                    }else{
-                        puntos -= 0;
-                    }
-                    // Suma puntos ultima ronda
-                    puntosFinal += puntos;
-                    // Calcular puntuacion media de las tres rondas
-                    puntosFinal /= 3;
-                    // Guardar nivel completado
-                    NivelCompletado.GuardarNivel(nivel,2);
-                    // Guardar puntuacion final
-                    Puntuaciones.GuardarPuntuacion(nivel, puntosFinal);
+            // Muestra la ultima pregunta
+            MostrarPregunta();
+            // Verifica si la opción escogida es la correcta
+            if(respuestas[opcion] == sombras[musculoActual].musculo){
+                musculoActual++;
+                base.CalcularPuntuacionRonda();
+                // Suma puntos ultima ronda
+                puntosFinal += base.puntos;
+                // Calcular puntuacion media de las tres rondas
+                puntosFinal /= 3;
+                base.puntos = puntosFinal;
 
-                    if (GameObject.Find("Sombra").TryGetComponent(out Image sombra)) {
-                        sombra.enabled = false;
-                    }
+                base.GuardarPuntuacion(2);
 
-                    // Desactiva el panel de respuestas
-                    GameObject respuestasPanel = GameObject.Find("Respuestas");
-                    if (respuestasPanel != null) {
-                        respuestasPanel.SetActive(false);
-                    }
+                if (GameObject.Find("Sombra").TryGetComponent(out Image sombra)) {
+                    sombra.enabled = false;
+                }
 
-                    // Desactiva el panel de explicación
-                    GameObject explicacionPanel = GameObject.Find("Explicacion");
-                    if (explicacionPanel != null) {
-                        explicacionPanel.SetActive(false);
-                    }
+                // Desactiva el panel de respuestas
+                GameObject respuestasPanel = GameObject.Find("Respuestas");
+                if (respuestasPanel != null) {
+                    respuestasPanel.SetActive(false);
+                }
 
-                    // Activa el panel final
-                    if (panelFinal != null) {
-                        panelFinal.SetActive(true);
-                    }
+                // Desactiva el panel de explicación
+                GameObject explicacionPanel = GameObject.Find("Explicacion");
+                if (explicacionPanel != null) {
+                    explicacionPanel.SetActive(false);
+                }
 
-                }else{
-                    ActivarImagen(opcion);
-                    numErrores++;
-                }   
+                // Activa el panel final
+                base.MostrarPanelFinal(); 
             }
         }
     }

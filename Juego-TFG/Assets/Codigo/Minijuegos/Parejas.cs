@@ -4,48 +4,33 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Parejas : MonoBehaviour
-{
-    public int nivel;
-    public Carta[] cartas;
-    private GameObject mazoCartas;
-
-    private GameObject[] objetocartas;
-
-    private GameObject seleccion1 = null;
-    private GameObject seleccion2 = null;
+public class Parejas : Minijuego{
 
     private int poseleccion1;
     private int poseleccion2;
     private int cartasCorrectasEncontradas = 0;
-    public GameObject panelFinal;
-    private int numFallos;
-    private const int MAX_FALLOS = 20;
+    private static int MAX_FALLOS = 20;
+    public Carta[] cartas;
 
-    AudioSource[] audioSources;
-    private string musica;
+    private GameObject mazoCartas;
+    private GameObject[] objetocartas;
+    private GameObject seleccion1 = null;
+    private GameObject seleccion2 = null;
 
     void Awake(){
-        audioSources = FindObjectsOfType<AudioSource>();
-        musica = PlayerPrefs.GetString("estadoMusica", "null");
-        if(musica != null){
-            if(musica == "OFF"){
-                if(audioSources != null){
-                    foreach (AudioSource audioSource in audioSources){
-                        audioSource.mute = false;
-                    }
-                }
-            }
-        }
+        ControlMusica.EstadoMusica();
     }
     void Start()
     {
+        base.puntos = 10;
+        base.numFallos = 0;
+
         // Mezclamos los elementos del array
         Utilidades.MezclarElementos(cartas);
         // Obtenemos el GameObject Cartas
         mazoCartas = GameObject.Find("Cartas");
         ColocarCartasAleatorias();
-
+        
     }
 
     // Funcion para colocar las cartas con los músculos de forma aleatoria
@@ -102,7 +87,7 @@ public class Parejas : MonoBehaviour
             } else {
                 // Esperas 2s antes de ocultar las cartas
                 Invoke("OcultarCartas", 2f);
-                numFallos++;
+                base.AumentarNumeroFallos();
                 BloquearInteraccionCartas(true);
             }
             
@@ -154,31 +139,27 @@ public class Parejas : MonoBehaviour
         }
     }
 
+    // Función para bloquear las cartas 
     private void BloquearInteraccionCartas(bool bloquear){
-        foreach (GameObject carta in objetocartas)
-        {
+        foreach (GameObject carta in objetocartas){
             Button button = carta.GetComponent<Button>();
-            if (button != null)
-            {
+            if (button != null){
                 button.interactable = !bloquear; // Desactivar la interacción si bloquear es true
             }
         }
     }
 
+    // Funcion para comprobar si todas las cartas han sido emparejadas 
+    // Si todas están emparejadas, calcula la puntuación final y la guarda, activa el panel final y devuelve true
     private bool ComprobarFinNivel(){
         if(cartasCorrectasEncontradas == cartas.Length){
             // Calcular puntuacion segun el numero de fallos cometidos
-            int puntuacionFinal = Utilidades.CalcularPuntuacionProporcion(numFallos, MAX_FALLOS);
-
-            NivelCompletado.GuardarNivel(nivel,2);
-            Puntuaciones.GuardarPuntuacion(nivel, puntuacionFinal);
+            base.puntos = base.CalcularPuntuacionProporcion(MAX_FALLOS);
+            base.GuardarPuntuacion(2);
             // Activa el panel final
-            if (panelFinal != null) {
-                panelFinal.SetActive(true);
-            }
+            base.MostrarPanelFinal();
             return true;
         }
-
         return false;
     }
 

@@ -25,12 +25,6 @@ public class Opciones : MonoBehaviour
         ComprobarEstadoMusica();
         
     }
-    public void EscenaJuego(string opcion)
-    {
-        SceneManager.LoadScene(opcion);
-        
-    }
-
 
     public void CambiarPersonaje(){
         // Cambiamos el valor guardado a null
@@ -38,13 +32,13 @@ public class Opciones : MonoBehaviour
         // Nos aseguramos que los cambios se realizan
         PlayerPrefs.Save();
         // Cargamos la escena "EleccionPersonaje"
-        EscenaJuego("EleccionPersonaje");
+        Utilidades.EscenaJuego("EleccionPersonaje");
     }
 
     public void CambiarDatos(){
         PlayerPrefs.SetInt("Datos",0);
         PlayerPrefs.Save();
-        EscenaJuego("Datos");
+        Utilidades.EscenaJuego("Datos");
     }
 
     public void ComprobarEstadoMusica(){
@@ -95,7 +89,7 @@ public class Opciones : MonoBehaviour
     public void BorrarDatos(){
         PlayerPrefs.DeleteAll();
         PlayerPrefs.Save();
-        EscenaJuego("Datos");
+        Utilidades.EscenaJuego("Datos");
     }
 
     public void CancelarAccion(){

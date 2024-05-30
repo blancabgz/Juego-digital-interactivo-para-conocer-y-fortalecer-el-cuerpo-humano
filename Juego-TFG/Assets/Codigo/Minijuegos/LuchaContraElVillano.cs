@@ -5,9 +5,9 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class LuchaContraElVillano : MonoBehaviour
+public class LuchaContraElVillano : Minijuego
 {
-    public int nivel;
+    // public int nivel;
     public Preguntas[] preguntas;
     public string pagina;
     public Image barraVida;
@@ -16,9 +16,7 @@ public class LuchaContraElVillano : MonoBehaviour
     private int indicePregAct = 0;
     private GameObject pregunta;
     private TextMeshProUGUI textoPregunta;
-    private int numPreguntasFalladas = 0;
-    private int puntos;
-    private int numErrores;
+
 
     void Awake(){
         GameObject controlMusica = GameObject.Find("ControlMusica");
@@ -35,7 +33,8 @@ public class LuchaContraElVillano : MonoBehaviour
         MostrarPregunta();
         
         if(nivel > 0){
-            puntos = 10;
+            base.puntos = 10;
+            base.numFallos = 0;
         }
     }
 
@@ -63,22 +62,13 @@ public class LuchaContraElVillano : MonoBehaviour
             barraVida.fillAmount = vidaActual / vidaMaxima; // actualizamos la barra de vida
             // Si ha vencido
             if(vidaActual == 0){
-                // Calculo la puntuacion segun el numero de preguntas falladas
-                puntos -= numPreguntasFalladas*2;
-                // Si la puntuacion es negativa
-                if(puntos < 0){
-                    // Puntuacion a 0
-                    puntos = 0;
-                }
-                // Guarda el nivel completado
-                NivelCompletado.GuardarNivel(nivel,2);
-                // Guarda los puntos del nivel
-                Puntuaciones.GuardarPuntuacion(nivel, puntos);
+                base.CalcularPuntuacionFinal(multiplicador);
+                base.GuardarPuntuacion(2);
                 // Carga la escena
-                SceneManager.LoadScene(pagina);
+                Utilidades.EscenaJuego(pagina);
             }
         }else{
-            numPreguntasFalladas++;
+            base.numFallos++;
         }
         indicePregAct++; // siguiente pregunta
         MostrarPregunta();

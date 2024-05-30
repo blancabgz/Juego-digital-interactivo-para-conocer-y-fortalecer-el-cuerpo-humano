@@ -5,22 +5,18 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Linq;
 
-public class Puzzle : MonoBehaviour
-{
-    public int nivel;
-    public Pregunta[] preguntas;
-    public GameObject cajonImagenes;
-    public GameObject cajonPuzzle;
-    public GameObject puzzleCompletado;
-    public GameObject btnCambiarEscena;
-    private int[] imagenesGuardadas;
-
-    private Button botonPulsadoImagenes;
+public class Puzzle : Minijuego{
     private int posImagen;
     private int posPuzzle;
     private int imagenesCorrectas = 0;
+    private int[] imagenesGuardadas;
 
-    private int numFallos;
+    public Pregunta[] preguntas;
+    public GameObject cajonImagenes;
+    public GameObject cajonPuzzle;
+    public GameObject btnCambiarEscena;
+    private Button botonPulsadoImagenes;
+
     private static int MAX_FALLOS = 66;
 
 
@@ -37,7 +33,7 @@ public class Puzzle : MonoBehaviour
     void Start() {
         Utilidades.MezclarElementos(preguntas);
         ColocarImagenesAleatorias();
-        numFallos = 0;
+        base.numFallos = 0;
     }
 
     public void ColocarImagenesAleatorias(){
@@ -84,26 +80,20 @@ public class Puzzle : MonoBehaviour
             imagenesCorrectas++;
 
             // comprobamos si se ha terminado el puzzle
-            if (imagenesCorrectas == preguntas.Length)
-            {
+            if (imagenesCorrectas == preguntas.Length){
                 CalcularPuntuacion();
-                if(puzzleCompletado != null){
-                    puzzleCompletado.SetActive(true);
-                    btnCambiarEscena.SetActive(true);
-                }
-                
+                base.MostrarPanelFinal();
+                btnCambiarEscena.SetActive(true);   
             }
         }else{
-            numFallos++;
+            base.AumentarNumeroFallos();
         }
     }
 
     public void CalcularPuntuacion(){
-        int puntuacionFinal = Utilidades.CalcularPuntuacionProporcion(numFallos, MAX_FALLOS);
-        NivelCompletado.GuardarNivel(nivel,2);
-        Puntuaciones.GuardarPuntuacion(nivel, puntuacionFinal);
+        base.puntos = base.CalcularPuntuacionProporcion(MAX_FALLOS);
+        base.GuardarPuntuacion(2);
     }
-
 }
 
 

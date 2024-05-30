@@ -88,11 +88,11 @@ public class TirarDado : MonoBehaviour
     }
 
     private void IrEscenaTest(){
-        SceneManager.LoadScene("TipoTestRuleta");
+        Utilidades.EscenaJuego("TipoTestRuleta");
     }
 
     private void IrMovimiento(){
-        SceneManager.LoadScene("MovimientoRuleta");
+        Utilidades.EscenaJuego("MovimientoRuleta");
     }
 
     public void DadoSeleccionado(int valor){

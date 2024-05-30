@@ -24,12 +24,11 @@ public class AsignarPremio : MonoBehaviour
         }
     }
 
-    public void MenuJuego(){
-        if(PlayerPrefs.GetInt("unlockedLevels",1) >= 20){
-            SceneManager.LoadScene("Juego2");
-        }else{
-            SceneManager.LoadScene("Juego");
-        }
+    /**
+     * @brief Metodo para cargar el menú de niveles según desbloqueado
+    */
+    public void IrMenu(){
+        Utilidades.MenuNiveles();
     }
     
 }

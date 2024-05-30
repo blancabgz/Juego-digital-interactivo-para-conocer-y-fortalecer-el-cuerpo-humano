@@ -97,7 +97,7 @@ public class InsertarCalificaciones : MonoBehaviour
         mail.From = new MailAddress("blancabril.999@gmail.com");
         mail.To.Add(new MailAddress(GuardarDatosJugador.CargarEmailJugador()));
 
-        mail.Subject = "Calificaciones";
+        mail.Subject = "Calificaciones de " + GuardarDatosJugador.CargarNombreJugador();
         mail.Body = mensaje;
 
         SmtpServer.Credentials = new System.Net.NetworkCredential("blancabril.999", "uexg kljy ikfn ldjm") as ICredentialsByHost; SmtpServer.EnableSsl = true;

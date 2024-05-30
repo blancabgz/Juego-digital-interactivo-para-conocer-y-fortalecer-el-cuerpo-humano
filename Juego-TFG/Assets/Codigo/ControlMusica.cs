@@ -13,37 +13,40 @@ public class ControlMusica : MonoBehaviour
     {
         musica = PlayerPrefs.GetString("estadoMusica", "null");
         Debug.Log(musica);
-        if (instance == null && musica == "ON")
-        {
+        if (instance == null && musica == "ON"){
             instance = this;
             DontDestroyOnLoad(gameObject);
-        }
-        else if (instance != null || musica == "null" || musica == "OFF")
-        {
+        }else if (instance != null || musica == "null" || musica == "OFF"){
             Destroy(gameObject);
             return;
         }
     }
 
-    private void OnEnable()
-    {
+    private void OnEnable(){
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
-    private void OnDisable()
-    {
+    private void OnDisable(){
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        if (escenasPersiste.Contains(scene.name))
-        {
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode){
+        if (escenasPersiste.Contains(scene.name)){
             DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
+        }else{
             Destroy(gameObject);
         }
     }
+
+    public static void EstadoMusica(){
+        GameObject controlMusica = GameObject.Find("ControlMusica");
+        if(PlayerPrefs.GetString("estadoMusica", "null") == "OFF"){
+
+            if(controlMusica != null){
+                Destroy(controlMusica);
+            }   
+            
+        }
+    }
+
 }
