@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class TextShow : MonoBehaviour
 {
+    public string escena;
+    public int nivel;
     // array con los mensajes de la escena
     public Mensaje[] mensajes;
     // array con los actores que participan en la escena
@@ -20,12 +22,7 @@ public class TextShow : MonoBehaviour
     // guardar si la historia ya se ha reproducido
     // public int historiaVisionada;
     // nombre de la escena a la que vamos a mandar cuando termine la conversacion
-    public string escena;
-
-    public int nivel;
-    
- 
-
+   
     public Image avatar;
     public Image avatarInicio;
     public Image avatarSuperheroe;
@@ -34,11 +31,7 @@ public class TextShow : MonoBehaviour
     string selectedCharacter;
     
 
-    int mensajeActivo = 0;
-
-
-
-  
+    int mensajeActivo = 0;  
 
     private void Awake(){
         string nombreEscena = SceneManager.GetActiveScene().name;
