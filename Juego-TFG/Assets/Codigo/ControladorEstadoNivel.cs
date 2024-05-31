@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class NivelCompletado : MonoBehaviour 
+public class ControladorEstadoNivel : MonoBehaviour 
 {
     private const string NIVEL_ESTADO = "EstadoNivel_";
     private const int NUM_NIVELES = 22;

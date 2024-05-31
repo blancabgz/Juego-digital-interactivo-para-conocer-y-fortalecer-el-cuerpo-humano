@@ -27,7 +27,7 @@ public class JuegoSombras : Minijuego
     void Start()
     {
         // Mezcla los elementos de sombras para evitar el mismo orden
-        Utilidades.MezclarElementos(sombras);
+        base.MezclarElementos(sombras);
         // Muestra la primera sombra
         MostrarPregunta();
         // Muestra las opciones posibles

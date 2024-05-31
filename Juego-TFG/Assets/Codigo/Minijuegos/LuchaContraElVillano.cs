@@ -24,7 +24,7 @@ public class LuchaContraElVillano : Minijuego
     
     void Start()
     {
-        Utilidades.MezclarElementos(preguntas);
+        base.MezclarElementos(preguntas);
         MostrarPregunta();
         
         if(nivel > 0){
@@ -42,7 +42,7 @@ public class LuchaContraElVillano : Minijuego
                 if(indicePregAct < preguntas.Length){ // si el componente no es nulo y el indice de la pregunta < max
                     textoPregunta.text = preguntas[indicePregAct].pregunta; // muestras la pregunta
                 }else{
-                    Utilidades.MezclarElementos(preguntas); // Volvemos a mezclar las preguntas
+                    base.MezclarElementos(preguntas); // Volvemos a mezclar las preguntas
                     indicePregAct = 0; // volvemos al principio
                 }
             }
@@ -60,7 +60,7 @@ public class LuchaContraElVillano : Minijuego
                 base.CalcularPuntuacionFinal(multiplicador);
                 base.GuardarPuntuacion(2);
                 // Carga la escena
-                Utilidades.EscenaJuego(pagina);
+                Controlador.EscenaJuego(pagina);
             }
         }else{
             base.numFallos++;

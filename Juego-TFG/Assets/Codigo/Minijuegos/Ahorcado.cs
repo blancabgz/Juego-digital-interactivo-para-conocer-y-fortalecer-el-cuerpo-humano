@@ -45,7 +45,7 @@ public class Ahorcado : Minijuego {
         AsignarLetrasDelTeclado();
 
         // Mezcla los elementos
-        Utilidades.MezclarElementos(palabras);
+        base.MezclarElementos(palabras);
 
         // Seleccionar palabra oculta
         SeleccionarPalabra();

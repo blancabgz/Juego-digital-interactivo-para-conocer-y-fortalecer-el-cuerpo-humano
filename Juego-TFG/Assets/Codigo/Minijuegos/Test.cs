@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-public class Test : MonoBehaviour
+public class Test : Minijuego
 {
     private int contadorMedallas = 0;
     int indicePreguntaAleatoria;
@@ -25,10 +25,14 @@ public class Test : MonoBehaviour
 
     void Start(){   
         FiltrarPreguntas();
-        Utilidades.MezclarElementos(preguntasSeleccionadas);
+        base.MezclarElementos(preguntasSeleccionadas);
         MostrarPreguntaRespuestas();
     }
 
+    /** 
+    * @brief Función para filtrar las preguntas por músculo
+    * Esta función filtra las preguntas según la selección del músculo del dado
+    */
     private void FiltrarPreguntas(){
         int contador = 0;
         if(dadoSeleccion != null){
@@ -46,27 +50,26 @@ public class Test : MonoBehaviour
         }
     }
     
+    /**
+    *  @brief Función para obtener datos
+    *  Esta funcion se utiliza para obtener el dado seleccionado o para saber el numero de medallas
+    *  conseguidas
+    *  @param {string} Clave 
+    */ 
+    // private string CargarDatos(string clave){
+    //     return 
+    // }
 
-    private void CargarSeleccionDado(){
-        if (PlayerPrefs.HasKey("DadoSeleccion")){
-            dadoSeleccion = PlayerPrefs.GetString("DadoSeleccion");
-        }
-    }
-
-    private void CargarContadorMedallas(){
-        if (PlayerPrefs.HasKey("ContadorMedallas")){
-            contadorMedallas = PlayerPrefs.GetInt("ContadorMedallas");
-        }
-    }
-
-
+    /** 
+    * @brief Obtener una pregunta aleatoria, mezcla las respuesta y las muestra por pantalla
+    */
     public void MostrarPreguntaRespuestas(){
         textPregunta = GameObject.Find("Pregunta").transform.GetComponent<TextMeshProUGUI>();
         if(textPregunta != null && preguntasSeleccionadas != null && preguntasSeleccionadas.Length > 0){
             // Obtener un numero de pregunta aleatoria
             indicePreguntaAleatoria = Random.Range(0, preguntasSeleccionadas.Length);
             // Mezclar las respuestas
-            Utilidades.MezclarElementos(preguntasSeleccionadas[indicePreguntaAleatoria].respuestas);
+            base.MezclarElementos(preguntasSeleccionadas[indicePreguntaAleatoria].respuestas);
             textPregunta.text = preguntasSeleccionadas[indicePreguntaAleatoria].pregunta;
 
             respuestas = GameObject.Find("Respuestas");
@@ -85,6 +88,11 @@ public class Test : MonoBehaviour
         }
     }
 
+    /**
+    * @brief Comprueba si la respuesta introducida es correcta o no
+    * La función comprueba si la respuesta es correcta, si es así, suma una nueva medalla
+    * Si es incorrecta, vuelve al dado pero sin sumar medalla
+    */
     public void ComprobarRespuesta(int indice){
         GameObject visible;
         if(panelFinal != null){
@@ -110,10 +118,21 @@ public class Test : MonoBehaviour
         
     }
 
+    private void CargarSeleccionDado(){
+        if (PlayerPrefs.HasKey("DadoSeleccion")){
+            dadoSeleccion = PlayerPrefs.GetString("DadoSeleccion");
+        }
+    }
+
+    private void CargarContadorMedallas(){
+        if (PlayerPrefs.HasKey("ContadorMedallas")){
+            contadorMedallas = PlayerPrefs.GetInt("ContadorMedallas");
+        }
+    }
 
 
     private void IrAlDado() {
-        Utilidades.EscenaJuego("Ruleta");
+        Controlador.EscenaJuego("Ruleta");
     }
 
     [System.Serializable] //mostrar los actores en los ajustes

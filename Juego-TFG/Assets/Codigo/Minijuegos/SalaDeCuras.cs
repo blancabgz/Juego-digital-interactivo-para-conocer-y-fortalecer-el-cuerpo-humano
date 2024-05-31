@@ -5,35 +5,24 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class SalaDeCuras : MonoBehaviour
+public class SalaDeCuras : Minijuego
 {
-    public int nivel;
+    // public int nivel;
     public string respuesta;
     public string[] curasOpciones;
-    public GameObject panelFinal;
-    private int numErrores;
-    private int puntos;
     
-    AudioSource[] audioSources;
-    private string musica;
-
     void Awake(){
-        GameObject controlMusica = GameObject.Find("ControlMusica");
-        if(PlayerPrefs.GetString("estadoMusica", "null") == "OFF"){
-            if(controlMusica != null){
-                Destroy(controlMusica);
-            }   
-        }
+        ControlMusica.EstadoMusica();
     }
     
     void Start()
     {
         // Mezcla las opciones de las curas
-        Utilidades.MezclarElementos(curasOpciones);
+        base.MezclarElementos(curasOpciones);
         // Muestra las opciones posibles
         MostrarCuras();
-        numErrores = 0;
-        puntos = 10;
+        base.numFallos = 0;
+        base.puntos = 10;
     }
 
     //
@@ -42,25 +31,12 @@ public class SalaDeCuras : MonoBehaviour
     public void RecogerRespuesta(int opcion){
         // Comprueba si la respuesta es correcta
         if(respuesta == curasOpciones[opcion]){
-            if(numErrores == 3){
-                puntos -= 10;
-            }else if(numErrores == 2){
-                puntos -= 6;
-            }else if(numErrores == 1){
-                puntos -= 4;
-            }
-            // Nivel completado
-            NivelCompletado.GuardarNivel(nivel,2);
-            // Guardo los puntos conseguidos 
-            Puntuaciones.GuardarPuntuacion(nivel, puntos);
-
-            // Activa el panel final tras comprobar que la respuesta es correcta
-            if (panelFinal != null) {
-                panelFinal.SetActive(true);
-            }
+            base.CalcularPuntuacion3Opciones();
+            base.GuardarPuntuacion(2);
+            base.MostrarPanelFinal();
         // Si la respuesta no es correcta
         }else{
-            numErrores++;
+            base.AumentarNumeroFallos();
             // Obtiene el componente Curas
             GameObject curas = GameObject.Find("Curas");
             if(curas != null){

@@ -60,7 +60,7 @@
         private void IrRetroalimentacion() {
             contadorMedallas++;
             PlayerPrefs.SetInt("ContadorMedallas", contadorMedallas);
-            Utilidades.EscenaJuego("MovimientoRetroalimentacion");
+            Controlador.EscenaJuego("MovimientoRetroalimentacion");
         }
 
         private void CargarContadorMedallas(){

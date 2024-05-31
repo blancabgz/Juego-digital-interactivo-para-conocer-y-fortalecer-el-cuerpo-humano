@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class Adivinanzas : MonoBehaviour
+public class Adivinanzas : Minijuego
 {
     public Adivinanza[] adivinanzas;
     private GameObject panelAdivinanzas;
@@ -23,7 +23,7 @@ public class Adivinanzas : MonoBehaviour
         }
 
         // Mezclar elementos adivinanzas
-        Utilidades.MezclarElementos(adivinanzas);
+        base.MezclarElementos(adivinanzas);
         panelAdivinanzas = GameObject.Find("Pregunta");
 
         if(panelAdivinanzas == null){
@@ -70,7 +70,7 @@ public class Adivinanzas : MonoBehaviour
     * @brief Carga la escena del minijuego para adivinar el musculo
     */ 
     public void CargarRespuestas(){
-        Utilidades.EscenaJuego("AdivinanzaSeleccion");
+        Controlador.EscenaJuego("AdivinanzaSeleccion");
     }
 
     [System.Serializable]

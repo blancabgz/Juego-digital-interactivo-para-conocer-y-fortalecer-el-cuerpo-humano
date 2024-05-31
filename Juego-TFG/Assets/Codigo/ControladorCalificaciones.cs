@@ -45,7 +45,7 @@ public class InsertarCalificaciones : MonoBehaviour
         mensaje = "Notas del alumno \n";
         for(int i = 0; i < 22; i++){
             int nota = Puntuaciones.CargarPuntuacion(i+1);
-            if(NivelCompletado.CargarNivel(i+1) == 2){
+            if(ControladorEstadoNivel.CargarNivel(i+1) == 2){
                 mensaje += "Nivel" + (i+1) + " -- " + nota + "\n";
             }else{
                 mensaje += "Nivel" + (i+1) + " --  nivel no completado \n";
@@ -61,7 +61,7 @@ public class InsertarCalificaciones : MonoBehaviour
                 slotPuntuacion = slotsPanel[i];
                 TextMeshProUGUI texto = slotPuntuacion.GetComponentInChildren<TextMeshProUGUI>();
                 if(texto != null){
-                    if(NivelCompletado.CargarNivel(i+1) == 2){
+                    if(ControladorEstadoNivel.CargarNivel(i+1) == 2){
                         texto.text = Convert.ToString(Puntuaciones.CargarPuntuacion(i+1));
                     }else{
                         texto.text = "-";

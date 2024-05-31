@@ -38,7 +38,7 @@ public class PreguntasRespuestas : Minijuego
         // Inicializar la variable de control de errores
         base.numFallos = 0;
         // Mezclar las posibles respuestas del array
-        Utilidades.MezclarElementos(respuestas);
+        base.MezclarElementos(respuestas);
         // Obtener los componentes y establecer una imagen
         resp1.GetComponent<Image>().sprite = respuestas[0].imagen;
         resp2.GetComponent<Image>().sprite = respuestas[1].imagen;
@@ -111,7 +111,7 @@ public class PreguntasRespuestas : Minijuego
                 resp3.GetComponent<Button>().interactable = false;
 
                 botonSiguiente.SetActive(true);
-                botonSiguiente.GetComponent<Button>().onClick.AddListener(() => Utilidades.EscenaJuego(escenaSiguiente)); 
+                botonSiguiente.GetComponent<Button>().onClick.AddListener(() => Controlador.EscenaJuego(escenaSiguiente)); 
 
             }else{
                 // activa la imagen fallo

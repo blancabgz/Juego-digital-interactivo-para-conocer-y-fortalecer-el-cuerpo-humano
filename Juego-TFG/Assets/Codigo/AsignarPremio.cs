@@ -28,7 +28,7 @@ public class AsignarPremio : MonoBehaviour
      * @brief Metodo para cargar el menú de niveles según desbloqueado
     */
     public void IrMenu(){
-        Utilidades.MenuNiveles();
+        Controlador.MenuNiveles();
     }
     
 }

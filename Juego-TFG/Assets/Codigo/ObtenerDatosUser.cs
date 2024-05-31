@@ -13,7 +13,7 @@ public class ObtenerDatosUser : MonoBehaviour
  
     void Start(){
         if(PlayerPrefs.GetInt("Datos",0) != 0){
-            Utilidades.EscenaJuego("MenuPrincipal");   
+            Controlador.EscenaJuego("MenuPrincipal");   
         }
     }
 
@@ -36,7 +36,7 @@ public class ObtenerDatosUser : MonoBehaviour
     public void GuardarDato(TMP_InputField campo){
         
         // Compruebo si es un mail
-        if(Utilidades.EsEmail(campo.text)){
+        if(Controlador.EsEmail(campo.text)){
             GuardarDatosJugador.GuardarEmail(campo.text.ToLower());
         }else{
             GuardarDatosJugador.GuardarNombre(campo.text.ToLower());
@@ -49,7 +49,7 @@ public class ObtenerDatosUser : MonoBehaviour
             mensajeError.text = "Por favor, complete todos los campos.";
         }else{
             PlayerPrefs.SetInt("Datos",1);
-            Utilidades.EscenaJuego(escena);
+            Controlador.EscenaJuego(escena);
         }
     }
 

@@ -44,7 +44,7 @@ public class TextShow : MonoBehaviour
 
         if(nombreEscena == "Historia"){
             if (PlayerPrefs.GetInt("HistoriaVisionada",0) == 1){
-                Utilidades.EscenaJuego("Juego"); 
+                Controlador.EscenaJuego("Juego"); 
             }
         }
         
@@ -115,14 +115,14 @@ public class TextShow : MonoBehaviour
         }else{
             if(nombreEscena == "Historia"){
                 PlayerPrefs.SetInt("HistoriaVisionada",1);
-                Utilidades.EscenaJuego("Juego"); // going to menu
+                Controlador.EscenaJuego("Juego"); // going to menu
             }else{
                 PlayerPrefs.SetInt("Nivel", nivel);
                 if(ControladorNiveles.instancia != null){
                     ControladorNiveles.instancia.IncreaseLevel();
                 }
                 
-                Utilidades.EscenaJuego(escena);
+                Controlador.EscenaJuego(escena);
 
             }
         }

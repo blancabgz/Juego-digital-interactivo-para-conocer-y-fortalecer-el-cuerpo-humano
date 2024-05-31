@@ -81,11 +81,11 @@ public class TirarDado : Minijuego
     }
 
     private void IrEscenaTest(){
-        Utilidades.EscenaJuego("TipoTestRuleta");
+        Controlador.EscenaJuego("TipoTestRuleta");
     }
 
     private void IrMovimiento(){
-        Utilidades.EscenaJuego("MovimientoRuleta");
+        Controlador.EscenaJuego("MovimientoRuleta");
     }
 
     public void DadoSeleccionado(int valor){

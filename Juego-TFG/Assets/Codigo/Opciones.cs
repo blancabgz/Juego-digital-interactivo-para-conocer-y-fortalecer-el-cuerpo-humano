@@ -32,13 +32,13 @@ public class Opciones : MonoBehaviour
         // Nos aseguramos que los cambios se realizan
         PlayerPrefs.Save();
         // Cargamos la escena "EleccionPersonaje"
-        Utilidades.EscenaJuego("EleccionPersonaje");
+        Controlador.EscenaJuego("EleccionPersonaje");
     }
 
     public void CambiarDatos(){
         PlayerPrefs.SetInt("Datos",0);
         PlayerPrefs.Save();
-        Utilidades.EscenaJuego("Datos");
+        Controlador.EscenaJuego("Datos");
     }
 
     public void ComprobarEstadoMusica(){
@@ -89,7 +89,7 @@ public class Opciones : MonoBehaviour
     public void BorrarDatos(){
         PlayerPrefs.DeleteAll();
         PlayerPrefs.Save();
-        Utilidades.EscenaJuego("Datos");
+        Controlador.EscenaJuego("Datos");
     }
 
     public void CancelarAccion(){

@@ -31,7 +31,7 @@ public class Puzzle : Minijuego{
     
 
     void Start() {
-        Utilidades.MezclarElementos(preguntas);
+        base.MezclarElementos(preguntas);
         ColocarImagenesAleatorias();
         base.numFallos = 0;
     }

@@ -15,6 +15,18 @@ public class Minijuego : MonoBehaviour{
     public GameObject panelFinal;
 
     
+    protected void MezclarElementos<T>(T[] array)
+    {
+        for (int i = 0; i < array.Length; i++)
+        {
+            int indiceAleatorio = Random.Range(0, array.Length);
+            T temp = array[indiceAleatorio];
+            array[indiceAleatorio] = array[i];
+            array[i] = temp;
+        }
+    }
+
+   
 
     /**
      * @brief Metodo para incrementar el numero de fallos
@@ -25,6 +37,11 @@ public class Minijuego : MonoBehaviour{
         // Debug.Log("Numero de fallos antes" + numFallos);
         numFallos++;
     }
+
+    /**
+     * @brief Metodo para decrementar el numero de fallos
+     * Este método se utiliza para disminuir el número de fallos registrado.
+    */
 
     protected void DisminuirNumeroFallos(){
         // Debug.Log("Numero de fallos antes" + numFallos);
@@ -39,11 +56,9 @@ public class Minijuego : MonoBehaviour{
     */
 
     protected void GuardarPuntuacion(int pantalla){
-        NivelCompletado.GuardarNivel(nivel,pantalla);
+        ControladorEstadoNivel.GuardarNivel(nivel,pantalla);
         Puntuaciones.GuardarPuntuacion(nivel, puntos);
-    }
-
-    
+    }    
 
     /**
      * @brief Metodo para mostrar el panel final 
@@ -108,6 +123,19 @@ public class Minijuego : MonoBehaviour{
         }
     }
 
+    // Funcion calcular puntuacion con 4 opciones
+
+    protected void CalcularPuntuacion3Opciones(){
+        if(numFallos == 3){
+            puntos -= 10;
+        }else if(numFallos == 2){
+            puntos -= 6;
+        }else if(numFallos == 1){
+            puntos -= 4;
+        }
+    }
+
+
     // Funcion que calcula la puntuacion basada en la proporcion de fallos en relacion con el maximo de fallos posibles
     /// numFallos --> El numero de fallos cometidos por el jugador.
     /// max_fallos --> El maximo de fallos posibles.
@@ -127,11 +155,11 @@ public class Minijuego : MonoBehaviour{
     protected void ObtenerPuntuacionNivel(){
 
         // Si el nivel ya ha sido completado 
-        if(NivelCompletado.CargarNivel(nivel) == 2){
+        if(ControladorEstadoNivel.CargarNivel(nivel) == 2){
             // reinicio los puntos
             puntos = -1;
         // Si el menu solo ha sido completado la primera fase
-        }else if(NivelCompletado.CargarNivel(nivel) == 1){
+        }else if(ControladorEstadoNivel.CargarNivel(nivel) == 1){
             // Obtengo los puntos conseguidos en la primera fase
             puntos = Puntuaciones.CargarPuntuacion(nivel);
         // Si no ha sido completado

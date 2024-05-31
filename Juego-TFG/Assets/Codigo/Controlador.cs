@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using System.Text.RegularExpressions;
 
-public class Utilidades : MonoBehaviour
+public class Controlador : MonoBehaviour
 {
     
     // Funcion que mezcla los elementos de un array 
@@ -45,9 +45,9 @@ public class Utilidades : MonoBehaviour
 
     public static void MenuNiveles(){
         if(PlayerPrefs.GetInt("unlockedLevels",1) >= 20){
-            Utilidades.EscenaJuego("Juego2");
+            EscenaJuego("Juego2");
         }else{
-            Utilidades.EscenaJuego("Juego");
+            EscenaJuego("Juego");
         }
     }
     public static void Salir(){   

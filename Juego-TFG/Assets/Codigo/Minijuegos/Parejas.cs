@@ -26,7 +26,7 @@ public class Parejas : Minijuego{
         base.numFallos = 0;
 
         // Mezclamos los elementos del array
-        Utilidades.MezclarElementos(cartas);
+        base.MezclarElementos(cartas);
         // Obtenemos el GameObject Cartas
         mazoCartas = GameObject.Find("Cartas");
         ColocarCartasAleatorias();

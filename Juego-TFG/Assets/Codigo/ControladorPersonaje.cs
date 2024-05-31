@@ -3,30 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Character : MonoBehaviour
+public class ControladorPersonaje : MonoBehaviour
 {
     public string selectedCharacter = "null";
 
-    // Method to load the character already selected by the player
+    // Metodo para cargar personaje 
     private void Awake(){
         LoadSelectedCharacter();
     }
     
-    // Method to select a character, save it and going to menu 
+    // Metodo para seleccionar un personaje, guardarlo en memoria.
     public void SelectCharacter(string gender){
         selectedCharacter = gender;
-        PlayerPrefs.SetString("SelectedCharacter", selectedCharacter ); // key and value
-        Utilidades.EscenaJuego("MenuPrincipal"); // going to menu 
+        PlayerPrefs.SetString("SelectedCharacter", selectedCharacter ); 
+        Controlador.EscenaJuego("MenuPrincipal"); 
     }
 
-    // Method to load the character, if this character exit, going to the level menu without selecting the character again
+    // Metodo para cargar un personaje
     public void LoadSelectedCharacter(){
         if (PlayerPrefs.HasKey("SelectedCharacter")){
             selectedCharacter = PlayerPrefs.GetString("SelectedCharacter");
         }
 
         if(selectedCharacter != "null"){
-            Utilidades.EscenaJuego("Historia"); // going to menu 
+            Controlador.EscenaJuego("Historia"); // going to menu 
         }
     }
 }
