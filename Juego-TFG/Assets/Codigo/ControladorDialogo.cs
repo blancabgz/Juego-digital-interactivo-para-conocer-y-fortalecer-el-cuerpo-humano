@@ -5,18 +5,18 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
-public class TextShow : MonoBehaviour
+public class ControladorDialogo : MonoBehaviour
 {
     public string escena;
     public int nivel;
     // array con los mensajes de la escena
     public Mensaje[] mensajes;
     // array con los actores que participan en la escena
-    public Actor[] actores;
+    public Personaje[] actores;
     // array con los actores de la escena (niño/a)
-    public Actor[] actorPanel;
+    public Personaje[] actorPanel;
     // array con los superheroes de la escena
-    public Actor[] superheroePanel;
+    public Personaje[] superheroePanel;
     // array con las diapositivas
     public Diapositiva[] imagenes;
     // guardar si la historia ya se ha reproducido
@@ -74,7 +74,7 @@ public class TextShow : MonoBehaviour
         conversacion.text = mensaje.text;
 
 
-        Actor actor;
+        Personaje actor;
         int id = 0;
     
         //si el personaje seleccionado por el jugador es un chico y contiene el nombre del id la palabra niña
@@ -82,7 +82,7 @@ public class TextShow : MonoBehaviour
 
             string nameActorSeleccionado = actores[mensaje.actorId].name.Replace("niña","niño"); // reemplazo la palabra niña por niño
 
-            foreach (Actor actorNombre in actores) //busco el id de los actores que sea igual al nombre
+            foreach (Personaje actorNombre in actores) //busco el id de los actores que sea igual al nombre
             {
                 if(actorNombre.name == nameActorSeleccionado){
                     id = actorNombre.id;
@@ -140,7 +140,7 @@ public class Mensaje {
 }
 
 [System.Serializable] //mostrar los actores en los ajustes
-public class Actor {
+public class Personaje {
     public int id;
     public string name;
     public Sprite sprite;

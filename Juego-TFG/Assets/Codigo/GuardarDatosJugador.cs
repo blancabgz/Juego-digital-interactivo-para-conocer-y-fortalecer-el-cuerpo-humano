@@ -29,4 +29,14 @@ public class GuardarDatosJugador : MonoBehaviour
     {
         return PlayerPrefs.GetString(EMAIL_JUGADOR, "");
     }
+
 }
+
+    [System.Serializable]
+    public class Usuario
+    {
+        string nombre;
+        string email_tutor;
+        
+    }
+

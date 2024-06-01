@@ -6,7 +6,7 @@ using UnityEngine.UI; // reference to buttons
 public class ControladorNiveles : MonoBehaviour
 {
     public static ControladorNiveles instancia; 
-    public Niveles[] levelBottons; // array containing level buttons
+    public Nivel[] levelBottons; // array containing level buttons
     public int unlock; // unlock level
 
     private void Awake() { // only one scene
@@ -49,7 +49,7 @@ public class ControladorNiveles : MonoBehaviour
     }
 
     [System.Serializable] 
-    public class Niveles {
+    public class Nivel {
         public int nivel;
         public Button btnNivel;
         

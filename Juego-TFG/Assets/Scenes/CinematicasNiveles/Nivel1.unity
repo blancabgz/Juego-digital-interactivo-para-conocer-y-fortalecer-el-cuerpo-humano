@@ -290,6 +290,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b3352837669b5944bece46e6dc7eae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  escena: PreguntaBiceps
+  nivel: 1
   mensajes:
   - actorId: 0
     id_superheroe: 0
@@ -378,7 +380,7 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: fe6fffcba6adffc41b51775c1a47b9b5, type: 3}
   actorPanel:
   - id: 0
-    name: Suphe
+    name: "Ni\xF1a"
     sprite: {fileID: 21300000, guid: 55f6094d3d2315a49911b3792337f749, type: 3}
   - id: 1
     name: "Ni\xF1o"
@@ -400,8 +402,6 @@ MonoBehaviour:
   - id: 2
     name: bicep_triceps
     sprite: {fileID: 21300000, guid: bbad2b5b8fdcf72428f7e9195cef3452, type: 3}
-  escena: PreguntaBiceps
-  nivel: 1
   avatar: {fileID: 1397982207}
   avatarInicio: {fileID: 338479597}
   avatarSuperheroe: {fileID: 1870251295}

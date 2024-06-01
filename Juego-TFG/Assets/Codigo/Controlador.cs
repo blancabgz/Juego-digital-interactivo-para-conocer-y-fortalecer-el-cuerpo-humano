@@ -9,18 +9,6 @@ using System.Text.RegularExpressions;
 public class Controlador : MonoBehaviour
 {
     
-    // Funcion que mezcla los elementos de un array 
-    // Array -> tipo de array para mezclar
-    public static void MezclarElementos<T>(T[] array)
-    {
-        for (int i = 0; i < array.Length; i++)
-        {
-            int indiceAleatorio = Random.Range(0, array.Length);
-            T temp = array[indiceAleatorio];
-            array[indiceAleatorio] = array[i];
-            array[i] = temp;
-        }
-    }
 
     // Funcion para redirigir a una escena 
     // opcion -> Nombre de la escena a redirigir
