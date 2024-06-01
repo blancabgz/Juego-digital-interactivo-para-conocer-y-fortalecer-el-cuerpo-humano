@@ -37,14 +37,14 @@ public class ControladorNiveles : MonoBehaviour
     }
 
     // Increase unlocked level
-    public void IncreaseLevel(){
+    public void AumentarNivel(){
         if (unlock > PlayerPrefs.GetInt("unlockedLevels",1))
         {
             PlayerPrefs.SetInt("unlockedLevels",unlock); // Save the value of the unlocked levels
         }
     }
 
-    public int ActualLevel(){
+    public int NivelActual(){
         return PlayerPrefs.GetInt("unlockedLevels",1);
     }
 

@@ -4,14 +4,20 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Linq;
+using System;
+using System.IO;
+using System.Collections.Generic;
+using System.Linq;
 
-public class Puzzle : Minijuego{
+public class Puzle : Minijuego{
     private int posImagen;
     private int posPuzzle;
     private int imagenesCorrectas = 0;
     private int[] imagenesGuardadas;
 
-    public Pregunta[] preguntas;
+    public List<Pieza> piezas;
+    private string[] lineas;
+
     public GameObject cajonImagenes;
     public GameObject cajonPuzzle;
     public GameObject btnCambiarEscena;
@@ -21,17 +27,18 @@ public class Puzzle : Minijuego{
 
 
     void Awake(){
-        GameObject controlMusica = GameObject.Find("ControlMusica");
-        if(PlayerPrefs.GetString("estadoMusica", "null") == "OFF"){
-            if(controlMusica != null){
-                Destroy(controlMusica);
-            }   
+        ControlMusica.EstadoMusica();
+        if (base.nivel == 2){
+            LeerArchivo("Assets/Codigo/Datos/puzlenivel2.csv");
+        }else if(base.nivel == 4){
+            LeerArchivo("Assets/Codigo/Datos/puzlenivel4.csv");
         }
+        
     }
     
 
     void Start() {
-        base.MezclarElementos(preguntas);
+        base.MezclarElementos(piezas);
         ColocarImagenesAleatorias();
         base.numFallos = 0;
     }
@@ -42,8 +49,8 @@ public class Puzzle : Minijuego{
         for (int i = 0; i < cajonImagenes.transform.childCount; i++){
             imagen = cajonImagenes.transform.GetChild(i).GetComponent<Image>();
             if (imagen != null) {
-                imagen.sprite = preguntas[i].sprite;
-                imagenesGuardadas[i] = preguntas[i].posicion;
+                imagen.sprite = piezas[i].sprite;
+                imagenesGuardadas[i] = piezas[i].posicion;
             }
         }
     }
@@ -72,7 +79,7 @@ public class Puzzle : Minijuego{
         Image imagen;
         if(posPuzzle == imagenesGuardadas[posImagen]){
             imagen = cajonPuzzle.transform.GetChild(posPuzzle).GetComponent<Image>();
-            imagen.sprite = preguntas[posImagen].sprite;
+            imagen.sprite = piezas[posImagen].sprite;
             botonPulsadoImagenes.transform.Find("Borde").gameObject.SetActive(false);
             botonPulsadoImagenes.interactable = false;
             
@@ -80,7 +87,7 @@ public class Puzzle : Minijuego{
             imagenesCorrectas++;
 
             // comprobamos si se ha terminado el puzzle
-            if (imagenesCorrectas == preguntas.Length){
+            if (imagenesCorrectas == piezas.Count){
                 CalcularPuntuacion();
                 base.MostrarPanelFinal();
                 btnCambiarEscena.SetActive(true);   
@@ -94,12 +101,36 @@ public class Puzzle : Minijuego{
         base.puntos = base.CalcularPuntuacionProporcion(MAX_FALLOS);
         base.GuardarPuntuacion(2);
     }
+
+    private void LeerArchivo(string rutaArchivo){
+        piezas = new List<Pieza>();
+        lineas = File.ReadAllLines(rutaArchivo);
+        for (int i = 1; i < lineas.Length; i++){
+            string[] valores = lineas[i].Split(',');
+            if(valores.Length >= 2){
+                int posicion = int.Parse(valores[0]);
+                string archivoName = valores[1];
+                string spriteName = valores[2];
+                Sprite sprite = base.CargarSprite(archivoName, spriteName);
+                if(sprite != null){
+                    Pieza pieza = new Pieza(posicion, sprite);
+                    piezas.Add(pieza);
+                }
+
+            }
+        }
+    }
 }
 
 
     [System.Serializable]
-    public class Pregunta
+    public class Pieza
     {
-        public int posicion;
-        public Sprite sprite;
+        public int posicion { get; set; }
+        public Sprite sprite { get; set; }
+
+        public Pieza(int posicion, Sprite sprite){
+            this.posicion = posicion;
+            this.sprite = sprite;
+        }
     }

@@ -119,7 +119,7 @@ public class ControladorDialogo : MonoBehaviour
             }else{
                 PlayerPrefs.SetInt("Nivel", nivel);
                 if(ControladorNiveles.instancia != null){
-                    ControladorNiveles.instancia.IncreaseLevel();
+                    ControladorNiveles.instancia.AumentarNivel();
                 }
                 
                 Controlador.EscenaJuego(escena);

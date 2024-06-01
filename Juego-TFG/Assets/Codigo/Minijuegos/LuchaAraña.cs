@@ -4,14 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
-public class Ahorcado : Minijuego {
+public class LuchaAraña : Minijuego {
 
     private char[] letras;
     // numero de intentos para acertar la palabra
     public char[] palabraDividida;
     public int letrasPalabraDividida;
     public char[] palabraOculta;
-    public PalabrasAhorcado[] palabras;
+    public Palabra[] palabras;
 
 
     private GameObject panelTeclado;
@@ -237,7 +237,7 @@ public class Ahorcado : Minijuego {
     }
 
     [System.Serializable]
-    public class PalabrasAhorcado{
+    public class Palabra{
         public string palabra;
         public string definicion;
     }

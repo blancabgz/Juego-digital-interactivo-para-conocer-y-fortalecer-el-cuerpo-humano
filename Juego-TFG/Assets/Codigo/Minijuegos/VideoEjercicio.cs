@@ -9,21 +9,9 @@ public class VideoEjercicio : MonoBehaviour
     
     public VideoClip[] videos;
     public GameObject videoPlayerObject;
-    AudioSource[] audioSources;
-    private string musica;
 
     void Awake(){
-        audioSources = FindObjectsOfType<AudioSource>();
-        musica = PlayerPrefs.GetString("estadoMusica", "null");
-        if(musica != null){
-            if(musica == "OFF"){
-                if(audioSources != null){
-                    foreach (AudioSource audioSource in audioSources){
-                        audioSource.mute = false;
-                    }
-                }
-            }
-        }
+        ControlMusica.EstadoMusica();
     }
     void Start()
     {

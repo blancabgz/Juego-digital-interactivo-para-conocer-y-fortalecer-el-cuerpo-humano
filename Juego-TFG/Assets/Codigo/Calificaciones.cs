@@ -15,12 +15,15 @@ using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
 
 
-public class InsertarCalificaciones : MonoBehaviour
+public class Calificaciones : MonoBehaviour
 {
     private GameObject[] slotsPanel;
     public GameObject calificaciones;   
     private int numSlots;
     public string mensaje = "";
+    private const string PUNTUACION_NIVEL = "PuntuacionNivel_";
+    private const int NUM_NIVELES = 22;
+    private Usuario usuario;
 
     
     
@@ -29,6 +32,8 @@ public class InsertarCalificaciones : MonoBehaviour
         numSlots = calificaciones.transform.childCount;
         // crear array 
         slotsPanel = new GameObject[numSlots];
+        usuario = ControladorUsuario.CargarUsuario();
+        ControlMusica.EstadoMusica();
     }
     void Start()
     {   
@@ -36,16 +41,16 @@ public class InsertarCalificaciones : MonoBehaviour
         for(int i = 0; i < slotsPanel.Length; i++){
             slotsPanel[i] = calificaciones.transform.GetChild(i).gameObject;
         }
-        Calificaciones();
+        ObtenerCalificaciones();
         EscribirMensaje();
 
     }
 
     public void EscribirMensaje(){
         mensaje = "Notas del alumno \n";
-        for(int i = 0; i < 22; i++){
-            int nota = Puntuaciones.CargarPuntuacion(i+1);
-            if(ControladorEstadoNivel.CargarNivel(i+1) == 2){
+        for(int i = 0; i < NUM_NIVELES; i++){
+            int nota = CargarPuntuacion(i+1);
+            if(Minijuego.CargarNivel(i+1) == 2){
                 mensaje += "Nivel" + (i+1) + " -- " + nota + "\n";
             }else{
                 mensaje += "Nivel" + (i+1) + " --  nivel no completado \n";
@@ -54,15 +59,15 @@ public class InsertarCalificaciones : MonoBehaviour
         }
     }
 
-    private void Calificaciones(){
+    private void ObtenerCalificaciones(){
         GameObject slotPuntuacion;
         if(slotsPanel.Length > 0){
             for(int i = 0; i < slotsPanel.Length; i++){
                 slotPuntuacion = slotsPanel[i];
                 TextMeshProUGUI texto = slotPuntuacion.GetComponentInChildren<TextMeshProUGUI>();
                 if(texto != null){
-                    if(ControladorEstadoNivel.CargarNivel(i+1) == 2){
-                        texto.text = Convert.ToString(Puntuaciones.CargarPuntuacion(i+1));
+                    if(Minijuego.CargarNivel(i+1) == 2){
+                        texto.text = Convert.ToString(CargarPuntuacion(i+1));
                     }else{
                         texto.text = "-";
                     }
@@ -87,8 +92,6 @@ public class InsertarCalificaciones : MonoBehaviour
     }
 
     public void EnviarEmail(){
-        Usuario usuario = ControladorUsuario.CargarUsuario();
-
         MailMessage mail = new MailMessage();
         SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
         SmtpServer.Timeout = 10000;
@@ -97,7 +100,8 @@ public class InsertarCalificaciones : MonoBehaviour
         SmtpServer.Port = 587;
 
         mail.From = new MailAddress("blancabril.999@gmail.com");
-        mail.To.Add(new MailAddress(usuario.email_tutor));
+        mail.To.Add(new MailAddress(usuario.email_tutor.ToLower()));
+
         mail.Subject = "Calificaciones de " + usuario.nombre.ToLower();
         mail.Body = mensaje;
 
@@ -108,9 +112,24 @@ public class InsertarCalificaciones : MonoBehaviour
             return true;
         };
 
+        
+
         mail.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
         SmtpServer.Send(mail);
     }
+
+    public static void GuardarPuntuacion(int nivel, int puntos){
+        string clave = PUNTUACION_NIVEL + nivel.ToString();
+        PlayerPrefs.SetInt(clave, puntos);
+        PlayerPrefs.Save();
+    }
+
+    public static int CargarPuntuacion(int nivel){
+        string clave = PUNTUACION_NIVEL + nivel.ToString();
+        return(PlayerPrefs.GetInt(clave, -1)); // Si no hay valor guardado, devuelve 0
+    }
+
+
 
 
 }

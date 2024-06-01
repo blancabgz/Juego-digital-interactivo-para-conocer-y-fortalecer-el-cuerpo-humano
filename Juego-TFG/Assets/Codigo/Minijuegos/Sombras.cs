@@ -5,10 +5,10 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class JuegoSombras : Minijuego
+public class Sombras : Minijuego
 {
     // public int nivel;
-    public Sombras[] sombras;
+    public Sombra[] sombras;
     private GameObject pregunta;
 
     public string[] respuestas;
@@ -225,7 +225,7 @@ public class JuegoSombras : Minijuego
     
     // Clase que contiene el nombre del musculo y el sprite correspondiente a la sombra
     [System.Serializable] 
-    public class Sombras {
+    public class Sombra {
         public string musculo;
         public Sprite sombra;
         

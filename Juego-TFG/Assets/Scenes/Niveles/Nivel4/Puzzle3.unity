@@ -2755,7 +2755,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nivel: 4
   panelFinal: {fileID: 747892532}
-  preguntas:
+  piezas:
   - posicion: 0
     sprite: {fileID: 587247606, guid: 96686c84d255d0248a4d34292fca7a24, type: 3}
   - posicion: 1

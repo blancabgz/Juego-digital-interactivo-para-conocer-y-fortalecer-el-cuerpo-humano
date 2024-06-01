@@ -9,7 +9,9 @@ using System.Text.RegularExpressions;
 public class Controlador : MonoBehaviour
 {
     
-
+    private void Awake() {
+        ControlMusica.EstadoMusica();
+    }
     // Funcion para redirigir a una escena 
     // opcion -> Nombre de la escena a redirigir
     public static void EscenaJuego(string opcion)

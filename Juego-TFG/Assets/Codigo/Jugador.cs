@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ControladorPersonaje : MonoBehaviour
+public class Jugador : MonoBehaviour
 {
     public string selectedCharacter = "null";
 

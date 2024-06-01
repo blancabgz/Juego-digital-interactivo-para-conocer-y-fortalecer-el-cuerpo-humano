@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class PreguntasRespuestas : Minijuego
+public class IdentificaMusculo : Minijuego
 {
     
-    public Respuestas[] respuestas;
+    public Opciones[] respuestas;
     public Imagenes[] imagenes;
 
     public GameObject resp1;
@@ -26,12 +26,7 @@ public class PreguntasRespuestas : Minijuego
 
 
     void Awake(){
-        GameObject controlMusica = GameObject.Find("ControlMusica");
-        if(PlayerPrefs.GetString("estadoMusica", "null") == "OFF"){
-            if(controlMusica != null){
-                Destroy(controlMusica);
-            }   
-        }
+        ControlMusica.EstadoMusica();
     }
     void Start(){
 
@@ -125,7 +120,7 @@ public class PreguntasRespuestas : Minijuego
     }
 
     [System.Serializable] //mostrar los mensajes en los ajustes
-    public class Respuestas {
+    public class Opciones {
         public int id;
         public string musculo;
         public Sprite imagen;

@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class Minijuego : MonoBehaviour{
 
@@ -13,6 +15,8 @@ public class Minijuego : MonoBehaviour{
     protected int numIntentos;
     protected int multiplicador;
     public GameObject panelFinal;
+    private const string NIVEL_ESTADO = "EstadoNivel_";
+    private const int NUM_NIVELES = 22;
 
     
     protected void MezclarElementos<T>(T[] array)
@@ -23,6 +27,15 @@ public class Minijuego : MonoBehaviour{
             T temp = array[indiceAleatorio];
             array[indiceAleatorio] = array[i];
             array[i] = temp;
+        }
+    }
+
+    protected void MezclarElementos<T>(List<T> lista){
+        for (int i = 0; i < lista.Count; i++){
+            int indiceAleatorio = Random.Range(0, lista.Count);
+            T temp = lista[indiceAleatorio];
+            lista[indiceAleatorio] = lista[i];
+            lista[i] = temp;
         }
     }
 
@@ -56,8 +69,8 @@ public class Minijuego : MonoBehaviour{
     */
 
     protected void GuardarPuntuacion(int pantalla){
-        ControladorEstadoNivel.GuardarNivel(nivel,pantalla);
-        Puntuaciones.GuardarPuntuacion(nivel, puntos);
+        GuardarNivel(nivel,pantalla);
+        Calificaciones.GuardarPuntuacion(nivel, puntos);
     }    
 
     /**
@@ -155,13 +168,13 @@ public class Minijuego : MonoBehaviour{
     protected void ObtenerPuntuacionNivel(){
 
         // Si el nivel ya ha sido completado 
-        if(ControladorEstadoNivel.CargarNivel(nivel) == 2){
+        if(CargarNivel(nivel) == 2){
             // reinicio los puntos
             puntos = -1;
         // Si el menu solo ha sido completado la primera fase
-        }else if(ControladorEstadoNivel.CargarNivel(nivel) == 1){
+        }else if(CargarNivel(nivel) == 1){
             // Obtengo los puntos conseguidos en la primera fase
-            puntos = Puntuaciones.CargarPuntuacion(nivel);
+            puntos = Calificaciones.CargarPuntuacion(nivel);
         // Si no ha sido completado
         }else{
             // Reinicio los puntos
@@ -182,6 +195,32 @@ public class Minijuego : MonoBehaviour{
             return parteEntera;
         }
 
+    }
+
+    // estado = 0 --> nivel no completado
+    // estado = 1 --> pantalla 1
+    // estado = 2 --> pantalla 2
+
+    public static void GuardarNivel(int nivel, int estado){
+        string estado_nivel = NIVEL_ESTADO + nivel.ToString();
+        PlayerPrefs.SetInt(estado_nivel, estado);
+        PlayerPrefs.Save();
+    }
+
+    public static int CargarNivel(int nivel){
+        string estado_nivel = NIVEL_ESTADO + nivel.ToString();
+        return(PlayerPrefs.GetInt(estado_nivel, 0)); // Si no hay valor guardado, devuelve 0
+    }
+
+    protected Sprite CargarSprite(string archivo, string spriteName){
+        Sprite[] sprites = Resources.LoadAll<Sprite>(archivo);
+        // Cargar un Sprite desde la ruta de archivo en la carpeta Resources
+        foreach(var sprite in sprites){
+            if(sprite.name == spriteName){
+                return sprite;
+            }
+        }
+        return null;
     }
 
 }

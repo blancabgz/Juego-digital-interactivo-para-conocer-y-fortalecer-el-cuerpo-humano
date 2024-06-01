@@ -26,7 +26,7 @@ public class ControladorRecompensas : MonoBehaviour
 
     void Awake(){
         ControlMusica.EstadoMusica();
-        LeerArchivo("Assets/Codigo/Datos/premios.csv");
+        LeerArchivo("Assets/Codigo/Datos/recompensas.csv");
         nombreEscenaActual = SceneManager.GetActiveScene().name;
         Debug.Log("El nombre de la escena actual es: " + nombreEscenaActual);
     }
@@ -54,7 +54,7 @@ public class ControladorRecompensas : MonoBehaviour
         nivelActual = PlayerPrefs.GetInt("Nivel", 1);
         imagen.sprite = recompensas[nivelActual - 1].sprite;
         if(ControladorNiveles.instancia != null){
-            ControladorNiveles.instancia.IncreaseLevel();
+            ControladorNiveles.instancia.AumentarNivel();
         }
     }
 
@@ -72,7 +72,7 @@ public class ControladorRecompensas : MonoBehaviour
 
             // si existe la instancia ControladorNiveles y el nivel actual es mas alto, se desbloquea aumentando su opacidad
             // -1 porque se desbloquea hasta el nivel pero esta completado hasta el anterior
-            if(ControladorNiveles.instancia != null && (ControladorNiveles.instancia.ActualLevel() - 1) >= recompensasEscena[i].nivel ){
+            if(ControladorNiveles.instancia != null && (ControladorNiveles.instancia.NivelActual() - 1) >= recompensasEscena[i].nivel ){
                 // Como el color es de solo lectura, hay que hacer un cambio creando una nueva 
                 // instancia
                 Color nuevaOpacidad = imagenSlot.color;
