@@ -87,6 +87,8 @@ public class InsertarCalificaciones : MonoBehaviour
     }
 
     public void EnviarEmail(){
+        Usuario usuario = ControladorUsuario.CargarUsuario();
+
         MailMessage mail = new MailMessage();
         SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
         SmtpServer.Timeout = 10000;
@@ -95,9 +97,8 @@ public class InsertarCalificaciones : MonoBehaviour
         SmtpServer.Port = 587;
 
         mail.From = new MailAddress("blancabril.999@gmail.com");
-        mail.To.Add(new MailAddress(GuardarDatosJugador.CargarEmailJugador()));
-
-        mail.Subject = "Calificaciones de " + GuardarDatosJugador.CargarNombreJugador();
+        mail.To.Add(new MailAddress(usuario.email_tutor));
+        mail.Subject = "Calificaciones de " + usuario.nombre.ToLower();
         mail.Body = mensaje;
 
         SmtpServer.Credentials = new System.Net.NetworkCredential("blancabril.999", "uexg kljy ikfn ldjm") as ICredentialsByHost; SmtpServer.EnableSsl = true;
@@ -106,8 +107,6 @@ public class InsertarCalificaciones : MonoBehaviour
             
             return true;
         };
-
-        
 
         mail.DeliveryNotificationOptions = DeliveryNotificationOptions.OnFailure;
         SmtpServer.Send(mail);

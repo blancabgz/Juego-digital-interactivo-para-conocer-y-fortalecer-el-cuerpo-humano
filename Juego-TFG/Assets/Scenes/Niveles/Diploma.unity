@@ -583,6 +583,7 @@ GameObject:
   - component: {fileID: 886121693}
   - component: {fileID: 886121695}
   - component: {fileID: 886121694}
+  - component: {fileID: 886121696}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -650,6 +651,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 886121692}
   m_CullTransparentMesh: 1
+--- !u!114 &886121696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886121692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f5a8f922e651ab43aa9732f166af24d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slots: []
+  inventario: {fileID: 0}
+  recompensas: []
+  recompensasEscena: []
+  imagenPremio: {fileID: 163005157}
 --- !u!1 &904487601
 GameObject:
   m_ObjectHideFlags: 0
@@ -800,16 +818,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1674484655}
-        m_TargetAssemblyTypeName: AsignarPremio, Assembly-CSharp
-        m_MethodName: MenuJuego
-        m_Mode: 1
+      - m_Target: {fileID: 1336627376}
+        m_TargetAssemblyTypeName: Controlador, Assembly-CSharp
+        m_MethodName: EscenaJuego
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: MenuPrincipal
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &980448407
@@ -861,7 +879,7 @@ GameObject:
   - component: {fileID: 1336627377}
   - component: {fileID: 1336627376}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Controlador
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -876,7 +894,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1336627375}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9228bcb2120efb34d8e5eac245508b21, type: 3}
+  m_Script: {fileID: 11500000, guid: b416c9f9c7ba8f341a8a7885680f47aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1336627377
@@ -905,7 +923,6 @@ GameObject:
   - component: {fileID: 1674484652}
   - component: {fileID: 1674484654}
   - component: {fileID: 1674484653}
-  - component: {fileID: 1674484655}
   m_Layer: 5
   m_Name: Premio
   m_TagString: Untagged
@@ -971,86 +988,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1674484651}
   m_CullTransparentMesh: 1
---- !u!114 &1674484655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1674484651}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8dc9f283f658c64c827c66d95b0b387, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  imagenPremio: {fileID: 163005157}
-  premios:
-  - nivel: 1
-    nombre: Pulsera
-    sprite: {fileID: 21300000, guid: 61d2c2f0adc4a40459d52ef2ec90463b, type: 3}
-  - nivel: 2
-    nombre: Mochila
-    sprite: {fileID: 21300000, guid: b33659bd955195f4f9483db453034d8d, type: 3}
-  - nivel: 3
-    nombre: Amuleto
-    sprite: {fileID: 21300000, guid: 97aad5f36d60e21429bcaa06dcfc7422, type: 3}
-  - nivel: 4
-    nombre: Medalla1
-    sprite: {fileID: 21300000, guid: 3f889f95fbea2164fa5648ebf002f1c2, type: 3}
-  - nivel: 5
-    nombre: Escudo
-    sprite: {fileID: 21300000, guid: fe32fe09a2c20cd438aac4c12290796c, type: 3}
-  - nivel: 6
-    nombre: Zapatillas
-    sprite: {fileID: 21300000, guid: 956a9beb5eff8b94e9049f04170cb7c3, type: 3}
-  - nivel: 7
-    nombre: "Curaci\xF3n"
-    sprite: {fileID: 21300000, guid: 308052af2c35e79458b90734dbd7f5bf, type: 3}
-  - nivel: 8
-    nombre: Medalla2
-    sprite: {fileID: 21300000, guid: bcbd0f7eed6f87b48abaf5327fb61fc0, type: 3}
-  - nivel: 9
-    nombre: Anillo
-    sprite: {fileID: 21300000, guid: b960fd06ada16bd4c8daf707e76e7064, type: 3}
-  - nivel: 10
-    nombre: Pesas
-    sprite: {fileID: 21300000, guid: 4ed164095afbf4b46ad5798e52a8d76b, type: 3}
-  - nivel: 11
-    nombre: Pelota
-    sprite: {fileID: 21300000, guid: 4c76cf4136a988640a9e4d4bc1b2efa0, type: 3}
-  - nivel: 12
-    nombre: Medalla3
-    sprite: {fileID: 21300000, guid: 2c62139fdeddf7940bdd51e44bbee483, type: 3}
-  - nivel: 13
-    nombre: Piedra_teletransporte
-    sprite: {fileID: 21300000, guid: 44f700940a9a7de4785fc6e5186d926e, type: 3}
-  - nivel: 14
-    nombre: cinturon
-    sprite: {fileID: 21300000, guid: e43be1cd4cb7748408a2f7eda078b33f, type: 3}
-  - nivel: 15
-    nombre: elixir
-    sprite: {fileID: 21300000, guid: e67a5f12a9893f946828ca923a08b6f3, type: 3}
-  - nivel: 16
-    nombre: Medalla4
-    sprite: {fileID: 21300000, guid: 1232ab83e2039274b9682c3f7700ca4b, type: 3}
-  - nivel: 17
-    nombre: Gafas
-    sprite: {fileID: 21300000, guid: 151e98a941599c3428d64f068d38d379, type: 3}
-  - nivel: 18
-    nombre: Patin
-    sprite: {fileID: 21300000, guid: 8c53aa3b9fda14e4ca7888e19f519641, type: 3}
-  - nivel: 19
-    nombre: Capa
-    sprite: {fileID: 21300000, guid: 138480539a2945f4db89cbc46020b4bc, type: 3}
-  - nivel: 20
-    nombre: Medalla5
-    sprite: {fileID: 21300000, guid: e65525f3d82833b48a137ad956790f93, type: 3}
-  - nivel: 21
-    nombre: Mascara
-    sprite: {fileID: 21300000, guid: bb803adabbad35f4ebfdaa2925144c9c, type: 3}
-  - nivel: 22
-    nombre: Manual
-    sprite: {fileID: 21300000, guid: 462d26f15fa00b144a2fd7952abfdcae, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

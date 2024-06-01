@@ -10,11 +10,14 @@ public class ObtenerDatosUser : MonoBehaviour
     public TMP_InputField nombre;
     public TMP_InputField email;
     public TextMeshProUGUI mensajeError;
+    public Usuario usuario;
  
     void Start(){
         if(PlayerPrefs.GetInt("Datos",0) != 0){
             Controlador.EscenaJuego("MenuPrincipal");   
         }
+
+        usuario = new Usuario();
     }
 
     void Update() {
@@ -37,9 +40,9 @@ public class ObtenerDatosUser : MonoBehaviour
         
         // Compruebo si es un mail
         if(Controlador.EsEmail(campo.text)){
-            GuardarDatosJugador.GuardarEmail(campo.text.ToLower());
+            usuario.email_tutor = campo.text.ToLower();;
         }else{
-            GuardarDatosJugador.GuardarNombre(campo.text.ToLower());
+            usuario.nombre = campo.text.ToLower();
         } 
         
     }
@@ -48,6 +51,9 @@ public class ObtenerDatosUser : MonoBehaviour
         if(string.IsNullOrEmpty(nombre.text) || string.IsNullOrEmpty(email.text)){
             mensajeError.text = "Por favor, complete todos los campos.";
         }else{
+            usuario.nombre = nombre.text;
+            usuario.email_tutor = email.text;
+            ControladorUsuario.GuardarUsuario(usuario);
             PlayerPrefs.SetInt("Datos",1);
             Controlador.EscenaJuego(escena);
         }
