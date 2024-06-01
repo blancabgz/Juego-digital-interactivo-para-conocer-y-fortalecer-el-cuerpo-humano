@@ -41,7 +41,7 @@ public class Controlador : MonoBehaviour
         }
     }
     public static void Salir(){   
-        Debug.Log("Salir...");
+        // Debug.Log("Salir...");
         Application.Quit();
     }
     

@@ -15,7 +15,7 @@ public class Opciones : MonoBehaviour
     // Load scene 
     private void Start() {
         audioSources = FindObjectsOfType<AudioSource>();
-        Debug.Log(audioSources.Length);
+        // Debug.Log(audioSources.Length);
         musica = PlayerPrefs.GetString("estadoMusica", "null");
         if(musica == "null"){
             musica = "ON";

@@ -12,7 +12,7 @@ public class ControlMusica : MonoBehaviour
     void Start()
     {
         musica = PlayerPrefs.GetString("estadoMusica", "null");
-        Debug.Log(musica);
+        // Debug.Log(musica);
         if (instance == null && musica == "ON"){
             instance = this;
             DontDestroyOnLoad(gameObject);

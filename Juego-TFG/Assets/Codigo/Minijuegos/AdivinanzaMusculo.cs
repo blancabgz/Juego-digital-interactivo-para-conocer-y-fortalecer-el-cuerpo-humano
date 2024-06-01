@@ -67,7 +67,7 @@ public class AdivinanzaMusculo : Minijuego
                   
             }else{
                 base.AumentarNumeroFallos();
-                Debug.Log("Numero de fallos despues " + base.numFallos);
+                // Debug.Log("Numero de fallos despues " + base.numFallos);
                 imagen.SetActive(true);
             }
         }else{

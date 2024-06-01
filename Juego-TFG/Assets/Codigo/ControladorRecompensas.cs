@@ -28,7 +28,7 @@ public class ControladorRecompensas : MonoBehaviour
         ControlMusica.EstadoMusica();
         LeerArchivo("Assets/Codigo/Datos/recompensas.csv");
         nombreEscenaActual = SceneManager.GetActiveScene().name;
-        Debug.Log("El nombre de la escena actual es: " + nombreEscenaActual);
+        // Debug.Log("El nombre de la escena actual es: " + nombreEscenaActual);
     }
 
     void Start(){
