@@ -187,7 +187,7 @@ MonoBehaviour:
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 224, y: 224}
-  m_Spacing: {x: 67.8, y: 15.9}
+  m_Spacing: {x: 67.8, y: 33.4}
   m_Constraint: 2
   m_ConstraintCount: 1
 --- !u!114 &58999980
@@ -829,7 +829,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4674375, y: 0.011000001}
   m_AnchorMax: {x: 0.5642293, y: 0.1516896}
-  m_AnchoredPosition: {x: 1.3793983, y: 4.5}
+  m_AnchoredPosition: {x: 1.3793945, y: 4.5}
   m_SizeDelta: {x: -2.758667, y: 13.4412}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &761338904
@@ -1064,22 +1064,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slots: []
   inventario: {fileID: 58999977}
-  premios:
-  - nivel: 4
-    nombre: Medalla1
-    sprite: {fileID: 21300000, guid: 3f889f95fbea2164fa5648ebf002f1c2, type: 3}
-  - nivel: 8
-    nombre: Medalla2
-    sprite: {fileID: 21300000, guid: bcbd0f7eed6f87b48abaf5327fb61fc0, type: 3}
-  - nivel: 12
-    nombre: Medalla3
-    sprite: {fileID: 21300000, guid: 2c62139fdeddf7940bdd51e44bbee483, type: 3}
-  - nivel: 16
-    nombre: Medalla4
-    sprite: {fileID: 21300000, guid: 1232ab83e2039274b9682c3f7700ca4b, type: 3}
-  - nivel: 20
-    nombre: Medalla5
-    sprite: {fileID: 21300000, guid: e65525f3d82833b48a137ad956790f93, type: 3}
+  recompensas: []
+  recompensasEscena: []
 --- !u!1 &1315031414
 GameObject:
   m_ObjectHideFlags: 0

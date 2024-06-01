@@ -199,7 +199,7 @@ MonoBehaviour:
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 160, y: 160}
-  m_Spacing: {x: 78.5, y: 10.5}
+  m_Spacing: {x: 78.5, y: 34}
   m_Constraint: 2
   m_ConstraintCount: 3
 --- !u!114 &58999980
@@ -1318,58 +1318,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slots: []
   inventario: {fileID: 58999977}
-  premios:
-  - nivel: 1
-    nombre: Reloj
-    sprite: {fileID: 21300000, guid: 61d2c2f0adc4a40459d52ef2ec90463b, type: 3}
-  - nivel: 2
-    nombre: Mochila
-    sprite: {fileID: 21300000, guid: b33659bd955195f4f9483db453034d8d, type: 3}
-  - nivel: 3
-    nombre: "Amuleto de protecci\xF3n"
-    sprite: {fileID: 21300000, guid: 97aad5f36d60e21429bcaa06dcfc7422, type: 3}
-  - nivel: 5
-    nombre: Escudo
-    sprite: {fileID: 21300000, guid: fe32fe09a2c20cd438aac4c12290796c, type: 3}
-  - nivel: 6
-    nombre: Zapatillas
-    sprite: {fileID: 21300000, guid: 956a9beb5eff8b94e9049f04170cb7c3, type: 3}
-  - nivel: 7
-    nombre: Curacion
-    sprite: {fileID: 21300000, guid: 308052af2c35e79458b90734dbd7f5bf, type: 3}
-  - nivel: 9
-    nombre: Anillo
-    sprite: {fileID: 21300000, guid: b960fd06ada16bd4c8daf707e76e7064, type: 3}
-  - nivel: 10
-    nombre: Pesas
-    sprite: {fileID: 21300000, guid: 4ed164095afbf4b46ad5798e52a8d76b, type: 3}
-  - nivel: 11
-    nombre: Pelota
-    sprite: {fileID: 21300000, guid: 4c76cf4136a988640a9e4d4bc1b2efa0, type: 3}
-  - nivel: 13
-    nombre: Piedra_teletransporte
-    sprite: {fileID: 21300000, guid: 44f700940a9a7de4785fc6e5186d926e, type: 3}
-  - nivel: 14
-    nombre: cinturon
-    sprite: {fileID: 21300000, guid: 7d849a0af0b198040997b37373f4031b, type: 3}
-  - nivel: 15
-    nombre: elixir
-    sprite: {fileID: 21300000, guid: e67a5f12a9893f946828ca923a08b6f3, type: 3}
-  - nivel: 17
-    nombre: gafas
-    sprite: {fileID: 21300000, guid: 151e98a941599c3428d64f068d38d379, type: 3}
-  - nivel: 18
-    nombre: patin
-    sprite: {fileID: 21300000, guid: 8c53aa3b9fda14e4ca7888e19f519641, type: 3}
-  - nivel: 19
-    nombre: capa
-    sprite: {fileID: 21300000, guid: 138480539a2945f4db89cbc46020b4bc, type: 3}
-  - nivel: 21
-    nombre: mascara
-    sprite: {fileID: 21300000, guid: bb803adabbad35f4ebfdaa2925144c9c, type: 3}
-  - nivel: 21
-    nombre: diploma
-    sprite: {fileID: 21300000, guid: 462d26f15fa00b144a2fd7952abfdcae, type: 3}
+  recompensas: []
+  recompensasEscena: []
 --- !u!1 &871237111
 GameObject:
   m_ObjectHideFlags: 0
