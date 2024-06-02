@@ -10,8 +10,8 @@ public class Test : Minijuego
     int indicePreguntaAleatoria;
     private string dadoSeleccion = "null";
 
-    public Preguntas[] preguntas;
-    public Preguntas[] preguntasSeleccionadas;
+    public PreguntaT[] preguntas;
+    public PreguntaT[] preguntasSeleccionadas;
     TextMeshProUGUI textPregunta;
     GameObject respuestas;
     public GameObject panelFinal;
@@ -36,7 +36,7 @@ public class Test : Minijuego
     private void FiltrarPreguntas(){
         int contador = 0;
         if(dadoSeleccion != null){
-            preguntasSeleccionadas = new Preguntas[preguntas.Length]; 
+            preguntasSeleccionadas = new PreguntaT[preguntas.Length]; 
             for(int i = 0; i < preguntas.Length; i++){
                 if(string.Equals(preguntas[i].musculo, dadoSeleccion)){
                     preguntasSeleccionadas[contador] = preguntas[i];
@@ -74,7 +74,7 @@ public class Test : Minijuego
 
             respuestas = GameObject.Find("Respuestas");
             if(respuestas != null){
-                Preguntas preguntaActual = preguntasSeleccionadas[indicePreguntaAleatoria];
+                PreguntaT preguntaActual = preguntasSeleccionadas[indicePreguntaAleatoria];
                 for(int i = 0; i < preguntaActual.respuestas.Length; i++){
                     Text textoRespuesta = respuestas.transform.GetChild(i).GetComponentInChildren<Text>();
                     textoRespuesta.text = preguntaActual.respuestas[i];
@@ -136,7 +136,7 @@ public class Test : Minijuego
     }
 
     [System.Serializable] //mostrar los actores en los ajustes
-    public class Preguntas {
+    public class PreguntaT {
         public string musculo;
         public string pregunta;
         public string[] respuestas;

@@ -15,8 +15,7 @@ using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
 
 
-public class Calificaciones : MonoBehaviour
-{
+public class Calificaciones : MonoBehaviour{
     private GameObject[] slotsPanel;
     public GameObject calificaciones;   
     private int numSlots;
@@ -50,7 +49,7 @@ public class Calificaciones : MonoBehaviour
         mensaje = "Notas del alumno \n";
         for(int i = 0; i < NUM_NIVELES; i++){
             int nota = CargarPuntuacion(i+1);
-            if(Minijuego.CargarNivel(i+1) == 2){
+            if(ControladorNiveles.CargarNivel(i+1) == 2){
                 mensaje += "Nivel" + (i+1) + " -- " + nota + "\n";
             }else{
                 mensaje += "Nivel" + (i+1) + " --  nivel no completado \n";
@@ -66,7 +65,7 @@ public class Calificaciones : MonoBehaviour
                 slotPuntuacion = slotsPanel[i];
                 TextMeshProUGUI texto = slotPuntuacion.GetComponentInChildren<TextMeshProUGUI>();
                 if(texto != null){
-                    if(Minijuego.CargarNivel(i+1) == 2){
+                    if(ControladorNiveles.CargarNivel(i+1) == 2){
                         texto.text = Convert.ToString(CargarPuntuacion(i+1));
                     }else{
                         texto.text = "-";

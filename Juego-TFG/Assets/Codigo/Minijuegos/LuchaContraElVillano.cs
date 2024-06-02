@@ -8,7 +8,7 @@ using TMPro;
 public class LuchaContraElVillano : Minijuego
 {
     // public int nivel;
-    public Preguntas[] preguntas;
+    public Pregunta[] preguntas;
     public string pagina;
     public Image barraVida;
     private float vidaActual = 4;
@@ -73,8 +73,7 @@ public class LuchaContraElVillano : Minijuego
 
 
     [System.Serializable]
-    public class Preguntas
-    {
+    public class Pregunta {
         public string pregunta;
         public bool verdadera;
     }

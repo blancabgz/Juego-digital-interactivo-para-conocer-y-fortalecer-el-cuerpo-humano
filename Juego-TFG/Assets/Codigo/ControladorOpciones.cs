@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement; // Menu
 using UnityEngine.UI;
 
 
-public class Opciones : MonoBehaviour
+public class ControladorOpciones : MonoBehaviour
 {
     private bool botonOn = true;
     public Text btext;
@@ -26,20 +26,6 @@ public class Opciones : MonoBehaviour
         
     }
 
-    public void CambiarPersonaje(){
-        // Cambiamos el valor guardado a null
-        PlayerPrefs.SetString("SelectedCharacter", "null");
-        // Nos aseguramos que los cambios se realizan
-        PlayerPrefs.Save();
-        // Cargamos la escena "EleccionPersonaje"
-        Controlador.EscenaJuego("EleccionPersonaje");
-    }
-
-    public void CambiarDatos(){
-        PlayerPrefs.SetInt("Datos",0);
-        PlayerPrefs.Save();
-        Controlador.EscenaJuego("Datos");
-    }
 
     public void ComprobarEstadoMusica(){
         if(audioSources != null){
@@ -84,12 +70,6 @@ public class Opciones : MonoBehaviour
 
     public void IntentarBorrarDatos(){
         panelSeguridad.SetActive(true);
-    }
-
-    public void BorrarDatos(){
-        PlayerPrefs.DeleteAll();
-        PlayerPrefs.Save();
-        Controlador.EscenaJuego("Datos");
     }
 
     public void CancelarAccion(){

@@ -973,8 +973,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1975719581}
-        m_TargetAssemblyTypeName: Opciones, Assembly-CSharp
+      - m_Target: {fileID: 1175458763}
+        m_TargetAssemblyTypeName: Controlador, Assembly-CSharp
         m_MethodName: CambiarDatos
         m_Mode: 1
         m_Arguments:
@@ -1487,8 +1487,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1975719581}
-        m_TargetAssemblyTypeName: Opciones, Assembly-CSharp
+      - m_Target: {fileID: 1175458763}
+        m_TargetAssemblyTypeName: Controlador, Assembly-CSharp
         m_MethodName: CambiarPersonaje
         m_Mode: 1
         m_Arguments:
@@ -3076,8 +3076,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1975719581}
-        m_TargetAssemblyTypeName: Opciones, Assembly-CSharp
+      - m_Target: {fileID: 1175458763}
+        m_TargetAssemblyTypeName: Controlador, Assembly-CSharp
         m_MethodName: BorrarDatos
         m_Mode: 1
         m_Arguments:

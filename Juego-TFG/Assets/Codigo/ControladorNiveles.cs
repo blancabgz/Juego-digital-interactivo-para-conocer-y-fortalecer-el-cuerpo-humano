@@ -8,6 +8,7 @@ public class ControladorNiveles : MonoBehaviour
     public static ControladorNiveles instancia; 
     public Nivel[] levelBottons; // array containing level buttons
     public int unlock; // unlock level
+    private const string NIVEL_ESTADO = "EstadoNivel_";
 
     private void Awake() { // only one scene
         if(instancia == null){
@@ -17,8 +18,7 @@ public class ControladorNiveles : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start(){
         
         if(levelBottons.Length > 0){
 
@@ -48,6 +48,21 @@ public class ControladorNiveles : MonoBehaviour
         return PlayerPrefs.GetInt("unlockedLevels",1);
     }
 
+    // estado = 0 --> nivel no completado
+    // estado = 1 --> pantalla 1
+    // estado = 2 --> pantalla 2
+
+    public static void GuardarNivel(int nivel, int estado){
+        string estado_nivel = NIVEL_ESTADO + nivel.ToString();
+        PlayerPrefs.SetInt(estado_nivel, estado);
+        PlayerPrefs.Save();
+    }
+
+    public static int CargarNivel(int nivel){
+        string estado_nivel = NIVEL_ESTADO + nivel.ToString();
+        return(PlayerPrefs.GetInt(estado_nivel, 0)); // Si no hay valor guardado, devuelve 0
+    }
+
     [System.Serializable] 
     public class Nivel {
         public int nivel;
@@ -55,3 +70,4 @@ public class ControladorNiveles : MonoBehaviour
         
     }
 }
+

@@ -390,7 +390,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: f0e1b5b475e70a447a75716acbfefc69, type: 3}
-    m_FontSize: 63
+    m_FontSize: 52
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
@@ -401,7 +401,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PREMIOS
+  m_Text: RECOMPENSAS
 --- !u!222 &506930091
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -629,7 +629,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: f0e1b5b475e70a447a75716acbfefc69, type: 3}
-    m_FontSize: 63
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
@@ -1441,7 +1441,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: f0e1b5b475e70a447a75716acbfefc69, type: 3}
-    m_FontSize: 63
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
@@ -1520,7 +1520,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: f0e1b5b475e70a447a75716acbfefc69, type: 3}
-    m_FontSize: 63
+    m_FontSize: 55
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5

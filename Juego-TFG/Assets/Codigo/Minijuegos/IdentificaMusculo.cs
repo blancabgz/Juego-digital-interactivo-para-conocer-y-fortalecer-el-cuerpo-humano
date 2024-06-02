@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class IdentificaMusculo : Minijuego
 {
     
-    public Opciones[] respuestas;
+    public OpcionesMusculo[] respuestas;
     public Imagenes[] imagenes;
 
     public GameObject resp1;
@@ -120,7 +120,7 @@ public class IdentificaMusculo : Minijuego
     }
 
     [System.Serializable] //mostrar los mensajes en los ajustes
-    public class Opciones {
+    public class OpcionesMusculo {
         public int id;
         public string musculo;
         public Sprite imagen;
