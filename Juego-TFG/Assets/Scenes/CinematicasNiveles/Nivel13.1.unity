@@ -290,6 +290,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b3352837669b5944bece46e6dc7eae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  escena: NivelCompletado
+  nivel: 13
   mensajes:
   - actorId: 8
     id_superheroe: 0
@@ -423,8 +425,6 @@ MonoBehaviour:
   - id: 7
     name: lumbar
     sprite: {fileID: 21300000, guid: 711758ead6c6a38439511006adc808a3, type: 3}
-  escena: NivelCompletado
-  nivel: 13
   avatar: {fileID: 1397982207}
   avatarInicio: {fileID: 338479597}
   avatarSuperheroe: {fileID: 1870251295}
@@ -1321,6 +1321,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1538256120}
   m_CullTransparentMesh: 1
+--- !u!1 &1728389541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1728389543}
+  - component: {fileID: 1728389542}
+  m_Layer: 0
+  m_Name: ControladorNiveles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1728389542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728389541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de9a11e3ac1c4f44fa28bce6e010dc7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelBottons: []
+  unlock: 14
+--- !u!4 &1728389543
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728389541}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 683.41547, y: 659.5067, z: 2.7174108}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1870251293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1480,3 +1526,4 @@ SceneRoots:
   - {fileID: 923447982}
   - {fileID: 1473372856}
   - {fileID: 1319692879}
+  - {fileID: 1728389543}

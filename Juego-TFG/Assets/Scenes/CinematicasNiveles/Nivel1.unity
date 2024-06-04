@@ -209,8 +209,8 @@ GameObject:
   - component: {fileID: 483878286}
   - component: {fileID: 483878288}
   - component: {fileID: 483878287}
-  - component: {fileID: 483878289}
   - component: {fileID: 483878290}
+  - component: {fileID: 483878291}
   m_Layer: 5
   m_Name: Dialogo
   m_TagString: Untagged
@@ -278,7 +278,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 483878285}
   m_CullTransparentMesh: 1
---- !u!114 &483878289
+--- !u!114 &483878290
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -287,66 +287,40 @@ MonoBehaviour:
   m_GameObject: {fileID: 483878285}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b3352837669b5944bece46e6dc7eae4, type: 3}
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escena: PreguntaBiceps
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 483878291}
+          m_TargetAssemblyTypeName: ControladorDialogoCSV, Assembly-CSharp
+          m_MethodName: SiguienteMensaje
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &483878291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483878285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 930e34a5d694ac14cb064bac7d735ae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   nivel: 1
-  mensajes:
-  - actorId: 0
-    id_superheroe: 0
-    id_imagen: 0
-    text: "\xBFQu\xE9 es este lugar?"
-  - actorId: 8
-    id_superheroe: 0
-    id_imagen: 0
-    text: "\xA1Hola! \xBFEst\xE1s preparado para comenzar tu entrenamiento? "
-  - actorId: 4
-    id_superheroe: 0
-    id_imagen: 0
-    text: "\xA1Si!"
-  - actorId: 8
-    id_superheroe: 0
-    id_imagen: 0
-    text: "Te presento a Mr. B\xEDceps, \xE9l te ayudar\xE1 a entrenar tus b\xEDceps
-      y aprender m\xE1s sobre como sacarles partido."
-  - actorId: 9
-    id_superheroe: 1
-    id_imagen: 1
-    text: "\xA1Hola joven! Hoy vamos a aprender como formar estos maravillosos brazos.
-      Lo primero de todo, \xBFsabes qu\xE9 son los m\xFAsculos?"
-  - actorId: 2
-    id_superheroe: 1
-    id_imagen: 1
-    text: "Ehhhh\u2026 \xBFSon los que nos ayudan a movernos?"
-  - actorId: 9
-    id_superheroe: 1
-    id_imagen: 1
-    text: 'Efectivamente, son tejidos del cuerpo humano que pueden contraerse y relajarse
-      para realizar todo tipo de movimientos. '
-  - actorId: 4
-    id_superheroe: 1
-    id_imagen: 1
-    text: "\xBFY por qu\xE9 t\xFA tienes un brazo tan grande?"
-  - actorId: 9
-    id_superheroe: 1
-    id_imagen: 2
-    text: "\xA1Buena pregunta! Mi brazo es grande porque he estado entrenando estos
-      m\xFAsculos, llamados b\xEDceps, durante mucho tiempo."
-  - actorId: 4
-    id_superheroe: 1
-    id_imagen: 2
-    text: "\xA1Guau, eso suena genial! \xBFC\xF3mo puedo hacer que mis b\xEDceps
-      sean fuertes?"
-  - actorId: 9
-    id_superheroe: 1
-    id_imagen: 2
-    text: "Te mostrar\xE9 tres ejercicios divertidos. Real\xEDzalos y selecciona
-      la imagen que creas correcta. \xBFEst\xE1s listo? "
-  - actorId: 4
-    id_superheroe: 1
-    id_imagen: 2
-    text: " \xA1Si! \xA1Vamos all\xE1!"
+  escena: PreguntaBiceps
   actores:
   - id: 0
     name: "ni\xF1a_asustad"
@@ -407,35 +381,6 @@ MonoBehaviour:
   avatarSuperheroe: {fileID: 1870251295}
   diapositiva: {fileID: 948334242}
   conversacion: {fileID: 1205313336}
---- !u!114 &483878290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 483878285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 483878289}
-          m_TargetAssemblyTypeName: TextShow, Assembly-CSharp
-          m_MethodName: SiguienteMensaje
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1 &502348837
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,8 +567,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 483878289}
-        m_TargetAssemblyTypeName: TextShow, Assembly-CSharp
+      - m_Target: {fileID: 483878291}
+        m_TargetAssemblyTypeName: ControladorDialogoCSV, Assembly-CSharp
         m_MethodName: SiguienteMensaje
         m_Mode: 1
         m_Arguments:
