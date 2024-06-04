@@ -290,6 +290,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b3352837669b5944bece46e6dc7eae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  escena: NivelCompletado
+  nivel: 3
   mensajes:
   - actorId: 8
     id_superheroe: 0
@@ -407,8 +409,6 @@ MonoBehaviour:
   - id: 7
     name: lumbar
     sprite: {fileID: 21300000, guid: 711758ead6c6a38439511006adc808a3, type: 3}
-  escena: NivelCompletado
-  nivel: 3
   avatar: {fileID: 1397982207}
   avatarInicio: {fileID: 338479597}
   avatarSuperheroe: {fileID: 1870251295}
@@ -802,6 +802,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelBottons: []
   unlock: 4
+  nivelSeleccionado: 0
 --- !u!4 &918565049
 Transform:
   m_ObjectHideFlags: 0

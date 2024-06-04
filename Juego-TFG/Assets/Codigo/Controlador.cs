@@ -32,13 +32,7 @@ public class Controlador : MonoBehaviour
      * Este metodo comprueba el último nivel nivel desbloqueado para cargar la primera escena o la segunda
     */
 
-    public static void MenuNiveles(){
-        if(PlayerPrefs.GetInt("unlockedLevels",1) >= 20){
-            EscenaJuego("Juego2");
-        }else{
-            EscenaJuego("Juego");
-        }
-    }
+    
     public static void Salir(){   
         // Debug.Log("Salir...");
         Application.Quit();

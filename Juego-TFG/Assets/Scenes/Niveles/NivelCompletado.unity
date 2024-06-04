@@ -397,6 +397,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelBottons: []
   unlock: 2
+  nivelSeleccionado: 0
 --- !u!4 &239002618
 Transform:
   m_ObjectHideFlags: 0
@@ -884,8 +885,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 195225152}
-        m_TargetAssemblyTypeName: Controlador, Assembly-CSharp
+      - m_Target: {fileID: 239002617}
+        m_TargetAssemblyTypeName: ControladorNiveles, Assembly-CSharp
         m_MethodName: MenuNiveles
         m_Mode: 1
         m_Arguments:

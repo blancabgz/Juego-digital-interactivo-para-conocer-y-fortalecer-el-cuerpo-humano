@@ -107,7 +107,6 @@ public class IdentificaMusculo : Minijuego
 
                 botonSiguiente.SetActive(true);
                 botonSiguiente.GetComponent<Button>().onClick.AddListener(() => Controlador.EscenaJuego(escenaSiguiente)); 
-
             }else{
                 // activa la imagen fallo
                 imagen.sprite = imagenes[1].sprite;

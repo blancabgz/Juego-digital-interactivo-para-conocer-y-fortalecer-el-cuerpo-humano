@@ -204,19 +204,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 95474907}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 657543997}
-        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
-        m_MethodName: EscenaJuego
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Nivel11
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &95474907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,94 +243,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 95474904}
   m_CullTransparentMesh: 1
---- !u!1 &188565145
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 188565146}
-  - component: {fileID: 188565147}
-  m_Layer: 0
-  m_Name: GameManagerLevels
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &188565146
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 188565145}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 955.09344, y: 520.3796, z: 2.0349855}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &188565147
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 188565145}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de9a11e3ac1c4f44fa28bce6e010dc7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelBottons:
-  - nivel: 0
-    btnNivel: {fileID: 884363597}
-  - nivel: 1
-    btnNivel: {fileID: 1605684791}
-  - nivel: 2
-    btnNivel: {fileID: 1929114510}
-  - nivel: 3
-    btnNivel: {fileID: 1488855722}
-  - nivel: 4
-    btnNivel: {fileID: 1506166247}
-  - nivel: 5
-    btnNivel: {fileID: 1990945081}
-  - nivel: 6
-    btnNivel: {fileID: 373789976}
-  - nivel: 7
-    btnNivel: {fileID: 357729650}
-  - nivel: 8
-    btnNivel: {fileID: 553764985}
-  - nivel: 9
-    btnNivel: {fileID: 559430285}
-  - nivel: 10
-    btnNivel: {fileID: 95474906}
-  - nivel: 11
-    btnNivel: {fileID: 735307403}
-  - nivel: 12
-    btnNivel: {fileID: 858161130}
-  - nivel: 13
-    btnNivel: {fileID: 1889176281}
-  - nivel: 14
-    btnNivel: {fileID: 1968927443}
-  - nivel: 15
-    btnNivel: {fileID: 1320868585}
-  - nivel: 16
-    btnNivel: {fileID: 895407162}
-  - nivel: 17
-    btnNivel: {fileID: 655641121}
-  - nivel: 18
-    btnNivel: {fileID: 243706780}
-  - nivel: 19
-    btnNivel: {fileID: 1608818549}
-  - nivel: 20
-    btnNivel: {fileID: 953304371}
-  unlock: 0
 --- !u!1 &243706778
 GameObject:
   m_ObjectHideFlags: 0
@@ -424,19 +324,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 243706781}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 657543997}
-        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
-        m_MethodName: EscenaJuego
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Nivel19
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &243706781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -556,19 +444,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 357729651}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 657543997}
-        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
-        m_MethodName: EscenaJuego
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Nivel8
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &357729651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -688,19 +564,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 373789977}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 657543997}
-        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
-        m_MethodName: EscenaJuego
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Nivel7
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &373789977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1064,19 +928,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 553764986}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 657543997}
-        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
-        m_MethodName: EscenaJuego
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Nivel9
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &553764986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1196,19 +1048,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 559430286}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 657543997}
-        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
-        m_MethodName: EscenaJuego
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Nivel10
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &559430286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1282,7 +1122,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.8341873, y: 0.26974076}
   m_AnchorMax: {x: 0.91263586, y: 0.3933704}
-  m_AnchoredPosition: {x: -1.8253784, y: 0.16625977}
+  m_AnchoredPosition: {x: -1.8254395, y: 0.16625977}
   m_SizeDelta: {x: 1.1072006, y: 0.58986}
   m_Pivot: {x: 0.49999997, y: 0.5}
 --- !u!114 &655641121
@@ -1328,19 +1168,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 655641122}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 657543997}
-        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
-        m_MethodName: EscenaJuego
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Nivel18
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &655641122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1458,7 +1286,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5234548, y: 0.41646224}
   m_AnchorMax: {x: 0.6, y: 0.544}
-  m_AnchoredPosition: {x: 1.0000305, y: -1.0000229}
+  m_AnchoredPosition: {x: 1.0000305, y: -1.0000305}
   m_SizeDelta: {x: -3.1525002, y: -1.5223999}
   m_Pivot: {x: 0.49999997, y: 0.5}
 --- !u!114 &735307403
@@ -1504,19 +1332,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 735307404}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 657543997}
-        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
-        m_MethodName: EscenaJuego
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Nivel12
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &735307404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1692,7 +1508,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5683126, y: 0.2817778}
   m_AnchorMax: {x: 0.6375453, y: 0.3933704}
-  m_AnchoredPosition: {x: -1.7470093, y: -3.3630066}
+  m_AnchoredPosition: {x: -1.7470093, y: -3.362976}
   m_SizeDelta: {x: 6.563202, y: 8.009998}
   m_Pivot: {x: 0.49999997, y: 0.5}
 --- !u!114 &858161130
@@ -1738,19 +1554,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 858161131}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 657543997}
-        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
-        m_MethodName: EscenaJuego
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Nivel13
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &858161131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1824,7 +1628,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.44256252, y: 0.8344475}
   m_AnchorMax: {x: 0.514, y: 0.95800006}
-  m_AnchoredPosition: {x: -4.5522995, y: -0.84332275}
+  m_AnchoredPosition: {x: -4.552307, y: -0.84332275}
   m_SizeDelta: {x: 5.6595, y: -1.4102}
   m_Pivot: {x: 0.49999997, y: 0.5}
 --- !u!114 &884363597
@@ -1871,9 +1675,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 657543997}
+      - m_Target: {fileID: 2114172770}
         m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
-        m_MethodName: EscenaJuego
+        m_MethodName: 
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2002,19 +1806,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 895407163}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 657543997}
-        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
-        m_MethodName: EscenaJuego
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Nivel17
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &895407163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2266,19 +2058,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1320868586}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 657543997}
-        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
-        m_MethodName: EscenaJuego
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Nivel16
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1320868586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2484,7 +2264,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.18627366, y: 0.5334622}
   m_AnchorMax: {x: 0.26451156, y: 0.63881487}
-  m_AnchoredPosition: {x: 3.141602, y: 7.905098}
+  m_AnchoredPosition: {x: 3.1416016, y: 7.9050903}
   m_SizeDelta: {x: -1.4207001, y: 20.9691}
   m_Pivot: {x: 0.49999997, y: 0.5}
 --- !u!114 &1488855722
@@ -2530,19 +2310,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1488855723}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 657543997}
-        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
-        m_MethodName: EscenaJuego
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Nivel4
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1488855723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2616,7 +2384,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.14639583, y: 0.4044815}
   m_AnchorMax: {x: 0.20600002, y: 0.5147778}
-  m_AnchoredPosition: {x: -15.299011, y: -0.81040955}
+  m_AnchoredPosition: {x: -15.29895, y: -0.81040955}
   m_SizeDelta: {x: 28.3546, y: 22.413}
   m_Pivot: {x: 0.49999997, y: 0.5}
 --- !u!114 &1506166247
@@ -2662,19 +2430,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1506166248}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 657543997}
-        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
-        m_MethodName: EscenaJuego
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Nivel5
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1506166248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2794,19 +2550,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1605684792}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 657543997}
-        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
-        m_MethodName: EscenaJuego
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Nivel2
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1605684792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2926,19 +2670,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1608818550}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 657543997}
-        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
-        m_MethodName: EscenaJuego
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Nivel20
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1608818550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3126,19 +2858,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1889176282}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 657543997}
-        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
-        m_MethodName: EscenaJuego
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Nivel14
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1889176282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3258,19 +2978,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1929114511}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 657543997}
-        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
-        m_MethodName: EscenaJuego
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Nivel3
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1929114511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3390,19 +3098,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1968927444}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 657543997}
-        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
-        m_MethodName: EscenaJuego
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Nivel15
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1968927444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3522,19 +3218,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1990945082}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 657543997}
-        m_TargetAssemblyTypeName: Utilidades, Assembly-CSharp
-        m_MethodName: EscenaJuego
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Nivel6
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1990945082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3584,6 +3268,7 @@ GameObject:
   - component: {fileID: 2114172771}
   - component: {fileID: 2114172773}
   - component: {fileID: 2114172772}
+  - component: {fileID: 2114172774}
   m_Layer: 5
   m_Name: JuegoNiveles
   m_TagString: Untagged
@@ -3670,6 +3355,84 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114172770}
   m_CullTransparentMesh: 1
+--- !u!114 &2114172774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114172770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de9a11e3ac1c4f44fa28bce6e010dc7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelBottons:
+  - nivel: 1
+    btnNivel: {fileID: 884363597}
+    escena: Nivel1
+  - nivel: 2
+    btnNivel: {fileID: 1605684791}
+    escena: Nivel2
+  - nivel: 3
+    btnNivel: {fileID: 1929114510}
+    escena: Nivel3
+  - nivel: 4
+    btnNivel: {fileID: 1488855722}
+    escena: Nivel4
+  - nivel: 5
+    btnNivel: {fileID: 1506166247}
+    escena: Nivel5
+  - nivel: 6
+    btnNivel: {fileID: 1990945081}
+    escena: Nivel6
+  - nivel: 7
+    btnNivel: {fileID: 373789976}
+    escena: Nivel7
+  - nivel: 8
+    btnNivel: {fileID: 357729650}
+    escena: Nivel8
+  - nivel: 9
+    btnNivel: {fileID: 553764985}
+    escena: Nivel9
+  - nivel: 10
+    btnNivel: {fileID: 559430285}
+    escena: Nivel10
+  - nivel: 11
+    btnNivel: {fileID: 95474906}
+    escena: Nivel11
+  - nivel: 12
+    btnNivel: {fileID: 735307403}
+    escena: Nivel12
+  - nivel: 13
+    btnNivel: {fileID: 858161130}
+    escena: Nivel13
+  - nivel: 14
+    btnNivel: {fileID: 1889176281}
+    escena: Nivel14
+  - nivel: 15
+    btnNivel: {fileID: 1968927443}
+    escena: Nivel15
+  - nivel: 16
+    btnNivel: {fileID: 1320868585}
+    escena: Nivel16
+  - nivel: 17
+    btnNivel: {fileID: 895407162}
+    escena: Nivel17
+  - nivel: 18
+    btnNivel: {fileID: 655641121}
+    escena: Nivel18
+  - nivel: 19
+    btnNivel: {fileID: 243706780}
+    escena: Nivel19
+  - nivel: 20
+    btnNivel: {fileID: 1608818549}
+    escena: Nivel20
+  - nivel: 20
+    btnNivel: {fileID: 953304371}
+    escena: Juego2
+  unlock: 0
+  nivelSeleccionado: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3677,6 +3440,5 @@ SceneRoots:
   - {fileID: 491882093}
   - {fileID: 803381976}
   - {fileID: 1864072726}
-  - {fileID: 188565146}
   - {fileID: 528501723}
   - {fileID: 657543998}

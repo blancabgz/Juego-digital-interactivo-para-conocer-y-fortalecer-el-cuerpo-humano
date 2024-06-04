@@ -211,6 +211,7 @@ GameObject:
   - component: {fileID: 483878287}
   - component: {fileID: 483878289}
   - component: {fileID: 483878290}
+  - component: {fileID: 483878291}
   m_Layer: 5
   m_Name: Dialogo
   m_TagString: Untagged
@@ -290,6 +291,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b3352837669b5944bece46e6dc7eae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  escena: PreguntaTriceps
+  nivel: 1
   mensajes:
   - actorId: 0
     id_superheroe: 1
@@ -407,8 +410,6 @@ MonoBehaviour:
   - id: 3
     name: triceps
     sprite: {fileID: 21300000, guid: d6e87c8e2ff6686438c3592aacc6a9ee, type: 3}
-  escena: PreguntaTriceps
-  nivel: 1
   avatar: {fileID: 1397982207}
   avatarInicio: {fileID: 338479597}
   avatarSuperheroe: {fileID: 1870251295}
@@ -443,6 +444,25 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &483878291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483878285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 930e34a5d694ac14cb064bac7d735ae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  escena: PreguntaTriceps
+  avatar: {fileID: 1397982207}
+  avatarInicio: {fileID: 338479597}
+  avatarSuperheroe: {fileID: 1870251295}
+  diapositiva: {fileID: 948334242}
+  conversacion: {fileID: 1205313336}
+  nombreEscenaActual: Nivel1.2
 --- !u!1 &502348837
 GameObject:
   m_ObjectHideFlags: 0

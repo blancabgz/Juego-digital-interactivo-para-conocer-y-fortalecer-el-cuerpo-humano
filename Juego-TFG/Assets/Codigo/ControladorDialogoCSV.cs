@@ -11,19 +11,19 @@ using System.Linq;
 
 public class ControladorDialogoCSV : MonoBehaviour
 {
-    public int nivel;
+    private int nivel;
     public string escena;
     // array con los mensajes de la escena
     // public Mensaje[] mensajes;
     private List<MensajeCSV> mensajes;
     // array con los actores que participan en la escena
-    public PersonajeCSV[] actores;
+    private List<PersonajeCSV> actores = new List<PersonajeCSV>();
     // array con los actores de la escena (niño/a)
-    public PersonajeCSV[] actorPanel;
+    private List<PersonajeCSV> actorPanel = new List<PersonajeCSV>();
     // array con los superheroes de la escena
-    public PersonajeCSV[] superheroePanel;
+    private List<PersonajeCSV> superheroePanel = new List<PersonajeCSV>();
     // array con las diapositivas
-    public DiapositivaCSV[] imagenes;
+    private List<PersonajeCSV> imagenes = new List<PersonajeCSV>();
 
     private string[] lineas;
     // guardar si la historia ya se ha reproducido
@@ -36,7 +36,7 @@ public class ControladorDialogoCSV : MonoBehaviour
     public Image diapositiva;
     public Text conversacion;
     string selectedCharacter;
-    string nombreEscenaActual;
+    public string nombreEscenaActual;
     
 
     int mensajeActivo = 0;  
@@ -55,17 +55,24 @@ public class ControladorDialogoCSV : MonoBehaviour
                 Controlador.EscenaJuego("Juego"); 
             }
         }
-        nombreEscenaActual = SceneManager.GetActiveScene().name;
+        nivel = PlayerPrefs.GetInt("nivelSeleccionado", 1);
+        Debug.Log(nivel);
         LeerArchivo("Assets/Codigo/Datos/historias.csv");
+        LeerArchivo("Assets/Codigo/Datos/actorhabla.csv", actores);
+        LeerArchivo("Assets/Codigo/Datos/jugadorpanel.csv", actorPanel);
+        LeerArchivo("Assets/Codigo/Datos/superheroepanel.csv", superheroePanel);
+        LeerArchivo("Assets/Codigo/Datos/imagenesDiapositivas.csv", imagenes);
+        
         
         // obtengo el personaje que ha elegido el jugador/a
         selectedCharacter = PlayerPrefs.GetString("SelectedCharacter");
         // comprueba si la escena ya ha sido visionada en la escena "Historia"
 
+
     }
     void Start(){
         PersonajePanel();
-        DesplegarMensaje();  
+        DesplegarMensaje();     
     }
 
     // Funcion para que aparezca el sprite del personaje seleccionado por el jugador/a
@@ -83,10 +90,9 @@ public class ControladorDialogoCSV : MonoBehaviour
         MensajeCSV mensaje = mensajes[mensajeActivo];
         conversacion.text = mensaje.texto;
 
-
         PersonajeCSV actor;
         int id = 0;
-    
+        Debug.Log(actores[0].name);
         //si el personaje seleccionado por el jugador es un chico y contiene el nombre del id la palabra niña
         if(selectedCharacter == "boy" && actores[mensaje.actor_habla].name.Contains("niña")){
 
@@ -160,6 +166,31 @@ public class ControladorDialogoCSV : MonoBehaviour
         }
 
     }
+
+    private void LeerArchivo(string rutaArchivo, List<PersonajeCSV> personajes){
+        lineas = File.ReadAllLines(rutaArchivo);
+
+        for (int i = 1; i < lineas.Length; i++){
+            string[] valores = lineas[i].Split(',');
+            if (valores.Length >= 3) {
+                // Debug.Log(valores[0] + " - " + valores[1] + " - " + valores[2]);
+                int id = int.Parse(valores[0]);
+                string name = valores[1];
+                string imagenPath = valores[2];
+                Sprite sprite = CargarSprite(imagenPath);
+                // Debug.Log(sprite);
+                PersonajeCSV personaje = new PersonajeCSV(id, name, sprite);
+                personajes.Add(personaje);
+                
+            }
+        }
+
+    }
+
+    private Sprite CargarSprite(string path){
+        // Cargar un Sprite desde la ruta de archivo en la carpeta Resources
+        return Resources.Load<Sprite>(path);
+    }
 }
 
 
@@ -182,16 +213,17 @@ public class MensajeCSV {
 
 [System.Serializable] //mostrar los actores en los ajustes
 public class PersonajeCSV {
-    public int id;
-    public string name;
-    public Sprite sprite;
+    public int id{ get; set; }
+    public string name{ get; set; }
+    public Sprite sprite{ get; set; }
+
+    public PersonajeCSV(int id, string name, Sprite sprite){
+        this.id = id;
+        this.name = name;
+        this.sprite = sprite;
+    }
 }
 
-[System.Serializable] //mostrar las diapositivas
-public class DiapositivaCSV {
-    public int id;
-    public string name;
-    public Sprite sprite;
-}
+
 
 
