@@ -16,14 +16,19 @@ public class LuchaContraElVillano : Minijuego
     private int indicePregAct = 0;
     private GameObject pregunta;
     private TextMeshProUGUI textoPregunta;
+    private Animator villano;
 
 
     void Awake(){
         ControlMusica.EstadoMusica();
+        villano = GameObject.Find("PersonajeV").GetComponent<Animator>();
+        villano.enabled = false;
+        
     }
     
     void Start()
     {
+    
         base.MezclarElementos(preguntas);
         MostrarPregunta();
         
@@ -55,6 +60,11 @@ public class LuchaContraElVillano : Minijuego
         if(respuesta == preguntas[indicePregAct].verdadera){ // si coincide la respuesta
             vidaActual--; // bajamos la vida 
             barraVida.fillAmount = vidaActual / vidaMaxima; // actualizamos la barra de vida
+            villano.enabled = true;
+            PlayAnimacion();
+            
+            
+
             // Si ha vencido
             if(vidaActual == 0){
                 base.CalcularPuntuacionFinal(multiplicador);
@@ -67,6 +77,16 @@ public class LuchaContraElVillano : Minijuego
         }
         indicePregAct++; // siguiente pregunta
         MostrarPregunta();
+        
+    }
+
+    // Funcion que activa la animación de golpe al enemigo cada vez que se acierta la pregunta
+    // Rebind y Update(0f) aseguran poner el animador en estado inicial
+    // Play, activa la animacion
+    void PlayAnimacion(){
+        villano.Rebind();
+        villano.Update(0f);
+        villano.Play("GolpeEnemigo");
     }
 
 }

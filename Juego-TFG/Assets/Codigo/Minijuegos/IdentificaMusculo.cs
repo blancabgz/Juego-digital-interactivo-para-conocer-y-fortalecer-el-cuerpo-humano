@@ -18,6 +18,8 @@ public class IdentificaMusculo : Minijuego
     public GameObject validate2;
     public GameObject validate3;
 
+    private GameObject panelPregunta;
+
     public string musculo;
 
     public GameObject imagenPanel;
@@ -27,6 +29,8 @@ public class IdentificaMusculo : Minijuego
 
     void Awake(){
         ControlMusica.EstadoMusica();
+        panelPregunta = GameObject.Find("Panelp");
+
     }
     void Start(){
 
@@ -66,6 +70,10 @@ public class IdentificaMusculo : Minijuego
             // Aumento el contador en 1 de errores cometidos
             base.AumentarNumeroFallos();
         }
+    }
+
+    public void OcultarPregunta(){
+        panelPregunta.SetActive(false);
     }
 
     void ActivarImagen(int indice, int correcta){
