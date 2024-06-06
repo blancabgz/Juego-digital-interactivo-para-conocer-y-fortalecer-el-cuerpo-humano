@@ -59,10 +59,10 @@ public class IdentificaMusculo : Minijuego
                 base.GuardarPuntuacion(1);
             // Si la primera pantalla ha sido completada
             }else{
-                
                 base.CalcularPuntuacionSegundaRonda();
                 base.puntos /= 2;
                 base.GuardarPuntuacion(2);
+                
             }
         }else{
             // Activo la imagen de error

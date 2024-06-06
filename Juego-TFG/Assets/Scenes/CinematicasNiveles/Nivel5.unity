@@ -418,6 +418,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b3352837669b5944bece46e6dc7eae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  escena: Pectoral1
+  nivel: 5
   mensajes:
   - actorId: 8
     id_superheroe: 0
@@ -559,8 +561,6 @@ MonoBehaviour:
   - id: 6
     name: news
     sprite: {fileID: 21300000, guid: 6291f7e62afc797478c6bca66c014676, type: 3}
-  escena: PreguntaPectoral1
-  nivel: 5
   avatar: {fileID: 1397982207}
   avatarInicio: {fileID: 338479597}
   avatarSuperheroe: {fileID: 1870251295}
