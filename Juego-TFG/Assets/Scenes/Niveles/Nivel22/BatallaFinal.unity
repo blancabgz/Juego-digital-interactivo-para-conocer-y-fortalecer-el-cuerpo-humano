@@ -303,8 +303,9 @@ GameObject:
   - component: {fileID: 177839526}
   - component: {fileID: 177839528}
   - component: {fileID: 177839527}
+  - component: {fileID: 177839529}
   m_Layer: 5
-  m_Name: Personaje
+  m_Name: PersonajeV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -326,7 +327,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.30800003, y: 0}
   m_AnchorMax: {x: 0.88000005, y: 0.8263064}
-  m_AnchoredPosition: {x: 22, y: -10.451416}
+  m_AnchoredPosition: {x: 22, y: -10.4513855}
   m_SizeDelta: {x: -206.3779, y: -42.3413}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &177839527
@@ -367,6 +368,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 177839525}
   m_CullTransparentMesh: 1
+--- !u!95 &177839529
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177839525}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b2feb6ad04c24b048a4123457b310c4f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &236453131
 GameObject:
   m_ObjectHideFlags: 0
@@ -661,6 +683,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nivel: 22
+  panelFinal: {fileID: 0}
   preguntas:
   - pregunta: "El recto abdominal ayuda a mantener una posici\xF3n recta del cuerpo"
     verdadera: 1
