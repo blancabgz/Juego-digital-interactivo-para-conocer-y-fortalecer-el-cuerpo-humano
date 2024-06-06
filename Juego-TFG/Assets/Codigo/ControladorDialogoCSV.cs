@@ -39,7 +39,7 @@ public class ControladorDialogoCSV : MonoBehaviour
     public string nombreEscenaActual;
     
 
-    int mensajeActivo = 0;  
+    int mensajeActivo;  
 
     private void Awake(){
         string nombreEscena = SceneManager.GetActiveScene().name;
@@ -55,8 +55,10 @@ public class ControladorDialogoCSV : MonoBehaviour
                 Controlador.EscenaJuego("Juego"); 
             }
         }
+
+        mensajeActivo = 0;
         nivel = PlayerPrefs.GetInt("nivelSeleccionado", 1);
-        Debug.Log(nivel);
+        Debug.Log("Nivel" + nivel);
         LeerArchivo("Assets/Codigo/Datos/historias.csv");
         LeerArchivo("Assets/Codigo/Datos/actorhabla.csv", actores);
         LeerArchivo("Assets/Codigo/Datos/jugadorpanel.csv", actorPanel);
@@ -92,7 +94,7 @@ public class ControladorDialogoCSV : MonoBehaviour
 
         PersonajeCSV actor;
         int id = 0;
-        Debug.Log(actores[0].name);
+        // Debug.Log(actores[0].name);
         //si el personaje seleccionado por el jugador es un chico y contiene el nombre del id la palabra niña
         if(selectedCharacter == "boy" && actores[mensaje.actor_habla].name.Contains("niña")){
 

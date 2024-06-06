@@ -789,6 +789,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nivel: 3
+  panelFinal: {fileID: 0}
   preguntas:
   - pregunta: "El recto abdominal ayuda a mantener una posici\xF3n recta del cuerpo"
     verdadera: 1
