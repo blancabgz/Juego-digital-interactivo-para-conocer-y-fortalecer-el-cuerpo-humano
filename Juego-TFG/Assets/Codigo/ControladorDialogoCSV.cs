@@ -36,13 +36,14 @@ public class ControladorDialogoCSV : MonoBehaviour
     public Image diapositiva;
     public Text conversacion;
     string selectedCharacter;
-    public string nombreEscenaActual;
+    private string nombreEscenaActual;
     
 
     int mensajeActivo;  
 
     private void Awake(){
         string nombreEscena = SceneManager.GetActiveScene().name;
+        nombreEscenaActual = nombreEscena;
         GameObject controlMusica = GameObject.Find("ControlMusica");
         if(PlayerPrefs.GetString("estadoMusica", "null") == "OFF"){
             if(controlMusica != null){

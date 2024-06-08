@@ -308,4 +308,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cinematica.unity
     guid: f41de3403f2e1b041b44040f14b507a4
+  - enabled: 1
+    path: Assets/Scenes/CinematicasNiveles/Nivel8.1.unity
+    guid: 569d4dfca0bfcdd46bde22b2e15bc40b
   m_configObjects: {}

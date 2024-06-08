@@ -337,8 +337,8 @@ GameObject:
   - component: {fileID: 483878286}
   - component: {fileID: 483878288}
   - component: {fileID: 483878287}
-  - component: {fileID: 483878289}
   - component: {fileID: 483878290}
+  - component: {fileID: 483878291}
   m_Layer: 5
   m_Name: Dialogo
   m_TagString: Untagged
@@ -406,214 +406,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 483878285}
   m_CullTransparentMesh: 1
---- !u!114 &483878289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 483878285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b3352837669b5944bece46e6dc7eae4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mensajes:
-  - actorId: 8
-    id_superheroe: 0
-    id_imagen: 0
-    text: "\xA1Buenas joven! Hoy toca una zona del cuerpo que a casi nadie le gusta
-      entrenar pero todo el mundo quiere tener trabajada."
-  - actorId: 2
-    id_superheroe: 0
-    id_imagen: 0
-    text: "\xBFDe qu\xE9 zona est\xE1s hablando?"
-  - actorId: 8
-    id_superheroe: 0
-    id_imagen: 0
-    text: "\xA1De las piernas y el gl\xFAteo! "
-  - actorId: 4
-    id_superheroe: 0
-    id_imagen: 0
-    text: "\xBFEn serio hay que entrenarlo? Siempre pens\xE9 que con correr un poco
-      ya estaba todo hecho."
-  - actorId: 8
-    id_superheroe: 0
-    id_imagen: 0
-    text: "\xA1Ja, ja! Esa es una idea com\xFAn, pero hay que hacer un poco m\xE1s
-      que correr para entrenarlos."
-  - actorId: 8
-    id_superheroe: 0
-    id_imagen: 0
-    text: "Nosotros aprenderemos los tres m\xFAsculos m\xE1s importantes. \xBFSabes
-      cu\xE1les son?"
-  - actorId: 4
-    id_superheroe: 0
-    id_imagen: 0
-    text: "Pues la verdad es que no. Las piernas y el culo, \xBFno?"
-  - actorId: 8
-    id_superheroe: 0
-    id_imagen: 9
-    text: "\xA1Has estado cerca! El m\xFAsculo que se encuentra en la parte delantera
-      de la pierna, en tus muslos se llaman cu\xE1driceps. \xBFSabes para qu\xE9
-      se utilizan?"
-  - actorId: 2
-    id_superheroe: 0
-    id_imagen: 9
-    text: "\xBFPara correr?"
-  - actorId: 8
-    id_superheroe: 0
-    id_imagen: 9
-    text: "\xA1Efectivamente! Y adem\xE1s sirven para saltar, por ejemplo. "
-  - actorId: 8
-    id_superheroe: 0
-    id_imagen: 8
-    text: "Por otro lado, el m\xFAsculo que se sit\xFAa en el culo, se llama gl\xFAteo.
-      \xA1Este m\xFAsculo es el m\xE1s grande del cuerpo! Te ayuda a caminar y subir
-      escaleras."
-  - actorId: 4
-    id_superheroe: 0
-    id_imagen: 8
-    text: "\xA1Ala! \xBFEs el m\xE1s grande? \xA1Qu\xE9 guay! "
-  - actorId: 8
-    id_superheroe: 0
-    id_imagen: 10
-    text: "Y el \xFAltimo que nos queda es el gemelo. "
-  - actorId: 8
-    id_superheroe: 0
-    id_imagen: 10
-    text: "Es un m\xFAsculo que est\xE1 en la parte de atr\xE1s de las piernas y
-      te ayudan a impulsarte y a mantener equilibrio."
-  - actorId: 4
-    id_superheroe: 0
-    id_imagen: 10
-    text: "\xA1Ah vale! Ahora s\xED lo comprendo todo."
-  - actorId: 8
-    id_superheroe: 0
-    id_imagen: 10
-    text: 'Pues ahora te vas a enfrentar a una actividad muy chula que te va a explicar
-      nuestro amigo Eclipse. '
-  - actorId: 9
-    id_superheroe: 4
-    id_imagen: 0
-    text: "\xA1Hola! \xBFQu\xE9 tal est\xE1s?"
-  - actorId: 4
-    id_superheroe: 4
-    id_imagen: 0
-    text: "\xA1Muy bien! Me han dicho que tienes una actividad para m\xED."
-  - actorId: 9
-    id_superheroe: 4
-    id_imagen: 0
-    text: "\xA1Efectivamente! "
-  - actorId: 9
-    id_superheroe: 4
-    id_imagen: 0
-    text: "Ahora que has aprendido los tres m\xFAsculos principales de la parte de
-      abajo de nuestro cuerpo te voy a llevar a un sitio donde realizaremos la actividad."
-  - actorId: 9
-    id_superheroe: 4
-    id_imagen: 0
-    text: "Tendr\xE1s que adivinar cual es el m\xFAsculo que muestra la sombra del
-      escenario. \xBFPodr\xE1s hacerlo?"
-  - actorId: 4
-    id_superheroe: 4
-    id_imagen: 0
-    text: "\xA1Por supuesto!"
-  actores:
-  - id: 0
-    name: "ni\xF1a_asustad"
-    sprite: {fileID: 21300000, guid: 2dd9d26ad59c04748b11e7f2c51af671, type: 3}
-  - id: 1
-    name: "ni\xF1o_asustad"
-    sprite: {fileID: 21300000, guid: 622a13cba4471b245819d5a706f59cb6, type: 3}
-  - id: 2
-    name: "ni\xF1a_nervios"
-    sprite: {fileID: 21300000, guid: 4b042d48fc62fc4449c44a4b955eee99, type: 3}
-  - id: 3
-    name: "ni\xF1o_nervios"
-    sprite: {fileID: 21300000, guid: 943362fd81e458c40ac771b0ebfb6ee7, type: 3}
-  - id: 4
-    name: "ni\xF1a_feliz"
-    sprite: {fileID: 21300000, guid: 36d459fae0ae0ca4f8eb95539ae8f2ce, type: 3}
-  - id: 5
-    name: "ni\xF1o_feliz"
-    sprite: {fileID: 21300000, guid: fadf0d94f0aca1b4789279d28ac65bca, type: 3}
-  - id: 6
-    name: "ni\xF1a_insegur"
-    sprite: {fileID: 21300000, guid: 4a3393da1a6da4940a77741abe4a81a2, type: 3}
-  - id: 7
-    name: "ni\xF1o_insegur"
-    sprite: {fileID: 21300000, guid: 622a13cba4471b245819d5a706f59cb6, type: 3}
-  - id: 8
-    name: superheroe
-    sprite: {fileID: 21300000, guid: 2fe66eef633d0e54b8b401e52fefe7c1, type: 3}
-  - id: 9
-    name: core
-    sprite: {fileID: 21300000, guid: 742117cbbf43fbd44b96d6e880a73456, type: 3}
-  actorPanel:
-  - id: 0
-    name: "Ni\xF1a"
-    sprite: {fileID: 21300000, guid: 55f6094d3d2315a49911b3792337f749, type: 3}
-  - id: 1
-    name: "Ni\xF1o"
-    sprite: {fileID: 21300000, guid: 299e00215b12b3e4591d0a2721bdf557, type: 3}
-  superheroePanel:
-  - id: 0
-    name: superheroe
-    sprite: {fileID: 21300000, guid: 0fbf80cc26e3e6644ad081f55c7e5c1c, type: 3}
-  - id: 1
-    name: mr_biceps
-    sprite: {fileID: 21300000, guid: 24313d8e19d4eae4cacbf5c71b879b0d, type: 3}
-  - id: 2
-    name: tempestad
-    sprite: {fileID: 21300000, guid: c8e36b65383819b4c810276893d0aa1c, type: 3}
-  - id: 3
-    name: core
-    sprite: {fileID: 21300000, guid: 9f88dba6a72eb2046b6edc8d66c7cc78, type: 3}
-  - id: 4
-    name: eclipse
-    sprite: {fileID: 21300000, guid: 6ce669e2c67ada141bee66edf3501b19, type: 3}
-  imagenes:
-  - id: 0
-    name: presentacion
-    sprite: {fileID: 21300000, guid: c9b9e5c68c224fd47bce671486a2f907, type: 3}
-  - id: 1
-    name: brazo
-    sprite: {fileID: 21300000, guid: fc46ae9f76aea0d498e15d606d11768e, type: 3}
-  - id: 2
-    name: bicep_triceps
-    sprite: {fileID: 21300000, guid: bbad2b5b8fdcf72428f7e9195cef3452, type: 3}
-  - id: 3
-    name: triceps
-    sprite: {fileID: 21300000, guid: d6e87c8e2ff6686438c3592aacc6a9ee, type: 3}
-  - id: 4
-    name: recto_abdominal
-    sprite: {fileID: 21300000, guid: 3d5b8bbd49fe52044b9c6ec823b841b3, type: 3}
-  - id: 5
-    name: oblicuos
-    sprite: {fileID: 21300000, guid: 9ac805b8bc4c8e44ca02d24d354536a7, type: 3}
-  - id: 6
-    name: pectoral
-    sprite: {fileID: 21300000, guid: b4a3d5e890f56d747bdc55b326a3e36d, type: 3}
-  - id: 7
-    name: news
-    sprite: {fileID: 21300000, guid: 6291f7e62afc797478c6bca66c014676, type: 3}
-  - id: 8
-    name: gluteo
-    sprite: {fileID: 21300000, guid: fbe05f45a51c8774eaabb8fd853e968d, type: 3}
-  - id: 9
-    name: cuadriceps
-    sprite: {fileID: 21300000, guid: 30c1ec046e66cbb4dae3b34380331597, type: 3}
-  - id: 10
-    name: gemelo
-    sprite: {fileID: 21300000, guid: 144f160416ffd444a878ad8418185060, type: 3}
-  escena: Sombras
-  nivel: 6
-  avatar: {fileID: 1397982207}
-  avatarInicio: {fileID: 338479597}
-  avatarSuperheroe: {fileID: 1870251295}
-  diapositiva: {fileID: 948334242}
-  conversacion: {fileID: 1205313336}
 --- !u!114 &483878290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -631,8 +423,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 483878289}
-          m_TargetAssemblyTypeName: TextShow, Assembly-CSharp
+        - m_Target: {fileID: 483878291}
+          m_TargetAssemblyTypeName: ControladorDialogoCSV, Assembly-CSharp
           m_MethodName: SiguienteMensaje
           m_Mode: 1
           m_Arguments:
@@ -643,6 +435,25 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &483878291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483878285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 930e34a5d694ac14cb064bac7d735ae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  escena: Sombras
+  avatar: {fileID: 1397982207}
+  avatarInicio: {fileID: 338479597}
+  avatarSuperheroe: {fileID: 1870251295}
+  diapositiva: {fileID: 948334242}
+  conversacion: {fileID: 1205313336}
+  nombreEscenaActual: Nivel6
 --- !u!1 &502348837
 GameObject:
   m_ObjectHideFlags: 0
@@ -829,8 +640,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 483878289}
-        m_TargetAssemblyTypeName: TextShow, Assembly-CSharp
+      - m_Target: {fileID: 483878291}
+        m_TargetAssemblyTypeName: ControladorDialogoCSV, Assembly-CSharp
         m_MethodName: SiguienteMensaje
         m_Mode: 1
         m_Arguments:
