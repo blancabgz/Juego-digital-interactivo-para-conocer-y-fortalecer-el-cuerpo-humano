@@ -337,8 +337,8 @@ GameObject:
   - component: {fileID: 483878286}
   - component: {fileID: 483878288}
   - component: {fileID: 483878287}
-  - component: {fileID: 483878289}
   - component: {fileID: 483878290}
+  - component: {fileID: 483878291}
   m_Layer: 5
   m_Name: Dialogo
   m_TagString: Untagged
@@ -406,151 +406,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 483878285}
   m_CullTransparentMesh: 1
---- !u!114 &483878289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 483878285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b3352837669b5944bece46e6dc7eae4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mensajes:
-  - actorId: 12
-    id_superheroe: 4
-    id_imagen: 0
-    text: "\xA1Lo has hecho genial! Ahora ya sabes ejercicios que puedes realizar
-      para fortalecer tu abdomen."
-  - actorId: 4
-    id_superheroe: 4
-    id_imagen: 0
-    text: "Me han encantado los ejercicios que me has ense\xF1ado. \xA1Muchas gracias!"
-  - actorId: 12
-    id_superheroe: 4
-    id_imagen: 0
-    text: "\xA1De nada! Mucho \xE1nimo en lo que te queda de camino y recuerda moverte
-      todos los d\xEDas. "
-  - actorId: 4
-    id_superheroe: 4
-    id_imagen: 0
-    text: "\xA1Lo har\xE9!"
-  - actorId: 12
-    id_superheroe: 4
-    id_imagen: 0
-    text: "Por aqu\xED tienes un peque\xF1o premio por haberte esforzado tanto."
-  - actorId: 12
-    id_superheroe: 4
-    id_imagen: 0
-    text: "Son unas gafas de visi\xF3n nocturna para que puedas ayudar a la gente
-      hasta siendo de noche."
-  - actorId: 4
-    id_superheroe: 4
-    id_imagen: 0
-    text: "\xA1Guau! Me ser\xE1n muy \xFAtiles. \xA1Qu\xE9 ganas de probarlas!"
-  actores:
-  - id: 0
-    name: "ni\xF1a_asustad"
-    sprite: {fileID: 21300000, guid: 2dd9d26ad59c04748b11e7f2c51af671, type: 3}
-  - id: 1
-    name: "ni\xF1o_asustad"
-    sprite: {fileID: 21300000, guid: 622a13cba4471b245819d5a706f59cb6, type: 3}
-  - id: 2
-    name: "ni\xF1a_nervios"
-    sprite: {fileID: 21300000, guid: 4b042d48fc62fc4449c44a4b955eee99, type: 3}
-  - id: 3
-    name: "ni\xF1o_nervios"
-    sprite: {fileID: 21300000, guid: 943362fd81e458c40ac771b0ebfb6ee7, type: 3}
-  - id: 4
-    name: "ni\xF1a_feliz"
-    sprite: {fileID: 21300000, guid: 36d459fae0ae0ca4f8eb95539ae8f2ce, type: 3}
-  - id: 5
-    name: "ni\xF1o_feliz"
-    sprite: {fileID: 21300000, guid: fadf0d94f0aca1b4789279d28ac65bca, type: 3}
-  - id: 6
-    name: "ni\xF1a_insegur"
-    sprite: {fileID: 21300000, guid: 4a3393da1a6da4940a77741abe4a81a2, type: 3}
-  - id: 7
-    name: "ni\xF1o_insegur"
-    sprite: {fileID: 21300000, guid: 622a13cba4471b245819d5a706f59cb6, type: 3}
-  - id: 8
-    name: superheroe
-    sprite: {fileID: 21300000, guid: 2fe66eef633d0e54b8b401e52fefe7c1, type: 3}
-  - id: 9
-    name: mr_biceps
-    sprite: {fileID: 21300000, guid: fe6fffcba6adffc41b51775c1a47b9b5, type: 3}
-  - id: 10
-    name: tempestad
-    sprite: {fileID: 21300000, guid: e7964e6e4630f3a41a10570376383c81, type: 3}
-  - id: 11
-    name: espaldin_supremo
-    sprite: {fileID: 21300000, guid: 8889b26b6770874468f7b73cdfd47451, type: 3}
-  - id: 12
-    name: capitan_core
-    sprite: {fileID: 21300000, guid: 76e2959fdc69d844bbb4fff18dd29ef2, type: 3}
-  - id: 13
-    name: eclipse
-    sprite: {fileID: 21300000, guid: 742117cbbf43fbd44b96d6e880a73456, type: 3}
-  actorPanel:
-  - id: 0
-    name: "Ni\xF1a"
-    sprite: {fileID: 21300000, guid: 55f6094d3d2315a49911b3792337f749, type: 3}
-  - id: 1
-    name: "Ni\xF1o"
-    sprite: {fileID: 21300000, guid: 299e00215b12b3e4591d0a2721bdf557, type: 3}
-  superheroePanel:
-  - id: 0
-    name: superheroe
-    sprite: {fileID: 21300000, guid: 0fbf80cc26e3e6644ad081f55c7e5c1c, type: 3}
-  - id: 1
-    name: mr_biceps
-    sprite: {fileID: 21300000, guid: 24313d8e19d4eae4cacbf5c71b879b0d, type: 3}
-  - id: 2
-    name: tempestad
-    sprite: {fileID: 21300000, guid: c8e36b65383819b4c810276893d0aa1c, type: 3}
-  - id: 3
-    name: espaldin_supremo
-    sprite: {fileID: 21300000, guid: 33b36bf16c15ef646a01c0722561e919, type: 3}
-  - id: 4
-    name: capitan_core
-    sprite: {fileID: 21300000, guid: 9f88dba6a72eb2046b6edc8d66c7cc78, type: 3}
-  - id: 5
-    name: eclipse
-    sprite: {fileID: 21300000, guid: 6ce669e2c67ada141bee66edf3501b19, type: 3}
-  imagenes:
-  - id: 0
-    name: presentacion
-    sprite: {fileID: 21300000, guid: c9b9e5c68c224fd47bce671486a2f907, type: 3}
-  - id: 1
-    name: brazo
-    sprite: {fileID: 21300000, guid: fc46ae9f76aea0d498e15d606d11768e, type: 3}
-  - id: 2
-    name: bicep_triceps
-    sprite: {fileID: 21300000, guid: bbad2b5b8fdcf72428f7e9195cef3452, type: 3}
-  - id: 3
-    name: triceps
-    sprite: {fileID: 21300000, guid: d6e87c8e2ff6686438c3592aacc6a9ee, type: 3}
-  - id: 4
-    name: espalda
-    sprite: {fileID: 21300000, guid: ca96f74bf7aab3e4387145d63f29190d, type: 3}
-  - id: 5
-    name: trapecio
-    sprite: {fileID: 21300000, guid: 2bcbfecbc6b7b584cafe1cb1f8aef13f, type: 3}
-  - id: 6
-    name: dorsal
-    sprite: {fileID: 21300000, guid: 1c32c04b9bac1dc4999e823c5178bc6a, type: 3}
-  - id: 7
-    name: lumbar
-    sprite: {fileID: 21300000, guid: 711758ead6c6a38439511006adc808a3, type: 3}
-  escena: NivelCompletado
-  nivel: 17
-  avatar: {fileID: 1397982207}
-  avatarInicio: {fileID: 338479597}
-  avatarSuperheroe: {fileID: 1870251295}
-  diapositiva: {fileID: 948334242}
-  conversacion: {fileID: 1205313336}
 --- !u!114 &483878290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -568,8 +423,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 483878289}
-          m_TargetAssemblyTypeName: TextShow, Assembly-CSharp
+        - m_Target: {fileID: 483878291}
+          m_TargetAssemblyTypeName: ControladorDialogoCSV, Assembly-CSharp
           m_MethodName: SiguienteMensaje
           m_Mode: 1
           m_Arguments:
@@ -580,6 +435,24 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &483878291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483878285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 930e34a5d694ac14cb064bac7d735ae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  escena: NivelCompletado
+  avatar: {fileID: 1397982207}
+  avatarInicio: {fileID: 338479597}
+  avatarSuperheroe: {fileID: 1870251295}
+  diapositiva: {fileID: 948334242}
+  conversacion: {fileID: 1205313336}
 --- !u!1 &502348837
 GameObject:
   m_ObjectHideFlags: 0
@@ -766,8 +639,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 483878289}
-        m_TargetAssemblyTypeName: TextShow, Assembly-CSharp
+      - m_Target: {fileID: 483878291}
+        m_TargetAssemblyTypeName: ControladorDialogoCSV, Assembly-CSharp
         m_MethodName: SiguienteMensaje
         m_Mode: 1
         m_Arguments:
@@ -939,6 +812,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelBottons: []
   unlock: 18
+  nivelSeleccionado: 0
 --- !u!4 &918565049
 Transform:
   m_ObjectHideFlags: 0

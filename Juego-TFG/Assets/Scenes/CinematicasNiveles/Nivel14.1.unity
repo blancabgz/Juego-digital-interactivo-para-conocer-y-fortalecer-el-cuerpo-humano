@@ -211,6 +211,7 @@ GameObject:
   - component: {fileID: 483878287}
   - component: {fileID: 483878289}
   - component: {fileID: 483878290}
+  - component: {fileID: 483878291}
   m_Layer: 5
   m_Name: Dialogo
   m_TagString: Untagged
@@ -290,6 +291,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b3352837669b5944bece46e6dc7eae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  escena: NivelCompletado
+  nivel: 14
   mensajes:
   - actorId: 10
     id_superheroe: 2
@@ -416,8 +419,6 @@ MonoBehaviour:
   - id: 7
     name: lumbar
     sprite: {fileID: 21300000, guid: 711758ead6c6a38439511006adc808a3, type: 3}
-  escena: NivelCompletado
-  nivel: 14
   avatar: {fileID: 1397982207}
   avatarInicio: {fileID: 338479597}
   avatarSuperheroe: {fileID: 1870251295}
@@ -440,8 +441,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 483878289}
-          m_TargetAssemblyTypeName: TextShow, Assembly-CSharp
+        - m_Target: {fileID: 483878291}
+          m_TargetAssemblyTypeName: ControladorDialogoCSV, Assembly-CSharp
           m_MethodName: SiguienteMensaje
           m_Mode: 1
           m_Arguments:
@@ -452,6 +453,24 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &483878291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483878285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 930e34a5d694ac14cb064bac7d735ae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  escena: NivelCompletado
+  avatar: {fileID: 1397982207}
+  avatarInicio: {fileID: 338479597}
+  avatarSuperheroe: {fileID: 1870251295}
+  diapositiva: {fileID: 948334242}
+  conversacion: {fileID: 1205313336}
 --- !u!1 &502348837
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,8 +657,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 483878289}
-        m_TargetAssemblyTypeName: TextShow, Assembly-CSharp
+      - m_Target: {fileID: 483878291}
+        m_TargetAssemblyTypeName: ControladorDialogoCSV, Assembly-CSharp
         m_MethodName: SiguienteMensaje
         m_Mode: 1
         m_Arguments:
@@ -939,6 +958,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelBottons: []
   unlock: 15
+  nivelSeleccionado: 0
 --- !u!4 &918565049
 Transform:
   m_ObjectHideFlags: 0

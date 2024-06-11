@@ -1192,11 +1192,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelBottons:
-  - nivel: 20
-    btnNivel: {fileID: 1064907924}
   - nivel: 21
+    btnNivel: {fileID: 1064907924}
+    escena: Nivel21
+  - nivel: 22
     btnNivel: {fileID: 815864705}
+    escena: Nivel22
   unlock: 0
+  nivelSeleccionado: 0
 --- !u!4 &1321944100
 Transform:
   m_ObjectHideFlags: 0
