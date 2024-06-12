@@ -10,53 +10,57 @@ public class ControladorOpciones : MonoBehaviour
     private bool botonOn = true;
     public Text btext;
     public GameObject panelSeguridad;
-    AudioSource[] audioSources;
+    public AudioSource[] audioSources;
     private string musica;
     // Load scene 
-    private void Start() {
+    public void Start()
+    {
         audioSources = FindObjectsOfType<AudioSource>();
-        // Debug.Log(audioSources.Length);
-        musica = PlayerPrefs.GetString("estadoMusica", "null");
-        if(musica == "null"){
-            musica = "ON";
-            PlayerPrefs.SetString("estadoMusica", musica);
-            PlayerPrefs.Save();
-        }
+        musica = PlayerPrefs.GetString("estadoMusica", "ON");
         ComprobarEstadoMusica();
-        
+
     }
 
 
-    public void ComprobarEstadoMusica(){
-        if(audioSources != null){
-            foreach (AudioSource audioSource in audioSources){
-                if(musica == "ON"){
-                    audioSource.mute = false;
-                    btext.text = "ON";
-                }else{
-                    audioSource.mute = true;
-                    btext.text = "OFF";
-                }
+    public void ComprobarEstadoMusica()
+    {
+        if (audioSources != null)
+        {
+            bool musicaEncendida = (musica == "ON");
+            string estadoTexto = (musicaEncendida) ? "ON" : "OFF";
+
+            foreach (AudioSource audioSource in audioSources)
+            {
+                audioSource.mute = !musicaEncendida;
             }
-        }
 
+            btext.text = estadoTexto;
+        }
     }
 
-    public void CambiarModoBoton(){
+    public void CambiarModoBoton()
+    {
         // cambiamos el valor del boton
         botonOn = !botonOn;
-        if (audioSources != null) {
-            foreach (AudioSource audioSource in audioSources){
-                if(botonOn == true){
+        if (audioSources != null)
+        {
+            foreach (AudioSource audioSource in audioSources)
+            {
+                if (botonOn == true)
+                {
                     btext.text = "ON";
-                    if(audioSource != null){
+                    if (audioSource != null)
+                    {
                         audioSource.mute = false;
                     }
                     musica = "ON";
                     PlayerPrefs.SetString("estadoMusica", musica);
-                }else{
+                }
+                else
+                {
                     btext.text = "OFF";
-                    if(audioSource != null){
+                    if (audioSource != null)
+                    {
                         audioSource.mute = true;
                     }
                     musica = "OFF";
@@ -68,11 +72,13 @@ public class ControladorOpciones : MonoBehaviour
         }
     }
 
-    public void IntentarBorrarDatos(){
+    public void IntentarBorrarDatos()
+    {
         panelSeguridad.SetActive(true);
     }
 
-    public void CancelarAccion(){
+    public void CancelarAccion()
+    {
         panelSeguridad.SetActive(false);
     }
 }

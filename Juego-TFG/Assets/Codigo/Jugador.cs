@@ -8,7 +8,7 @@ public class Jugador : MonoBehaviour
     public string selectedCharacter = "null";
 
     // Metodo para cargar personaje 
-    private void Awake(){
+    public void Awake(){
         LoadSelectedCharacter();
     }
     
