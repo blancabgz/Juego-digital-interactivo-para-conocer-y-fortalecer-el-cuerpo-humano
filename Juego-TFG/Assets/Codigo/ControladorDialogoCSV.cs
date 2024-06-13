@@ -11,49 +11,54 @@ using System.Linq;
 
 public class ControladorDialogoCSV : MonoBehaviour
 {
-    private int nivel;
+    public int nivel;
     public string escena;
     // array con los mensajes de la escena
     // public Mensaje[] mensajes;
-    private List<MensajeCSV> mensajes;
+    public List<MensajeCSV> mensajes;
     // array con los actores que participan en la escena
-    private List<PersonajeCSV> actores = new List<PersonajeCSV>();
+    public List<PersonajeCSV> actores = new List<PersonajeCSV>();
     // array con los actores de la escena (niño/a)
-    private List<PersonajeCSV> actorPanel = new List<PersonajeCSV>();
+    public List<PersonajeCSV> actorPanel = new List<PersonajeCSV>();
     // array con los superheroes de la escena
-    private List<PersonajeCSV> superheroePanel = new List<PersonajeCSV>();
+    public List<PersonajeCSV> superheroePanel = new List<PersonajeCSV>();
     // array con las diapositivas
-    private List<PersonajeCSV> imagenes = new List<PersonajeCSV>();
+    public List<PersonajeCSV> imagenes = new List<PersonajeCSV>();
 
-    private string[] lineas;
+    public string[] lineas;
     // guardar si la historia ya se ha reproducido
     // public int historiaVisionada;
     // nombre de la escena a la que vamos a mandar cuando termine la conversacion
-   
+
     public Image avatar;
     public Image avatarInicio;
     public Image avatarSuperheroe;
     public Image diapositiva;
     public Text conversacion;
-    string selectedCharacter;
-    private string nombreEscenaActual;
-    
+    public string selectedCharacter;
+    public string nombreEscenaActual;
 
-    int mensajeActivo;  
 
-    private void Awake(){
+    public int mensajeActivo;
+
+    public void Awake()
+    {
         string nombreEscena = SceneManager.GetActiveScene().name;
         nombreEscenaActual = nombreEscena;
         GameObject controlMusica = GameObject.Find("ControlMusica");
-        if(PlayerPrefs.GetString("estadoMusica", "null") == "OFF"){
-            if(controlMusica != null){
+        if (PlayerPrefs.GetString("estadoMusica", "null") == "OFF")
+        {
+            if (controlMusica != null)
+            {
                 Destroy(controlMusica);
-            }   
+            }
         }
 
-        if(nombreEscena == "Historia"){
-            if (PlayerPrefs.GetInt("HistoriaVisionada",0) == 1){
-                Controlador.EscenaJuego("Juego"); 
+        if (nombreEscena == "Historia")
+        {
+            if (PlayerPrefs.GetInt("HistoriaVisionada", 0) == 1)
+            {
+                Controlador.EscenaJuego("Juego");
             }
         }
 
@@ -65,31 +70,37 @@ public class ControladorDialogoCSV : MonoBehaviour
         LeerArchivo("Assets/Codigo/Datos/jugadorpanel.csv", actorPanel);
         LeerArchivo("Assets/Codigo/Datos/superheroepanel.csv", superheroePanel);
         LeerArchivo("Assets/Codigo/Datos/imagenesDiapositivas.csv", imagenes);
-        
-        
+
+
         // obtengo el personaje que ha elegido el jugador/a
         selectedCharacter = PlayerPrefs.GetString("SelectedCharacter");
         // comprueba si la escena ya ha sido visionada en la escena "Historia"
 
 
     }
-    void Start(){
+    public Start()
+    {
         PersonajePanel();
-        DesplegarMensaje();     
-    }
-
-    // Funcion para que aparezca el sprite del personaje seleccionado por el jugador/a
-    public void PersonajePanel(){
-        if(selectedCharacter == "boy"){
-            avatarInicio.sprite = actorPanel[1].sprite;
-        }else{
-            avatarInicio.sprite = actorPanel[0].sprite;
-        }
-    }
+        DesplegarMensaje();
     
 
+    // Funcion para que aparezca el sprite del personaje seleccionado por el jugador/a
+    public void PersonajePanel()
+    {
+        if (selectedCharacter == "boy")
+        {
+            avatarInicio.sprite = actorPanel[1].sprite;
+        }
+        else
+        {
+            avatarInicio.sprite = atorPanel[0].sprite;
+        }
+    }
+
+
     // Funcion que despliega el mensaje junto con el avatar del personaje que habla
-    public void DesplegarMensaje(){
+    public void DesplegarMensaje()
+    {
         MensajeCSV mensaje = mensajes[mensajeActivo];
         conversacion.text = mensaje.texto;
 
@@ -97,63 +108,79 @@ public class ControladorDialogoCSV : MonoBehaviour
         int id = 0;
         // Debug.Log(actores[0].name);
         //si el personaje seleccionado por el jugador es un chico y contiene el nombre del id la palabra niña
-        if(selectedCharacter == "boy" && actores[mensaje.actor_habla].name.Contains("niña")){
+        if (selectedCharacter == "boy" && actores[mensaje.actor_habla].name.Contains("niña"))
+        {
 
-            string nameActorSeleccionado = actores[mensaje.actor_habla].name.Replace("niña","niño"); // reemplazo la palabra niña por niño
+            string nameActorSeleccionado = actores[mensaje.actor_habla].name.Replace("niña", "niño"); // reemplazo la palabra niña por niño
 
             foreach (PersonajeCSV actorNombre in actores) //busco el id de los actores que sea igual al nombre
             {
-                if(actorNombre.name == nameActorSeleccionado){
+                if (actorNombre.name == nameActorSeleccionado)
+                {
                     id = actorNombre.id;
                     break;
                 }
             }
             actor = actores[id];
-        }else { // si el personaje elegido por el jugador es una chica o es el superheroe obtengo el actor con el id
+        }
+        else
+        { // si el personaje elegido por el jugador es una chica o es el superheroe obtengo el actor con el id
             actor = actores[mensaje.actor_habla];
         }
-        
+
         // avatar del actor que dice el mensaje
         avatar.sprite = actor.sprite;
         // avatar del superheroe de la escena
         avatarSuperheroe.sprite = superheroePanel[mensaje.superheroe].sprite;
         // imagen de la escena
-        if(diapositiva != null){
+        if (diapositiva != null)
+        {
             diapositiva.sprite = imagenes[mensaje.imagen].sprite;
         }
-        
+
     }
 
-    public void SiguienteMensaje(){
+    public void SiguienteMensaje()
+    {
         mensajeActivo++;
         string nombreEscena = SceneManager.GetActiveScene().name;
-        
+
         // si aun hay mensajes por mostrar, continuo
-        if(mensajeActivo < mensajes.Count){
+        if (mensajeActivo < mensajes.Count)
+        {
             DesplegarMensaje();
-        }else{
-            if(nombreEscena == "Historia"){
-                PlayerPrefs.SetInt("HistoriaVisionada",1);
+        }
+        else
+        {
+            if (nombreEscena == "Historia")
+            {
+                PlayerPrefs.SetInt("HistoriaVisionada", 1);
                 Controlador.EscenaJuego("Juego"); // going to menu
-            }else{
+            }
+            else
+            {
                 PlayerPrefs.SetInt("Nivel", nivel);
-                if(ControladorNiveles.instancia != null){
+                if (ControladorNiveles.instancia != null)
+                {
                     ControladorNiveles.instancia.AumentarNivel();
                 }
-                
+
                 Controlador.EscenaJuego(escena);
 
             }
         }
     }
 
-    private void LeerArchivo(string rutaArchivo){
+    private void LeerArchivo(string rutaArchivo)
+    {
         mensajes = new List<MensajeCSV>();
         lineas = File.ReadAllLines(rutaArchivo);
 
-        for (int i = 1; i < lineas.Length; i++){
+        for (int i = 1; i < lineas.Length; i++)
+        {
             string[] valores = lineas[i].Split('-');
-            if (valores.Length >= 6) {
+            if (valores.Length >= 6)
+            {
                 int nivelL = int.Parse(valores[0]);
                 string escenaL = valores[1];
                 int actor_habla = int.Parse(valores[2]);
@@ -161,7 +188,8 @@ public class ControladorDialogoCSV : MonoBehaviour
                 int imagen = int.Parse(valores[4]);
                 string texto = valores[5];
 
-                if(nivelL == nivel && escenaL == nombreEscenaActual){
+                if (nivelL == nivel && escenaL == nombreEscenaActual)
+                {
                     MensajeCSV mensaje = new MensajeCSV(actor_habla, superheroe, imagen, texto);
                     mensajes.Add(mensaje);
                 }
@@ -170,12 +198,15 @@ public class ControladorDialogoCSV : MonoBehaviour
 
     }
 
-    private void LeerArchivo(string rutaArchivo, List<PersonajeCSV> personajes){
+    private void LeerArchivo(string rutaArchivo, List<PersonajeCSV> personajes)
+    {
         lineas = File.ReadAllLines(rutaArchivo);
 
-        for (int i = 1; i < lineas.Length; i++){
+        for (int i = 1; i < lineas.Length; i++)
+        {
             string[] valores = lineas[i].Split(',');
-            if (valores.Length >= 3) {
+            if (valores.Length >= 3)
+            {
                 // Debug.Log(valores[0] + " - " + valores[1] + " - " + valores[2]);
                 int id = int.Parse(valores[0]);
                 string name = valores[1];
@@ -184,13 +215,14 @@ public class ControladorDialogoCSV : MonoBehaviour
                 // Debug.Log(sprite);
                 PersonajeCSV personaje = new PersonajeCSV(id, name, sprite);
                 personajes.Add(personaje);
-                
+
             }
         }
 
     }
 
-    private Sprite CargarSprite(string path){
+    private Sprite CargarSprite(string path)
+    {
         // Cargar un Sprite desde la ruta de archivo en la carpeta Resources
         return Resources.Load<Sprite>(path);
     }
@@ -198,13 +230,15 @@ public class ControladorDialogoCSV : MonoBehaviour
 
 
 [System.Serializable] //mostrar los mensajes en los ajustes
-public class MensajeCSV {
-    public int actor_habla{ get; set; }
-    public int superheroe{ get; set; }
-    public int imagen{ get; set; }
-    public string texto{ get; set; }
+public class MensajeCSV
+{
+    public int actor_habla { get; set; }
+    public int superheroe { get; set; }
+    public int imagen { get; set; }
+    public string texto { get; set; }
 
-    public MensajeCSV(int actor_habla, int superheroe, int imagen, string texto){
+    public MensajeCSV(int actor_habla, int superheroe, int imagen, string texto)
+    {
         this.actor_habla = actor_habla;
         this.superheroe = superheroe;
         this.imagen = imagen;
@@ -215,12 +249,14 @@ public class MensajeCSV {
 
 
 [System.Serializable] //mostrar los actores en los ajustes
-public class PersonajeCSV {
-    public int id{ get; set; }
-    public string name{ get; set; }
-    public Sprite sprite{ get; set; }
+public class PersonajeCSV
+{
+    public int id { get; set; }
+    public string name { get; set; }
+    public Sprite sprite { get; set; }
 
-    public PersonajeCSV(int id, string name, Sprite sprite){
+    public PersonajeCSV(int id, string name, Sprite sprite)
+    {
         this.id = id;
         this.name = name;
         this.sprite = sprite;

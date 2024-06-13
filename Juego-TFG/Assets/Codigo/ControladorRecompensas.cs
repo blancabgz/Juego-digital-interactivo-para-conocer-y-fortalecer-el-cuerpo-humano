@@ -8,10 +8,10 @@ using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 public class ControladorRecompensas : MonoBehaviour
-{   
+{
 
     // numero de slots en escena
-    private int numSlots; 
+    private int numSlots;
     //hueco del inventario
     public GameObject[] slots;
     // contenedor del inventario de los slots
@@ -22,43 +22,53 @@ public class ControladorRecompensas : MonoBehaviour
     private string[] lineas;
     public GameObject imagenPremio;
     private int nivelActual;
-    
 
-    void Awake(){
+
+    void Awake()
+    {
         ControlMusica.EstadoMusica();
         LeerArchivo("Assets/Codigo/Datos/recompensas.csv");
         nombreEscenaActual = SceneManager.GetActiveScene().name;
         // Debug.Log("El nombre de la escena actual es: " + nombreEscenaActual);
     }
 
-    void Start(){
-        
-        if(imagenPremio){
+    void Start()
+    {
+
+        if (imagenPremio)
+        {
             AsignarRecomenpensaNivel();
         }
 
-        if(nombreEscenaActual == "Medallas"){
+        if (nombreEscenaActual == "Medallas")
+        {
             // Filtramos por el nombre de la escena
             recompensasEscena = recompensas.Where(recompensa => recompensa.tipo == "medalla").ToList();
-        }else if(nombreEscenaActual == "Objetos"){
+        }
+        else if (nombreEscenaActual == "Objetos")
+        {
             recompensasEscena = recompensas.Where(recompensa => recompensa.tipo == "objeto").ToList();
         }
 
-        if(inventario != null){
+        if (inventario != null)
+        {
             RellenarPanel();
         }
     }
 
-    private void AsignarRecomenpensaNivel(){
+    private void AsignarRecomenpensaNivel()
+    {
         Image imagen = imagenPremio.GetComponent<Image>();
         nivelActual = PlayerPrefs.GetInt("Nivel", 1);
         imagen.sprite = recompensas[nivelActual - 1].sprite;
-        if(ControladorNiveles.instancia != null){
+        if (ControladorNiveles.instancia != null)
+        {
             ControladorNiveles.instancia.AumentarNivel();
         }
     }
 
-    private void RellenarPanel(){
+    private void RellenarPanel()
+    {
         // cuenta el numero de slots del inventario
         numSlots = inventario.transform.childCount;
         // crear un array de slots 
@@ -72,7 +82,8 @@ public class ControladorRecompensas : MonoBehaviour
 
             // si existe la instancia ControladorNiveles y el nivel actual es mas alto, se desbloquea aumentando su opacidad
             // -1 porque se desbloquea hasta el nivel pero esta completado hasta el anterior
-            if(ControladorNiveles.instancia != null && (ControladorNiveles.instancia.NivelActual() - 1) >= recompensasEscena[i].nivel ){
+            if (ControladorNiveles.instancia != null && (ControladorNiveles.instancia.NivelActual() - 1) >= recompensasEscena[i].nivel)
+            {
                 // Como el color es de solo lectura, hay que hacer un cambio creando una nueva 
                 // instancia
                 Color nuevaOpacidad = imagenSlot.color;
@@ -82,14 +93,17 @@ public class ControladorRecompensas : MonoBehaviour
         }
     }
 
-    private void LeerArchivo(string rutaArchivo){
+    private void LeerArchivo(string rutaArchivo)
+    {
 
         recompensas = new List<Recompensa>();
 
         lineas = File.ReadAllLines(rutaArchivo);
-        for (int i = 1; i < lineas.Length; i++){
+        for (int i = 1; i < lineas.Length; i++)
+        {
             string[] valores = lineas[i].Split(',');
-            if(valores.Length >= 3){
+            if (valores.Length >= 3)
+            {
 
                 int nivel = int.Parse(valores[0]);
                 string tipo = valores[1];
@@ -101,7 +115,8 @@ public class ControladorRecompensas : MonoBehaviour
         }
     }
 
-    private Sprite CargarSprite(string path){
+    private Sprite CargarSprite(string path)
+    {
         // Cargar un Sprite desde la ruta de archivo en la carpeta Resources
         return Resources.Load<Sprite>(path);
     }
@@ -109,18 +124,19 @@ public class ControladorRecompensas : MonoBehaviour
 
 [System.Serializable]
 public class Recompensa
+{
+    public int nivel { get; set; }
+    public string tipo { get; set; }
+    public Sprite sprite { get; set; }
+
+    public Recompensa(int nivel, string nombre, Sprite sprite)
     {
-        public int nivel { get; set; }
-        public string tipo{ get; set; }
-        public Sprite sprite{ get; set; }
-
-        public Recompensa(int nivel, string nombre, Sprite sprite){
-            this.nivel = nivel;
-            this.tipo = nombre;
-            this.sprite = sprite;
-        }
-
+        this.nivel = nivel;
+        this.tipo = nombre;
+        this.sprite = sprite;
     }
+
+}
 
 
 

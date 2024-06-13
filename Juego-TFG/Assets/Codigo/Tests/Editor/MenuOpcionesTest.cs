@@ -5,7 +5,8 @@ using UnityEngine;
 using UnityEngine.TestTools;
 using UnityEngine.UI;
 
-public class MenuOpcionesTest{
+public class MenuOpcionesTest
+{
     private GameObject controladorGameObject;
     private ControladorOpciones controladorOpciones;
     private AudioSource audioSource;
@@ -13,7 +14,8 @@ public class MenuOpcionesTest{
     private GameObject panelSeguridad;
 
     [SetUp]
-    public void Setup(){
+    public void Setup()
+    {
         controladorGameObject = new GameObject();
         controladorOpciones = controladorGameObject.AddComponent<ControladorOpciones>();
         audioSource = controladorGameObject.AddComponent<AudioSource>();
@@ -30,20 +32,24 @@ public class MenuOpcionesTest{
     }
 
     [TearDown]
-    public void Teardown(){
-        if (controladorOpciones != null){
+    public void Teardown()
+    {
+        if (controladorOpciones != null)
+        {
             Object.DestroyImmediate(controladorOpciones.gameObject);
         }
 
-        if (panelSeguridad != null){
+        if (panelSeguridad != null)
+        {
             Object.DestroyImmediate(panelSeguridad);
         }
 
-        if (buttonText != null){
+        if (buttonText != null)
+        {
             Object.DestroyImmediate(buttonText.gameObject);
         }
 
-        PlayerPrefs.DeleteAll(); 
+        PlayerPrefs.DeleteAll();
     }
 
     [Test]
@@ -78,5 +84,5 @@ public class MenuOpcionesTest{
         Assert.IsFalse(controladorOpciones.panelSeguridad.activeSelf);
     }
 
-    
+
 }
