@@ -319,12 +319,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 930e34a5d694ac14cb064bac7d735ae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escena: PreguntaOblicuo
+  nivel: 0
+  escena: Oblicuo
+  mensajes: []
+  actores: []
+  actorPanel: []
+  superheroePanel: []
+  imagenes: []
+  lineas: []
   avatar: {fileID: 1397982207}
   avatarInicio: {fileID: 338479597}
   avatarSuperheroe: {fileID: 1870251295}
   diapositiva: {fileID: 948334242}
   conversacion: {fileID: 1205313336}
+  selectedCharacter: 
+  nombreEscenaActual: 
+  mensajeActivo: 0
 --- !u!1 &502348837
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,8 +7,6 @@ using TMPro;
 using System;
 using System.IO;
 
-using UnityEngine;
-using UnityEngine.UI;
 using System.Net;
 using System.Net.Mail;
 using System.Net.Security;
@@ -22,7 +20,7 @@ public class Calificaciones : MonoBehaviour{
     public string mensaje = "";
     private const string PUNTUACION_NIVEL = "PuntuacionNivel_";
     private const int NUM_NIVELES = 22;
-    private Usuario usuario;
+    public Usuario usuario;
 
     
     

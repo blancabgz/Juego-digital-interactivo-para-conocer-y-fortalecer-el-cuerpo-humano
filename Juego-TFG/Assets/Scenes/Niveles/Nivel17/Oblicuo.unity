@@ -628,6 +628,85 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &758041298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 758041299}
+  - component: {fileID: 758041301}
+  - component: {fileID: 758041300}
+  m_Layer: 5
+  m_Name: Text (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &758041299
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758041298}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1504800689}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0.000030518}
+  m_SizeDelta: {x: 1115.8484, y: 218.4387}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &758041300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758041298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: fa29623f44370ff45bf8b8971524e512, type: 3}
+    m_FontSize: 80
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 100
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "\xBFQue ejercicio necesito hacer para trabajar los oblicuos?"
+--- !u!222 &758041301
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758041298}
+  m_CullTransparentMesh: 1
 --- !u!1 &921883126
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,7 +793,6 @@ GameObject:
   - component: {fileID: 967269157}
   - component: {fileID: 967269159}
   - component: {fileID: 967269158}
-  - component: {fileID: 967269160}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -784,49 +862,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 967269156}
   m_CullTransparentMesh: 1
---- !u!114 &967269160
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 967269156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3c081fa1f3cf4d4f982d4b29d4f5dea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nivel: 17
-  panelFinal: {fileID: 0}
-  respuestas:
-  - id: 0
-    musculo: Gluteo
-    imagen: {fileID: 21300000, guid: b5013eeeefcb3324886da9970b4f2ebe, type: 3}
-  - id: 1
-    musculo: Hombro
-    imagen: {fileID: 21300000, guid: edc1755a858e8a64999c125604daef85, type: 3}
-  - id: 2
-    musculo: Oblicuo
-    imagen: {fileID: 21300000, guid: 2b067fb8b4efa58488ae0e326329ca57, type: 3}
-  imagenes:
-  - id: 0
-    sprite: {fileID: 21300000, guid: 0a47ad41f1377be4ca0ae78652c529e9, type: 3}
-  - id: 1
-    sprite: {fileID: 21300000, guid: d97a0c1e0b6b4a3498a9ef88e18465f6, type: 3}
-  - id: 2
-    sprite: {fileID: 21300000, guid: af4ce651d480a934fbc60e10a06db9af, type: 3}
-  - id: 3
-    sprite: {fileID: 21300000, guid: af4ce651d480a934fbc60e10a06db9af, type: 3}
-  resp1: {fileID: 649120442}
-  resp2: {fileID: 1683214145}
-  resp3: {fileID: 319577855}
-  validate1: {fileID: 370645618}
-  validate2: {fileID: 1589949770}
-  validate3: {fileID: 1486606070}
-  musculo: Oblicuo
-  imagenPanel: {fileID: 921883126}
-  botonSiguiente: {fileID: 97172446}
-  escenaSiguiente: PreguntaAbdomen
 --- !u!1 &1010863238
 GameObject:
   m_ObjectHideFlags: 0
@@ -1050,6 +1085,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 967269157}
+  - {fileID: 1504800689}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1149,6 +1185,86 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1416267336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1416267338}
+  - component: {fileID: 1416267337}
+  m_Layer: 0
+  m_Name: ControladorIdentificaMusculo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1416267337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416267336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3c081fa1f3cf4d4f982d4b29d4f5dea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nivel: 17
+  puntos: 0
+  numFallos: 0
+  numIntentos: 0
+  multiplicador: 0
+  panelFinal: {fileID: 0}
+  respuestas:
+  - id: 0
+    musculo: Gluteo
+    imagen: {fileID: 21300000, guid: b5013eeeefcb3324886da9970b4f2ebe, type: 3}
+  - id: 1
+    musculo: Hombro
+    imagen: {fileID: 21300000, guid: edc1755a858e8a64999c125604daef85, type: 3}
+  - id: 2
+    musculo: Oblicuo
+    imagen: {fileID: 21300000, guid: 2b067fb8b4efa58488ae0e326329ca57, type: 3}
+  imagenes:
+  - id: 0
+    sprite: {fileID: 21300000, guid: 0a47ad41f1377be4ca0ae78652c529e9, type: 3}
+  - id: 1
+    sprite: {fileID: 21300000, guid: d97a0c1e0b6b4a3498a9ef88e18465f6, type: 3}
+  - id: 2
+    sprite: {fileID: 21300000, guid: af4ce651d480a934fbc60e10a06db9af, type: 3}
+  - id: 3
+    sprite: {fileID: 21300000, guid: af4ce651d480a934fbc60e10a06db9af, type: 3}
+  resp1: {fileID: 649120442}
+  resp2: {fileID: 1683214145}
+  resp3: {fileID: 319577855}
+  validate1: {fileID: 370645618}
+  validate2: {fileID: 1589949770}
+  validate3: {fileID: 1486606070}
+  panelPregunta: {fileID: 0}
+  musculo: Oblicuo
+  imagenPanel: {fileID: 921883126}
+  botonSiguiente: {fileID: 97172446}
+  escenaSiguiente: Abdomen
+--- !u!4 &1416267338
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416267336}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 585.24945, y: 345.93524, z: 3.5366364}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1486606070
 GameObject:
   m_ObjectHideFlags: 0
@@ -1223,6 +1339,139 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1486606070}
+  m_CullTransparentMesh: 1
+--- !u!1 &1504800688
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1504800689}
+  - component: {fileID: 1504800692}
+  - component: {fileID: 1504800691}
+  - component: {fileID: 1504800690}
+  m_Layer: 5
+  m_Name: Panelp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1504800689
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504800688}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 758041299}
+  m_Father: {fileID: 1150778335}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0.000061035156}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1504800690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504800688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1504800691}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1416267337}
+        m_TargetAssemblyTypeName: IdentificaMusculo, Codigo
+        m_MethodName: OcultarPregunta
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1504800691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504800688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: f94b12ebd032edc4db4e90766d054cfb, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1504800692
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504800688}
   m_CullTransparentMesh: 1
 --- !u!1 &1589949770
 GameObject:
@@ -1428,3 +1677,4 @@ SceneRoots:
   - {fileID: 1150778335}
   - {fileID: 157059781}
   - {fileID: 1010863240}
+  - {fileID: 1416267338}

@@ -840,6 +840,12 @@ MonoBehaviour:
     verdadera: 0
   pagina: Nivel3.1
   barraVida: {fileID: 2087164769}
+  vidaActual: 4
+  vidaMaxima: 4
+  indicePregAct: 0
+  pregunta: {fileID: 0}
+  textoPregunta: {fileID: 0}
+  villano: {fileID: 177839529}
 --- !u!1 &420161739
 GameObject:
   m_ObjectHideFlags: 0

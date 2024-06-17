@@ -46,6 +46,13 @@ public class ControlMusica : MonoBehaviour
                 Destroy(controlMusica);
             }   
             
+        }else{
+            if(controlMusica != null){
+                AudioSource audioSource = controlMusica.GetComponent<AudioSource>();
+                if(audioSource != null){
+                    audioSource.volume = 0.5f;
+                }
+            } 
         }
     }
 

@@ -11,18 +11,21 @@ public class LuchaContraElVillano : Minijuego
     public Pregunta[] preguntas;
     public string pagina;
     public Image barraVida;
-    private float vidaActual = 4;
-    private float vidaMaxima = 4;
-    private int indicePregAct = 0;
-    private GameObject pregunta;
-    private TextMeshProUGUI textoPregunta;
-    private Animator villano;
+    public float vidaActual = 4;
+    public float vidaMaxima = 4;
+    public int indicePregAct = 0;
+    public GameObject pregunta;
+    public TextMeshProUGUI textoPregunta;
+    public Animator villano;
 
 
     void Awake(){
         ControlMusica.EstadoMusica();
         villano = GameObject.Find("PersonajeV").GetComponent<Animator>();
-        villano.enabled = false;
+        if(villano != null){
+            villano.enabled = false;
+        }
+        
         
     }
     
@@ -60,9 +63,10 @@ public class LuchaContraElVillano : Minijuego
         if(respuesta == preguntas[indicePregAct].verdadera){ // si coincide la respuesta
             vidaActual--; // bajamos la vida 
             barraVida.fillAmount = vidaActual / vidaMaxima; // actualizamos la barra de vida
-            villano.enabled = true;
-            PlayAnimacion();
-            
+            if(villano){
+                villano.enabled = true;
+                PlayAnimacion();
+            }
             
 
             // Si ha vencido
@@ -89,12 +93,23 @@ public class LuchaContraElVillano : Minijuego
         villano.Play("GolpeEnemigo");
     }
 
+    public int GetNumFallos(){
+        return base.numFallos;
+    }
+
+    public void SetNumFallos(int numFallos){
+        base.numFallos = numFallos;
+    }
+
+    
 }
 
-
-    [System.Serializable]
+[System.Serializable]
     public class Pregunta {
         public string pregunta;
         public bool verdadera;
     }
+
+
+    
 

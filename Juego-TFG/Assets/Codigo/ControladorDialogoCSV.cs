@@ -78,12 +78,12 @@ public class ControladorDialogoCSV : MonoBehaviour
 
 
     }
-    public Start()
+    public void Start()
     {
         PersonajePanel();
         DesplegarMensaje();
     
-
+    }
     // Funcion para que aparezca el sprite del personaje seleccionado por el jugador/a
     public void PersonajePanel()
     {
@@ -93,7 +93,7 @@ public class ControladorDialogoCSV : MonoBehaviour
         }
         else
         {
-            avatarInicio.sprite = atorPanel[0].sprite;
+            avatarInicio.sprite = actorPanel[0].sprite;
         }
     }
 
@@ -227,7 +227,6 @@ public class ControladorDialogoCSV : MonoBehaviour
         return Resources.Load<Sprite>(path);
     }
 }
-
 
 [System.Serializable] //mostrar los mensajes en los ajustes
 public class MensajeCSV

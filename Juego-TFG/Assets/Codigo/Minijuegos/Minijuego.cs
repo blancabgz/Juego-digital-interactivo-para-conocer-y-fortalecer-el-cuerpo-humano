@@ -10,16 +10,16 @@ using UnityEngine;
 public class Minijuego : MonoBehaviour{
 
     public int nivel;
-    protected int puntos;   
-    protected int numFallos;
-    protected int numIntentos;
-    protected int multiplicador;
+    public int puntos;   
+    public int numFallos;
+    public int numIntentos;
+    public int multiplicador;
     public GameObject panelFinal;
     
     private const int NUM_NIVELES = 22;
 
     
-    protected void MezclarElementos<T>(T[] array)
+    public void MezclarElementos<T>(T[] array)
     {
         for (int i = 0; i < array.Length; i++)
         {
@@ -30,7 +30,7 @@ public class Minijuego : MonoBehaviour{
         }
     }
 
-    protected void MezclarElementos<T>(List<T> lista){
+    public void MezclarElementos<T>(List<T> lista){
         for (int i = 0; i < lista.Count; i++){
             int indiceAleatorio = Random.Range(0, lista.Count);
             T temp = lista[indiceAleatorio];
@@ -46,7 +46,7 @@ public class Minijuego : MonoBehaviour{
      * Este método se utiliza para aumentar el número de fallos registrado.
     */
 
-    protected void AumentarNumeroFallos(){
+    public void AumentarNumeroFallos(){
         // Debug.Log("Numero de fallos antes" + numFallos);
         numFallos++;
     }
@@ -56,7 +56,7 @@ public class Minijuego : MonoBehaviour{
      * Este método se utiliza para disminuir el número de fallos registrado.
     */
 
-    protected void DisminuirNumeroFallos(){
+    public void DisminuirNumeroFallos(){
         // Debug.Log("Numero de fallos antes" + numFallos);
         numFallos--;
     }
@@ -68,7 +68,7 @@ public class Minijuego : MonoBehaviour{
      *
     */
 
-    protected void GuardarPuntuacion(int pantalla){
+    public void GuardarPuntuacion(int pantalla){
         ControladorNiveles.GuardarNivel(nivel,pantalla);
         Calificaciones.GuardarPuntuacion(nivel, puntos);
     }    
@@ -78,11 +78,9 @@ public class Minijuego : MonoBehaviour{
      *
      * Este método muestra el panel final una vez el juego ha finalizado
     */
-    protected void MostrarPanelFinal(){
+    public void MostrarPanelFinal(){
         if (panelFinal != null){
             panelFinal.SetActive(true);
-        }else{
-            Debug.LogError("El panel final no ha sido asignado en la vista");
         }
     }
 
@@ -92,7 +90,7 @@ public class Minijuego : MonoBehaviour{
      *
      * Este método calcula la puntuación final obtenida por el jugador dependiendo de los fallos cometidos durante el juego
     */
-    protected void CalcularPuntuacionFinal(int multiplicador){
+    public void CalcularPuntuacionFinal(int multiplicador){
         puntos -= numFallos * multiplicador;
         if(puntos < 0){
             puntos = 0;
@@ -107,13 +105,13 @@ public class Minijuego : MonoBehaviour{
      * @param intentos Numero de intentos actuales
     */
 
-    protected void CalcularPuntuacionFinalIntentos(){
+    public void CalcularPuntuacionFinalIntentos(){
         puntos -= (6 - numIntentos) * 2;  
     }    
 
     // Funcion que calcula la puntuacion para la segunda ronda de juego. 
 
-    protected void CalcularPuntuacionRonda(){
+    public void CalcularPuntuacionRonda(){
         puntos = 10;
         if(numFallos == 2){
             puntos -= 10;
@@ -126,7 +124,7 @@ public class Minijuego : MonoBehaviour{
 
     // Funcion que calcula la puntuacion para la segunda ronda de juego. 
 
-    protected void CalcularPuntuacionSegundaRonda(){
+    public void CalcularPuntuacionSegundaRonda(){
         if(numFallos == 0){
             puntos += 10;
         }else if(numFallos == 1){
@@ -138,7 +136,7 @@ public class Minijuego : MonoBehaviour{
 
     // Funcion calcular puntuacion con 4 opciones
 
-    protected void CalcularPuntuacion3Opciones(){
+    public void CalcularPuntuacion3Opciones(){
         if(numFallos == 3){
             puntos -= 10;
         }else if(numFallos == 2){
@@ -153,7 +151,7 @@ public class Minijuego : MonoBehaviour{
     /// numFallos --> El numero de fallos cometidos por el jugador.
     /// max_fallos --> El maximo de fallos posibles.
     /// int return --> La puntuacion calculada, redondeada al entero mas cercano.
-    protected int CalcularPuntuacionProporcion(int max_fallos){
+    public int CalcularPuntuacionProporcion(int max_fallos){
         float proporcion = (float)numFallos / max_fallos;
         float puntuacion = 10.0f - proporcion * 10.0f;
         return Redondear(puntuacion);
@@ -165,7 +163,7 @@ public class Minijuego : MonoBehaviour{
     }
 
     // Funcion que obtiene la puntuacion 
-    protected void ObtenerPuntuacionNivel(){
+    public void ObtenerPuntuacionNivel(){
 
         // Si el nivel ya ha sido completado 
         if(ControladorNiveles.CargarNivel(nivel) == 2){
@@ -185,7 +183,7 @@ public class Minijuego : MonoBehaviour{
     // Funcion que redondea el numero flotante al entero mas cercano
     // puntuacion --> El numero float para redondear
     // return int --> El numero redondeada
-    private int Redondear(float puntuacion) {
+    public int Redondear(float puntuacion) {
         int parteEntera = (int) puntuacion;
         float parteDecimal = puntuacion - parteEntera;
 
@@ -201,7 +199,7 @@ public class Minijuego : MonoBehaviour{
 
     
 
-    protected Sprite CargarSprite(string archivo, string spriteName){
+    public Sprite CargarSprite(string archivo, string spriteName){
         Sprite[] sprites = Resources.LoadAll<Sprite>(archivo);
         // Cargar un Sprite desde la ruta de archivo en la carpeta Resources
         foreach(var sprite in sprites){

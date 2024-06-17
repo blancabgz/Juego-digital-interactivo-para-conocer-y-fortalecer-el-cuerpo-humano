@@ -945,7 +945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   min: 0
-  seg: 10
+  seg: 30
   tiempo: {fileID: 437723140}
 --- !u!1 &1536470079
 GameObject:

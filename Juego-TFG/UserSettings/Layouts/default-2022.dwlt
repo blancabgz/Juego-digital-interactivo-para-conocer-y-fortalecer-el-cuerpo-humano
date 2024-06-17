@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 868.8
   m_ShowMode: 4
-  m_Title: Test Runner
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 115
+  controlID: 45
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1235.2
-    height: 448
+    height: 628.8
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
@@ -188,12 +188,12 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 246.4
-    height: 448
+    height: 628.8
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 15}
+  m_ActualView: {fileID: 13}
   m_Panes:
-  - {fileID: 15}
+  - {fileID: 13}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &9
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SimulatorWindow
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -214,15 +214,15 @@ MonoBehaviour:
     x: 246.4
     y: 0
     width: 988.7999
-    height: 448
-  m_MinSize: {x: 202, y: 221}
+    height: 628.8
+  m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 14}
   - {fileID: 22}
   m_Selected: 1
-  m_LastSelected: 0
+  m_LastSelected: 1
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -233,26 +233,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: TestRunnerWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 448
+    y: 628.8
     width: 1235.2
-    height: 370.8
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+    height: 190
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 12}
   m_Panes:
+  - {fileID: 12}
+  - {fileID: 15}
   - {fileID: 16}
   - {fileID: 17}
-  - {fileID: 19}
-  - {fileID: 13}
-  - {fileID: 12}
-  m_Selected: 4
-  m_LastSelected: 0
+  - {fileID: 18}
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -272,13 +272,13 @@ MonoBehaviour:
     y: 0
     width: 300.80005
     height: 818.8
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 20}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 19}
   m_Panes:
+  - {fileID: 19}
   - {fileID: 20}
   - {fileID: 21}
-  - {fileID: 18}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &12
@@ -289,22 +289,22 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 13401, guid: 0000000000000000e000000000000000, type: 0}
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
-    m_Text: Test Runner
-    m_Image: {fileID: 0}
+    m_Text: Project
+    m_Image: {fileID: -5179483145760003458, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 521.60004
+    y: 702.4
     width: 1234.2
-    height: 349.8
+    height: 169
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -315,488 +315,118 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
-  m_Spl:
-    ID: 195
-    splitterInitialOffset: 382
-    currentActiveSplitter: -1
-    realSizes:
-    - 384.00012
-    - 850.3999
-    relativeSizes:
-    - 0.3110824
-    - 0.68891764
-    minSizes:
-    - 32
-    - 32
-    maxSizes:
-    - 0
-    - 0
-    lastTotalSize: 1234.4
-    splitSize: 6
-    xOffset: 0
-    m_Version: 1
-    oldRealSizes: 
-    oldMinSizes: 
-    oldMaxSizes: 
-    oldSplitSize: 0
-  m_TestTypeToolbarIndex: 0
-  m_PlayModeTestListGUI:
-    m_Window: {fileID: 12}
-    m_NewResultList:
-    - id: 1005
-      uniqueId: '[Juego-TFG][suite]'
-      name: Juego-TFG
-      fullName: Juego-TFG
-      resultStatus: 1
-      duration: 0.083508
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 
-      parentUniqueId: 
-    - id: 1003
-      uniqueId: '[Tests][E:/TFG-JUEGO/Juego-TFG/Library/ScriptAssemblies/Tests.dll][suite]'
-      name: Tests.dll
-      fullName: E:/TFG-JUEGO/Juego-TFG/Library/ScriptAssemblies/Tests.dll
-      resultStatus: 1
-      duration: 0.0608181
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1000
-      parentUniqueId: '[Juego-TFG][suite]'
-    - id: 1001
-      uniqueId: Tests.dll/[Tests][EleccionPersonajeTest][suite]
-      name: EleccionPersonajeTest
-      fullName: EleccionPersonajeTest
-      resultStatus: 1
-      duration: 0.0379097
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1010
-      parentUniqueId: '[Tests][E:/TFG-JUEGO/Juego-TFG/Library/ScriptAssemblies/Tests.dll][suite]'
-    - id: 1004
-      uniqueId: Tests.dll/EleccionPersonajeTest/[Tests][EleccionPersonajeTest.CargarJugadorSeleccionado]
-      name: CargarJugadorSeleccionado
-      fullName: EleccionPersonajeTest.CargarJugadorSeleccionado
-      resultStatus: 1
-      duration: 0.0212499
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/[Tests][EleccionPersonajeTest][suite]
-    - id: 1003
-      uniqueId: Tests.dll/EleccionPersonajeTest/[Tests][EleccionPersonajeTest.GuardarPersonajeSeleccionado]
-      name: GuardarPersonajeSeleccionado
-      fullName: EleccionPersonajeTest.GuardarPersonajeSeleccionado
-      resultStatus: 1
-      duration: 0.0010311
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/[Tests][EleccionPersonajeTest][suite]
-    - id: 1002
-      uniqueId: Tests.dll/EleccionPersonajeTest/[Tests][EleccionPersonajeTest.PersonajeSeleccionado]
-      name: PersonajeSeleccionado
-      fullName: EleccionPersonajeTest.PersonajeSeleccionado
-      resultStatus: 1
-      duration: 0.0007625
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: Tests.dll/[Tests][EleccionPersonajeTest][suite]
-    - id: 1005
-      uniqueId: Tests.dll/[Tests][MenuNivelesTest][suite]
-      name: MenuNivelesTest
-      fullName: MenuNivelesTest
-      resultStatus: 1
-      duration: 2.3847904
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1017
-      parentUniqueId: '[Tests][E:/TFG-JUEGO/Juego-TFG/Library/ScriptAssemblies/Tests.dll][suite]'
-    - id: 1008
-      uniqueId: Tests.dll/MenuNivelesTest/[Tests][MenuNivelesTest.AumentarNivelCorrecto]
-      name: AumentarNivelCorrecto
-      fullName: MenuNivelesTest.AumentarNivelCorrecto
-      resultStatus: 1
-      duration: 0.003021
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1005
-      parentUniqueId: Tests.dll/[Tests][MenuNivelesTest][suite]
-    - id: 1011
-      uniqueId: Tests.dll/MenuNivelesTest/[Tests][MenuNivelesTest.CargarEscenaCorrecta]
-      name: CargarEscenaCorrecta
-      fullName: MenuNivelesTest.CargarEscenaCorrecta
-      resultStatus: 1
-      duration: 0.6822676
-      messages: 
-      output: 'Nivel1
-
-'
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1005
-      parentUniqueId: Tests.dll/[Tests][MenuNivelesTest][suite]
-    - id: 1006
-      uniqueId: Tests.dll/MenuNivelesTest/[Tests][MenuNivelesTest.DesactivarTodosBotones]
-      name: DesactivarTodosBotones
-      fullName: MenuNivelesTest.DesactivarTodosBotones
-      resultStatus: 1
-      duration: 0.0026318
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1005
-      parentUniqueId: Tests.dll/[Tests][MenuNivelesTest][suite]
-    - id: 1007
-      uniqueId: Tests.dll/MenuNivelesTest/[Tests][MenuNivelesTest.DesbloquearNiveles]
-      name: DesbloquearNiveles
-      fullName: MenuNivelesTest.DesbloquearNiveles
-      resultStatus: 1
-      duration: 0.0016261
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1005
-      parentUniqueId: Tests.dll/[Tests][MenuNivelesTest][suite]
-    - id: 1010
-      uniqueId: Tests.dll/MenuNivelesTest/[Tests][MenuNivelesTest.GuardarNivelCompletado]
-      name: GuardarNivelCompletado
-      fullName: MenuNivelesTest.GuardarNivelCompletado
-      resultStatus: 1
-      duration: 0.0011289
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1005
-      parentUniqueId: Tests.dll/[Tests][MenuNivelesTest][suite]
-    - id: 1009
-      uniqueId: Tests.dll/MenuNivelesTest/[Tests][MenuNivelesTest.NivelActualCorrecto]
-      name: NivelActualCorrecto
-      fullName: MenuNivelesTest.NivelActualCorrecto
-      resultStatus: 1
-      duration: 0.0009937
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1005
-      parentUniqueId: Tests.dll/[Tests][MenuNivelesTest][suite]
-    - id: 1012
-      uniqueId: Tests.dll/[Tests][MenuOpcionesTest][suite]
-      name: MenuOpcionesTest
-      fullName: MenuOpcionesTest
-      resultStatus: 1
-      duration: 0.0565358
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1019
-      parentUniqueId: '[Tests][E:/TFG-JUEGO/Juego-TFG/Library/ScriptAssemblies/Tests.dll][suite]'
-    - id: 1014
-      uniqueId: Tests.dll/MenuOpcionesTest/[Tests][MenuOpcionesTest.CancelarAccionBorrarDatos]
-      name: CancelarAccionBorrarDatos
-      fullName: MenuOpcionesTest.CancelarAccionBorrarDatos
-      resultStatus: 1
-      duration: 0.0319116
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1012
-      parentUniqueId: Tests.dll/[Tests][MenuOpcionesTest][suite]
-    - id: 1013
-      uniqueId: Tests.dll/MenuOpcionesTest/[Tests][MenuOpcionesTest.ComprobarEstadoMusicaCorrecto]
-      name: ComprobarEstadoMusicaCorrecto
-      fullName: MenuOpcionesTest.ComprobarEstadoMusicaCorrecto
-      resultStatus: 1
-      duration: 0.0059808
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1012
-      parentUniqueId: Tests.dll/[Tests][MenuOpcionesTest][suite]
-    - id: 1013
-      uniqueId: Tests.dll/MenuOpcionesTest/[Tests][MenuOpcionesTest.IntentarBorrarDatosTest]
-      name: IntentarBorrarDatosTest
-      fullName: MenuOpcionesTest.IntentarBorrarDatosTest
-      resultStatus: 1
-      duration: 0.0009023
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1012
-      parentUniqueId: Tests.dll/[Tests][MenuOpcionesTest][suite]
-    - id: 1001
-      uniqueId: Tests.dll/[Tests][ObtenerDatosUserTest][suite]
-      name: ObtenerDatosUserTest
-      fullName: ObtenerDatosUserTest
-      resultStatus: 1
-      duration: 0.0601181
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1003
-      parentUniqueId: '[Tests][E:/TFG-JUEGO/Juego-TFG/Library/ScriptAssemblies/Tests.dll][suite]'
-    - id: 1014
-      uniqueId: Tests.dll/ObtenerDatosUserTest/[Tests][ObtenerDatosUserTest.AlmacenaEmailCorrectamente]
-      name: AlmacenaEmailCorrectamente
-      fullName: ObtenerDatosUserTest.AlmacenaEmailCorrectamente
-      resultStatus: 1
-      duration: 0.0388554
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1012
-      parentUniqueId: Tests.dll/[Tests][ObtenerDatosUserTest][suite]
-    - id: 1013
-      uniqueId: Tests.dll/ObtenerDatosUserTest/[Tests][ObtenerDatosUserTest.AlmacenaNombreCorrectamente]
-      name: AlmacenaNombreCorrectamente
-      fullName: ObtenerDatosUserTest.AlmacenaNombreCorrectamente
-      resultStatus: 1
-      duration: 0.0006862
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1012
-      parentUniqueId: Tests.dll/[Tests][ObtenerDatosUserTest][suite]
-    - id: 1016
-      uniqueId: Tests.dll/ObtenerDatosUserTest/[Tests][ObtenerDatosUserTest.CambiaDeEscenaSiCamposEstanLlenos]
-      name: CambiaDeEscenaSiCamposEstanLlenos
-      fullName: ObtenerDatosUserTest.CambiaDeEscenaSiCamposEstanLlenos
-      resultStatus: 1
-      duration: 0.0009473
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1012
-      parentUniqueId: Tests.dll/[Tests][ObtenerDatosUserTest][suite]
-    - id: 1015
-      uniqueId: Tests.dll/ObtenerDatosUserTest/[Tests][ObtenerDatosUserTest.MuestraErrorSiCamposEstanVacios]
-      name: MuestraErrorSiCamposEstanVacios
-      fullName: ObtenerDatosUserTest.MuestraErrorSiCamposEstanVacios
-      resultStatus: 1
-      duration: 0.0005772
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1012
-      parentUniqueId: Tests.dll/[Tests][ObtenerDatosUserTest][suite]
-    m_ResultText: MenuOpcionesTest (0,057s)
-    m_ResultStacktrace: 
-    m_TestListState:
-      scrollPos: {x: 0, y: 44}
-      m_SelectedIDs: f24c2809
-      m_LastClickedID: 153636082
-      m_ExpandedIDs: aa46498ed093fbc8f24c2809bab3db0c0e6bbc3c12e74d59ffffff7f
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_UserData: 0
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 11
-        m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
-      m_SearchString: 
-    m_TestRunnerUIFilter:
-      PassedHidden: 0
-      FailedHidden: 0
-      NotRunHidden: 0
-      m_SearchString: 
-      selectedCategoryMask: 0
-      availableCategories:
-      - Uncategorized
-    m_SelectedOption: 0
-  m_EditModeTestListGUI:
-    m_Window: {fileID: 12}
-    m_NewResultList:
-    - id: 1000
-      uniqueId: '[Juego-TFG][suite]'
-      name: Juego-TFG
-      fullName: Juego-TFG
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 
-      parentUniqueId: 
-    m_ResultText: 
-    m_ResultStacktrace: 
-    m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: bab3db0cffffff7f
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_UserData: 0
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 11
-        m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
-      m_SearchString: 
-    m_TestRunnerUIFilter:
-      PassedHidden: 0
-      FailedHidden: 0
-      NotRunHidden: 0
-      m_SearchString: 
-      selectedCategoryMask: 0
-      availableCategories:
-      - Uncategorized
+  m_SearchFilter:
+    m_NameFilter: 
+    m_ClassNames: []
+    m_AssetLabels: []
+    m_AssetBundleNames: []
+    m_ReferencingInstanceIDs: 
+    m_SceneHandles: 
+    m_ShowAllHits: 0
+    m_SkipHidden: 0
+    m_SearchArea: 1
+    m_Folders:
+    - Assets/Scenes
+    m_Globs: []
+    m_OriginalText: 
+    m_ImportLogFlags: 0
+    m_FilterByTypeIntersection: 0
+  m_ViewMode: 1
+  m_StartGridSize: 57
+  m_LastFolders:
+  - Assets/Scenes
+  m_LastFoldersGridSize: 57
+  m_LastProjectPath: E:\TFG-JUEGO\Juego-TFG
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 207}
+    m_SelectedIDs: f0660000
+    m_LastClickedID: 26352
+    m_ExpandedIDs: 00000000ee660000f0660000f2660000f4660000f6660000f8660000fa660000fc66000000ca9a3b
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_AssetTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 00000000ee660000f0660000f2660000f4660000f6660000f8660000fa660000fc660000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_ListAreaState:
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c6230000406400001c7200001e8f00002e720000d4640000e4730000ae7400004862000046620000708f0000d2a50000a26700001a6e00000e6e0000e2620000e6620000d8620000547300002c65000002640000fa6300009c670000fe6300002a6500002e650000d46e0000ec630000c263000002710000986800009a680000e0620000dc620000e4620000406a000020b700008c6b0000cc650000aa6e0000ca68000048640000ae640000266d0000846700008a6700008c670000da680000466600009a6300009e630000b0630000ae630000aa630000a863000046650000c0630000be630000e26500008e630000906300001c660000607000005e700000ca64000068780000f4640000ee620000ec62000064640000b6630000fe620000f0620000066300009c6b00001ab20000586300004c630000f26c00004a6a0000b66d0000706a00006e6a00006c6a0000226400001a7100001c710000ba880000c86e0000926300007a6a0000b2630000c0760000a07d00009087000094870000aa870000f0640000fc6400000065000010650000126500004271000046710000f8720000926b0000b2750000ac6e0000906600008c6600008e6600009466000092660000cc6200004a6500009a650000b6650000b865000004650000d2670000ca670000de64000006650000ea6700008468000040610000329800003c61000034610000f0980000a6690000da8f00006e9700002c980000ea650000e865000058860000568600005a860000c0850000a08c0000a8660000fa650000f2640000b0650000fc6d0000f86d0000306600005a7300002463000026630000286300002c6300002e6300002a630000f08000001c6300001e6300003a6b00002e66000028660000346600003266000038660000fc6500002266000024660000c09e0000a4b90000a0b900008a6300003a89000038890000c2890000ec990000e6a4000064630000626300006863000066630000ea6400002c6c0000b0660000b2660000ac66000088830000b4660000a48e0000b8660000c0660000a49200003c6a00008aae000000000000f294000088680000fc7a0000a6650000aa65000092650000ac65000054660000588900005a89000062890000d67300006a6200006c6200006e6200007262000000640000a2650000e66400003464000072630000c46300002a660000a2660000ee6600001c640000146500001a6600004265000058660000da660000206300003063000096630000aa66000028650000ba6600008a6600005e65000030650000fe650000d666000026660000bc650000f0630000e0630000966500001e6700008267000056660000086400000a660000946400005a660000726700005a6500003e670000c2660000786400008e670000666500009c64000074640000ee650000846400000a670000ae6600003666000090640000a8640000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 10}
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+    m_NewAssetIndexInList: -1
+    m_ScrollPosition: {x: 0, y: 0}
+    m_GridSize: 57
+  m_SkipHiddenPackages: 0
+  m_DirectoriesAreaWidth: 207
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -805,22 +435,22 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
+  m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: Animator
-    m_Image: {fileID: 1711060831702674872, guid: 0000000000000000d000000000000000, type: 0}
+    m_Text: Hierarchy
+    m_Image: {fileID: -3734745235275155857, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 521.60004
-    width: 1234.2
-    height: 349.8
+    y: 73.6
+    width: 245.4
+    height: 607.8
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -831,42 +461,35 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
-  m_ViewTransforms:
-    m_KeySerializationHelper:
-    - {fileID: 1993496146545251691, guid: c2b600c452258a445ba26b2544e77a18, type: 2}
-    m_ValueSerializationHelper:
-    - e00: 0.644795
-      e01: 0
-      e02: 0
-      e03: 133.6908
-      e10: 0
-      e11: 0.644795
-      e12: 0
-      e13: -10.075821
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-  m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: c2b600c452258a445ba26b2544e77a18, type: 2}
-  m_BreadCrumbs:
-  - m_Target: {fileID: 1993496146545251691, guid: c2b600c452258a445ba26b2544e77a18, type: 2}
-    m_ScrollPosition: {x: 0, y: 0}
-  stateMachineGraph: {fileID: 0}
-  stateMachineGraphGUI: {fileID: 0}
-  blendTreeGraph: {fileID: 0}
-  blendTreeGraphGUI: {fileID: 0}
-  m_AutoLiveLink: 1
-  m_MiniTool: 0
-  m_LockTracker:
-    m_IsLocked: 0
-  m_CurrentEditor: 1
-  m_LayerEditor:
-    m_SelectedLayerIndex: 0
+  m_SceneHierarchy:
+    m_TreeViewState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 3653ffffdc54ffffd456ffff745dffff6e5fffffb05fffffc860ffffec63ffffba64ffff2267ffff7a67ffffe867ffff3868ffff7c6affffd46affff426bfffffc6cffff0a6fffff1e70ffffd870ffff1e71ffff9c78ffffe278ffff5c7cffff987cfffff47cffff407dffff827dffffbe7dffff7a80ffffbc81ffff0682ffff5088ffffaa88ffff1689ffff308cffff1493ffffde93fffff494ffff6295ffff9c95ffffda95ffff3c9affffae9bffff4e9efffffaa1ffffc8a2ffff04daffff3cdbffff76dbffffaedbffffeadbffff24dcffff94ddffff48deffff4cdfffff54e3ffff42e4ffff7ae4ffffdce7ffff02eaffff1eedffff1aeeffff98f2ffff44f3ffffb4f3ffff80f5ffff50f6ffffbcf6fffff0f6ffffbcf8ffff00f9ffff18fbffffe467000062680000f868000088690000806a00002c6b00004a6c0000546c0000666d0000166e00005a6f0000be70000076720000a27200002a730000f8740000ac75000036790000d2790000087f0000307f0000807f0000ba7f0000d29600004ca1000008a2000092a2000026a400009ea7000052a80000e0a800000eae00005cc1000086c10000f8fa00006afc00002afd0000b2fd0000ecff000022000100b600010026070100860e0100a00e0100ba110100d4110100
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 8}
+      m_SearchString: 
+    m_ExpandedScenes: []
+    m_CurrenRootInstanceID: 0
+    m_LockTracker:
+      m_IsLocked: 1
+    m_CurrentSortingName: TransformSorting
+  m_WindowGUID: 4c969a2b90040154d917609493e03593
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -890,7 +513,7 @@ MonoBehaviour:
     x: 246.40001
     y: 73.6
     width: 986.7999
-    height: 427
+    height: 607.8
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1236,9 +859,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1361.4377, y: 586.5586, z: -0.7347348}
+    m_Target: {x: 911.2439, y: 356.13513, z: 2.9447026}
     speed: 2
-    m_Value: {x: 1361.4377, y: 586.5586, z: -0.7347348}
+    m_Value: {x: 911.2439, y: 356.13513, z: 2.9447026}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1288,9 +911,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 972.8969
+    m_Target: 772.73267
     speed: 2
-    m_Value: 972.8969
+    m_Value: 772.73267
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1324,215 +947,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Hierarchy
-    m_Image: {fileID: -3734745235275155857, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 0
-    y: 73.6
-    width: 245.4
-    height: 427
-  m_SerializedDataModeController:
-    m_DataMode: 0
-    m_PreferredDataMode: 0
-    m_SupportedDataModes: 
-    isAutomatic: 1
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-    m_OverlaysVisible: 1
-  m_SceneHierarchy:
-    m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 8cb6ffffd4b6ffffb6b9ffff94bbffffdcbbffffd0beffffdac0ffff22c1ffff0ac4ffff16c6ffff5ec6ffff1ec9ffffdacaffff22cbffff66cfffff24d1ffff6cd1ffffd8d3ffff96d5ffffded5ffff3ed8ffff98d8ffffe0d8ffff38dbffff10deffff58deffffb2e0ffff70e8ffffb4e8ffffe0eaffff68ecffffacecffffcceeffff0af5ffff4ef5ffffdef8ffff18fbffff826c0000
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_UserData: 0
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 11
-        m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 8}
-      m_SearchString: 
-    m_ExpandedScenes: []
-    m_CurrenRootInstanceID: 0
-    m_LockTracker:
-      m_IsLocked: 1
-    m_CurrentSortingName: TransformSorting
-  m_WindowGUID: 4c969a2b90040154d917609493e03593
---- !u!114 &16
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 230, y: 250}
-  m_MaxSize: {x: 10000, y: 10000}
-  m_TitleContent:
-    m_Text: Project
-    m_Image: {fileID: -5179483145760003458, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 0
-    y: 521.60004
-    width: 1234.2
-    height: 349.8
-  m_SerializedDataModeController:
-    m_DataMode: 0
-    m_PreferredDataMode: 0
-    m_SupportedDataModes: 
-    isAutomatic: 1
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-    m_OverlaysVisible: 1
-  m_SearchFilter:
-    m_NameFilter: 
-    m_ClassNames: []
-    m_AssetLabels: []
-    m_AssetBundleNames: []
-    m_ReferencingInstanceIDs: 
-    m_SceneHandles: 
-    m_ShowAllHits: 0
-    m_SkipHidden: 0
-    m_SearchArea: 1
-    m_Folders:
-    - Assets/Scenes
-    m_Globs: []
-    m_OriginalText: 
-    m_ImportLogFlags: 0
-    m_FilterByTypeIntersection: 0
-  m_ViewMode: 1
-  m_StartGridSize: 57
-  m_LastFolders:
-  - Assets/Scenes
-  m_LastFoldersGridSize: 57
-  m_LastProjectPath: E:\TFG-JUEGO\Juego-TFG
-  m_LockTracker:
-    m_IsLocked: 0
-  m_FolderTreeState:
-    scrollPos: {x: 0, y: 10.200012}
-    m_SelectedIDs: a6670000
-    m_LastClickedID: 26534
-    m_ExpandedIDs: 00000000726700007467000076670000786700007a6700007c6700007e670000806700008267000096670000326d000000ca9a3b
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 10}
-    m_SearchString: 
-    m_CreateAssetUtility:
-      m_EndAction: {fileID: 0}
-      m_InstanceID: 0
-      m_Path: 
-      m_Icon: {fileID: 0}
-      m_ResourceFile: 
-  m_AssetTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 00000000726700007467000076670000786700007a6700007c6700007e6700008067000082670000
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
-    m_SearchString: 
-    m_CreateAssetUtility:
-      m_EndAction: {fileID: 0}
-      m_InstanceID: 0
-      m_Path: 
-      m_Icon: {fileID: 0}
-      m_ResourceFile: 
-  m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c6230000406400001c7200001e8f00002e720000d4640000e4730000ae7400004862000046620000708f0000d2a50000a26700001a6e00000e6e0000e2620000e6620000d8620000547300002c65000002640000fa6300009c670000fe6300002a6500002e650000d46e0000ec630000c263000002710000986800009a680000e0620000dc620000e4620000406a000020b700008c6b0000cc650000aa6e0000ca68000048640000ae640000266d0000846700008a6700008c670000da680000466600009a6300009e630000b0630000ae630000aa630000a863000046650000c0630000be630000e26500008e630000906300001c660000607000005e700000ca64000068780000f4640000ee620000ec62000064640000b6630000fe620000f0620000066300009c6b00001ab20000586300004c630000f26c00004a6a0000b66d0000706a00006e6a00006c6a0000226400001a7100001c710000ba880000c86e0000926300007a6a0000b2630000c0760000a07d00009087000094870000aa870000f0640000fc6400000065000010650000126500004271000046710000f8720000926b0000b2750000ac6e0000906600008c6600008e6600009466000092660000cc6200004a6500009a650000b6650000b865000004650000d2670000ca670000de64000006650000ea6700008468000040610000329800003c61000034610000f0980000a6690000da8f00006e9700002c980000ea650000e865000058860000568600005a860000c0850000a08c0000a8660000fa650000f2640000b0650000fc6d0000f86d0000306600005a7300002463000026630000286300002c6300002e6300002a630000f08000001c6300001e6300003a6b00002e6600002866000036660000346600003266000038660000fc6500002266000024660000c09e0000a4b90000a0b900008a6300003a89000038890000c2890000ec990000e6a4000064630000626300006863000066630000ea6400002c6c0000b0660000b2660000ac66000088830000b4660000ae660000a48e0000b8660000c0660000a49200003c6a00008aae000000000000f294000088680000fc7a0000a6650000aa65000092650000ac65000054660000588900005a89000062890000d67300006a6200006c6200006e6200007262000000640000a2650000e66400003464000072630000c46300002a660000a2660000ee6600001c640000146500001a6600004265000058660000da660000206300003063000096630000aa66000028650000ba6600008a6600005e65000030650000fe650000d666000026660000bc650000f0630000e0630000966500001e6700008267000056660000086400000a660000946400005a660000726700005a6500003e670000c2660000786400008e670000666500009c64000074640000ee650000
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 10}
-    m_CreateAssetUtility:
-      m_EndAction: {fileID: 0}
-      m_InstanceID: 0
-      m_Path: 
-      m_Icon: {fileID: 0}
-      m_ResourceFile: 
-    m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 57
-  m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 207
---- !u!114 &17
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
   m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -1545,9 +959,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 521.60004
+    y: 702.4
     width: 1234.2
-    height: 349.8
+    height: 169
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1558,42 +972,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
---- !u!114 &18
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6629f1bb292b749a18b5fff7994c8b19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 600, y: 350}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Unity Version Control
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 1088
-    y: 73.6
-    width: 447
-    height: 797.8
-  m_SerializedDataModeController:
-    m_DataMode: 0
-    m_PreferredDataMode: 0
-    m_SupportedDataModes: 
-    isAutomatic: 1
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-    m_OverlaysVisible: 1
-  mForceToOpen: 0
---- !u!114 &19
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1614,9 +993,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 682.4
-    width: 1087
-    height: 189
+    y: 521.60004
+    width: 1234.2
+    height: 349.8
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1629,8 +1008,1136 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 28412
---- !u!114 &20
+  m_LastSelectedObjectID: 69346
+--- !u!114 &17
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Animator
+    m_Image: {fileID: 1711060831702674872, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 521.60004
+    width: 1234.2
+    height: 349.8
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_OverlaysVisible: 1
+  m_ViewTransforms:
+    m_KeySerializationHelper:
+    - {fileID: 1993496146545251691, guid: c2b600c452258a445ba26b2544e77a18, type: 2}
+    m_ValueSerializationHelper:
+    - e00: 0.644795
+      e01: 0
+      e02: 0
+      e03: 133.6908
+      e10: 0
+      e11: 0.644795
+      e12: 0
+      e13: -10.075821
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  m_PreviewAnimator: {fileID: 0}
+  m_AnimatorController: {fileID: 9100000, guid: c2b600c452258a445ba26b2544e77a18, type: 2}
+  m_BreadCrumbs:
+  - m_Target: {fileID: 1993496146545251691, guid: c2b600c452258a445ba26b2544e77a18, type: 2}
+    m_ScrollPosition: {x: 0, y: 0}
+  stateMachineGraph: {fileID: 0}
+  stateMachineGraphGUI: {fileID: 0}
+  blendTreeGraph: {fileID: 0}
+  blendTreeGraphGUI: {fileID: 0}
+  m_AutoLiveLink: 1
+  m_MiniTool: 0
+  m_LockTracker:
+    m_IsLocked: 0
+  m_CurrentEditor: 1
+  m_LayerEditor:
+    m_SelectedLayerIndex: 0
+--- !u!114 &18
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13401, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Test Runner
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 521.60004
+    width: 1234.2
+    height: 349.8
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_OverlaysVisible: 1
+  m_Spl:
+    ID: 95
+    splitterInitialOffset: 789.6
+    currentActiveSplitter: -1
+    realSizes:
+    - 787.2001
+    - 447.1999
+    relativeSizes:
+    - 0.63771886
+    - 0.36228114
+    minSizes:
+    - 32
+    - 32
+    maxSizes:
+    - 0
+    - 0
+    lastTotalSize: 1234.4
+    splitSize: 6
+    xOffset: 0
+    m_Version: 1
+    oldRealSizes: 
+    oldMinSizes: 
+    oldMaxSizes: 
+    oldSplitSize: 0
+  m_TestTypeToolbarIndex: 0
+  m_PlayModeTestListGUI:
+    m_Window: {fileID: 18}
+    m_NewResultList:
+    - id: 1005
+      uniqueId: '[Juego-TFG][suite]'
+      name: Juego-TFG
+      fullName: Juego-TFG
+      resultStatus: 1
+      duration: 0.0881363
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    - id: 1003
+      uniqueId: '[Tests][E:/TFG-JUEGO/Juego-TFG/Library/ScriptAssemblies/Tests.dll][suite]'
+      name: Tests.dll
+      fullName: E:/TFG-JUEGO/Juego-TFG/Library/ScriptAssemblies/Tests.dll
+      resultStatus: 1
+      duration: 0.0693781
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[Juego-TFG][suite]'
+    - id: 1001
+      uniqueId: Tests.dll/[Tests][CalificacionesTest][suite]
+      name: CalificacionesTest
+      fullName: CalificacionesTest
+      resultStatus: 1
+      duration: 1.393978
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1028
+      parentUniqueId: '[Tests][E:/TFG-JUEGO/Juego-TFG/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1002
+      uniqueId: Tests.dll/CalificacionesTest/[Tests][CalificacionesTest.EnviarMensajeTest]
+      name: EnviarMensajeTest
+      fullName: CalificacionesTest.EnviarMensajeTest
+      resultStatus: 1
+      duration: 1.3847533
+      messages: "El m\xE9todo EnviarMensaje se ejecut\xF3 sin errores."
+      output: 'You are trying to create a MonoBehaviour using the ''new'' keyword. 
+        This is not allowed.  MonoBehaviours can only be added using AddComponent().
+        Alternatively, your script can inherit from ScriptableObject or no base class
+        at all
+
+'
+      stacktrace: 'at CalificacionesTest.EnviarMensajeTest () [0x00049] in E:\TFG-JUEGO\Juego-TFG\Assets\Codigo\Tests\Editor\CalificacionesTest.cs:29
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][CalificacionesTest][suite]
+    - id: 1003
+      uniqueId: Tests.dll/CalificacionesTest/[Tests][CalificacionesTest.GuardarYCargarPuntuacionTest]
+      name: GuardarYCargarPuntuacionTest
+      fullName: CalificacionesTest.GuardarYCargarPuntuacionTest
+      resultStatus: 1
+      duration: 0.0113438
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][CalificacionesTest][suite]
+    - id: 1001
+      uniqueId: Tests.dll/[Tests][CinematicaTest][suite]
+      name: CinematicaTest
+      fullName: CinematicaTest
+      resultStatus: 1
+      duration: 0.1577407
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1023
+      parentUniqueId: '[Tests][E:/TFG-JUEGO/Juego-TFG/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1002
+      uniqueId: Tests.dll/CinematicaTest/[Tests][CinematicaTest.ColocarAvatarInicio]
+      name: ColocarAvatarInicio
+      fullName: CinematicaTest.ColocarAvatarInicio
+      resultStatus: 1
+      duration: 0.0607205
+      messages: 
+      output: 'Nivel1
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][CinematicaTest][suite]
+    - id: 1003
+      uniqueId: Tests.dll/CinematicaTest/[Tests][CinematicaTest.DesplegarMensajeEnPantalla]
+      name: DesplegarMensajeEnPantalla
+      fullName: CinematicaTest.DesplegarMensajeEnPantalla
+      resultStatus: 1
+      duration: 0.0105077
+      messages: 
+      output: 'Nivel1
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][CinematicaTest][suite]
+    - id: 1004
+      uniqueId: Tests.dll/CinematicaTest/[Tests][CinematicaTest.SiguienteMensajeYDesplegar]
+      name: SiguienteMensajeYDesplegar
+      fullName: CinematicaTest.SiguienteMensajeYDesplegar
+      resultStatus: 1
+      duration: 0.1357733
+      messages: 
+      output: 'Nivel1
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][CinematicaTest][suite]
+    - id: 1001
+      uniqueId: Tests.dll/[Tests][EleccionPersonajeTest][suite]
+      name: EleccionPersonajeTest
+      fullName: EleccionPersonajeTest
+      resultStatus: 1
+      duration: 0.1070931
+      messages: 
+      output: 'Invalid AABB inAABB
+
+        Invalid AABB inAABB
+
+        Invalid
+        AABB inAABB
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1010
+      parentUniqueId: '[Tests][E:/TFG-JUEGO/Juego-TFG/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1004
+      uniqueId: Tests.dll/EleccionPersonajeTest/[Tests][EleccionPersonajeTest.CargarJugadorSeleccionado]
+      name: CargarJugadorSeleccionado
+      fullName: EleccionPersonajeTest.CargarJugadorSeleccionado
+      resultStatus: 1
+      duration: 0.0031137
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][EleccionPersonajeTest][suite]
+    - id: 1003
+      uniqueId: Tests.dll/EleccionPersonajeTest/[Tests][EleccionPersonajeTest.GuardarPersonajeSeleccionado]
+      name: GuardarPersonajeSeleccionado
+      fullName: EleccionPersonajeTest.GuardarPersonajeSeleccionado
+      resultStatus: 1
+      duration: 0.0739281
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][EleccionPersonajeTest][suite]
+    - id: 1002
+      uniqueId: Tests.dll/EleccionPersonajeTest/[Tests][EleccionPersonajeTest.PersonajeSeleccionado]
+      name: PersonajeSeleccionado
+      fullName: EleccionPersonajeTest.PersonajeSeleccionado
+      resultStatus: 1
+      duration: 0.0015801
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/[Tests][EleccionPersonajeTest][suite]
+    - id: 1012
+      uniqueId: Tests.dll/[Tests][IdentificaMusculoTest][suite]
+      name: IdentificaMusculoTest
+      fullName: IdentificaMusculoTest
+      resultStatus: 1
+      duration: 0.0429571
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1045
+      parentUniqueId: '[Tests][E:/TFG-JUEGO/Juego-TFG/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1013
+      uniqueId: Tests.dll/IdentificaMusculoTest/[Tests][IdentificaMusculoTest.VerificarRespuestaCorrecta]
+      name: VerificarRespuestaCorrecta
+      fullName: IdentificaMusculoTest.VerificarRespuestaCorrecta
+      resultStatus: 1
+      duration: 0.0283682
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Tests.dll/[Tests][IdentificaMusculoTest][suite]
+    - id: 1014
+      uniqueId: Tests.dll/IdentificaMusculoTest/[Tests][IdentificaMusculoTest.VerificarRespuestaIncorrecta]
+      name: VerificarRespuestaIncorrecta
+      fullName: IdentificaMusculoTest.VerificarRespuestaIncorrecta
+      resultStatus: 1
+      duration: 0.0011931
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Tests.dll/[Tests][IdentificaMusculoTest][suite]
+    - id: 1015
+      uniqueId: Tests.dll/[Tests][LuchaVillanoTest][suite]
+      name: LuchaVillanoTest
+      fullName: LuchaVillanoTest
+      resultStatus: 1
+      duration: 0.0544522
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1045
+      parentUniqueId: '[Tests][E:/TFG-JUEGO/Juego-TFG/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1017
+      uniqueId: Tests.dll/LuchaVillanoTest/[Tests][LuchaVillanoTest.AciertoJugador]
+      name: AciertoJugador
+      fullName: LuchaVillanoTest.AciertoJugador
+      resultStatus: 1
+      duration: 0.0442429
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1015
+      parentUniqueId: Tests.dll/[Tests][LuchaVillanoTest][suite]
+    - id: 1018
+      uniqueId: Tests.dll/LuchaVillanoTest/[Tests][LuchaVillanoTest.FalloJugador]
+      name: FalloJugador
+      fullName: LuchaVillanoTest.FalloJugador
+      resultStatus: 1
+      duration: 0.0011258
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1015
+      parentUniqueId: Tests.dll/[Tests][LuchaVillanoTest][suite]
+    - id: 1016
+      uniqueId: Tests.dll/LuchaVillanoTest/[Tests][LuchaVillanoTest.MostrarPreguntaCorrectamente]
+      name: MostrarPreguntaCorrectamente
+      fullName: LuchaVillanoTest.MostrarPreguntaCorrectamente
+      resultStatus: 1
+      duration: 0.040318
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1015
+      parentUniqueId: Tests.dll/[Tests][LuchaVillanoTest][suite]
+    - id: 1005
+      uniqueId: Tests.dll/[Tests][MenuNivelesTest][suite]
+      name: MenuNivelesTest
+      fullName: MenuNivelesTest
+      resultStatus: 1
+      duration: 2.519082
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1017
+      parentUniqueId: '[Tests][E:/TFG-JUEGO/Juego-TFG/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1008
+      uniqueId: Tests.dll/MenuNivelesTest/[Tests][MenuNivelesTest.AumentarNivelCorrecto]
+      name: AumentarNivelCorrecto
+      fullName: MenuNivelesTest.AumentarNivelCorrecto
+      resultStatus: 1
+      duration: 0.0025306
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: Tests.dll/[Tests][MenuNivelesTest][suite]
+    - id: 1011
+      uniqueId: Tests.dll/MenuNivelesTest/[Tests][MenuNivelesTest.CargarEscenaCorrecta]
+      name: CargarEscenaCorrecta
+      fullName: MenuNivelesTest.CargarEscenaCorrecta
+      resultStatus: 1
+      duration: 0.6884551
+      messages: 
+      output: 'Nivel1
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: Tests.dll/[Tests][MenuNivelesTest][suite]
+    - id: 1006
+      uniqueId: Tests.dll/MenuNivelesTest/[Tests][MenuNivelesTest.DesactivarTodosBotones]
+      name: DesactivarTodosBotones
+      fullName: MenuNivelesTest.DesactivarTodosBotones
+      resultStatus: 1
+      duration: 0.0019781
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: Tests.dll/[Tests][MenuNivelesTest][suite]
+    - id: 1007
+      uniqueId: Tests.dll/MenuNivelesTest/[Tests][MenuNivelesTest.DesbloquearNiveles]
+      name: DesbloquearNiveles
+      fullName: MenuNivelesTest.DesbloquearNiveles
+      resultStatus: 1
+      duration: 0.0015325
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: Tests.dll/[Tests][MenuNivelesTest][suite]
+    - id: 1010
+      uniqueId: Tests.dll/MenuNivelesTest/[Tests][MenuNivelesTest.GuardarNivelCompletado]
+      name: GuardarNivelCompletado
+      fullName: MenuNivelesTest.GuardarNivelCompletado
+      resultStatus: 1
+      duration: 0.0012503
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: Tests.dll/[Tests][MenuNivelesTest][suite]
+    - id: 1009
+      uniqueId: Tests.dll/MenuNivelesTest/[Tests][MenuNivelesTest.NivelActualCorrecto]
+      name: NivelActualCorrecto
+      fullName: MenuNivelesTest.NivelActualCorrecto
+      resultStatus: 1
+      duration: 0.0010048
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1005
+      parentUniqueId: Tests.dll/[Tests][MenuNivelesTest][suite]
+    - id: 1012
+      uniqueId: Tests.dll/[Tests][MenuOpcionesTest][suite]
+      name: MenuOpcionesTest
+      fullName: MenuOpcionesTest
+      resultStatus: 1
+      duration: 0.0243442
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1019
+      parentUniqueId: '[Tests][E:/TFG-JUEGO/Juego-TFG/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1014
+      uniqueId: Tests.dll/MenuOpcionesTest/[Tests][MenuOpcionesTest.CancelarAccionBorrarDatos]
+      name: CancelarAccionBorrarDatos
+      fullName: MenuOpcionesTest.CancelarAccionBorrarDatos
+      resultStatus: 1
+      duration: 0.0026341
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Tests.dll/[Tests][MenuOpcionesTest][suite]
+    - id: 1013
+      uniqueId: Tests.dll/MenuOpcionesTest/[Tests][MenuOpcionesTest.ComprobarEstadoMusicaCorrecto]
+      name: ComprobarEstadoMusicaCorrecto
+      fullName: MenuOpcionesTest.ComprobarEstadoMusicaCorrecto
+      resultStatus: 1
+      duration: 0.0019963
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Tests.dll/[Tests][MenuOpcionesTest][suite]
+    - id: 1013
+      uniqueId: Tests.dll/MenuOpcionesTest/[Tests][MenuOpcionesTest.IntentarBorrarDatosTest]
+      name: IntentarBorrarDatosTest
+      fullName: MenuOpcionesTest.IntentarBorrarDatosTest
+      resultStatus: 1
+      duration: 0.0010701
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Tests.dll/[Tests][MenuOpcionesTest][suite]
+    - id: 1030
+      uniqueId: Tests.dll/[Tests][MinijuegoTest][suite]
+      name: MinijuegoTest
+      fullName: MinijuegoTest
+      resultStatus: 1
+      duration: 0.0559499
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1044
+      parentUniqueId: '[Tests][E:/TFG-JUEGO/Juego-TFG/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1032
+      uniqueId: Tests.dll/MinijuegoTest/[Tests][MinijuegoTest.TestAumentarNumeroFallos]
+      name: TestAumentarNumeroFallos
+      fullName: MinijuegoTest.TestAumentarNumeroFallos
+      resultStatus: 1
+      duration: 0.026211
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1030
+      parentUniqueId: Tests.dll/[Tests][MinijuegoTest][suite]
+    - id: 1034
+      uniqueId: Tests.dll/MinijuegoTest/[Tests][MinijuegoTest.TestCalcularPuntuacionFinal]
+      name: TestCalcularPuntuacionFinal
+      fullName: MinijuegoTest.TestCalcularPuntuacionFinal
+      resultStatus: 1
+      duration: 0.0003683
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1030
+      parentUniqueId: Tests.dll/[Tests][MinijuegoTest][suite]
+    - id: 1035
+      uniqueId: Tests.dll/MinijuegoTest/[Tests][MinijuegoTest.TestCalcularPuntuacionFinalIntentos]
+      name: TestCalcularPuntuacionFinalIntentos
+      fullName: MinijuegoTest.TestCalcularPuntuacionFinalIntentos
+      resultStatus: 1
+      duration: 0.0002297
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1030
+      parentUniqueId: Tests.dll/[Tests][MinijuegoTest][suite]
+    - id: 1036
+      uniqueId: Tests.dll/MinijuegoTest/[Tests][MinijuegoTest.TestCalcularPuntuacionRonda]
+      name: TestCalcularPuntuacionRonda
+      fullName: MinijuegoTest.TestCalcularPuntuacionRonda
+      resultStatus: 1
+      duration: 0.0002027
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1030
+      parentUniqueId: Tests.dll/[Tests][MinijuegoTest][suite]
+    - id: 1037
+      uniqueId: Tests.dll/MinijuegoTest/[Tests][MinijuegoTest.TestCalcularPuntuacionSegundaRonda]
+      name: TestCalcularPuntuacionSegundaRonda
+      fullName: MinijuegoTest.TestCalcularPuntuacionSegundaRonda
+      resultStatus: 1
+      duration: 0.0001891
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1030
+      parentUniqueId: Tests.dll/[Tests][MinijuegoTest][suite]
+    - id: 1038
+      uniqueId: Tests.dll/MinijuegoTest/[Tests][MinijuegoTest.TestCalcularPuntuacionTresOpciones]
+      name: TestCalcularPuntuacionTresOpciones
+      fullName: MinijuegoTest.TestCalcularPuntuacionTresOpciones
+      resultStatus: 1
+      duration: 0.000231
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1030
+      parentUniqueId: Tests.dll/[Tests][MinijuegoTest][suite]
+    - id: 1033
+      uniqueId: Tests.dll/MinijuegoTest/[Tests][MinijuegoTest.TestDisminuirNumeroFallos]
+      name: TestDisminuirNumeroFallos
+      fullName: MinijuegoTest.TestDisminuirNumeroFallos
+      resultStatus: 1
+      duration: 0.0001752
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1030
+      parentUniqueId: Tests.dll/[Tests][MinijuegoTest][suite]
+    - id: 1031
+      uniqueId: Tests.dll/MinijuegoTest/[Tests][MinijuegoTest.TestMezclarElementos]
+      name: TestMezclarElementos
+      fullName: MinijuegoTest.TestMezclarElementos
+      resultStatus: 1
+      duration: 0.0033203
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1030
+      parentUniqueId: Tests.dll/[Tests][MinijuegoTest][suite]
+    - id: 1039
+      uniqueId: Tests.dll/MinijuegoTest/[Tests][MinijuegoTest.TestRedondear]
+      name: TestRedondear
+      fullName: MinijuegoTest.TestRedondear
+      resultStatus: 1
+      duration: 0.0005477
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1030
+      parentUniqueId: Tests.dll/[Tests][MinijuegoTest][suite]
+    - id: 1001
+      uniqueId: Tests.dll/[Tests][ObtenerDatosUserTest][suite]
+      name: ObtenerDatosUserTest
+      fullName: ObtenerDatosUserTest
+      resultStatus: 1
+      duration: 0.0700985
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1003
+      parentUniqueId: '[Tests][E:/TFG-JUEGO/Juego-TFG/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1014
+      uniqueId: Tests.dll/ObtenerDatosUserTest/[Tests][ObtenerDatosUserTest.AlmacenaEmailCorrectamente]
+      name: AlmacenaEmailCorrectamente
+      fullName: ObtenerDatosUserTest.AlmacenaEmailCorrectamente
+      resultStatus: 1
+      duration: 0.0504118
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Tests.dll/[Tests][ObtenerDatosUserTest][suite]
+    - id: 1013
+      uniqueId: Tests.dll/ObtenerDatosUserTest/[Tests][ObtenerDatosUserTest.AlmacenaNombreCorrectamente]
+      name: AlmacenaNombreCorrectamente
+      fullName: ObtenerDatosUserTest.AlmacenaNombreCorrectamente
+      resultStatus: 1
+      duration: 0.0007783
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Tests.dll/[Tests][ObtenerDatosUserTest][suite]
+    - id: 1016
+      uniqueId: Tests.dll/ObtenerDatosUserTest/[Tests][ObtenerDatosUserTest.CambiaDeEscenaSiCamposEstanLlenos]
+      name: CambiaDeEscenaSiCamposEstanLlenos
+      fullName: ObtenerDatosUserTest.CambiaDeEscenaSiCamposEstanLlenos
+      resultStatus: 1
+      duration: 0.0009795
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Tests.dll/[Tests][ObtenerDatosUserTest][suite]
+    - id: 1015
+      uniqueId: Tests.dll/ObtenerDatosUserTest/[Tests][ObtenerDatosUserTest.MuestraErrorSiCamposEstanVacios]
+      name: MuestraErrorSiCamposEstanVacios
+      fullName: ObtenerDatosUserTest.MuestraErrorSiCamposEstanVacios
+      resultStatus: 1
+      duration: 0.0006228
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1012
+      parentUniqueId: Tests.dll/[Tests][ObtenerDatosUserTest][suite]
+    - id: 1035
+      uniqueId: Tests.dll/[Tests][SalaDeCurasTests][suite]
+      name: SalaDeCurasTests
+      fullName: SalaDeCurasTests
+      resultStatus: 1
+      duration: 0.0457664
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1045
+      parentUniqueId: '[Tests][E:/TFG-JUEGO/Juego-TFG/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1039
+      uniqueId: Tests.dll/SalaDeCurasTests/[Tests][SalaDeCurasTests.InicializacionCorrecta]
+      name: InicializacionCorrecta
+      fullName: SalaDeCurasTests.InicializacionCorrecta
+      resultStatus: 1
+      duration: 0.0276114
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1035
+      parentUniqueId: Tests.dll/[Tests][SalaDeCurasTests][suite]
+    - id: 1036
+      uniqueId: Tests.dll/SalaDeCurasTests/[Tests][SalaDeCurasTests.ObtenerRespuesta]
+      name: ObtenerRespuesta
+      fullName: SalaDeCurasTests.ObtenerRespuesta
+      resultStatus: 1
+      duration: 0.0024661
+      messages: Obteniene la respuesta correcta sin fallos
+      output: 
+      stacktrace: 'at SalaDeCurasTests.ObtenerRespuesta () [0x0000c] in E:\TFG-JUEGO\Juego-TFG\Assets\Codigo\Tests\Editor\SalaCurasTest.cs:38
+
+'
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1035
+      parentUniqueId: Tests.dll/[Tests][SalaDeCurasTests][suite]
+    - id: 1037
+      uniqueId: Tests.dll/SalaDeCurasTests/[Tests][SalaDeCurasTests.ObtenerRespuestaIncorrecta]
+      name: ObtenerRespuestaIncorrecta
+      fullName: SalaDeCurasTests.ObtenerRespuestaIncorrecta
+      resultStatus: 1
+      duration: 0.0011874
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1035
+      parentUniqueId: Tests.dll/[Tests][SalaDeCurasTests][suite]
+    - id: 1040
+      uniqueId: Tests.dll/[Tests][SombrasTest][suite]
+      name: SombrasTest
+      fullName: SombrasTest
+      resultStatus: 1
+      duration: 0.0370882
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1045
+      parentUniqueId: '[Tests][E:/TFG-JUEGO/Juego-TFG/Library/ScriptAssemblies/Tests.dll][suite]'
+    - id: 1041
+      uniqueId: Tests.dll/SombrasTest/[Tests][SombrasTest.inicializar]
+      name: inicializar
+      fullName: SombrasTest.inicializar
+      resultStatus: 1
+      duration: 0.0186942
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1040
+      parentUniqueId: Tests.dll/[Tests][SombrasTest][suite]
+    - id: 1042
+      uniqueId: Tests.dll/SombrasTest/[Tests][SombrasTest.TestObtenerImagen]
+      name: TestObtenerImagen
+      fullName: SombrasTest.TestObtenerImagen
+      resultStatus: 1
+      duration: 0.0005098
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1040
+      parentUniqueId: Tests.dll/[Tests][SombrasTest][suite]
+    m_ResultText: MinijuegoTest (0,056s)
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 112.00079}
+      m_SelectedIDs: a0e86864
+      m_LastClickedID: 1684596896
+      m_ExpandedIDs: ff949489ab8f238ee89700abd093fbc82249ddf1bab3db0ca0e86864ffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories:
+      - Uncategorized
+    m_SelectedOption: 0
+  m_EditModeTestListGUI:
+    m_Window: {fileID: 18}
+    m_NewResultList:
+    - id: 1000
+      uniqueId: '[Juego-TFG][suite]'
+      name: Juego-TFG
+      fullName: Juego-TFG
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
+    m_ResultText: 
+    m_ResultStacktrace: 
+    m_TestListState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: bab3db0cffffff7f
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    m_TestRunnerUIFilter:
+      PassedHidden: 0
+      FailedHidden: 0
+      NotRunHidden: 0
+      m_SearchString: 
+      selectedCategoryMask: 0
+      availableCategories:
+      - Uncategorized
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1677,7 +2184,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &21
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1711,6 +2218,41 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
+--- !u!114 &21
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6629f1bb292b749a18b5fff7994c8b19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 600, y: 350}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Unity Version Control
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1088
+    y: 73.6
+    width: 447
+    height: 797.8
+  m_SerializedDataModeController:
+    m_DataMode: 0
+    m_PreferredDataMode: 0
+    m_SupportedDataModes: 
+    isAutomatic: 1
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+    m_OverlaysVisible: 1
+  mForceToOpen: 0
 --- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1720,21 +2262,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 13974, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 200, y: 200}
+  m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: Simulator
-    m_Image: {fileID: 3038311277492192215, guid: 0000000000000000d000000000000000, type: 0}
+    m_Text: Game
+    m_Image: {fileID: 4621777727084837110, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 246.40001
     y: 73.6
     width: 986.7999
-    height: 427
+    height: 607.8
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1746,34 +2288,68 @@ MonoBehaviour:
     m_SaveData: []
     m_OverlaysVisible: 1
   m_SerializedViewNames:
-  - UnityEditor.GameView
+  - UnityEditor.DeviceSimulation.SimulatorWindow
   m_SerializedViewValues:
-  - E:\TFG-JUEGO\Juego-TFG\Library\PlayModeViewStates\ff5ba02e89f248b4a8cf720fff3e5ab1
-  m_PlayModeViewName: Device Simulator
+  - E:\TFG-JUEGO\Juego-TFG\Library\PlayModeViewStates\7e0a3ed0eb1cb1049a165fb50279058b
+  m_PlayModeViewName: GameView
   m_ShowGizmos: 0
   m_TargetDisplay: 0
-  m_ClearColor: {r: 0, g: 0, b: 0, a: 1}
-  m_TargetSize: {x: 2688, y: 1242}
+  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+  m_TargetSize: {x: 1233.4999, y: 733.5}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
   m_EnterPlayModeBehavior: 2
   m_UseMipMap: 0
-  m_SimulatorState:
-    controlPanelVisible: 0
-    controlPanelWidth: 0
-    controlPanelFoldoutKeys:
-    - UnityEditor.DeviceSimulation.ApplicationSettingsPlugin
-    controlPanelFoldoutValues: 01
-    pluginNames:
-    - UnityEditor.DeviceSimulation.ApplicationSettingsPlugin
-    pluginStates:
-    - '{}'
-    scale: 29
-    fitToScreenEnabled: 1
-    rotationDegree: 90
-    highlightSafeAreaEnabled: 0
-    friendlyName: Apple iPhone XS Max
-    screenIndex: 0
-    networkReachability: 1
-    systemLanguage: 10
+  m_VSyncEnabled: 0
+  m_Gizmos: 0
+  m_Stats: 0
+  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_ZoomArea:
+    m_HRangeLocked: 0
+    m_VRangeLocked: 0
+    hZoomLockedByDefault: 0
+    vZoomLockedByDefault: 0
+    m_HBaseRangeMin: -493.39996
+    m_HBaseRangeMax: 493.39996
+    m_VBaseRangeMin: -293.4
+    m_VBaseRangeMax: 293.4
+    m_HAllowExceedBaseRangeMin: 1
+    m_HAllowExceedBaseRangeMax: 1
+    m_VAllowExceedBaseRangeMin: 1
+    m_VAllowExceedBaseRangeMax: 1
+    m_ScaleWithWindow: 0
+    m_HSlider: 0
+    m_VSlider: 0
+    m_IgnoreScrollWheelUntilClicked: 0
+    m_EnableMouseInput: 1
+    m_EnableSliderZoomHorizontal: 0
+    m_EnableSliderZoomVertical: 0
+    m_UniformScale: 1
+    m_UpDirection: 1
+    m_DrawArea:
+      serializedVersion: 2
+      x: 0
+      y: 21
+      width: 986.7999
+      height: 586.8
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 493.39996, y: 293.4}
+    m_MarginLeft: 0
+    m_MarginRight: 0
+    m_MarginTop: 0
+    m_MarginBottom: 0
+    m_LastShownAreaInsideMargins:
+      serializedVersion: 2
+      x: -493.39996
+      y: -293.4
+      width: 986.7999
+      height: 586.8
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 1233.4999, y: 759.75}
+  m_ClearInEditMode: 1
+  m_NoCameraWarning: 1
+  m_LowResolutionForAspectRatios: 00000000000000000000
+  m_XRRenderMode: 0
+  m_RenderTexture: {fileID: 0}

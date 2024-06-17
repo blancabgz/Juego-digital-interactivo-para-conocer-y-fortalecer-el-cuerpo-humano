@@ -18,7 +18,7 @@ public class IdentificaMusculo : Minijuego
     public GameObject validate2;
     public GameObject validate3;
 
-    private GameObject panelPregunta;
+    public GameObject panelPregunta;
 
     public string musculo;
 
@@ -32,7 +32,7 @@ public class IdentificaMusculo : Minijuego
         panelPregunta = GameObject.Find("Panelp");
 
     }
-    void Start(){
+    public void Start(){
 
         // Inicializar la variable de control de errores
         base.numFallos = 0;

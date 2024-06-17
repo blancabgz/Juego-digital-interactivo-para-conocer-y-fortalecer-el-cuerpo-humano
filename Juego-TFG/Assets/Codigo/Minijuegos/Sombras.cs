@@ -19,6 +19,8 @@ public class Sombras : Minijuego
     public int musculoActual = 0;
     private int puntosFinal;
 
+    private Image sombra;
+
     
     void Awake(){
         ControlMusica.EstadoMusica();
@@ -50,7 +52,7 @@ public class Sombras : Minijuego
         // Encuentra el GameObject que contiene la imagen de la sombra
         pregunta = GameObject.Find("Sombra");
         // Obtener el componente imagen
-        Image sombra = pregunta.GetComponent<Image>();
+        sombra = pregunta.GetComponent<Image>();
         // Verifica si se encuentra el GameObject
         if(pregunta != null){
             // Verifica si el indice de la pregunta se encuentra en el rango 

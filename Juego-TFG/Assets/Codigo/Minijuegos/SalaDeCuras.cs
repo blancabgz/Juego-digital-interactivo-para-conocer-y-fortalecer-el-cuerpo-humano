@@ -11,11 +11,11 @@ public class SalaDeCuras : Minijuego
     public string respuesta;
     public string[] curasOpciones;
     
-    void Awake(){
+    public void Awake(){
         ControlMusica.EstadoMusica();
     }
     
-    void Start()
+    public void Start()
     {
         // Mezcla las opciones de las curas
         base.MezclarElementos(curasOpciones);
