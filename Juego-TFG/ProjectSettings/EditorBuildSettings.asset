@@ -311,4 +311,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CinematicasNiveles/Nivel8.1.unity
     guid: 569d4dfca0bfcdd46bde22b2e15bc40b
+  - enabled: 1
+    path: Assets/Scenes/Niveles/Nivel9/Lumbar.unity
+    guid: 0fc65343b39945a4e9eb02aa92087ccb
   m_configObjects: {}

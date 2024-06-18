@@ -381,7 +381,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xBFQue ejercicio necesito hacer para trabajar el dorsal?"
+  m_Text: "\xBFQue ejercicio necesito hacer para trabajar la lumbar?"
 --- !u!222 &212481669
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -449,7 +449,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 83636da298c194c42991511d8a1bead9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 41d62b78a74aeb648be4b608039741f1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -830,7 +830,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5ee32d3e03752bf46a462c25e6427d66, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cfe523cb42b65244b8cdbff33bf7d99c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -877,14 +877,14 @@ MonoBehaviour:
   panelFinal: {fileID: 0}
   respuestas:
   - id: 0
-    musculo: Biceps
-    imagen: {fileID: 21300000, guid: 5ee32d3e03752bf46a462c25e6427d66, type: 3}
+    musculo: Abdomen
+    imagen: {fileID: 21300000, guid: cfe523cb42b65244b8cdbff33bf7d99c, type: 3}
   - id: 1
-    musculo: Hombro
-    imagen: {fileID: 21300000, guid: 83636da298c194c42991511d8a1bead9, type: 3}
+    musculo: Lumbar
+    imagen: {fileID: 21300000, guid: 270478b0375cacb4aa60e5351de18539, type: 3}
   - id: 2
-    musculo: Dorsal
-    imagen: {fileID: 21300000, guid: 496b58e93499f0543a006f9068d8142b, type: 3}
+    musculo: Oblicuo
+    imagen: {fileID: 21300000, guid: 41d62b78a74aeb648be4b608039741f1, type: 3}
   imagenes:
   - id: 0
     sprite: {fileID: 21300000, guid: 0a47ad41f1377be4ca0ae78652c529e9, type: 3}
@@ -901,10 +901,10 @@ MonoBehaviour:
   validate2: {fileID: 1589949770}
   validate3: {fileID: 1486606070}
   panelPregunta: {fileID: 518336499}
-  musculo: Dorsal
+  musculo: Lumbar
   imagenPanel: {fileID: 921883126}
   botonSiguiente: {fileID: 97172446}
-  escenaSiguiente: Lumbar
+  escenaSiguiente: Nivel9.1
 --- !u!4 &741163020
 Transform:
   m_ObjectHideFlags: 0
@@ -1607,7 +1607,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 496b58e93499f0543a006f9068d8142b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 270478b0375cacb4aa60e5351de18539, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

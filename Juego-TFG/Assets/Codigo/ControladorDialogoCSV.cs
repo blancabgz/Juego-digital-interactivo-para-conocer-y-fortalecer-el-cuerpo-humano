@@ -64,7 +64,7 @@ public class ControladorDialogoCSV : MonoBehaviour
 
         mensajeActivo = 0;
         nivel = PlayerPrefs.GetInt("nivelSeleccionado", 1);
-        Debug.Log("Nivel" + nivel);
+        // Debug.Log("Nivel" + nivel);
         LeerArchivo("Assets/Codigo/Datos/historias.csv");
         LeerArchivo("Assets/Codigo/Datos/actorhabla.csv", actores);
         LeerArchivo("Assets/Codigo/Datos/jugadorpanel.csv", actorPanel);
