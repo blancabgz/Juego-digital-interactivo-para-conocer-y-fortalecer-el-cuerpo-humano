@@ -34,19 +34,19 @@ EditorBuildSettings:
     guid: a7598e27456ff0543a00db366dbeb94d
   - enabled: 1
     path: Assets/Scenes/Niveles/Nivel1/Biceps.unity
-    guid: 3a8039a4e009df9449d03ee4b0a7eb00
-  - enabled: 1
+    guid: b08e29da90765f648a1a1ece303c4d0a
+  - enabled: 0
     path: Assets/Scenes/Niveles/Nivel1/PreguntaBiceps.unity
     guid: db29076767c6ad841b52f7472e46a3f4
   - enabled: 1
     path: Assets/Scenes/CinematicasNiveles/Nivel1.2.unity
     guid: d54c9d75446f26a409ff67ddbb36bdb1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Niveles/Nivel1/PreguntaTriceps.unity
     guid: 0a92155cc42421148885c4ff2537b015
   - enabled: 1
     path: Assets/Scenes/Niveles/Nivel1/Triceps.unity
-    guid: 6283bc40eaa80da49b96b55eb1143197
+    guid: 07f93e39c2ec7324db7f1ac600bf75dd
   - enabled: 1
     path: Assets/Scenes/CinematicasNiveles/Nivel1.3.unity
     guid: d8624ceef8dcaac4f9d2fcfcef22fe78
@@ -86,18 +86,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CinematicasNiveles/Nivel4.1.unity
     guid: 47028e5cbf8e83748ad4d234f1e60cec
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Niveles/Nivel5/PreguntaPectoral2.unity
     guid: c22721c9b3fd22a4d884853b564f23b9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Niveles/Nivel5/PreguntaPectoral1.unity
     guid: 4b6db71b94820fd41b4aa50e58326adf
   - enabled: 1
     path: Assets/Scenes/Niveles/Nivel5/Pectoral1.unity
-    guid: df82080ccd159e446a66b220a77f67da
+    guid: a4b03f30375addd46bb873a1f02ec220
   - enabled: 1
     path: Assets/Scenes/Niveles/Nivel5/Pectoral2.unity
-    guid: ab2723b0fdbc2bb4d802d739eef89027
+    guid: 9795589feacef73429ffca9fbaa9abb9
   - enabled: 1
     path: Assets/Scenes/CinematicasNiveles/Nivel5.1.unity
     guid: b6512a59b7771db43ba1c213ec106f74
@@ -124,8 +124,8 @@ EditorBuildSettings:
     guid: 3a2364b1009e3b74fba0fddf9a2cc836
   - enabled: 1
     path: Assets/Scenes/Niveles/Nivel9/Dorsal.unity
-    guid: c7c27fd9d91d8124385b6c71703e6ff0
-  - enabled: 1
+    guid: f73cf203c04f7d64e9f13df296ca6bdd
+  - enabled: 0
     path: Assets/Scenes/Niveles/Nivel9/PreguntaDorsal.unity
     guid: 314e1345c8079d1468306f814dd028fb
   - enabled: 1
@@ -209,7 +209,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CinematicasNiveles/Nivel18.1.unity
     guid: 9be6fac830db699479da72d568141ca1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Niveles/Nivel17/PreguntaOblicuo.unity
     guid: bf6eb89093ced12448eb0504927daeef
   - enabled: 1
@@ -218,19 +218,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Niveles/Nivel17/Abdomen.unity
     guid: 49131ca257634ac4998b3797b43329f6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Niveles/Nivel17/PreguntaAbdomen.unity
     guid: eeef3996cedad3b47b0ffb05e19053ac
   - enabled: 1
     path: Assets/Scenes/Niveles/Nivel18/SombrasBrazo.unity
     guid: 0cff8d1b44b2e3449abf2bf1864f6e8b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Niveles/Nivel19/PreguntaGluteo.unity
     guid: 0f827387ebc9ff444bbbd178b6fc0a69
   - enabled: 1
     path: Assets/Scenes/Niveles/Nivel19/Gluteo.unity
     guid: 08eb1cb56bc7eab47b954136800c72cc
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Niveles/Nivel19/PreguntaGemelo.unity
     guid: 60b0d56a4c04471419879e22fc7e3627
   - enabled: 1
@@ -305,7 +305,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CinematicasNiveles/Nivel15.unity
     guid: 605f0fbae12b43e4b8899423fe63e43a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Cinematica.unity
     guid: f41de3403f2e1b041b44040f14b507a4
   - enabled: 1

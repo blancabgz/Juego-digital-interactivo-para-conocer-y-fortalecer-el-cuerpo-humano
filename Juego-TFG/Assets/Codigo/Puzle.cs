@@ -29,9 +29,9 @@ public class Puzle : Minijuego{
     void Awake(){
         ControlMusica.EstadoMusica();
         if (base.nivel == 2){
-            LeerArchivo("Assets/Codigo/Datos/puzlenivel2.csv");
+            LeerArchivo("Datos/puzlenivel2");
         }else if(base.nivel == 4){
-            LeerArchivo("Assets/Codigo/Datos/puzlenivel4.csv");
+            LeerArchivo("Datos/puzlenivel4");
         }
         
     }
@@ -104,7 +104,8 @@ public class Puzle : Minijuego{
 
     private void LeerArchivo(string rutaArchivo){
         piezas = new List<Pieza>();
-        lineas = File.ReadAllLines(rutaArchivo);
+        TextAsset csvFile = Resources.Load(rutaArchivo) as TextAsset;
+        lineas = csvFile.text.Split('\n');
         for (int i = 1; i < lineas.Length; i++){
             string[] valores = lineas[i].Split(',');
             if(valores.Length >= 2){

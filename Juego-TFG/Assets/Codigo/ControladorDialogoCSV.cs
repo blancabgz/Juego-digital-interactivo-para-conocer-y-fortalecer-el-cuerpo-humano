@@ -65,11 +65,11 @@ public class ControladorDialogoCSV : MonoBehaviour
         mensajeActivo = 0;
         nivel = PlayerPrefs.GetInt("nivelSeleccionado", 1);
         // Debug.Log("Nivel" + nivel);
-        LeerArchivo("Assets/Codigo/Datos/historias.csv");
-        LeerArchivo("Assets/Codigo/Datos/actorhabla.csv", actores);
-        LeerArchivo("Assets/Codigo/Datos/jugadorpanel.csv", actorPanel);
-        LeerArchivo("Assets/Codigo/Datos/superheroepanel.csv", superheroePanel);
-        LeerArchivo("Assets/Codigo/Datos/imagenesDiapositivas.csv", imagenes);
+        LeerArchivo("Datos/historias");
+        LeerArchivo("Datos/actorhabla", actores);
+        LeerArchivo("Datos/jugadorpanel", actorPanel);
+        LeerArchivo("Datos/superheroepanel", superheroePanel);
+        LeerArchivo("Datos/imagenesDiapositivas", imagenes);
 
 
         // obtengo el personaje que ha elegido el jugador/a
@@ -174,7 +174,8 @@ public class ControladorDialogoCSV : MonoBehaviour
     private void LeerArchivo(string rutaArchivo)
     {
         mensajes = new List<MensajeCSV>();
-        lineas = File.ReadAllLines(rutaArchivo);
+        TextAsset csvFile = Resources.Load(rutaArchivo) as TextAsset;
+        lineas = csvFile.text.Split('\n');
 
         for (int i = 1; i < lineas.Length; i++)
         {
@@ -200,7 +201,8 @@ public class ControladorDialogoCSV : MonoBehaviour
 
     private void LeerArchivo(string rutaArchivo, List<PersonajeCSV> personajes)
     {
-        lineas = File.ReadAllLines(rutaArchivo);
+        TextAsset csvFile = Resources.Load(rutaArchivo) as TextAsset;
+        lineas = csvFile.text.Split('\n');
 
         for (int i = 1; i < lineas.Length; i++)
         {
@@ -212,7 +214,6 @@ public class ControladorDialogoCSV : MonoBehaviour
                 string name = valores[1];
                 string imagenPath = valores[2];
                 Sprite sprite = CargarSprite(imagenPath);
-                // Debug.Log(sprite);
                 PersonajeCSV personaje = new PersonajeCSV(id, name, sprite);
                 personajes.Add(personaje);
 
@@ -223,6 +224,7 @@ public class ControladorDialogoCSV : MonoBehaviour
 
     private Sprite CargarSprite(string path)
     {
+        Debug.Log(path);
         // Cargar un Sprite desde la ruta de archivo en la carpeta Resources
         return Resources.Load<Sprite>(path);
     }

@@ -27,7 +27,7 @@ public class ControladorRecompensas : MonoBehaviour
     void Awake()
     {
         ControlMusica.EstadoMusica();
-        LeerArchivo("Assets/Codigo/Datos/recompensas.csv");
+        LeerArchivo("Datos/recompensas");
         nombreEscenaActual = SceneManager.GetActiveScene().name;
         // Debug.Log("El nombre de la escena actual es: " + nombreEscenaActual);
     }
@@ -97,8 +97,8 @@ public class ControladorRecompensas : MonoBehaviour
     {
 
         recompensas = new List<Recompensa>();
-
-        lineas = File.ReadAllLines(rutaArchivo);
+        TextAsset csvFile = Resources.Load(rutaArchivo) as TextAsset;
+        lineas = csvFile.text.Split('\n');
         for (int i = 1; i < lineas.Length; i++)
         {
             string[] valores = lineas[i].Split(',');
