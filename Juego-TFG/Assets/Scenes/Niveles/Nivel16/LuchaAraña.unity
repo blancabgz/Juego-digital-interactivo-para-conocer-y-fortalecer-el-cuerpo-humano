@@ -2086,6 +2086,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nivel: 16
+  puntos: 0
+  numFallos: 0
+  numIntentos: 0
+  multiplicador: 0
   panelFinal: {fileID: 1245959418}
   palabraDividida: 
   letrasPalabraDividida: 0
@@ -3493,7 +3497,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Ahorcado
+          m_StringArgument: "LuchaAra\xF1a"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &714770144

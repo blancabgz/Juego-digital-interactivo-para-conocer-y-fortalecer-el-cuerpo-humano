@@ -32,12 +32,12 @@ nivel-escena-actor_habla-superheroe-imagen-texto
 2-Nivel2-4-0-0-¡Sí! Estoy trabajando mucho. ¿Qué vamos a aprender hoy?
 2-Nivel2-8-0-0-Hoy te presentaré a un gran amigo mío que te enseñará un nuevo conocimiento. Pero antes, me ha pedido que pases una prueba.
 2-Nivel2-0-0-0-¿Una prueba? ¿Qué tipo de prueba?   
-2-Nivel2-8-0-0-Te enfrentarás a este rompecabezas.
-2-Nivel2-0-0-0-¿Y cómo funciona?
-2-Nivel2-8-0-0-Tendrás que pulsar en las imágenes desordenadas de la parte derecha y luego colocarlas en el espacio en blanco que tienes a la izquierda. 
-2-Nivel2-8-0-0-¿A que es sencillo?
-2-Nivel2-0-0-0-¡Tanto como sacar punta a un lápiz!
-2-Nivel2-8-0-0-¡Pues mucho ánimo!
+2-Nivel2-8-0-27-Te enfrentarás a este rompecabezas.
+2-Nivel2-0-0-27-¿Y cómo funciona?
+2-Nivel2-8-0-27-Tendrás que pulsar en las imágenes desordenadas de la parte derecha y luego colocarlas en el espacio en blanco que tienes a la izquierda. 
+2-Nivel2-8-0-27-¿A que es sencillo?
+2-Nivel2-0-0-27-¡Tanto como sacar punta a un lápiz!
+2-Nivel2-8-0-27-¡Pues mucho ánimo!
 2-Nivel2.1-0-0-0-Creo que lo he hecho bien, ¿no?
 2-Nivel2.1-8-0-0-¡Sí! Y ahora te voy a presentar a...
 2-Nivel2.1-11-3-3-¡Hola joven! Soy Espaldín Supremo, y ya he visto que has sido capaz de completar el rompecabezas para formar la espalda. ¿Sabías que en la espalda intervienen varios músculos?
@@ -84,13 +84,13 @@ nivel-escena-actor_habla-superheroe-imagen-texto
 4-Nivel4-4-0-0-¡Sí! Me lo estoy pasando genial.
 4-Nivel4-8-0-0-¡Así me gusta! ¿Sabías que los superhéroes no solo deben ser fuertes físicamente, sino que también tienen que estar preparados mentalmente?
 4-Nivel4-2-0-0-¿Si?¿Por qué?
-4-Nivel4-8-0-0-Porque no solo hay que tener una gran fuerza para hacerles frente, también hay que ser inteligente para prevenir los ataques. ¿Entiendes?
-4-Nivel4-4-0-0-Si si pero, ¿qué puedo hacer para mejorar?
-4-Nivel4-8-0-0-¡Esa es la actitud! Por ello voy a presentarte a un compañero que te ayudará a mejorar tu inteligencia.
+4-Nivel4-8-0-28-Porque no solo hay que tener una gran fuerza para hacerles frente, también hay que ser inteligente para prevenir los ataques. ¿Entiendes?
+4-Nivel4-4-0-28-Si si pero, ¿qué puedo hacer para mejorar?
+4-Nivel4-8-0-28-¡Esa es la actitud! Por ello voy a presentarte a un compañero que te ayudará a mejorar tu inteligencia.
 4-Nivel4-13-5-0-¡Hola joven! Me presento, soy Delto Titán, un superhéroe con un gran cerebro.
 4-Nivel4-13-5-0-Vengo a enseñarte como puedes desarrollar tu inteligencia para poder hacer frente a villanos muy listos.
-4-Nivel4-4-5-0-¡Guau! ¿Y cómo vamos a hacerlo?
-4-Nivel4-13-5-0-Para ello tendrás que resolver este puzle donde aparece el equipo de superhéroes, esto te ayudará a desarrollar más tu cerebro.
+4-Nivel4-4-5-28-¡Guau! ¿Y cómo vamos a hacerlo?
+4-Nivel4-13-5-28-Para ello tendrás que resolver este puzle donde aparece el equipo de superhéroes, esto te ayudará a desarrollar más tu cerebro.
 4-Nivel4-4-5-0-¡Vamos allá!
 4-Nivel4.1-13-5-0-¿Qué te ha parecido el puzle? ¿Te ha gustado?
 4-Nivel4.1-4-5-0-¡Sí! Me ha encantado conocer al equipo del que voy a formar parte.
@@ -246,9 +246,9 @@ nivel-escena-actor_habla-superheroe-imagen-texto
 12-Nivel12-2-5-0-¡Sí! Pero, ¿por qué es necesario recordarlos todos para un superhéroe?
 12-Nivel12-13-5-0-¡Buena pregunta! Un superhéroe necesita estar bien preparado para cualquier ocasión que surja.
 12-Nivel12-13-5-0-Y conocer su cuerpo es fundamental para ello.
-12-Nivel12-13-5-0-Además, los músculos no son solo importantes para la movilidad, sino que también nos ayudan a realizar acciones cotidianas como levantar objetos, correr y saltar.
-12-Nivel12-2-5-0-¡Ah vale! Ahora entiendo por qué es tan importante. Sin saber los músculos, no podemos entrenar bien nuestro cuerpo para salvar a las personas.
-12-Nivel12-13-5-0-¡Exacto!
+12-Nivel12-13-5-29-Además, los músculos no son solo importantes para la movilidad, sino que también nos ayudan a realizar acciones cotidianas como levantar objetos, correr y saltar.
+12-Nivel12-2-5-29-¡Ah vale! Ahora entiendo por qué es tan importante. Sin saber los músculos, no podemos entrenar bien nuestro cuerpo para salvar a las personas.
+12-Nivel12-13-5-29-¡Exacto!
 12-Nivel12-13-5-0-Ahora, vamos a lanzar este dado especial. 
 12-Nivel12-13-5-0-Dependiendo de la parte del cuerpo que salga, tendrás que responder una pregunta relacionada con ese músculo o realizar un ejercicio de movilidad.
 12-Nivel12-2-5-0-¡Genial! ¡Dame ese dado!
@@ -288,8 +288,8 @@ nivel-escena-actor_habla-superheroe-imagen-texto
 14-Nivel14-10-2-0-¡Hola joven! He vuelto porque tenemos que hablar sobre la importancia del tríceps.
 14-Nivel14-10-2-0-¿Qué recuerdas sobre los tríceps?
 14-Nivel14-4-2-0-Pues que están en la parte de atrás del brazo.
-14-Nivel14-10-2-0-¡Exactamente! El tríceps está ubicado en la parte posterior del brazo y es crucial para extender el codo.
-14-Nivel14-4-2-0-¿Y para qué se usan?
+14-Nivel14-10-2-30-¡Exactamente! El tríceps está ubicado en la parte posterior del brazo y es crucial para extender el codo.
+14-Nivel14-4-2-30-¿Y para qué se usan?
 14-Nivel14-10-2-22-¿Alguna vez has volado una cometa?
 14-Nivel14-4-2-22-¡Sí, me encantan!
 14-Nivel14-10-2-22-Pues el tríceps es esencial para realizar los movimientos que necesitas para que la cometa se mantenga en el aire. 
@@ -383,12 +383,12 @@ nivel-escena-actor_habla-superheroe-imagen-texto
 18-Nivel18-6-3-0-¿Para levantar los brazos?
 18-Nivel18-11-3-0-¡Sí! Sirve tanto para levantar los brazos como para girar el brazo en diferentes direcciones.
 18-Nivel18-4-3-0-Entendido.
-18-Nivel18-11-3-0-¿Alguna vez has ido a un partido de béisbol?
-18-Nivel18-2-3-0-La verdad es que no. 
-18-Nivel18-11-3-0-¡Qué pena! Pues te voy a llevar a uno. Mientras tanto, observa esta imagen donde puedes ver como lanzan la pelota con fuerza y precisión, ¿verdad?
-18-Nivel18-4-3-0-¡Si, es increíble!
-18-Nivel18-11-3-0-Pues el deltoides es el protagonista en esos lanzamientos. Es como el motor que impulsa el movimiento del brazo hacia adelante con fuerza y precisión.
-18-Nivel18-4-5-0-¡Qué interesante! ¿Algo más que deba saber?
+18-Nivel18-11-3-31-¿Alguna vez has ido a un partido de béisbol?
+18-Nivel18-2-3-31-La verdad es que no. 
+18-Nivel18-11-3-31-¡Qué pena! Pues te voy a llevar a uno. Mientras tanto, observa esta imagen donde puedes ver como lanzan la pelota con fuerza y precisión, ¿verdad?
+18-Nivel18-4-3-31-¡Si, es increíble!
+18-Nivel18-11-3-31-Pues el deltoides es el protagonista en esos lanzamientos. Es como el motor que impulsa el movimiento del brazo hacia adelante con fuerza y precisión.
+18-Nivel18-4-3-31-¡Qué interesante! ¿Algo más que deba saber?
 18-Nivel18-11-3-0-Un detalle importante, el deltoides es un músculo bastante complejo que se compone de tres partes distintas.
 18-Nivel18-0-3-0-¿Tres?
 18-Nivel18-11-3-0-Efectivamente, la parte delantera nos ayuda a levantar el brazo hacia adelante, como cuando saludamos a alguien, por ejemplo.
@@ -423,11 +423,11 @@ nivel-escena-actor_habla-superheroe-imagen-texto
 19-Nivel19.1-4-4-0-¡Muchas gracias!
 20-Nivel20-13-5-0-¡Hola joven! Hoy traigo un nuevo desafío para ti.
 20-Nivel20-6-5-0-¿En qué consiste?
-20-Nivel20-13-5-0-Hoy vamos a entrenar tu mente de una manera divertida y desafiante. Vamos a jugar con adivinanzas.
-20-Nivel20-4-5-0-¡Uy suena divertido!
-20-Nivel20-4-5-0-Quiero empezar cuánto antes. ¿Cómo se juega?
-20-Nivel20-14-5-0-Pues es muy sencillo. Te leeré una adivinanza y luego tendrás que seleccionar el músculo al que corresponde. ¿Entendido?
-20-Nivel20-4-5-0-¡Sí! Vamos allá
+20-Nivel20-13-5-32-Hoy vamos a entrenar tu mente de una manera divertida y desafiante. Vamos a jugar con adivinanzas.
+20-Nivel20-4-5-32-¡Uy suena divertido!
+20-Nivel20-4-5-32-Quiero empezar cuánto antes. ¿Cómo se juega?
+20-Nivel20-14-5-32-Pues es muy sencillo. Te leeré una adivinanza y luego tendrás que seleccionar el músculo al que corresponde. ¿Entendido?
+20-Nivel20-4-5-32-¡Sí! Vamos allá
 20-Nivel20.1-13-5-0-¡Lo has hecho súper bien! Estoy muy orgulloso de ti.
 20-Nivel20.1-4-5-0-¡Gracias! Es muy importante desarrollar todo mi potencial para entrar en el equipo. Además, ha sido divertido.
 20-Nivel20.1-13-5-0-Me alegro mucho joven. Te hago entrega de tu premio como siempre. ¡Nos vemos!
@@ -465,11 +465,11 @@ nivel-escena-actor_habla-superheroe-imagen-texto
 22-Nivel22-6-0-0-¡Si! Let's go. Pero... ¡espera! ¿En qué consiste la prueba?
 22-Nivel22-8-0-0-Confío en ti, se que lo harás genial. Te vas a enfrentar a un par de pruebas y las tendrás que superar para unirte al equipo y ganar tu diploma.
 22-Nivel22-4-0-0-¡Perfecto! Vamos al lío.
-22-Nivel22.1-8-0-0-¡Has conseguido superar la prueba final! ¡Eres parte del equipo por fin!
-22-Nivel22.1-2-0-0-¿Enserio? ¡No me lo creo!
-22-Nivel22.1-8-0-0-¡Efectivamente! Ya eres parte de nuestro equipo. Has trabajado muy duro para llegar hasta aquí y te doy mi enhorabuena.
-22-Nivel22.1-4-0-0-¡Muchas gracias! Y… ¿ahora qué?
-22-Nivel22.1-8-0-0-A partir de aquí, con los conocimientos que has adquirido y nuestro gran equipo, podrás llegar donde te propongas.
-22-Nivel22.1-8-0-0-¡Confío en ti! Se que ayudarás para hacer del mundo un lugar mejor. 
-22-Nivel22.1-4-0-0-¡Sí! Trabajaré muy duro para ayudar a los demás. ¡Gracias por todo!
-22-Nivel22.1-8-0-0-Gracias a ti por esta gran aventura, te hago entrega de tu diploma. ¡Nos veremos salvando a la gente! 
+22-Nivel22.1-8-0-33-¡Has conseguido superar la prueba final! ¡Eres parte del equipo por fin!
+22-Nivel22.1-2-0-33-¿Enserio? ¡No me lo creo!
+22-Nivel22.1-8-0-33-¡Efectivamente! Ya eres parte de nuestro equipo. Has trabajado muy duro para llegar hasta aquí y te doy mi enhorabuena.
+22-Nivel22.1-4-0-33-¡Muchas gracias! Y… ¿ahora qué?
+22-Nivel22.1-8-0-33-A partir de aquí, con los conocimientos que has adquirido y nuestro gran equipo, podrás llegar donde te propongas.
+22-Nivel22.1-8-0-33-¡Confío en ti! Se que ayudarás para hacer del mundo un lugar mejor. 
+22-Nivel22.1-4-0-33-¡Sí! Trabajaré muy duro para ayudar a los demás. ¡Gracias por todo!
+22-Nivel22.1-8-0-33-Gracias a ti por esta gran aventura, te hago entrega de tu diploma. ¡Nos veremos salvando a la gente! 

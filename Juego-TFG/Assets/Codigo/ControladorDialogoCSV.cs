@@ -214,6 +214,7 @@ public class ControladorDialogoCSV : MonoBehaviour
                 string name = valores[1];
                 string imagenPath = valores[2];
                 Sprite sprite = CargarSprite(imagenPath);
+                Debug.Log(sprite);
                 PersonajeCSV personaje = new PersonajeCSV(id, name, sprite);
                 personajes.Add(personaje);
 
@@ -224,9 +225,8 @@ public class ControladorDialogoCSV : MonoBehaviour
 
     private Sprite CargarSprite(string path)
     {
-        Debug.Log(path);
         // Cargar un Sprite desde la ruta de archivo en la carpeta Resources
-        return Resources.Load<Sprite>(path);
+        return Resources.Load<Sprite>(path.Trim());
     }
 }
 

@@ -194,9 +194,6 @@ public class Minijuego : MonoBehaviour{
         }
 
     }
-
-    
-
     
 
     public Sprite CargarSprite(string archivo, string spriteName){

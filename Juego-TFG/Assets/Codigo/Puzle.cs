@@ -112,7 +112,7 @@ public class Puzle : Minijuego{
                 int posicion = int.Parse(valores[0]);
                 string archivoName = valores[1];
                 string spriteName = valores[2];
-                Sprite sprite = base.CargarSprite(archivoName, spriteName);
+                Sprite sprite = base.CargarSprite(archivoName.Trim(), spriteName.Trim());
                 if(sprite != null){
                     Pieza pieza = new Pieza(posicion, sprite);
                     piezas.Add(pieza);
