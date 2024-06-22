@@ -40,6 +40,7 @@ public class LuchaContraElVillano : Minijuego
         if(nivel > 0){
             base.puntos = 10;
             base.numFallos = 0;
+            base.multiplicador = 1;
         }
 
         if (selectedCharacter == "boy")
@@ -79,7 +80,6 @@ public class LuchaContraElVillano : Minijuego
                 PlayAnimacion();
             }
             
-
             // Si ha vencido
             if(vidaActual == 0){
                 base.CalcularPuntuacionFinal(multiplicador);

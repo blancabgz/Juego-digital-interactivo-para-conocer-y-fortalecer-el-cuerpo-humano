@@ -70,6 +70,7 @@ public class Minijuego : MonoBehaviour{
 
     public void GuardarPuntuacion(int pantalla){
         ControladorNiveles.GuardarNivel(nivel,pantalla);
+        // Debug.Log("Nivel: " + nivel + " Puntos: " + puntos);
         Calificaciones.GuardarPuntuacion(nivel, puntos);
     }    
 
@@ -91,10 +92,13 @@ public class Minijuego : MonoBehaviour{
      * Este método calcula la puntuación final obtenida por el jugador dependiendo de los fallos cometidos durante el juego
     */
     public void CalcularPuntuacionFinal(int multiplicador){
+
         puntos -= numFallos * multiplicador;
+        // Debug.Log("Puntos: " + puntos + "Fallos: " + numFallos + " Multiplicador " + multiplicador);
         if(puntos < 0){
             puntos = 0;
         }
+        // Debug.Log("Puntos finales: " + puntos);
     }
 
     /**

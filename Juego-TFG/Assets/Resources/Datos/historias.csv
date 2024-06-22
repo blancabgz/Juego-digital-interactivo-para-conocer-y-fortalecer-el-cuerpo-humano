@@ -6,7 +6,7 @@ nivel-escena-actor_habla-superheroe-imagen-texto
 1-Nivel1-9-1-1-¡Hola joven! Hoy vamos a aprender como formar estos maravillosos brazos. Lo primero de todo, ¿sabes qué son los músculos?
 1-Nivel1-2-1-1-Ehhhh… ¿Son los que nos ayudan a movernos?
 1-Nivel1-9-1-1-Efectivamente, son tejidos del cuerpo humano que pueden contraerse y relajarse para realizar todo tipo de movimientos. 
-1-Nivel1-9-1-1-¿Y por qué tú tienes un brazo tan grande?
+1-Nivel1-2-1-1-¿Y por qué tú tienes un brazo tan grande?
 1-Nivel1-9-1-2-¡Buena pregunta! Mi brazo es grande porque he estado entrenando estos músculos, llamados bíceps, durante mucho tiempo.
 1-Nivel1-4-1-2-¡Guau, eso suena genial! ¿Cómo puedo hacer que mis bíceps sean fuertes?
 1-Nivel1-9-1-2-Te mostraré tres ejercicios divertidos. Realízalos y selecciona la imagen que creas correcta. ¿Estás listo? 
@@ -40,7 +40,7 @@ nivel-escena-actor_habla-superheroe-imagen-texto
 2-Nivel2-8-0-27-¡Pues mucho ánimo!
 2-Nivel2.1-0-0-0-Creo que lo he hecho bien, ¿no?
 2-Nivel2.1-8-0-0-¡Sí! Y ahora te voy a presentar a...
-2-Nivel2.1-11-3-3-¡Hola joven! Soy Espaldín Supremo, y ya he visto que has sido capaz de completar el rompecabezas para formar la espalda. ¿Sabías que en la espalda intervienen varios músculos?
+2-Nivel2.1-11-3-0-¡Hola joven! Soy Espaldín Supremo, y ya he visto que has sido capaz de completar el rompecabezas para formar la espalda. ¿Sabías que en la espalda intervienen varios músculos?
 2-Nivel2.1-0-3-0-¿Si? No entiendo mucho sobre los músculos de la espalda. 
 2-Nivel2.1-11-3-4-¡Por supuesto! Ahora mismo te explico.
 2-Nivel2.1-11-3-4-Intervienen 3 músculos importantes: el trapecio, los dorsales y el lumbar.
@@ -60,7 +60,7 @@ nivel-escena-actor_habla-superheroe-imagen-texto
 3-Nivel3-12-4-0-¡Hola joven! Hoy aprenderás sobre cómo obtener un abdomen fuerte e increíble como el mío. 
 3-Nivel3-12-4-0-¿Sabías que tu abdomen es una parte muy fuerte de tu cuerpo y que es fundamental para mantener una buena postura? 
 3-Nivel3-0-4-0-¿Para la postura? ¿Pero para eso no está la espalda?
-3-Nivel3-12-4-0-Efectivamente, pero tus músculos abdominales, como el recto abdominal y los oblicuos, son  también muy importantes.
+3-Nivel3-12-4-0-Efectivamente, pero tus músculos abdominales, como el recto abdominal y los oblicuos, son también muy importantes.
 3-Nivel3-0-4-8-¿Y qué hace cada uno?
 3-Nivel3-12-4-8-El recto abdominal te ayuda a mantener una posición recta del cuerpo.
 3-Nivel3-12-4-8-Esto hace que puedas inclinarte hacia los lados y ayuda a las costillas para que puedas flexionar la columna hacia adelante y hacia atrás.
@@ -71,14 +71,14 @@ nivel-escena-actor_habla-superheroe-imagen-texto
 3-Nivel3-8-0-10-¡Perdón por interrumpir! ¡Noticias urgentes! Un villano está atacando la ciudad.
 3-Nivel3-0-0-10-¿Qué podemos hacer?
 3-Nivel3-12-4-10-Es el momento de poner en práctica lo que has aprendido en la clase para ayudarme a derrotar al villano.
-3-Nivel3-0-4-10-¿Yo? ¿Estás seguro?Estupendo, recuerda que debes usar tus habilidades y conocimientos para hacer el bien. ¡Continúa con tu entrenamiento!
+3-Nivel3-0-4-10-¿Yo? ¿Estás seguro? Estupendo, recuerda que debes usar tus habilidades y conocimientos para hacer el bien. ¡Continúa con tu entrenamiento!
 3-Nivel3-12-4-10-Sí, necesitamos que utilices tus conocimientos y fuerzas para enfrentarte al villano.
 3-Nivel3-2-4-10-¡Entendido! ¡Voy a detener a ese villano!
 3-Nivel3.1-8-0-0-¡Ha sido increíble! Muchas gracias por vencer al villano. Te ha venido muy bien esta clase sobre abdomen para vencerle. 
 3-Nivel3.1-4-0-0-¡Gracias! Ha sido todo gracias a Capitán Core que me ha ayudado. 
 3-Nivel3.1-12-4-0-¡Has estado increíble!
 3-Nivel3.1-12-4-0-Y como recompensa por tu gran hazaña, tu premio es el valioso aprendizaje que has adquirido y este amuleto especial que te avisará cuando haya alguna amenaza cerca.
-3-Nivel3.1-4-4-0-¡Guau me encanta! Gracias Capitán Core
+3-Nivel3.1-4-4-0-¡Guau, me encanta! Gracias Capitán Core.
 3-Nivel3.1-8-0-0-Estupendo, recuerda que debes usar tus habilidades y conocimientos para hacer el bien. ¡Continúa con tu entrenamiento!
 4-Nivel4-8-0-0-¡Hola joven! Veo que vas progresando en tu entrenamiento y estoy muy orgulloso de ti por ello. 
 4-Nivel4-4-0-0-¡Sí! Me lo estoy pasando genial.
@@ -89,8 +89,8 @@ nivel-escena-actor_habla-superheroe-imagen-texto
 4-Nivel4-8-0-28-¡Esa es la actitud! Por ello voy a presentarte a un compañero que te ayudará a mejorar tu inteligencia.
 4-Nivel4-13-5-0-¡Hola joven! Me presento, soy Delto Titán, un superhéroe con un gran cerebro.
 4-Nivel4-13-5-0-Vengo a enseñarte como puedes desarrollar tu inteligencia para poder hacer frente a villanos muy listos.
-4-Nivel4-4-5-28-¡Guau! ¿Y cómo vamos a hacerlo?
-4-Nivel4-13-5-28-Para ello tendrás que resolver este puzle donde aparece el equipo de superhéroes, esto te ayudará a desarrollar más tu cerebro.
+4-Nivel4-4-5-0-¡Guau! ¿Y cómo vamos a hacerlo?
+4-Nivel4-13-5-0-Para ello tendrás que resolver este puzle donde aparece el equipo de superhéroes, esto te ayudará a desarrollar más tu cerebro.
 4-Nivel4-4-5-0-¡Vamos allá!
 4-Nivel4.1-13-5-0-¿Qué te ha parecido el puzle? ¿Te ha gustado?
 4-Nivel4.1-4-5-0-¡Sí! Me ha encantado conocer al equipo del que voy a formar parte.
@@ -130,7 +130,7 @@ nivel-escena-actor_habla-superheroe-imagen-texto
 6-Nivel6-8-0-12-Por otro lado, el músculo que se sitúa en el culo, se llama glúteo. ¡Este músculo es el más grande del cuerpo! Te ayuda a caminar y subir escaleras.
 6-Nivel6-4-0-12-¡Ala! ¿Es el más grande? ¡Qué guay! 
 6-Nivel6-8-0-14-Y el último que nos queda es el gemelo. 
-6-Nivel6-8-0-14-Es un músculo que está en la parte de atrás de las piernas y te ayudan a impulsarte y a mantener equilibrio.
+6-Nivel6-8-0-14-Es un músculo que está en la parte de atrás de las piernas y te ayudan a impulsarte y a mantener el equilibrio.
 6-Nivel6-4-0-14-¡Ah vale! Ahora sí lo comprendo todo.
 6-Nivel6-8-0-14-Pues ahora te vas a enfrentar a una actividad muy chula que te va a explicar nuestro amigo Eclipse. 
 6-Nivel6-14-6-0-¡Hola! ¿Qué tal estás?

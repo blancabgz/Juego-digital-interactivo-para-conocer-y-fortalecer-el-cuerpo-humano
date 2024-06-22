@@ -1019,7 +1019,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xBFQue ejercicio necesito hacer para conseguir unos triceps fuertes?"
+  m_Text: "\xBFQu\xE9 ejercicio necesito hacer para conseguir unos tr\xEDceps fuertes?"
 --- !u!222 &1031469061
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1268,6 +1268,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nivel: 1
+  puntos: 0
+  numFallos: 0
+  numIntentos: 0
+  multiplicador: 0
   panelFinal: {fileID: 0}
   respuestas:
   - id: 0
@@ -1294,6 +1298,7 @@ MonoBehaviour:
   validate1: {fileID: 370645618}
   validate2: {fileID: 1589949770}
   validate3: {fileID: 1486606070}
+  panelPregunta: {fileID: 0}
   musculo: Triceps
   imagenPanel: {fileID: 921883126}
   botonSiguiente: {fileID: 97172446}

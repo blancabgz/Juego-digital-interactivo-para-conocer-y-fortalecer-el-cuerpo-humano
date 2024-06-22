@@ -191,6 +191,9 @@ public class Sombras : Minijuego
 
                 // Activa el panel final
                 base.MostrarPanelFinal(); 
+            }else{
+                ActivarImagen(opcion);
+                base.AumentarNumeroFallos();
             }
         }
     }

@@ -1596,7 +1596,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xBFQue ejercicio necesito hacer para conseguir los biceps de mr biceps?"
+  m_Text: "\xBFQu\xE9 ejercicio necesito hacer para conseguir los b\xEDceps de mr
+    biceps?"
 --- !u!222 &1511430639
 CanvasRenderer:
   m_ObjectHideFlags: 0
