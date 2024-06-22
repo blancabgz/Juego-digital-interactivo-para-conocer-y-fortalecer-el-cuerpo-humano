@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class Parejas : Minijuego{
 
-    private int poseleccion1;
-    private int poseleccion2;
+    private int poseleccion1 = -1;
+    private int poseleccion2 = -1;
     private int cartasCorrectasEncontradas = 0;
     private static int MAX_FALLOS = 20;
     public Carta[] cartas;
@@ -16,6 +16,7 @@ public class Parejas : Minijuego{
     private GameObject[] objetocartas;
     private GameObject seleccion1 = null;
     private GameObject seleccion2 = null;
+    private List<GameObject> cartasEmparejadas;
 
     void Awake(){
         ControlMusica.EstadoMusica();
@@ -24,6 +25,7 @@ public class Parejas : Minijuego{
     {
         base.puntos = 10;
         base.numFallos = 0;
+        cartasEmparejadas = new List<GameObject>();
 
         // Mezclamos los elementos del array
         base.MezclarElementos(cartas);
@@ -64,6 +66,10 @@ public class Parejas : Minijuego{
     // Si hay otra carta seleccionada, se comprueba si ambas son iguales. Si lo son, las deja visibles; si no, las vuelve a ocultar.
     // @param {int} posicion La posición de la carta seleccionada. 
     public void CartaPulsada(int posicion){
+
+        if(seleccion1 != null && poseleccion1 == posicion){
+            return;
+        }
         
         // Desactiva la carta pulsada para mostrar su contenido
         DesActCarta(objetocartas[posicion], false);
@@ -77,11 +83,18 @@ public class Parejas : Minijuego{
             // Comprobacion si ambas cartas son iguales
             if(ComprobarCartas(poseleccion1, poseleccion2)){
                 // Restablecer las variables
+                BloquearCarta(seleccion1);
+                BloquearCarta(seleccion2);
+
+                cartasEmparejadas.Add(seleccion1);
+                cartasEmparejadas.Add(seleccion2);
+
                 poseleccion1 = -1;
                 poseleccion2 = -1;
                 seleccion1 = null;
                 seleccion2 = null;
                 ComprobarFinNivel();
+                
                 // Salir de la función si se encontraron dos cartas iguales
                 return; 
             } else {
@@ -143,9 +156,16 @@ public class Parejas : Minijuego{
     private void BloquearInteraccionCartas(bool bloquear){
         foreach (GameObject carta in objetocartas){
             Button button = carta.GetComponent<Button>();
-            if (button != null){
+            if (button != null && !cartasEmparejadas.Contains(carta)){
                 button.interactable = !bloquear; // Desactivar la interacción si bloquear es true
             }
+        }
+    }
+
+    private void BloquearCarta(GameObject carta){
+        Button boton = carta.GetComponent<Button>();
+        if(boton != null){
+            boton.interactable = false;
         }
     }
 

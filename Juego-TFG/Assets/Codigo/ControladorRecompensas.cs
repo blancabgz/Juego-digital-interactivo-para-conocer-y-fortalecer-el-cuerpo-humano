@@ -104,11 +104,12 @@ public class ControladorRecompensas : MonoBehaviour
             string[] valores = lineas[i].Split(',');
             if (valores.Length >= 3)
             {
-
                 int nivel = int.Parse(valores[0]);
                 string tipo = valores[1];
                 string imagenPath = valores[2];
+                // Debug.Log(nivel + " " + tipo + " " + imagenPath);
                 Sprite sprite = CargarSprite(imagenPath);
+                Debug.Log(sprite);
                 Recompensa recompensa = new Recompensa(nivel, tipo, sprite);
                 recompensas.Add(recompensa);
             }
@@ -118,7 +119,7 @@ public class ControladorRecompensas : MonoBehaviour
     private Sprite CargarSprite(string path)
     {
         // Cargar un Sprite desde la ruta de archivo en la carpeta Resources
-        return Resources.Load<Sprite>(path);
+        return Resources.Load<Sprite>(path.Trim());
     }
 }
 

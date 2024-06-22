@@ -17,6 +17,8 @@ public class LuchaContraElVillano : Minijuego
     public GameObject pregunta;
     public TextMeshProUGUI textoPregunta;
     public Animator villano;
+    public Image heroe;
+    public Sprite[] personajesSprites;
 
 
     void Awake(){
@@ -31,13 +33,22 @@ public class LuchaContraElVillano : Minijuego
     
     void Start()
     {
-    
+        string selectedCharacter = PlayerPrefs.GetString("SelectedCharacter");
         base.MezclarElementos(preguntas);
         MostrarPregunta();
         
         if(nivel > 0){
             base.puntos = 10;
             base.numFallos = 0;
+        }
+
+        if (selectedCharacter == "boy")
+        {
+            heroe.sprite = personajesSprites[0];
+        }
+        else if (selectedCharacter == "girl")
+        {
+            heroe.sprite = personajesSprites[1];
         }
     }
 

@@ -683,6 +683,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nivel: 14
+  puntos: 0
+  numFallos: 0
+  numIntentos: 0
+  multiplicador: 0
   panelFinal: {fileID: 0}
   preguntas:
   - pregunta: "El b\xEDceps tiene dos cabezas"
@@ -720,6 +724,16 @@ MonoBehaviour:
     verdadera: 0
   pagina: Nivel14.1
   barraVida: {fileID: 2087164769}
+  vidaActual: 4
+  vidaMaxima: 4
+  indicePregAct: 0
+  pregunta: {fileID: 0}
+  textoPregunta: {fileID: 0}
+  villano: {fileID: 0}
+  heroe: {fileID: 844802316}
+  personajesSprites:
+  - {fileID: 21300000, guid: 299e00215b12b3e4591d0a2721bdf557, type: 3}
+  - {fileID: 21300000, guid: 55f6094d3d2315a49911b3792337f749, type: 3}
 --- !u!1 &420161739
 GameObject:
   m_ObjectHideFlags: 0
