@@ -16,7 +16,7 @@ public class ObtenerDatosUser : MonoBehaviour
         if(PlayerPrefs.GetInt("Datos",0) != 0){
             Controlador.EscenaJuego("MenuPrincipal");   
         }
-
+        mensajeError.text = "";
         usuario = new Usuario();
     }
 
@@ -37,19 +37,28 @@ public class ObtenerDatosUser : MonoBehaviour
     }
 
     public void GuardarDato(TMP_InputField campo){
-        
-        // Compruebo si es un mail
-        if(Controlador.EsEmail(campo.text)){
-            usuario.email_tutor = campo.text.ToLower();;
-        }else{
-            usuario.nombre = campo.text.ToLower();
-        } 
+
+        if(campo.name == "Correo"){
+            if(Controlador.EsEmail(campo.text)){
+                usuario.email_tutor = campo.text.ToLower();
+                mensajeError.text = "";
+            }else{
+                mensajeError.text = "El correo electrónico no es correcto";
+            }
+        }
+
+        if(campo.name == "Nombre"){
+            if(!string.IsNullOrEmpty(campo.text)){
+                usuario.nombre = campo.text.ToLower();
+            }
+        }
         
     }
 
+
     public void Continuar(string escena){
-        if(string.IsNullOrEmpty(nombre.text) || string.IsNullOrEmpty(email.text)){
-            mensajeError.text = "Por favor, complete todos los campos.";
+        if(string.IsNullOrEmpty(nombre.text) || string.IsNullOrEmpty(email.text) || !Controlador.EsEmail(email.text)){
+            mensajeError.text = "Por favor, complete todos los campos correctamente.";
         }else{
             usuario.nombre = nombre.text;
             usuario.email_tutor = email.text;

@@ -23,6 +23,7 @@ public class Controlador : MonoBehaviour
         // Expresión regular para validar el formato de un correo electrónico
         string pattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
         Regex regex = new Regex(pattern);
+        // Debug.Log(regex.IsMatch(email));
         return regex.IsMatch(email);
     }
 

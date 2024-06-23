@@ -30,7 +30,9 @@ public class ObtenerDatosUserTest
         mensajeErrorText = mensajeErrorObject.AddComponent<TextMeshProUGUI>();
 
         obtenerDatosUser.nombre = nombreInputField;
+        nombreInputField.name = "Nombre";
         obtenerDatosUser.email = emailInputField;
+        emailInputField.name = "Correo";
         obtenerDatosUser.mensajeError = mensajeErrorText;
 
         obtenerDatosUser.usuario = new Usuario();
@@ -51,6 +53,7 @@ public class ObtenerDatosUserTest
         obtenerDatosUser.GuardarDato(nombreInputField);
 
         Assert.AreEqual(nombre.ToLower(), obtenerDatosUser.usuario.nombre);
+        
     }
 
     [Test]
@@ -70,7 +73,7 @@ public class ObtenerDatosUserTest
 
         obtenerDatosUser.Continuar("Juego");
 
-        Assert.AreEqual("Por favor, complete todos los campos.", mensajeErrorText.text);
+        Assert.AreEqual("Por favor, complete todos los campos correctamente.", mensajeErrorText.text);
     }
 
     [Test]
