@@ -57,8 +57,9 @@ public class Minijuego : MonoBehaviour{
     */
 
     public void DisminuirNumeroFallos(){
-        // Debug.Log("Numero de fallos antes" + numFallos);
+        Debug.Log("Numero de fallos antes" + numFallos);
         numFallos--;
+        Debug.Log("Numero de fallos despues" + numFallos);
     }
 
      /**
@@ -140,7 +141,7 @@ public class Minijuego : MonoBehaviour{
 
     // Funcion calcular puntuacion con 4 opciones
 
-    public void CalcularPuntuacion3Opciones(){
+    public void CalcularPuntuacion4Opciones(){
         if(numFallos == 3){
             puntos -= 10;
         }else if(numFallos == 2){
@@ -210,5 +211,13 @@ public class Minijuego : MonoBehaviour{
         }
         return null;
     }
+
+    public void CargarPuntuacion(){
+        if (PlayerPrefs.HasKey("Puntuacion")){
+            puntos = PlayerPrefs.GetInt("Puntuacion");
+        }
+    }
+
+
 
 }

@@ -71,7 +71,7 @@ public class MinijuegoTest
     public void TestCalcularPuntuacionTresOpciones(){
         minijuego.numFallos = 2;
         minijuego.puntos = 10;
-        minijuego.CalcularPuntuacion3Opciones();
+        minijuego.CalcularPuntuacion4Opciones();
         Assert.AreEqual(4, minijuego.puntos);
     }
 

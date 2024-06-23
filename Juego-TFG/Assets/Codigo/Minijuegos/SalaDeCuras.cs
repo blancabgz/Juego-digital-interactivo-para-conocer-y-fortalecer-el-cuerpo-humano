@@ -31,7 +31,7 @@ public class SalaDeCuras : Minijuego
     public void RecogerRespuesta(int opcion){
         // Comprueba si la respuesta es correcta
         if(respuesta == curasOpciones[opcion]){
-            base.CalcularPuntuacion3Opciones();
+            base.CalcularPuntuacion4Opciones();
             base.GuardarPuntuacion(2);
             base.MostrarPanelFinal();
         // Si la respuesta no es correcta

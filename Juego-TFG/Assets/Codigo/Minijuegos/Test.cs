@@ -91,7 +91,7 @@ public class Test : Minijuego
     /**
     * @brief Comprueba si la respuesta introducida es correcta o no
     * La función comprueba si la respuesta es correcta, si es así, suma una nueva medalla
-    * Si es incorrecta, vuelve al dado pero sin sumar medalla
+    * Si es incorrecta, vuelve al dado pero sin sumar medalla y le baja puntuacion
     */
     public void ComprobarRespuesta(int indice){
         GameObject visible;
@@ -104,6 +104,8 @@ public class Test : Minijuego
 
             }else{
                 visible = panelFinal.transform.Find("Fallo")?.gameObject;
+                base.CargarPuntuacion();
+                PlayerPrefs.SetInt("Puntuacion", base.puntos - 1);
             }
             if(visible != null){
                 visible.SetActive(true);

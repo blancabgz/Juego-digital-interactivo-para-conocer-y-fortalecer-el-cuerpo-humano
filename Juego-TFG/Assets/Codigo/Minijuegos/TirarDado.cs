@@ -44,10 +44,6 @@ public class TirarDado : Minijuego
 
     public void Pulsar(){
         if(!rueda){
-            // Quito un punto por tirar al dado
-            base.DisminuirNumeroFallos();
-            PlayerPrefs.SetInt("Puntuacion", base.puntos);
-            CargarPuntuacion();
             StartCoroutine(Dado());
             if(PlayerPrefs.GetString("estadoMusica", "null") == "ON"){
                 if (audioSource != null){
@@ -106,8 +102,6 @@ public class TirarDado : Minijuego
         }
 
         if(contadorMedallas >= 3){
-            // A la puntuacion obtenida le sumo los puntos ganados 
-            base.puntos += contadorMedallas;
             // Compruebo que la puntuacion es mayor de 0
             if(base.puntos < 0){
                 base.puntos = 0;
