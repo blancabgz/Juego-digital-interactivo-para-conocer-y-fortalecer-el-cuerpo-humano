@@ -693,7 +693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelBottons: []
-  unlock: 22
+  unlock: 2
   nivelSeleccionado: 0
 --- !u!4 &918565049
 Transform:
