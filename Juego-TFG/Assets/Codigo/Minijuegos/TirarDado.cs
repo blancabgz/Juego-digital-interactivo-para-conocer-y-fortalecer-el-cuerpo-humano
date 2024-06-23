@@ -31,6 +31,12 @@ public class TirarDado : Minijuego
         SubirIntensidadImagen();
     }
 
+
+    /**
+    *  @brief Función de inicialización
+    * 
+    *  Busca y asigna los componentes Image y TextMeshProUGUI de los objetos "Dado" y "TituloDado", respectivamente.
+    */
     
     void Start(){
         if(audioSource != null){
@@ -41,6 +47,11 @@ public class TirarDado : Minijuego
         tituloDado = GameObject.Find("TituloDado").transform.GetComponent<TextMeshProUGUI>();
     }
 
+    /**
+    *  @brief Función para reproducir el sonido del dado y crear la animación de girar el dado.
+    * 
+    *  Esta función inicia el giro del dado. Verifica si la música está activada en los ajustes del jugador y, si es así, habilita y reproduce el audio.
+    */
 
     public void Pulsar(){
         if(!rueda){
@@ -53,6 +64,12 @@ public class TirarDado : Minijuego
             }
         }
     }
+
+    /**
+    *  @brief Función que controla el giro del dado
+    * 
+    *  Esta función controla el giro del dado y dependiendo de la selección, envía al jugador a la escena que le corresponde. 
+    */
     IEnumerator Dado(){
         rueda = true;
         int iteraciones = Random.Range(10, 20);
@@ -76,13 +93,25 @@ public class TirarDado : Minijuego
           
     }
 
+    /**
+    *  @brief Función que lleva al jugador a la escena Tipo Test
+    */
+
     private void IrEscenaTest(){
         Controlador.EscenaJuego("TipoTestRuleta");
     }
 
+    /**
+    *  @brief Función que lleca al jugador a la escena Movimiento
+    */
+
     private void IrMovimiento(){
         Controlador.EscenaJuego("MovimientoRuleta");
     }
+
+    /**
+    *  @brief Función que almacena el dado seleccionado para filtrar las preguntas
+    */
 
     public void DadoSeleccionado(int valor){
         dadoSeleccion = musculos[valor];
@@ -90,16 +119,29 @@ public class TirarDado : Minijuego
         
     }
 
+    /**
+    *  @brief Función para obtener la puntuación
+    */
+
     private void CargarPuntuacion(){
         if (PlayerPrefs.HasKey("Puntuacion")){
             base.puntos = PlayerPrefs.GetInt("Puntuacion");
         }
     }
 
+    /**
+    *  @brief Función para cargar el contador de medallas y verificar finalización del juego
+    * 
+    *  Esta función verifica si existe una clave para el contador de medallas en las preferencias del jugador.
+    *  Si existe, carga el valor. Si el contador de medallas es igual a 3, el juego ha terminado y almacena la puntuación. 
+    */
+
     private void CargarContadorMedallas(){
         if (PlayerPrefs.HasKey("ContadorMedallas")){
             contadorMedallas = PlayerPrefs.GetInt("ContadorMedallas");   
         }
+
+        Debug.Log(base.puntos);
 
         if(contadorMedallas >= 3){
             // Compruebo que la puntuacion es mayor de 0
@@ -124,6 +166,11 @@ public class TirarDado : Minijuego
 
     }
 
+    /**
+    *  @brief Función para aumentar la intensidad de la imagen por medallas desbloqueadas. 
+    * 
+    *  Esta función verifica el numero de medallas desbloqueadas y aumenta la intensidad de la imagen.  
+    */
 
     private void SubirIntensidadImagen(){
         if(contadorMedallas != 0){
@@ -136,6 +183,10 @@ public class TirarDado : Minijuego
             }
         }
     }
+
+    /**
+    *  @brief Función para inicializar el contador de medallas
+    */
 
     private void GuardarContadorMedallas(){
         if(contadorMedallas == 0){

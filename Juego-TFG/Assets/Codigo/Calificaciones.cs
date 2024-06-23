@@ -32,6 +32,7 @@ public class Calificaciones : MonoBehaviour{
         usuario = ControladorUsuario.CargarUsuario();
         ControlMusica.EstadoMusica();
     }
+
     void Start()
     {   
         
@@ -43,6 +44,11 @@ public class Calificaciones : MonoBehaviour{
 
     }
 
+    /**
+    *  @brief Función para escribir el mensaje que se le envía 
+    * 
+    *  Esta función escribe el mensaje con el nivel y la nota correspondiente a ese nivel. Si el nivel no ha sido completado, lo indica
+    */
     public void EscribirMensaje(){
         mensaje = "Notas del alumno \n";
         for(int i = 0; i < NUM_NIVELES; i++){
@@ -56,6 +62,12 @@ public class Calificaciones : MonoBehaviour{
         }
     }
 
+    /**
+    *  @brief Función para obtener las calificaciones del jugador
+    * 
+    *  Esta función recorre todos los slots de puntuaciones, asignando las puntuaciones a cada slot. 
+    *  Si el nivel no ha sido completado, mostrará un "-"
+    */
     private void ObtenerCalificaciones(){
         GameObject slotPuntuacion;
         if(slotsPanel.Length > 0){
@@ -76,6 +88,12 @@ public class Calificaciones : MonoBehaviour{
         }
     }
 
+    /**
+    *  @brief Función para enviar las calificaciones del jugador
+    * 
+    *  Esta función realiza el envío de las calificaciones del jugador. Si detecta que el dispositivo es un Android, lo realiza
+    *  desplegando el menú de compatir del teléfono. En caso contrario, lo enviará por email introducido en el juego. 
+    */
     public void EnviarMensaje(){
         if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer){
             SocialShare(mensaje, "Calificaciones");
@@ -115,12 +133,28 @@ public class Calificaciones : MonoBehaviour{
         SmtpServer.Send(mail);
     }
 
+
+    /**
+    *  @brief Función para almacenar la puntuación por nivel obtenida por el jugador
+    *  Esta función almacena la puntuación obtenida en un nivel introducido por el jugador. 
+    * 
+    *  @param nivel El nivel para el cual se guarda la puntuación.
+    *  @param puntos La puntuación obtenida en el nivel.
+    */
     public static void GuardarPuntuacion(int nivel, int puntos){
         string clave = PUNTUACION_NIVEL + nivel.ToString();
         PlayerPrefs.SetInt(clave, puntos);
         PlayerPrefs.Save();
     }
 
+    /**
+    *  @brief Obtener la puntuación de un nivel específico.
+    * 
+    *  Esta función obtiene la puntuación obtenida en un nivel dado.
+    * 
+    *  @param nivel El nivel del cual se obtiene la puntuación.
+    *  @return La puntuación obtenida en el nivel, o -1 si no hay ninguna puntuación guardada.
+    */
     public static int CargarPuntuacion(int nivel){
         string clave = PUNTUACION_NIVEL + nivel.ToString();
         return(PlayerPrefs.GetInt(clave, -1)); // Si no hay valor guardado, devuelve 0

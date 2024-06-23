@@ -50,15 +50,6 @@ public class Test : Minijuego
         }
     }
     
-    /**
-    *  @brief Función para obtener datos
-    *  Esta funcion se utiliza para obtener el dado seleccionado o para saber el numero de medallas
-    *  conseguidas
-    *  @param {string} Clave 
-    */ 
-    // private string CargarDatos(string clave){
-    //     return 
-    // }
 
     /** 
     * @brief Obtener una pregunta aleatoria, mezcla las respuesta y las muestra por pantalla
