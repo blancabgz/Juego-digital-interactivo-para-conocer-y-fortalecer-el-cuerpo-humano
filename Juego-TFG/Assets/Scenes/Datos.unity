@@ -464,7 +464,7 @@ GameObject:
   m_Component:
   - component: {fileID: 520316115}
   - component: {fileID: 520316114}
-  - component: {fileID: 520316113}
+  - component: {fileID: 520316116}
   m_Layer: 0
   m_Name: ControlMusica
   m_TagString: Untagged
@@ -472,29 +472,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &520316113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 520316112}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c457dcd7feb3c0643a63cf767e54ff5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  escenasPersiste:
-  - MenuPrincipal
-  - Juego
-  - Juego2
-  - Medallas
-  - Objetos
-  - MenuOpciones
-  - EleccionPersonaje
-  - Datos
-  - Calificaciones
-  - Historia
 --- !u!82 &520316114
 AudioSource:
   m_ObjectHideFlags: 0
@@ -606,6 +583,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &520316116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520316112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c457dcd7feb3c0643a63cf767e54ff5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  escenasPersiste:
+  - Datos
+  - EleccionPersonaje
+  - MenuPrincipal
+  - Juego
+  - Juego2
+  - Medallas
+  - Objetos
+  - MenuOpciones
+  - Calificaciones
+  - Historia
 --- !u!1 &597872561
 GameObject:
   m_ObjectHideFlags: 0

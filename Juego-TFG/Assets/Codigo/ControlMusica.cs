@@ -11,15 +11,28 @@ public class ControlMusica : MonoBehaviour
 
     void Start()
     {
-        musica = PlayerPrefs.GetString("estadoMusica", "null");
-        // Debug.Log(musica);
-        if (instance == null && musica == "ON"){
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }else if (instance != null || musica == "null" || musica == "OFF"){
+        if(instance != null && instance != this){
             Destroy(gameObject);
             return;
         }
+
+        instance = this;
+
+        musica = PlayerPrefs.GetString("estadoMusica", "null");
+
+        if(musica == "OFF"){
+            Destroy(gameObject);
+        }else{
+            DontDestroyOnLoad(gameObject);
+        }
+
+        // if (instance == null && musica == "ON"){
+        //     instance = this;
+        //     DontDestroyOnLoad(gameObject);
+        // }else if (instance != null || musica == "null" || musica == "OFF"){
+        //     Destroy(gameObject);
+        //     return;
+        // }
     }
 
     private void OnEnable(){

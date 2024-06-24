@@ -440,16 +440,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   escenasPersiste:
+  - Datos
+  - EleccionPersonaje
   - MenuPrincipal
   - Juego
   - Juego2
   - Medallas
   - Objetos
   - MenuOpciones
-  - EleccionPersonaje
-  - Datos
   - Calificaciones
   - Historia
+  musicaOriginal: {fileID: 8300000, guid: 6db3605a8a6f48d4cba83836efc7d21c, type: 3}
+  musicaHistoria: {fileID: 8300000, guid: 7009c3deff3951045ac8c780e5ae26d6, type: 3}
 --- !u!82 &110657275
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2625,6 +2627,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   calificaciones: {fileID: 1760954184}
   mensaje: Este es un mensaje de ejemplo.
+  usuario:
+    nombre: 
+    email_tutor: 
 --- !u!1 &887435988
 GameObject:
   m_ObjectHideFlags: 0

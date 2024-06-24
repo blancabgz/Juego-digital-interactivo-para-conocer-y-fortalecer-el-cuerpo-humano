@@ -154,16 +154,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   escenasPersiste:
+  - Datos
+  - EleccionPersonaje
   - MenuPrincipal
   - Juego
   - Juego2
   - Medallas
   - Objetos
   - MenuOpciones
-  - EleccionPersonaje
-  - Datos
   - Calificaciones
   - Historia
+  musicaOriginal: {fileID: 8300000, guid: 6db3605a8a6f48d4cba83836efc7d21c, type: 3}
+  musicaHistoria: {fileID: 8300000, guid: 7009c3deff3951045ac8c780e5ae26d6, type: 3}
 --- !u!82 &268611794
 AudioSource:
   m_ObjectHideFlags: 0
@@ -309,7 +311,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.07362691, y: 0.351}
   m_AnchorMax: {x: 0.938, y: 0.521}
-  m_AnchoredPosition: {x: -4.216919, y: -2.312004}
+  m_AnchoredPosition: {x: -4.216919, y: -2.3120117}
   m_SizeDelta: {x: -5.9558, y: -5.5218}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &316351139
@@ -2859,6 +2861,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   btext: {fileID: 391739477}
   panelSeguridad: {fileID: 1005297586}
+  audioSources: []
 --- !u!1 &1976746745
 GameObject:
   m_ObjectHideFlags: 0

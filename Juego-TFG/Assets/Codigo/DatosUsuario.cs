@@ -18,6 +18,13 @@ public class ObtenerDatosUser : MonoBehaviour
         }
         mensajeError.text = "";
         usuario = new Usuario();
+
+        GameObject controlMusica = GameObject.Find("ControlMusica");
+        if(PlayerPrefs.GetString("estadoMusica", "null") == "OFF"){
+            if(controlMusica != null){
+                Destroy(controlMusica);
+            }   
+        }
     }
 
     void Update() {

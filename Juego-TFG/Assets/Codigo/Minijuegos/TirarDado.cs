@@ -141,8 +141,6 @@ public class TirarDado : Minijuego
             contadorMedallas = PlayerPrefs.GetInt("ContadorMedallas");   
         }
 
-        Debug.Log(base.puntos);
-
         if(contadorMedallas >= 3){
             // Compruebo que la puntuacion es mayor de 0
             if(base.puntos < 0){

@@ -109,7 +109,7 @@ public class ControladorRecompensas : MonoBehaviour
                 string imagenPath = valores[2];
                 // Debug.Log(nivel + " " + tipo + " " + imagenPath);
                 Sprite sprite = CargarSprite(imagenPath);
-                Debug.Log(sprite);
+                // Debug.Log(sprite);
                 Recompensa recompensa = new Recompensa(nivel, tipo, sprite);
                 recompensas.Add(recompensa);
             }

@@ -711,7 +711,7 @@ MonoBehaviour:
     verdadera: 0
   - pregunta: Los gemelos permiten levantar los talones del suelo.
     verdadera: 1
-  pagina: PreguntaAbdomenFinal
+  pagina: AbdomenFinal
   barraVida: {fileID: 2087164769}
   vidaActual: 4
   vidaMaxima: 4

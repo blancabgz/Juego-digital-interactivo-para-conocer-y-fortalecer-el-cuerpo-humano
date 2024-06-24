@@ -1000,7 +1000,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.45900002, y: 0.09185185}
   m_AnchorMax: {x: 0.54935414, y: 0.1948148}
-  m_AnchoredPosition: {x: 1.9899902, y: 1.5}
+  m_AnchoredPosition: {x: 1.9899902, y: 1.4999695}
   m_SizeDelta: {x: -7.4682007, y: -5.7639008}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1075875067
@@ -1261,16 +1261,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   escenasPersiste:
+  - Datos
+  - EleccionPersonaje
   - MenuPrincipal
   - Juego
   - Juego2
   - Medallas
   - Objetos
   - MenuOpciones
-  - EleccionPersonaje
-  - Datos
   - Calificaciones
   - Historia
+  musicaOriginal: {fileID: 8300000, guid: 6db3605a8a6f48d4cba83836efc7d21c, type: 3}
+  musicaHistoria: {fileID: 8300000, guid: 7009c3deff3951045ac8c780e5ae26d6, type: 3}
 --- !u!82 &1357170744
 AudioSource:
   m_ObjectHideFlags: 0
